@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+
+<html lang="fr">
+  <head>
+    <title> </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/jquery.scrollgress.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.slidertron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+  </head>
+  <body class="landing">
+
+    <!-- Header -->
+    <header id="header" class="alt skel-layers-fixed">
+      <h1><a href="index.html">Open de bloc 2015<span> Grenoble </span></a></h1>
+      <nav id="nav">
+	<ul>
+	  <li><a href="index.html">Présentation</a></li>
+	  <li><a href="program.html">Programme</a></li>
+	  <li><a href="registration.html">Inscription</a></li>
+	  <li><a href="results.html">Résultats</a></li>
+	  <!--<li><a href="media.html">Media</a></li>-->
+	  <li><a href="contact.html">Contact</a></li>
+	</ul>
+      </nav>
+    </header>
+
+    <section id="three" class="wrapper style1">
+      <div class="container">
+	<h2>Enregistrement d'un compétiteur</h2>
+	  <form>
+	    <fieldset>
+
+	      <label for="text">Nom</label>
+	      <input type="text" name="text" id="text">
+
+	      <label for="text">Prénom</label>
+	      <input type="text" name="text" id="text">
+      
+	      <label for="email">Mail</label>
+	      <input type="email" id="email" name="email">
+	      <br>
+
+	      <label>Catégorie</label>
+
+	      <input type="radio" name="categorie" id="poussins" value="poussins">
+	      <label for="poussins">Poussins</label>
+	      <br>
+
+	      <input type="radio" name="categorie" id="benjamins" value="benjamins">
+	      <label for="benjamins">Benjamins</label>
+	      <br>
+
+	      <input type="radio" name="categorie" id="minimes" value="minimes">
+	      <label for="minimes">Minimes</label>
+	      <br>
+
+	      <input type="radio" name="categorie" id="cadets" value="cadets">
+	      <label for="cadets">Cadets</label>
+	      <br></br>
+
+	      <label>Circuit</label>
+
+	      <input type="radio" name="circuit" id="jaune" value="jaune" checked>
+	      <label for="jaune">Circuit jaune</label>
+	      <br>
+
+	      <input type="radio" name="circuit" id="bleu" value="bleu">
+	      <label for="bleu">Circuit bleu</label>
+	      <br>
+ 
+	      <input type="radio" name="circuit" id="rouge" value="rouge">
+	      <label for="rouge">Circuit rouge</label>
+	      <br>
+
+	      <input type="radio" name="circuit" id="noir" value="noir">
+	      <label for="noir">Circuit noir</label>
+	      <br>
+
+	      <button type="submit" class="button big" role="button"
+		      aria-disabled="false">Validation et paiement</button>
+	      
+	    </fieldset>
+
+	  </form>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  
+    <input name="cmd" type="hidden" value="_xclick" />
+    <input name="business" type="hidden" value="me@myemail.com" />
+    <input name="return" type="hidden" value="n=http://www.yoursite.com/registration-paid" />
+    <input name="item_name" type="hidden" value="Registration Fee" />
+    <input name="amount" type="hidden" value="20" />
+     
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=me@myemail.com&amp;currency_code=USD&amp;amount=20&amp;return=http://www.yoursite.com/registration-paid&amp;item_name=Registration+Fee" target="paypal">Validation et paiement.</a>
+ 
+</form>
+
+      </div>
+    </section>
+  </body>
+</html>
