@@ -42,55 +42,77 @@
 
     <section id="three" class="wrapper style1">
       <div class="container">
-	<h2>Enregistrement d'un compétiteur</h2>
 	  <form>
 	    <fieldset>
+	      <h2>Participant</h2>
 
-	      <label for="text">Nom</label>
-	      <input type="text" name="text" id="text">
+	      <label for="lastname">Nom</label>
+	      <input type="text" name="nom" id="name">
 
-	      <label for="text">Prénom</label>
-	      <input type="text" name="text" id="text">
+	      <label for="firstname">Prénom</label>
+	      <input type="text" name="prenom" id="firstname">
+
+	      <label for="birthday">Date de naissance</label>
+	      <input type="date" name="naissance" id="birthday" min="2003-12-31" max="1996-12-31" >
       
+	      <label>Licence</label>
+	      <input type="radio" name="licence-type" id="ffme" value="FFME" checked>
+	      <label for="ffme">FFME</label>
+
+	      <input type="radio" name="licence-type" id="ffcam" value="FFCAM">
+	      <label for="ffcam">FFCAM</label>
+
+	      <label for="licence-num">Numéro</label>
+	      <input type="text" name="licence-num" id="licence-num">
+
+	      <label for="association">Club</label>
+	      <input type="text" name="club" id="association">
+
+	      <label>Expérience</label>
+	      <input type="radio" name="niveau" id="4c" value="4c">
+	      <label for="4c">4c</label>
+
+	      <input type="radio" name="niveau" id="5a" value="5a">
+	      <label for="5a">5a</label>
+
+	      <input type="radio" name="niveau" id="5b" value="5b">
+	      <label for="5b">5b</label>
+
+	      <input type="radio" name="niveau" id="5c" value="5c">
+	      <label for="5c">5c</label>
+
+	      <input type="radio" name="niveau" id="6a" value="6a">
+	      <label for="6a">6a</label>
+
+	      <input type="radio" name="niveau" id="6b" value="6b">
+	      <label for="6b">6b</label>
+
+	      <input type="radio" name="niveau" id="6c" value="6c">
+	      <label for="6c">6c</label>
+
+	      <input type="radio" name="niveau" id="7a" value="7a">
+	      <label for="7a">7a</label>
+
+	      <input type="radio" name="niveau" id="7b" value="7b">
+	      <label for="7b">7b</label>
+
+	      <input type="radio" name="niveau" id="7c" value="7c">
+	      <label for="7c">7c</label>
+
+	      
+	      <br>
+	      <h2>Contact</h2>
+	      
 	      <label for="email">Mail</label>
 	      <input type="email" id="email" name="email">
+	      <br>	      
+
+	      <label for="telephone">Téléphone</label>
+	      <input type="tel" id="tel" name="telephone">
 	      <br>
-
-	      <label>Catégorie</label>
-
-	      <input type="radio" name="categorie" id="poussins" value="poussins">
-	      <label for="poussins">Poussins</label>
+	      
 	      <br>
-
-	      <input type="radio" name="categorie" id="benjamins" value="benjamins">
-	      <label for="benjamins">Benjamins</label>
-	      <br>
-
-	      <input type="radio" name="categorie" id="minimes" value="minimes">
-	      <label for="minimes">Minimes</label>
-	      <br>
-
-	      <input type="radio" name="categorie" id="cadets" value="cadets">
-	      <label for="cadets">Cadets</label>
-	      <br></br>
-
-	      <label>Circuit</label>
-
-	      <input type="radio" name="circuit" id="jaune" value="jaune" checked>
-	      <label for="jaune">Circuit jaune</label>
-	      <br>
-
-	      <input type="radio" name="circuit" id="bleu" value="bleu">
-	      <label for="bleu">Circuit bleu</label>
-	      <br>
- 
-	      <input type="radio" name="circuit" id="rouge" value="rouge">
-	      <label for="rouge">Circuit rouge</label>
-	      <br>
-
-	      <input type="radio" name="circuit" id="noir" value="noir">
-	      <label for="noir">Circuit noir</label>
-	      <br>
+	      <h2>Enregistrement</h2>
 
 	      <button type="submit" class="button big" role="button"
 		      aria-disabled="false">Validation et paiement</button>
@@ -99,6 +121,7 @@
 
 	  </form>
 
+<!--
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
   
     <input name="cmd" type="hidden" value="_xclick" />
@@ -110,7 +133,7 @@
     <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=me@myemail.com&amp;currency_code=USD&amp;amount=20&amp;return=http://www.yoursite.com/registration-paid&amp;item_name=Registration+Fee" target="paypal">Validation et paiement.</a>
  
 </form>
-
+-->
       </div>
     </section>
   </body>
