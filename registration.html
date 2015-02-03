@@ -32,85 +32,193 @@
 	<ul>
 	  <li><a href="index.html">Présentation</a></li>
 	  <li><a href="program.html">Programme</a></li>
+	  <li><a href="rules.html">Règlement</a></li>
 	  <li><a href="registration.html">Inscription</a></li>
 	  <li><a href="results.html">Résultats</a></li>
-	  <!--<li><a href="media.html">Media</a></li>-->
+	  <li><a href="media.html">Media</a></li>
 	  <li><a href="contact.html">Contact</a></li>
 	</ul>
       </nav>
     </header>
 
-    <section id="three" class="wrapper style1">
+    <!-- Main -->
+    <section id="main" class="wrapper style1">
+      <header class="major">
+	<h2>Enregistrement</h2>
+      </header>
       <div class="container">
-	<h2>Enregistrement d'un compétiteur</h2>
-	  <form>
-	    <fieldset>
+	<div class="row 150%">
+	  <div class="8u 12u$(2)">
 
-	      <label for="text">Nom</label>
-	      <input type="text" name="text" id="text">
+	    <!-- Content -->
+	    <section id="content">
 
-	      <label for="text">Prénom</label>
-	      <input type="text" name="text" id="text">
-      
-	      <label for="email">Mail</label>
-	      <input type="email" id="email" name="email">
-	      <br>
+	      <form>
+		<fieldset>
+		  <h2>Participant</h2>
 
-	      <label>Catégorie</label>
+		  <div class="left">
+		    <label for="lastname">Nom</label>
+		    <input type="text" name="nom" id="name" required>
+		  </div>
 
-	      <input type="radio" name="categorie" id="poussins" value="poussins">
-	      <label for="poussins">Poussins</label>
-	      <br>
+		  <div class="left">
+		    <label for="firstname">Prénom</label>
+		    <input type="text" name="prenom" id="firstname">
+		  </div>
 
-	      <input type="radio" name="categorie" id="benjamins" value="benjamins">
-	      <label for="benjamins">Benjamins</label>
-	      <br>
+		  <div class="clear">&nbsp;</div>
 
-	      <input type="radio" name="categorie" id="minimes" value="minimes">
-	      <label for="minimes">Minimes</label>
-	      <br>
+		  <div class="left">
+		    <label>Sexe</label>
+		    <input type="radio" name="sex" id="m" value="M" checked>
+		    <label for="m">M</label>
 
-	      <input type="radio" name="categorie" id="cadets" value="cadets">
-	      <label for="cadets">Cadets</label>
-	      <br></br>
+		    <input type="radio" name="sex" id="f" value="F">
+		    <label for="f">F</label>
+		  </div>
 
-	      <label>Circuit</label>
+		  <div class="left">
+		    <label for="birthday">Date de naissance</label>
+		    <input type="date" name="naissance" id="birthday" min="2005-12-31" max="1998-01-01" >
+		  </div>
 
-	      <input type="radio" name="circuit" id="jaune" value="jaune" checked>
-	      <label for="jaune">Circuit jaune</label>
-	      <br>
+		  <div class="clear">&nbsp;</div>
 
-	      <input type="radio" name="circuit" id="bleu" value="bleu">
-	      <label for="bleu">Circuit bleu</label>
-	      <br>
- 
-	      <input type="radio" name="circuit" id="rouge" value="rouge">
-	      <label for="rouge">Circuit rouge</label>
-	      <br>
+		  <div class="left">
+		    <label>Licence</label>
+		    <input type="radio" name="licence-type" id="ffme" value="FFME" checked>
+		    <label for="ffme">FFME</label>
 
-	      <input type="radio" name="circuit" id="noir" value="noir">
-	      <label for="noir">Circuit noir</label>
-	      <br>
+		    <input type="radio" name="licence-type" id="ffcam" value="FFCAM">
+		    <label for="ffcam">FFCAM</label>
+		  </div>
 
-	      <button type="submit" class="button big" role="button"
-		      aria-disabled="false">Validation et paiement</button>
-	      
-	    </fieldset>
+		  <div class="left">
+		    <label for="licence-num">Numéro</label>
+		    <input type="text" name="licence-num" id="licence-num">
+		  </div>
 
-	  </form>
+		  <div class="left">
+		    <label for="association">Club</label>
+		    <input type="text" name="club" id="association">
+		  </div>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-  
-    <input name="cmd" type="hidden" value="_xclick" />
-    <input name="business" type="hidden" value="me@myemail.com" />
-    <input name="return" type="hidden" value="n=http://www.yoursite.com/registration-paid" />
-    <input name="item_name" type="hidden" value="Registration Fee" />
-    <input name="amount" type="hidden" value="20" />
-     
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=me@myemail.com&amp;currency_code=USD&amp;amount=20&amp;return=http://www.yoursite.com/registration-paid&amp;item_name=Registration+Fee" target="paypal">Validation et paiement.</a>
- 
-</form>
+		  <div class="clear">&nbsp;</div>
 
+		  <div>
+		    <label>Expérience</label>
+		    <input type="radio" name="niveau" id="4c" value="4c">
+		    <label for="4c">4c</label>
+
+		    <input type="radio" name="niveau" id="5a" value="5a">
+		    <label for="5a">5a</label>
+
+		    <input type="radio" name="niveau" id="5b" value="5b">
+		    <label for="5b">5b</label>
+
+		    <input type="radio" name="niveau" id="5c" value="5c">
+		    <label for="5c">5c</label>
+
+		    <input type="radio" name="niveau" id="6a" value="6a">
+		    <label for="6a">6a</label>
+
+		    <input type="radio" name="niveau" id="6b" value="6b">
+		    <label for="6b">6b</label>
+
+		    <input type="radio" name="niveau" id="6c" value="6c">
+		    <label for="6c">6c</label>
+
+		    <input type="radio" name="niveau" id="7a" value="7a">
+		    <label for="7a">7a</label>
+
+		    <input type="radio" name="niveau" id="7b" value="7b">
+		    <label for="7b">7b</label>
+
+		    <input type="radio" name="niveau" id="7c" value="7c">
+		    <label for="7c">7c</label>
+		  </div>
+
+		  <div>
+		    <textarea name="message" id="message" placeholder="Dites-nous en plus sur votre expérience et votre niveau en compétition" rows="4"></textarea>
+		  </div>
+
+		  <div class="clear">&nbsp;</div>
+
+
+		  <h2>Contact</h2>
+
+		  <div class="left">
+		    <label for="email">Mail</label>
+		    <input type="email" id="email" name="email" placeholder="name@provider.com">
+		  </div>
+
+		  <div class="left">
+		    <label for="telephone">Téléphone</label>
+		    <input type="tel" id="tel" name="telephone" placeholder="06XXXXXXXX">
+		  </div>
+
+		  <div class="clear">&nbsp;</div>
+
+		  <h2>Enregistrement</h2>
+
+		  <input type="checkbox" name="conditions" id="conditions" value="">
+		  <label for="conditions">En cochant cette case, vous acceptez les <a href="rules.html">conditions d'inscription et le règlement de la compétition</a>.</label>
+		  <br>
+
+		  <button type="submit" class="button big" role="button"
+			  aria-disabled="false">Validation et paiement</button>
+
+		</fieldset>
+
+	      </form>
+
+	      <!--
+		  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		    <input name="cmd" type="hidden" value="_xclick" />
+		    <input name="business" type="hidden" value="me@myemail.com" />
+		    <input name="return" type="hidden" value="n=http://www.yoursite.com/registration-paid" />
+		    <input name="item_name" type="hidden" value="Registration Fee" />
+		    <input name="amount" type="hidden" value="20" />
+
+		    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=me@myemail.com&amp;currency_code=USD&amp;amount=20&amp;return=http://www.yoursite.com/registration-paid
+			     </form>
+-->
+
+	    </section>
+
+	  </div>
+	  <div class="4u 12u$(2)">
+
+	    <!-- Sidebar -->
+	    <section id="sidebar">
+	      <section>
+		<h3>Places restantes disponibles</h3>
+		<p>Les inscriptions sont limitées à 100 participants par catégorie.</p>
+		<footer>
+		  <table class="actions">
+		    <tr>
+		      <th>Catégorie</th>
+		      <th>Places restantes</th>
+		    </tr>
+		    <tr>
+		      <td>Poussins / Benjamins</td>
+		      <td>42</td>
+		    </tr>
+		    <tr>
+		      <td>Minimes / Cadets</td>
+		      <td>42</td>
+		    </tr>
+		  </table>
+		</footer>
+	      </section>
+
+	      <hr />
+
+	    </section>
+
+	  </div>
+	</div>
       </div>
     </section>
   </body>
