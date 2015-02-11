@@ -54,7 +54,7 @@
 	    <!-- Content -->
 	    <section id="content">
 
-	      <form>
+	      <form action="success.php" method="post">
 		<fieldset>
 		  <h2>Participant</h2>
 
@@ -65,7 +65,7 @@
 
 		  <div class="left">
 		    <label for="firstname">Prénom</label>
-		    <input type="text" name="prenom" id="firstname">
+		    <input type="text" name="prenom" id="firstname" required>
 		  </div>
 
 		  <div class="clear">&nbsp;</div>
@@ -81,7 +81,7 @@
 
 		  <div class="left">
 		    <label for="birthday">Date de naissance</label>
-		    <input type="date" name="naissance" id="birthday" min="2005-12-31" max="1998-01-01" >
+		    <input type="date" name="naissance" id="birthday" min="1998-01-01" max="2005-12-31" required>
 		  </div>
 
 		  <div class="clear">&nbsp;</div>
@@ -97,7 +97,7 @@
 
 		  <div class="left">
 		    <label for="licence-num">Numéro</label>
-		    <input type="text" name="licence-num" id="licence-num">
+		    <input type="text" name="licence-num" id="licence-num" required>
 		  </div>
 
 		  <div class="left">
@@ -151,12 +151,12 @@
 
 		  <div class="left">
 		    <label for="email">Mail</label>
-		    <input type="email" id="email" name="email" placeholder="name@provider.com">
+		    <input type="email" id="email" name="email" placeholder="name@provider.com" required>
 		  </div>
 
 		  <div class="left">
 		    <label for="tel">Téléphone</label>
-		    <input type="tel" id="tel" name="telephone" placeholder="06XXXXXXXX">
+		    <input type="tel" id="tel" name="telephone" placeholder="06XXXXXXXX" required>
 		  </div>
 
 		  <div class="clear">&nbsp;</div>
@@ -191,11 +191,39 @@
 	  </div>
 	  <div class="4u 12u$(2)">
 
+
+
 	    <!-- Sidebar -->
 	    <section id="sidebar">
+
+<?php
+try
+{
+  $bdd = new PDO('mysql:host=mysql.server;dbname=name;charset=utf8', 'login', 'password');
+  $bdd->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+  $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (Exception $e)
+{
+  die('Erreur de connexion à la base de données: ' . $e->getMessage());
+}
+
+  $availablePlaces = 100;
+
+ $answer = $bdd->query("SELECT COUNT(*) FROM participants WHERE categorie='poussin' OR categorie='benjamin'"); 
+ $data = $answer->fetch();
+ $remainingPlacesPB = $availablePlaces - $data[0];
+ $answer->closeCursor();
+ 
+ $answer = $bdd->query("SELECT COUNT(*) FROM participants WHERE categorie='minime' OR categorie='cadet'"); 
+ $data = $answer->fetch();
+ $remainingPlacesMC = $availablePlaces - $data[0];
+ $answer->closeCursor();
+?>
+
 	      <section>
 		<h3>Places restantes disponibles</h3>
-		<p>Les inscriptions sont limitées à 100 participants par catégorie.</p>
+		<p>Les inscriptions sont limitées à <?php echo $availablePlaces ?> participants par catégorie.</p>
 		<footer>
 		  <table class="actions">
 		    <tr>
@@ -204,17 +232,17 @@
 		    </tr>
 		    <tr>
 		      <td>Poussins / Benjamins</td>
-		      <td>42</td>
+		      <td><?php echo $remainingPlacesPB ?></td>
 		    </tr>
 		    <tr>
 		      <td>Minimes / Cadets</td>
-		      <td>42</td>
+		      <td><?php echo $remainingPlacesMC ?></td>
 		    </tr>
 		  </table>
 		</footer>
 	      </section>
 
-	      <hr />
+	      <hr />     
 
 	    </section>
 
