@@ -110,13 +110,23 @@ catch (Exception $e)
 
 ?>
 
-<p>
-L'inscription du participant <?php echo $firstname $lastname ?> a été réalisée avec succès.
-Une confirmation vous sera envoyée par email à l'adresse <?php echo $mail ?>.
-En cas d'information incomplète ou erronée, merci de <a href=mailto:romain.goffe@gmail.com>contacter l'administrateur</a> au plus vite.
-<p>
-<a href="index.html">Cliquez ici</a> pour revenir au site et à bientot !
-</p>
+      <div class="container">
+
+	<!-- Content -->
+	<section id="content">
+
+<p>L'inscription du participant <b><?php echo $firstname ?> <?php echo
+$lastname ?></b> a été réalisée avec succès.</p>
+
+<p>Une confirmation vous sera envoyée par email à l'adresse <b><?php echo
+$mail ?></b></p>
+
+<p>En cas d'information incomplète ou erronée, merci
+de <a href=mailto:romain.goffe@gmail.com>contacter
+l'administrateur</a> au plus vite.</p>
+
+<p><a href="index.html">Cliquez ici</a> pour revenir au site et à
+bientot !</p>
 
 <table>
 
@@ -140,17 +150,17 @@ En cas d'information incomplète ou erronée, merci de <a href=mailto:romain.gof
 <td><?php 
   echo $category;
 if ($sex == 'M'):
-  echo garçon;
+  echo " garçon";
 else:
-  echo fille;
+  echo " fille";
 endif;
   ?></td>
 </tr>
 
 </table>
 
-
-</p>
+</section>
+</div>
 </section>
 </body>
 </html>
