@@ -31,8 +31,7 @@
       <nav id="nav">
 	<ul>
 	  <li><a href="#one">Présentation</a></li>
-	  <li><a href="program.html">Programme</a></li>
-	  <li><a href="rules.html">Règlement</a></li>
+	  <li><a href="program.html">Programme et Règlement</a></li>
 	  <li><a href="registration.php">Inscription</a></li>
 	  <li><a href="results.html">Résultats</a></li>
 	  <li><a href="benevoles.html">Bénévoles</a></li>

@@ -1388,3 +1388,18 @@
 		#footer .copyright {
 			font-size: 0.8em;
 		}
+
+
+/* Section nav */
+
+
+.subnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.subnav li {
+    display: inline;
+}
