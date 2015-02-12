@@ -108,7 +108,7 @@
 		  <div class="clear">&nbsp;</div>
 
 		  <div>
-		    <label>Expérience</label>
+		    <label>Niveau maximum réalisé en voie :</label>
 		    <input type="radio" name="niveau" id="4c" value="4c">
 		    <label for="4c">4c</label>
 
@@ -141,7 +141,7 @@
 		  </div>
 
 		  <div>
-		    <textarea name="message" id="message" placeholder="Dites-nous en plus sur votre expérience et votre niveau en compétition" rows="4"></textarea>
+		    <textarea name="message" id="message" placeholder="Dites-nous en plus sur votre expérience (ou éventuellement vos résultats en compétition)" rows="4"></textarea>
 		  </div>
 
 		  <div class="clear">&nbsp;</div>
@@ -223,7 +223,7 @@ catch (Exception $e)
 
 	      <section>
 		<h3>Places restantes disponibles</h3>
-		<p>Les inscriptions sont limitées à <?php echo $availablePlaces ?> participants par catégorie.</p>
+		<p>Les inscriptions sont limitées à <?php echo $availablePlaces ?> participants par demi-journées.</p>
 		<footer>
 		  <table class="actions">
 		    <tr>
@@ -231,11 +231,11 @@ catch (Exception $e)
 		      <th>Places restantes</th>
 		    </tr>
 		    <tr>
-		      <td>Poussins / Benjamins</td>
+		      <td>Poussins / Benjamins (F&G)</td>
 		      <td><?php echo $remainingPlacesPB ?></td>
 		    </tr>
 		    <tr>
-		      <td>Minimes / Cadets</td>
+		      <td>Minimes / Cadets (F&G)</td>
 		      <td><?php echo $remainingPlacesMC ?></td>
 		    </tr>
 		  </table>
