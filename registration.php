@@ -140,7 +140,7 @@
 		  </div>
 
 		  <div>
-		    <textarea name="message" id="message" placeholder="Dites-nous en plus sur votre expérience (ou éventuellement vos résultats en compétition)" rows="4"></textarea>
+		    <textarea name="message" id="message" placeholder="Dites-nous en plus sur votre expérience (ou éventuellement vos résultats en compétition) :" rows="4"></textarea>
 		  </div>
 
 		  <div class="clear">&nbsp;</div>
@@ -163,7 +163,7 @@
 		  <h2>Enregistrement</h2>
 
 		  <input type="checkbox" name="conditions" id="conditions" value="">
-		  <label for="conditions">En cochant cette case, vous acceptez les <a href="rules.html">conditions d'inscription et le règlement de la compétition</a>.</label>
+		  <label for="conditions">En cochant cette case, vous acceptez les <a href="program.html">conditions d'inscription et le règlement de la compétition</a>.</label>
 		  <br>
 
 		  <button type="submit" class="button big" role="button"
