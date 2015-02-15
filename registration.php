@@ -56,6 +56,7 @@
 	      <form action="success.php" method="post">
 		<fieldset>
 		  <h2>Participant</h2>
+		  <span class="required_notification">* Champs obligatoires</span>
 
 		  <div class="left">
 		    <label for="lastname">Nom</label>
@@ -80,7 +81,7 @@
 
 		  <div class="left">
 		    <label for="birthday">Date de naissance</label>
-		    <input type="date" name="naissance" id="birthday" min="1998-01-01" max="2005-12-31" required>
+		    <input type="text" name="naissance" id="birthday" placeholder="jj/mm/aaaa" pattern"[1-3][0-9]/[0-1][0-9]/(1998|1999|2000|2001|2002|2003|2004)" required>
 		  </div>
 
 		  <div class="clear">&nbsp;</div>
@@ -108,7 +109,7 @@
 
 		  <div>
 		    <label>Niveau maximum réalisé en voie :</label>
-		    <input type="radio" name="niveau" id="4c" value="4c">
+		    <input type="radio" name="niveau" id="4c" value="4c" required>
 		    <label for="4c">4c</label>
 
 		    <input type="radio" name="niveau" id="5a" value="5a">
@@ -194,7 +195,7 @@
 
 	    <!-- Sidebar -->
 	    <section id="sidebar">
-
+<!--
 <?php
 try
 {
@@ -219,7 +220,7 @@ catch (Exception $e)
  $remainingPlacesMC = $availablePlaces - $data[0];
  $answer->closeCursor();
 ?>
-
+-->
 	      <section>
 		<h3>Places restantes disponibles</h3>
 		<p>Les inscriptions sont limitées à <?php echo $availablePlaces ?> participants par demi-journées.</p>
