@@ -53,7 +53,7 @@
 	    <!-- Content -->
 	    <section id="content">
 
-	      <form action="success.php" method="post">
+	      <form action="confirm.php" method="post">
 		<fieldset>
 		  <h2>Participant</h2>
 
