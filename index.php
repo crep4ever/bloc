@@ -27,7 +27,7 @@
 
     <!-- Header -->
     <header id="header" class="alt skel-layers-fixed">
-      <h1><a href="index.html">Open de bloc 2015<span> Grenoble </span></a></h1>
+      <h1><a href="index.php">Open de bloc 2015<span> Grenoble </span></a></h1>
       <nav id="nav">
 	<ul>
 	  <li><a href="#one">Présentation</a></li>

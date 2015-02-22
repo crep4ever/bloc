@@ -1,5 +1,13 @@
 <?php
-ob_start(); // ensures anything dumped out will be caught
+
+require 'paypal.php';
+require 'error.php';
+
+// Set error handler
+set_error_handler("handleError");
+
+// Ensures anything dumped out will be caught
+ob_start(); 
 
 $product = array("name" => "Inscription Open de Bloc Grenoble 2015",
 		 "price"=> 15.0,
@@ -8,7 +16,6 @@ $product = array("name" => "Inscription Open de Bloc Grenoble 2015",
 $port = 0;
 $totalttc = $product['price'];
 
-require 'paypal.php';
 $paypal = new Paypal();
 $response = $paypal->request('GetExpressCheckoutDetails', 
 			     array('TOKEN' => $_GET['token']));
@@ -17,13 +24,12 @@ if ($response)
   {
     if($response['CHECKOUTSTATUS'] == 'PaymentActionCompleted')
       {
-	die('Ce paiement a déjà été validé');
+	trigger_error("Ce paiement a déjà été validé. Vous n'avez pas été débité à nouveau.");
       }
   }
 else
   {
-    var_dump($paypal->errors);
-    die();
+    trigger_error("Erreur Paypal:" . $paypal->errors);
   }
 
 $params = array('TOKEN' => $_GET['token'],
@@ -44,18 +50,18 @@ $response = $paypal->request('DoExpressCheckoutPayment',$params);
 
 if ($response)
   {
-    var_dump($response);
+    //var_dump($response);
     $response['PAYMENTINFO_0_TRANSACTIONID'];
 
     try
       {
 	$bdd = new PDO('mysql:host=mysql.server;dbname=name;charset=utf8', 'login', 'password');
 	$bdd->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-	$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
+	$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       }
     catch (Exception $e)
       {
-	die('Erreur de connexion à la base de données: ' . $e->getMessage());
+	trigger_error('Erreur de connexion à la base de données: ' . $e->getMessage());
       }
 
     try
@@ -92,7 +98,7 @@ if ($response)
       }
     catch (Exception $e)
       {
-	die('Erreur pendant l\'enregistrement des informations du formulaire: ' . $e->getMessage());
+	trigger_error('Erreur pendant l\'enregistrement des informations du formulaire: ' . $e->getMessage());
       }
 
     $url = 'success.php';

@@ -104,10 +104,10 @@ else
 
       <!-- Header -->
       <header id="header" class="alt skel-layers-fixed">
-        <h1><a href="index.html">Open de bloc 2015<span> Grenoble </span></a></h1>
+        <h1><a href="index.php">Open de bloc 2015<span> Grenoble </span></a></h1>
         <nav id="nav">
   	<ul>
-  	  <li><a href="#one">Présentation</a></li>
+  	  <li><a href="index.php">Présentation</a></li>
   	  <li><a href="program.html">Programme et Règlement</a></li>
   	  <li><a href="registration.php">Inscription</a></li>
   	  <li><a href="results.html">Résultats</a></li>
