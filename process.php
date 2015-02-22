@@ -1,5 +1,6 @@
 <?php
 
+require 'globals.php';
 require 'paypal.php';
 require 'error.php';
 
@@ -9,8 +10,8 @@ set_error_handler("handleError");
 // Ensures anything dumped out will be caught
 ob_start(); 
 
-$product = array("name" => "Inscription Open de Bloc Grenoble 2015",
-		 "price"=> 15.0,
+$product = array("name" => "Frais d'inscription",
+		 "price"=> $GLOBALS['registration-fee'],
 		 "count"=> 1);
 
 $port = 0;
@@ -42,7 +43,7 @@ $params = array('TOKEN' => $_GET['token'],
 		'PAYMENTREQUEST_0_ITEMAMT' => $totalttc);
 
 $params["L_PAYMENTREQUEST_0_NAME0"] = $product['name'];
-$params["L_PAYMENTREQUEST_0_DESC0"] = '';
+$params["L_PAYMENTREQUEST_0_DESC0"] = 'Open de Bloc Grenoble 2015';
 $params["L_PAYMENTREQUEST_0_AMT0"] = $product['price'];
 $params["L_PAYMENTREQUEST_0_QTY0"] = $product['count'];
 

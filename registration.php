@@ -196,6 +196,13 @@
 	    <section id="sidebar">
 
 <?php
+
+require 'globals.php';
+require 'error.php';
+
+// Set error handler
+set_error_handler("handleError");
+
 try
 {
   $bdd = new PDO('mysql:host=mysql.server;dbname=name;charset=utf8', 'login', 'password');
@@ -204,10 +211,10 @@ try
 }
 catch (Exception $e)
 {
-  die('Erreur de connexion à la base de données: ' . $e->getMessage());
+  trigger_error('Erreur de connexion à la base de données: ' . $e->getMessage());
 }
 
-  $availablePlaces = 100;
+  $availablePlaces = $GLOBALS['available-places'];
 
  $answer = $bdd->query("SELECT COUNT(*) FROM participants WHERE categorie='poussin' OR categorie='benjamin'"); 
  $data = $answer->fetch();
