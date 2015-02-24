@@ -44,7 +44,7 @@ $params["L_PAYMENTREQUEST_0_DESC0"] = 'Open de Bloc Grenoble 2015';
 $params["L_PAYMENTREQUEST_0_AMT0"] = $product['price'];
 $params["L_PAYMENTREQUEST_0_QTY0"] = $product['count'];
 
-$response = $paypal->request('DoExpressCheckoutPayment',$params);
+$response = $paypal->request('DoExpressCheckoutPayment', $params);
 
 if ($response)
   {
