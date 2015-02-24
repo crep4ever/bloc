@@ -51,7 +51,6 @@ $response = $paypal->request('DoExpressCheckoutPayment',$params);
 
 if ($response)
   {
-    //var_dump($response);
     $response['PAYMENTINFO_0_TRANSACTIONID'];
 
     try
