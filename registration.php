@@ -141,35 +141,24 @@
 	<section id="sidebar">
 
 <?php
-
 require 'globals.php';
-require 'error.php';
-
-// Set error handler
-set_error_handler("handleError");
-
-try
-{
-  $bdd = new PDO('mysql:host=mysql.server;dbname=name;charset=utf8', 'login', 'password');
-  $bdd->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-  $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (Exception $e)
-{
-  trigger_error('Erreur de connexion à la base de données: ' . $e->getMessage());
-}
-
 $availablePlaces = $GLOBALS['available-places'];
 
-$answer = $bdd->query("SELECT COUNT(*) FROM participants WHERE categorie='poussin' OR categorie='benjamin'"); 
-$data = $answer->fetch();
-$remainingPlacesPB = $availablePlaces - $data[0];
-$answer->closeCursor();
-	  
-$answer = $bdd->query("SELECT COUNT(*) FROM participants WHERE categorie='minime' OR categorie='cadet'"); 
-$data = $answer->fetch();
-$remainingPlacesMC = $availablePlaces - $data[0];
-$answer->closeCursor();
+require 'database.php';
+$db = new Database();
+
+$db->query("SELECT * FROM bloc_participants WHERE categorie = :lcat1 OR categorie = :lcat2"); 
+
+$db->bind(':lcat1', 'poussin');
+$db->bind(':lcat2', 'benjamin');
+$db->resultset();
+$remainingPlacesPB = $availablePlaces - $db->rowCount();
+
+$db->bind(':lcat1', 'minime');
+$db->bind(':lcat2', 'cadet');
+$db->resultset();
+$remainingPlacesMC = $availablePlaces - $db->rowCount();
+
 ?>
 
 	  <section>
