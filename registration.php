@@ -147,15 +147,15 @@ $availablePlaces = $GLOBALS['available-places'];
 require 'database.php';
 $db = new Database();
 
-$db->query("SELECT * FROM bloc_participants WHERE categorie = :lcat1 OR categorie = :lcat2");
+$db->query("SELECT * FROM bloc_participants WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
 
-$db->bind(':lcat1', 'poussin');
-$db->bind(':lcat2', 'benjamin');
+$db->bind(':cat1', 'poussin');
+$db->bind(':cat2', 'benjamin');
 $db->resultset();
 $remainingPlacesPB = $availablePlaces - $db->rowCount();
 
-$db->bind(':lcat1', 'minime');
-$db->bind(':lcat2', 'cadet');
+$db->bind(':cat1', 'minime');
+$db->bind(':cat2', 'cadet');
 $db->resultset();
 $remainingPlacesMC = $availablePlaces - $db->rowCount();
 
