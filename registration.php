@@ -147,7 +147,7 @@ $availablePlaces = $GLOBALS['available-places'];
 require 'database.php';
 $db = new Database();
 
-$db->query("SELECT * FROM bloc_participants WHERE categorie = :lcat1 OR categorie = :lcat2"); 
+$db->query("SELECT * FROM bloc_participants WHERE categorie = :lcat1 OR categorie = :lcat2");
 
 $db->bind(':lcat1', 'poussin');
 $db->bind(':lcat2', 'benjamin');
