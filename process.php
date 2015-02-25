@@ -46,52 +46,31 @@ $params["L_PAYMENTREQUEST_0_QTY0"] = $product['count'];
 
 $response = $paypal->request('DoExpressCheckoutPayment', $params);
 
-if ($response)
-  {
-    $response['PAYMENTINFO_0_TRANSACTIONID'];
+if (!$response)
+{
+    $url = 'cancel.php';
+}
+else
+{
+    $url = 'success.php';
 
-    $lastname = "Hello";
-    $firstname = "world";
-    $sex = "M";
-    $birthday = "2000";
-    $category ='cadet';
-    $licenceType   = "FFME";
-    $licenceNumber = "1234AB12";
-    $club          = "CAF";
-    $experience    = "5a";
-    $comment       = "no comment";
-    $mail          = "hellow.world@gmail.com";
-    $tel           = "0699999999";
-    $conditions = 1;
+    $response['PAYMENTINFO_0_TRANSACTIONID'];
 
     require 'database.php';
     $db = new Database();
 
-    $db->query("INSERT INTO bloc_participants(nom, prenom, sexe, naissance, categorie, licence_type, licence_number, club, experience, comment, mail, tel, conditions) VALUES(:nom, :prenom, :sexe, :naissance, :categorie, :licence_type, :licence_number, :club, :experience, :comment, :mail, :tel, :conditions)"); 
+    $db->beginTransaction();
 
-    $db->bind('nom', $lastname);
-    $db->bind('prenom' , $firstname);
-    $db->bind('sexe', $sex);
-    $db->bind('naissance', $birthday);
-    $db->bind('categorie', $category);
-    $db->bind('licence_type', $licenceType);
-    $db->bind('licence_number', $licenceNumber);
-    $db->bind('club', $club);
-    $db->bind('experience', $experience);
-    $db->bind('comment', $comment);
-    $db->bind('mail', $mail);
-    $db->bind('tel', $tel);
-    $db->bind('conditions', $conditions);
+    $db->query("UPDATE bloc_participants SET payer_id = :payer_id, transaction = :transaction WHERE token = :token");
+
+    $db->bind('payer_id', $_GET['PayerID']);
+    $db->bind('transaction' , $response['PAYMENTINFO_0_TRANSACTIONID']);
+    $db->bind('token' , $_GET['token']);
 
     $db->execute();
-    
-    $url = 'success.php';
-  }
-else
-  {
-    $url = 'cancel.php';
-  }
 
+    $db->endTransaction();
+}
 
 header( "Location: $url" );
 die();

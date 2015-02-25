@@ -2,10 +2,10 @@
 
 require 'globals.php';
 require 'paypal.php';
-require 'error.php';
+//require 'error.php';
 
 // Set error handler
-set_error_handler("handleError");
+//set_error_handler("handleError");
 
 $lastname = htmlspecialchars($_POST['nom']);
 $firstname = htmlspecialchars($_POST['prenom']);
@@ -24,6 +24,12 @@ else:
   $category = 'invalid';
 endif;
 
+if ($sex == 'M'):
+  $sex_str = 'garçon';
+else:
+  $sex_str = 'fille';
+endif;
+
 $licenceType   = htmlspecialchars($_POST['licence-type']);
 $licenceNumber = htmlspecialchars($_POST['licence-num']);
 $club          = htmlspecialchars($_POST['club']);
@@ -35,11 +41,9 @@ $tel           = htmlspecialchars($_POST['telephone']);
 $conditions = isset($_POST['conditions']);
 
 
-$product = array(
-"name" => "Frais d'inscription",
-"price"=> $GLOBALS['registration-fee'],
-"count"=> 1
-);
+$product = array("name" => "Frais d'inscription",
+		 "price"=> $GLOBALS['registration-fee'],
+		 "count"=> 1);
 
 $port = 0;
 $totalttc = $product['price'];
@@ -60,14 +64,40 @@ $params["L_PAYMENTREQUEST_0_QTY0"] = $product['count'];
 
 $response = $paypal->request('SetExpressCheckout', $params);
 
-if ($response)
-{
-  $paypal = 'https://www.sandbox.paypal.com/webscr?cmd=_express-checkout&useraction=commit&token=' . $response['TOKEN'];
-}
+if (!$response)
+  {
+    trigger_error($paypal->errors);
+  }
 else
-{
-  trigger_error('Erreur Paypal: ' . $paypal->errors);
-}
+  {
+    require 'database.php';
+    $db = new Database();
+
+    $db->beginTransaction();
+
+    $db->query("INSERT INTO bloc_participants(nom, prenom, sexe, naissance, categorie, licence_type, licence_number, club, experience, comment, mail, tel, conditions, token) VALUES(:nom, :prenom, :sexe, :naissance, :categorie, :licence_type, :licence_number, :club, :experience, :comment, :mail, :tel, :conditions, :token)"); 
+
+    $db->bind('nom', $lastname);
+    $db->bind('prenom' , $firstname);
+    $db->bind('sexe', $sex);
+    $db->bind('naissance', $birthday);
+    $db->bind('categorie', $category);
+    $db->bind('licence_type', $licenceType);
+    $db->bind('licence_number', $licenceNumber);
+    $db->bind('club', $club);
+    $db->bind('experience', $experience);
+    $db->bind('comment', $comment);
+    $db->bind('mail', $mail);
+    $db->bind('tel', $tel);
+    $db->bind('conditions', $conditions);
+    $db->bind('token', $response['TOKEN']);
+
+    $db->execute();
+
+    $db->endTransaction();
+
+    $paypal = 'https://www.sandbox.paypal.com/webscr?cmd=_express-checkout&useraction=commit&token=' . $response['TOKEN'];
+  }
 
 ?>
 
@@ -118,14 +148,7 @@ else
 
 	<tr>
 	  <td>Catégorie</td>
-	  <td><?php 
-		 echo $category;
-		 if ($sex == 'M'):
-		 echo " garçon";
-		 else:
-		 echo " fille";
-		 endif;
-		 ?></td>
+	  <td><?php echo $category . ' ' . $sex_str ?></td>
 	</tr>
 
       </table>
