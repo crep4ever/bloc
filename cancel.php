@@ -17,7 +17,7 @@
       </p>
 
       <p>
-	<a href="index.html" class="button big">Retourner au site</a>
+	<a href="index.php" class="button big">Retourner au site</a>
       </p>
 
     </section>

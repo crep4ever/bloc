@@ -55,13 +55,13 @@
       <div class="4u 6u$(2) 12u$(3)">
 	<section class="feature fa-calendar">
 	  <h3>Date</h3>
-	  <p>Dimanche 7 juin 2015. Consultez le <a href="program.html">programme</a>.</p>
+	  <p>Dimanche 7 juin 2015. Consultez le <a href="program.php#program">programme</a>.</p>
 	</section>
       </div>
       <div class="4u$ 6u(2) 12u$(3)">
 	<section class="feature fa-users">
 	  <h3>Catégories</h3>
-	  <p>Poussins, Benjamins, Minimes, Cadets. </br> Consultez le <a href="program.html">règlement</a>.</p>
+	  <p>Poussins, Benjamins, Minimes, Cadets. </br> Consultez le <a href="program.php#competition">règlement</a>.</p>
 	</section>
       </div>
       <div class="4u 6u$(2) 12u$(3)">
