@@ -32,12 +32,12 @@
       <nav id="nav">
 	<ul>
 	  <li><a href="index.php">Présentation</a></li>
-	  <li><a href="program.html">Programme et Règlement</a></li>
+	  <li><a href="program.php">Programme et Règlement</a></li>
 	  <li><a href="registration.php">Inscription</a></li>
-	  <li><a href="results.html">Résultats</a></li>
-	  <li><a href="benevoles.html">Bénévoles</a></li>
-	  <li><a href="media.html">Media</a></li>
-	  <li><a href="contact.html">Contact</a></li>
+	  <li><a href="results.php">Résultats</a></li>
+	  <li><a href="benevoles.php">Bénévoles</a></li>
+	  <li><a href="media.php">Media</a></li>
+	  <li><a href="contact.php">Contact</a></li>
 	</ul>
       </nav>
     </header>
