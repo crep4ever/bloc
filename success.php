@@ -19,7 +19,7 @@
 
       <p>
 	Nous vous donnons rendez-vous le <b>dimanche 7 juin</b>
-	à <a href="access.html">Espace Vertical 3</a>. N'oubliez pas
+	à <a href="access.php">Espace Vertical 3</a>. N'oubliez pas
 	de vous munir :
 	<ul>
 	  <li>D'une pièce d'identité valide</li>
