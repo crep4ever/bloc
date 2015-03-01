@@ -1413,3 +1413,23 @@
 .subnav li {
     display: inline;
 }
+
+
+/* User-defined */
+
+
+b.yellow {
+    color:#edd400;
+}
+
+b.blue {
+    color:#204a87;
+}
+
+b.red {
+    color:#a40000;
+}
+
+b.black {
+    color:#2e3436;
+}

@@ -25,18 +25,18 @@
       <h3 id="program">Programme prévisionnel</h3>
 
       <p>
-	Les grimpeurs seront répartis dans un des deux circuits de leur catégorie d'âge, en fonction du niveau annoncé à l'inscription.
-</br> Ils seront informés de cette attribution lors du retrait de leur dossard.
+	Les grimpeurs seront répartis dans un des deux circuits de leur catégorie d'âge, en fonction du niveau annoncé à l'inscription.<br />
+	Ils seront informés de cette attribution lors du retrait de leur dossard.
       </p>
 
       <ul>
-	<li>Poussins et benjamins, filles et garçons : <b style="color:orange">circuit jaune</b> ou <b style="color:blue">circuit bleu</b> (plus difficile).</li>
-	<li>Minimes et cadets, filles et garçons : <b style="color:red">circuit rouge</b> ou <b style="color:black">circuit noir</b> (plus difficile).</li>
+	<li>Poussins et benjamins, filles et garçons : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
+	<li>Minimes et cadets, filles et garçons : <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b> (plus difficile).</li>
       </ul>
 
       <p>
-	Le circuit <b style="color:black">noir</b> donnera lieu à des finales par catégorie d'âge (MF, MG, CF, CG).<br />
-	Seuls les compétiteurs issus des circuits <b style="color:blue">bleu</b> ou <b style="color:black">noir</b> pourront prétendre au podium.
+	Le <b class="black">circuit noir</b> donnera lieu à des finales par catégorie d'âge (MF, MG, CF, CG).<br />
+	Seuls les compétiteurs issus du <b class="blue">circuit bleu</b> ou du <b class="black">circuit noir</b> pourront prétendre au podium.
       </p>
 
       <p style="padding:4em">
@@ -97,7 +97,7 @@
 
       <h4 id="finals">Finales</h4>
       <ul>
-	<li>Seul le <b style="color:black">circuit noir</b> est qualificatif pour des finales.</li>
+	<li>Seul le <b class="black">circuit noir</b> est qualificatif pour des finales.</li>
 	<li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge (MF, MG, CF, CG).</li>
 	<li>La finale se fera sous la forme d’un circuit de 3 blocs à-vue,
 	  chaque finaliste disposant de 3 essais maximum par bloc.</li>
@@ -107,7 +107,10 @@
       <h4 id="prizes">Remise des prix</h4>
       <ul>
 	<li>Les podiums seront annoncés par catégorie d'âge et de sexe.</li>
-	<li>Nous rappelons que seuls les compétiteurs issus des circuits les plus difficiles, c'est à dire <b style="color:blue">bleu</b> ou <b>noir</b> peuvent y prétendre.</li>
+	<li>Seuls les compétiteurs issus des circuits les plus
+	difficiles (<b class="blue">circuit bleu</b>
+	ou <b class="black">circuit noir</b>) peuvent y
+	prétendre.</li>
 	<li>Une récompense sera remise à tous les partipants.</li>
       </ul>
 
