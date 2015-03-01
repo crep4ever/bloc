@@ -1,5 +1,7 @@
 <?php include("header.php"); ?>
 
+<?php require 'globals.php' ?>
+
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Enregistrement</h2>
@@ -168,10 +170,19 @@
 	<!-- Sidebar -->
 	<section id="sidebar">
 
-<?php
-require 'globals.php';
-$availablePlaces = $GLOBALS['available-places'];
 
+	  <section>
+	    <h3>Inscriptions en ligne</h3>
+	    <ul>
+	    <li>Ouverture : <?php echo $GLOBALS['registration-open-date-str'] ?></li>
+	    <li>Fermeture : <?php echo $GLOBALS['registration-close-date-str'] ?></li>
+	    </ul>
+
+	    <hr />
+
+	    <h3>Places restantes disponibles</h3>
+
+<?php
 require 'database.php';
 $db = new Database();
 
@@ -180,17 +191,14 @@ $db->query("SELECT * FROM bloc_participants WHERE (categorie = :cat1 OR categori
 $db->bind(':cat1', 'poussin');
 $db->bind(':cat2', 'benjamin');
 $db->resultset();
-$remainingPlacesPB = $availablePlaces - $db->rowCount();
+$remainingPlacesPB = max(0, $GLOBALS['available-places'] - $db->rowCount());
 
 $db->bind(':cat1', 'minime');
 $db->bind(':cat2', 'cadet');
 $db->resultset();
-$remainingPlacesMC = $availablePlaces - $db->rowCount();
-
+$remainingPlacesMC = max(0, $GLOBALS['available-places'] - $db->rowCount());
 ?>
 
-	  <section>
-	    <h3>Places restantes disponibles</h3>
 	    <p>Les inscriptions sont limitées à <?php echo $availablePlaces ?> participants par demi-journées.</p>
 	    <footer>
 	      <table class="actions">

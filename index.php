@@ -1,10 +1,12 @@
 <?php include("header.php"); ?>
 
+<?php require 'globals.php' ?>
+
 <!-- Banner -->
 <section id="banner">
   <div class="inner">
     <h2>Open de bloc de Grenoble</h2>
-    <p>Dimanche 7 juin 2015</p>
+   <p><?php echo $GLOBALS['event-date-str'] ?></p>
     <ul class="actions">
       <li><a href="registration.php" class="button big scrolly">Inscription</a></li>
     </ul>
@@ -64,13 +66,13 @@
       <div class="4u$ 6u(2) 12u$(3)">
 	<section class="feature fa-users">
 	  <h3>Catégories</h3>
-	  <p>Poussins, Benjamins, Minimes, Cadets. </br> Consultez le <a href="program.php#competition">règlement</a>.</p>
+	  <p>Poussins, Benjamins, Minimes, Cadets. <br /> Consultez le <a href="program.php#rules">règlement</a>.</p>
 	</section>
       </div>
       <div class="4u 6u$(2) 12u$(3)">
 	<section class="feature fa-sign-in">
 	  <h3>Inscription</h3>
-	  <p>Tarif unique de 12€. </br> <a href="registration.php">Inscription en ligne</a> jusqu'au 31 mai 2015.</p>
+	  <p>Tarif unique de <?php echo $GLOBALS['registration-fee'] ?>€. <br /> <a href="registration.php">Inscription en ligne</a> jusqu'au <?php echo $GLOBALS['registration-close-date-str'] ?>.</p>
 	</section>
       </div>
       <div class="4u 6u(2) 12u$(3)">
