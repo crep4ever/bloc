@@ -74,21 +74,21 @@
 	</section>
       </div>
       <div class="4u 6u$(2) 12u$(3)">
-	<section class="feature fa-envelope-o">
-	  <h3>Contact</h3>
-	  <p>Organisateur : CAF Fontaine, Fabien Viguier.</p>
-	</section>
-      </div>
-      <div class="4u 6u(2) 12u$(3)">
 	<section class="feature fa-sign-in">
 	  <h3>Inscription</h3>
 	  <p>Tarif unique de 12€. </br> <a href="registration.php">Inscription en ligne</a> jusqu'au 31 mai 2015.</p>
 	</section>
       </div>
+      <div class="4u 6u(2) 12u$(3)">
+	<section class="feature fa-facebook">
+	  <h3>Réseaux sociaux</h3>
+	  <p>Rejoignez-nous sur Facebook.</p>
+	</section>
+      </div>
       <div class="4u$ 6u$(2) 12u$(3)">
-	<section class="feature fa-star">
-	  <h3>Partenaires</h3>
-	  <p>FFME, FFCAM.</p>
+	<section class="feature fa-envelope-o">
+	  <h3>Contact</h3>
+	  <p>Organisateur : CAF Fontaine, Fabien Viguier.</p>
 	</section>
       </div>
     </div>
