@@ -10,7 +10,7 @@ $month = 4;
 $day = 11;
 $year = 2015;
 
-$GLOBALS['registration-open-date'] = mktime(hour, minute, second, month, day, year);
+$GLOBALS['registration-open-date'] = mktime($hour, $minute, $second, $month, $day, $year);
 
 $hour = 0;
 $minute = 0;
@@ -19,6 +19,6 @@ $month = 5;
 $day = 31;
 $year = 2015;
 
-$GLOBALS['registration-close-date'] = mktime(hour, minute, second, month, day, year);
+$GLOBALS['registration-close-date'] = mktime($hour, $minute, $second, $month, $day, $year);
 
 ?>
