@@ -11,15 +11,16 @@
     <nav class="subnav">
       <ul>
 	<li><a href="#program">Programme</a></li>
-	<li><a href="#competition">Règlement</a></li>
-	<li><a href="#prizes">Remise des prix</a></li>
-	<li><a href="#parental">Autorisation parentale</a></li>
+	<li><a href="#rules">Règlement</a></li>
+	<li><a href="#results">Résultats</a></li>
       </ul>
     </nav>
     
     
     <!-- Content -->
     <section id="content">
+
+      <!--    **************** PROGRAM ******************    -->
 
       <h3 id="program">Programme prévisionnel</h3>
 
@@ -74,9 +75,15 @@
 	</tr>
       </table>
 
+      <br />
+      <p>Téléchargez la <a href="doc/reglement.pdf">version imprimable du programme</a>.</p>
+
+      <hr />
       
-      <h3 id="competition">Règlement de la compétition</h3>
-      <h4 id="competition">Contest</h4>
+      <!--    **************** RULES ******************    -->
+
+      <h3 id="rules">Règlement de la compétition</h3>
+      <h4 id="contest">Contest</h4>
 
       <ul>
 	<li>Format contest : les grimpeurs ont 2h30 pour réussir le maximum de blocs du circuit qui leur a été attribué.</li>
@@ -88,38 +95,28 @@
 	<li>En cas d'égalité sur ces deux critères, un bloc de vitesse permet de départager les ex-aequos.</li>
       </ul>
 
-      <h4 id="competition">Finales</h4>
-      <li>Seul le <b style="color:black">circuit noir</b> est qualificatif pour des finales.</li>
-      <li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge (MF, MG, CF, CG).</li>
-      <li>La finale se fera sous la forme d’un circuit de 3 blocs à-vue, 
-	chaque finaliste disposant de 3 essais maximum par bloc.</li>
-      <li>Le classement des finalistes sera établi en fonction du nombre de bloc réussis, du nombre d'essais nécessaires, du nombre de "prise de zone", puis du nombre d'essais pour atteindre ces prises de zone.</li>
+      <h4 id="finals">Finales</h4>
+      <ul>
+	<li>Seul le <b style="color:black">circuit noir</b> est qualificatif pour des finales.</li>
+	<li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge (MF, MG, CF, CG).</li>
+	<li>La finale se fera sous la forme d’un circuit de 3 blocs à-vue,
+	  chaque finaliste disposant de 3 essais maximum par bloc.</li>
+	<li>Le classement des finalistes sera établi en fonction du nombre de bloc réussis, du nombre d'essais nécessaires, du nombre de "prise de zone", puis du nombre d'essais pour atteindre ces prises de zone.</li>
+      </ul>
 
-	</br>									
-      <p>Le règlement complet est <a href="doc/reglement.pdf">téléchargeable ici</a>.</p>
+      <h4 id="prizes">Remise des prix</h4>
+      <ul>
+	<li>Les podiums seront annoncés par catégorie d'âge et de sexe.</li>
+	<li>Nous rappelons que seuls les compétiteurs issus des circuits les plus difficiles, c'est à dire <b style="color:blue">bleu</b> ou <b>noir</b> peuvent y prétendre.</li>
+	<li>Une récompense sera remise à tous les partipants.</li>
+      </ul>
 
-      <hr />
-      <h3 id="prizes">Remise des prix</h3>
-      
-      <p>
-	<ul>    
-	  <li>Les podiums seront annoncés par catégorie d'âge et de sexe.</li>
-	  <li>Nous rappelons que seuls les compétiteurs issus des circuits les plus difficiles, c'est à dire <b style="color:blue">bleu</b> ou <b>noir</b> peuvent y prétendre.</li>
-	  <li>Une récompense sera remise à tous les partipants.</li>
-	</ul>
-      </p>
+      <ul>
+	<li>Des (beaux) lots seront à gagner par tirage au sort. Tous les compétiteurs auront leur chance.</li>
+	<li>Notez qu'un gagnant qui ne se présenterait pas à l'appel de son nom verra son lot remis en jeu.</li>
+      </ul>
 
-      <p>
-	De plus : 
-	<ul>
-	  <li>Des (beaux) lots seront à gagner par tirage au sort. Tous les compétiteurs auront leur chance.</li>
-	  <li>Notez qu'un gagnant qui ne se présenterait pas à l'appel de son nom verra son lot remis en jeu.</li>
-	</ul>
-      </p>
-
-      
-      <hr />
-      <h3 id="parental">Autorisation parentale</h3>
+      <h4 id="parental">Autorisation parentale</h4>
       <p>
 	La personne effectuant l'enregistrement et le paiement d'un
 	participant mineur  :
@@ -128,6 +125,52 @@
 	  <li>accorde l'utilisation par le CAF FONTAINE des <b>photos ou vidéos du participant</b> prises pendant l'évènement</li>
 	</ul>
       </p>
+
+      <br />
+      <p>Le règlement complet est <a href="doc/reglement.pdf">téléchargeable ici</a>.</p>
+
+      <hr />
+
+      <!--    **************** RESULTS ******************    -->
+      <h3 id="results">Résultats</h3>
+
+      <div class="row">
+
+	<div class="4u 6u(2) 12u$(3)">
+	  <article class="box post">
+	    <a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+	    <h3>Classement par circuit</h3>
+	    <p>Résultats généraux des qualifications sur circuit.</p>
+	    <ul class="actions">
+	      <li><a href="#" class="button">Résultats</a></li>
+	    </ul>
+	  </article>
+	</div>
+
+	<div class="4u 6u$(2) 12u$(3)">
+	  <article class="box post">
+	    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+	    <h3>Classement par catégorie</h3>
+	    <p>Résultats des qualifications sur circuit par catégorie.</p>
+	    <ul class="actions">
+	      <li><a href="#" class="button">Résultats</a></li>
+	    </ul>
+	  </article>
+	</div>
+
+	<div class="4u 6u$(2) 12u$(3)">
+	  <article class="box post">
+	    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+	    <h3>Finales</h3>
+	    <p>Classement des finalistes Minimes/Cadets.</p>
+	    <ul class="actions">
+	      <li><a href="#" class="button">Résultats</a></li>
+	    </ul>
+	  </article>
+	</div>
+
+      </div>
+
 
     </section>
   </div>
