@@ -275,8 +275,18 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4e9a06;
-			box-shadow: 0 0 0 1px #4e9a06;
+			/*border-color: #4e9a06;*/
+			/*box-shadow: 0 0 0 1px #4e9a06;*/
+		}
+
+		input:invalid
+		{
+			border-color: #a40000;			
+			background: rgba(144, 144, 144, 0.075) url(images/red-asterisk.png) no-repeat 98% center;
+		}
+
+		input:required, textarea:focus
+		{
 		}
 
 	.select-wrapper {
