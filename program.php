@@ -40,7 +40,7 @@
       </p>
 
       <p style="padding:4em">
-	<img width="110%" src="images/program.svg" alt="" />
+	<img width="110%" src="images/src/program.svg" alt="" />
       </p>
 
       <table style="width:90%">
@@ -76,7 +76,7 @@
       </table>
 
       <br />
-      <p>Téléchargez la <a href="doc/reglement.pdf">version imprimable du programme</a>.</p>
+      <p>Téléchargez la <a href="images/program-full.pdf">version imprimable du programme</a>.</p>
 
       <hr />
       
@@ -127,7 +127,7 @@
       </p>
 
       <br />
-      <p>Le règlement complet est <a href="doc/reglement.pdf">téléchargeable ici</a>.</p>
+      <p>Le règlement complet est <a href="images/reglement.pdf">téléchargeable ici</a>.</p>
 
       <hr />
 
@@ -138,7 +138,7 @@
 
 	<div class="4u 6u(2) 12u$(3)">
 	  <article class="box post">
-	    <a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+	    <a href="#" class="image fit"><img src="images/results01.jpg" alt="" /></a>
 	    <h3>Classement par circuit</h3>
 	    <p>Résultats généraux des qualifications sur circuit.</p>
 	    <ul class="actions">
@@ -149,7 +149,7 @@
 
 	<div class="4u 6u$(2) 12u$(3)">
 	  <article class="box post">
-	    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+	    <a href="#" class="image fit"><img src="images/results02.jpg" alt="" /></a>
 	    <h3>Classement par catégorie</h3>
 	    <p>Résultats des qualifications sur circuit par catégorie.</p>
 	    <ul class="actions">
@@ -160,7 +160,7 @@
 
 	<div class="4u 6u$(2) 12u$(3)">
 	  <article class="box post">
-	    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+	    <a href="#" class="image fit"><img src="images/results03.jpg" alt="" /></a>
 	    <h3>Finales</h3>
 	    <p>Classement des finalistes Minimes/Cadets.</p>
 	    <ul class="actions">

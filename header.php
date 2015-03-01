@@ -37,7 +37,7 @@
 	<span>&nbsp;&nbsp;par le&nbsp;&nbsp;</span>
 	<a href="http://fontaine-en-montagne.ffcam.fr">CAF Fontaine
 	<span>
-	  <img src="images/logo-no-text.png" alt="CAF Fontaine" height="40px" />
+	  <img src="images/logos/caf-fontaine.png" alt="CAF Fontaine" height="40px" />
 	</span>
 	</a>
       </h1>

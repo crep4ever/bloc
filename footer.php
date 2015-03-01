@@ -2,8 +2,8 @@
     <!-- Footer -->
     <footer id="footer">
       <ul class="icons">
-	<li><a href="http://www.ffme.fr"><img src="images/partners/ffme.png" title="FFME" alt="FFME" /></a></li>
-	<li><a href="http://www.ffcam.fr"><img src="images/partners/ffcam.png" title="FFCAM" alt="FFCAM" /></a></li>
+	<li><a href="http://www.ffme.fr"><img src="images/logos/ffme.png" title="FFME" alt="FFME" /></a></li>
+	<li><a href="http://www.ffcam.fr"><img src="images/logos/ffcam.png" title="FFCAM" alt="FFCAM" /></a></li>
       </ul>
 
       <span class="copyright">
