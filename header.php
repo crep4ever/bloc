@@ -32,7 +32,15 @@
 
     <!-- Header -->
     <header id="header" class="alt skel-layers-fixed">
-      <h1><a href="index.php">Open de bloc 2015<span> Grenoble </span></a></h1>
+      <h1>
+	<a href="index.php">Open de bloc Grenoble 2015</a>
+	<span>&nbsp;&nbsp;par le&nbsp;&nbsp;</span>
+	<a href="http://fontaine-en-montagne.ffcam.fr">CAF Fontaine
+	<span>
+	  <img src="images/logo-no-text.png" alt="CAF Fontaine" height="40px" />
+	</span>
+	</a>
+      </h1>
       <nav id="nav">
 	<ul>
 	  <li><a href="index.php">Présentation</a></li>

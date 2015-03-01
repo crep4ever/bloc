@@ -17,12 +17,6 @@
     <header class="major">
 
       <h2>Un évènement convivial et pour tous les niveaux</h2>
-
-<!--
-      <div style="float:left; width: 30%;">
-	<img src="images/caf-logo-black.png" alt="" width="300px" />
-      </div>
--->
       <p>
 	Le club CAF Fontaine en montagne vous invite à la 3ème
 	édition de l'Open de bloc de Grenoble : <br />
