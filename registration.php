@@ -33,7 +33,7 @@
 	      <div class="left">
 		<label>Sexe</label>
 		<input type="radio" name="sex" id="m" value="M" checked>
-		<label for="m">M</label>
+		<label for="m">G</label>
 
 		<input type="radio" name="sex" id="f" value="F">
 		<label for="f">F</label>
@@ -41,7 +41,7 @@
 
 	      <div class="left">
 		<label for="birthday">Date de naissance</label>
-		<input type="text" name="naissance" id="birthday" placeholder="jj/mm/aaaa" pattern"[1-3][0-9]/[0-1][0-9]/(1998|1999|2000|2001|2002|2003|2004)" required>
+		<input type="text" name="naissance" id="birthday" placeholder="jj/mm/aaaa" pattern="[1-3][0-9]/[0-1][0-9]/(1998|1999|2000|2001|2002|2003|2004)" required>
 	      </div>
 
 	      <div class="clear">&nbsp;</div>
@@ -96,7 +96,7 @@
 	      <div class="clear">&nbsp;</div>
 
 	      <div>
-		<label>Niveau maximum réalisé en voie :</label>
+		<label>Niveau maximum réalisé en voie</label>
 		<input type="radio" name="niveau" id="4c" value="4c" required>
 		<label for="4c">4c</label>
 
@@ -207,11 +207,11 @@ $remainingPlacesMC = max(0, $GLOBALS['available-places'] - $db->rowCount());
 		  <th>Places restantes</th>
 		</tr>
 		<tr>
-		  <td>Poussins / Benjamins (F&G)</td>
+		  <td>Poussins / Benjamins (F&amp;G)</td>
 		  <td><?php echo $remainingPlacesPB ?></td>
 		</tr>
 		<tr>
-		  <td>Minimes / Cadets (F&G)</td>
+		  <td>Minimes / Cadets (F&amp;G)</td>
 		  <td><?php echo $remainingPlacesMC ?></td>
 		</tr>
 	      </table>

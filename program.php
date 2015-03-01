@@ -40,7 +40,7 @@
       </p>
 
       <p style="padding:4em">
-	<img width="110%" src="images/src/program.svg" alt="" />
+	<img src="images/src/program.svg" alt="" style="border:none; background:transparent; overflow:hidden; width:100%;" />
       </p>
 
       <table style="width:90%">
@@ -122,12 +122,13 @@
       <h4 id="parental">Autorisation parentale</h4>
       <p>
 	La personne effectuant l'enregistrement et le paiement d'un
-	participant mineur  :
+	participant mineur :
+      </p>
 	<ul>
 	  <li>se porte garante d'avoir en sa possession <b>l'autorisation parentale écrite</b> pour cette participation</li>
 	  <li>accorde l'utilisation par le CAF FONTAINE des <b>photos ou vidéos du participant</b> prises pendant l'évènement</li>
 	</ul>
-      </p>
+
 
       <br />
       <p>Le règlement complet est <a href="images/reglement.pdf">téléchargeable ici</a>.</p>
