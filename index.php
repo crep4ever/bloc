@@ -3,8 +3,7 @@
 <!-- Banner -->
 <section id="banner">
   <div class="inner">
-    <h3><img src="images/logo.png" alt="" width="300px" /> vous invite à la 3ème édition de</h3>
-    <h2>l'Open de bloc de Grenoble</h2>
+    <h2>Open de bloc de Grenoble</h2>
     <p>Dimanche 7 juin 2015</p>
     <ul class="actions">
       <li><a href="registration.php" class="button big scrolly">Inscription</a></li>
@@ -16,11 +15,21 @@
 <section id="one" class="wrapper style1">
   <div class="container">
     <header class="major">
+
       <h2>Un évènement convivial et pour tous les niveaux</h2>
+
+<!--
+      <div style="float:left; width: 30%;">
+	<img src="images/caf-logo-black.png" alt="" width="300px" />
+      </div>
+-->
       <p>
-	Compétition ouverte aux catégories
-	Poussins, Benjamins, Minimes et Cadets.
+	Le club CAF Fontaine en montagne vous invite à la 3ème
+	édition de l'Open de bloc de Grenoble : <br />
+	une compétition ouverte aux catégories poussins, benjamins,
+	minimes et cadets.
       </p>
+
     </header>
     <div class="slider">
       <span class="nav-previous"></span>
