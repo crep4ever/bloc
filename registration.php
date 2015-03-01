@@ -11,14 +11,16 @@
     <script src="js/jquery.dropotron.min.js"></script>
     <script src="js/jquery.scrollgress.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>
-    <script src="js/jquery.slidertron.min.js"></script>
+    <script src="js/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
     <noscript>
+      <link rel="stylesheet" href="css/jquery-ui.css">
       <link rel="stylesheet" href="css/skel.css" />
       <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/style-xlarge.css" />
+      <link rel="stylesheet" href="css/style-xlarge.css"/>
+      <link rel="stylesheet" href="css/datepicker.css">
     </noscript>
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
@@ -81,7 +83,7 @@
 
 		  <div class="left">
 		    <label for="birthday">Date de naissance</label>
-		    <input type="text" name="naissance" id="birthday" placeholder="jj/mm/aaaa" pattern"[1-3][0-9]/[0-1][0-9]/(1998|1999|2000|2001|2002|2003|2004)" required>
+		    <input type="text" id="datepicker" readonly="true" required>
 		  </div>
 
 		  <div class="clear">&nbsp;</div>
@@ -102,7 +104,7 @@
 
 		  <div class="left">
 		    <label for="association">Club</label>
-		    <input type="text" name="club" id="association">
+		    <input type="text" name="club" id="association" required>
 		  </div>
 
 		  <div class="clear">&nbsp;</div>
@@ -156,14 +158,14 @@
 
 		  <div class="left">
 		    <label for="tel">Téléphone</label>
-		    <input type="tel" id="tel" name="telephone" placeholder="06XXXXXXXX" required>
+		    <input type="tel" id="tel" name="telephone" placeholder="06XXXXXXXX" maxlength="10" pattern="[0][0-9]{9}" required>
 		  </div>
 
 		  <div class="clear">&nbsp;</div>
 
 		  <h2>Enregistrement</h2>
 
-		  <input type="checkbox" name="conditions" id="conditions" value="">
+		  <input type="checkbox" name="conditions" id="conditions" value="" required>
 		  <label for="conditions">En cochant cette case, vous acceptez les <a href="program.html">conditions d'inscription et le règlement de la compétition</a>.</label>
 		  <br>
 
