@@ -40,8 +40,8 @@
 	      </div>
 
 	      <div class="left">
-		<label for="birthday">Date de naissance</label>
-		<input type="text" name="naissance" id="birthday" placeholder="jj/mm/aaaa" pattern="[1-3][0-9]/[0-1][0-9]/(1998|1999|2000|2001|2002|2003|2004)" required>
+		<label for="datepicker">Date de naissance</label>
+		<input type="text" name="naissance" id="datepicker" readonly="true" required>
 	      </div>
 
 	      <div class="clear">&nbsp;</div>
@@ -144,14 +144,14 @@
 
 	      <div class="left">
 		<label for="tel">Téléphone</label>
-		<input type="tel" id="tel" name="telephone" placeholder="06XXXXXXXX" required>
+		<input type="tel" id="tel" name="telephone" placeholder="06XXXXXXXX" maxlength="10" pattern="[0][0-9]{9}" required>
 	      </div>
 
 	      <div class="clear">&nbsp;</div>
 
 	      <h2>Enregistrement</h2>
 
-	      <input type="checkbox" name="conditions" id="conditions" value="">
+	      <input type="checkbox" name="conditions" id="conditions" value="" required>
 	      <label for="conditions">En cochant cette case, vous acceptez les <a href="program.php">conditions d'inscription et le règlement de la compétition</a>.</label>
 	      <br>
 

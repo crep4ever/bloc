@@ -13,6 +13,7 @@
     <script src="js/jquery.scrollgress.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>
     <script src="js/jquery.slidertron.min.js"></script>
+    <script src="js/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
