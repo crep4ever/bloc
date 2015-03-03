@@ -13,7 +13,6 @@
     <script src="js/jquery.scrollgress.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>
     <script src="js/jquery.slidertron.min.js"></script>
-    <script src="js/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
@@ -23,10 +22,21 @@
       <link rel="stylesheet" href="css/skel.css" />
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/style-xlarge.css" />
-      <link rel="stylesheet" href="http//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
     </noscript>
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
+ <script>
+$(function() {
+$( "#datepicker" ).datepicker({dateFormat: 'dd/mm/yy',
+ changeYear: true,
+ changeMonth: true,
+ yearRange: "1998:2005",
+ defaultDate: '01/01/1998'
+ });
+});
+</script>
+
 
   </head>
   <body class="landing">
