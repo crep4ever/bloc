@@ -242,7 +242,6 @@
 	input[type="tel"],
 	input[type="checkbox"],
 	input[type="radio"],
-
 	textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -280,6 +279,7 @@
 		input[type="tel"]:required:invalid,
 		input[type="checkbox"]:required:invalid,
 		input[type="radio"]:required:invalid,
+		input[name="naissance"],
 		textarea:required:invalid {
 			background: rgba(144, 144, 144, 0.075) url(../images/red-asterisk.png) no-repeat 98% center;
 			border-color: #a40000;
@@ -352,7 +352,6 @@
 	input[type="tel"],
 	select {
 		height: 2.75em;
-		bacground-color: #fff;
 	}
 
 	textarea {
