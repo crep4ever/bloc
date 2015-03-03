@@ -5,7 +5,7 @@
 <!-- Banner -->
 <section id="banner">
   <div class="inner">
-    <h2>Open de bloc de Grenoble</h2>
+    <h2>3<sup>ème</sup> Open de bloc de Grenoble</h2>
    <p><?php echo $GLOBALS['event-date-str'] ?></p>
     <ul class="actions">
       <li><a href="registration.php" class="button big scrolly">Inscription</a></li>
