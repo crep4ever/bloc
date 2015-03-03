@@ -28,12 +28,22 @@
 
  <script>
 $(function() {
-$( "#datepicker" ).datepicker({dateFormat: 'dd/mm/yy',
- changeYear: true,
- changeMonth: true,
- yearRange: "1998:2005",
- defaultDate: '01/01/1998'
- });
+    $.datepicker.setDefaults($.extend(
+	{ dateFormat: 'dd/mm/yy',
+	  defaultDate: '01/01/1998',
+	  changeYear: true,
+	  changeMonth: true,
+	  yearRange: "1998:2005" },
+	$.datepicker.regional[ 'fr' ]
+    ));
+
+    $( '#datepicker' ).datepicker({
+	// restore input field style when a date is selected
+	onSelect: function(dateText, inst) {
+		$( this ).css( 'background', 'rgba(144, 144, 144, 0.075)' );
+		$( this ).css( 'border-color', '#ccc' );
+	}
+    });
 });
 </script>
 
