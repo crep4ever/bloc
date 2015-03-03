@@ -234,14 +234,15 @@
 		margin: 0 0 1em 0;
 	}
 
+
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
 	input[type="date"],
 	input[type="tel"],
-	input[type="checkbox"]:focus,
-	input[type="radio"]:focus,
-	select,
+	input[type="checkbox"],
+	input[type="radio"],
+
 	textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -265,62 +266,47 @@
 		input[type="email"]:invalid,
 		input[type="date"]:invalid,
 		input[type="tel"]:invalid,
-		input[type="checkbox"]:focus,
-		input[type="radio"]:focus,
-		select:invalid,
+		input[type="checkbox"]:invalid,
+		input[type="radio"]:invalid,
 		textarea:invalid {
 			box-shadow: none;
-		}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		input[type="date"]:focus,
-		input[type="tel"]:focus,
-		input[type="checkbox"]:focus,
-		input[type="radio"]:focus,
-		select:focus,
-		textarea:focus {
-			/*border-color: #4e9a06;*/
-			/*box-shadow: 0 0 0 1px #4e9a06;*/
-		}
-
-		input:required, textarea:required
-		{
-			background: rgba(144, 144, 144, 0.075) url(images/red-asterisk.png) no-repeat 98% center;
-		}
-
-		input:focus:invalid, textarea:focus:invalid
-		{
-			border-color: #a40000;
-			background-image: none;	
- 		}
-
- 		input[type="checkbox"]:required + label:after
-		{
-			background: rgba(144, 144, 144, 0.075) url(images/red-asterisk.png) no-repeat 98% center;
-		}
-
-		input[type="checkbox"]:focus:invalid + label:before
-		{
-			color: red;
 			border-color: #a40000;
 		}
 
-		input:focus:valid, textarea:focus:valid
+		input[type="text"]:required:invalid,
+		input[type="password"]:required:invalid,
+		input[type="email"]:required:invalid,
+		input[type="date"]:required:invalid,
+		input[type="tel"]:required:invalid,
+		input[type="checkbox"]:required:invalid,
+		input[type="radio"]:required:invalid,
+		textarea:required:invalid {
+			background: rgba(144, 144, 144, 0.075) url(../images/red-asterisk.png) no-repeat 98% center;
+			border-color: #a40000;
+		}
+
+
+		input[type="text"]:focus:required:invalid,
+		input[type="password"]:focus:required:invalid,
+		input[type="email"]:focus:required:invalid,
+		input[type="date"]:focus:required:invalid,
+		input[type="tel"]:focus:required:invalid,
+		input[type="checkbox"]:focus:required:invalid,
+		input[type="radio"]:focus:required:invalid,
+		textarea:focus:required:invalid {
+			background-image: none;
+			border-color: inherit;
+		}
+
+
+		input:focus:required:valid
 		{
-			border-color: #0F0;
+			border-color: #4e9a06;
 			background-image: none;
 		}
 
-		#ui-datepicker-div
-		{
-			background-color: white;
-			border: 2px solid rgba(80, 80, 80, 0.25);
-			border-radius: 0.5em;
-		}
 
-		input:valid, textarea:valid
+		input:focus, textarea:focus
 		{
 			background-image: none;
 		}
@@ -366,6 +352,7 @@
 	input[type="tel"],
 	select {
 		height: 2.75em;
+		bacground-color: #fff;
 	}
 
 	textarea {
@@ -1595,6 +1582,12 @@
 .ui-datepicker-calendar tr:last-child .ui-state-active {
 	height: 29px;
 	margin-bottom: 0;
+}
+
+.ui-state-disabled {
+ cursor: default !important;
+ background-color: #fff !important;
+ color: #fff !important;
 }
 
 /* User-defined */
