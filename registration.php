@@ -41,7 +41,7 @@
 
 	      <div class="left">
 		<label for="datepicker">Date de naissance</label>
-		<input type="text" name="naissance" id="datepicker" readonly="true" required>
+		<input type="text" name="naissance" id="datepicker" pattern="\d{1,2}/\d{1,2}/\d{4}" readonly="true" required>
 	      </div>
 
 	      <div class="clear">&nbsp;</div>
