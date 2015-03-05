@@ -8,7 +8,7 @@
     <h2>Open de bloc de Grenoble</h2>
    <p><?php echo $GLOBALS['event-date-str'] ?></p>
     <ul class="actions">
-      <li><a href="registration.php" class="button big scrolly">Inscription</a></li>
+      <li><a href="#cta" class="button big scrolly">Inscription</a></li>
     </ul>
   </div>
 </section>
@@ -89,6 +89,14 @@
       </div>
     </div>
   </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="wrapper style3">
+  <h2>Prenez votre place !</h2>
+  <ul class="actions">
+    <li><a href="registration.php" class="button big">Inscription</a></li>
+  </ul>
 </section>
 
 <?php include("footer.php"); ?>
