@@ -152,14 +152,6 @@
 			
 			}
 
-			$( "#datepicker" ).datepicker({dateFormat: 'dd/mm/yy',
-										   changeYear: true,
-										   changeMonth: true,
-										   yearRange: "1998:2005",
-										   defaultDate: '01/01/1998'
-										});
-		// 	$( "#datepicker" ).on('change', function() {       $( this ).validate();
-  // });	
 	});
 
 })(jQuery);
