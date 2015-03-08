@@ -54,7 +54,7 @@
       <div class="4u 6u(2) 12u$(3)">
 	<section class="feature fa-map-marker">
 	  <h3>Adresse</h3>
-	  <p><a href="http://www.espacevertical.com/#ev3">Espace Vertical 3 à Grenoble.</a></p>
+	  <p><a href="access.php">Espace Vertical 3 à Grenoble.</a></p>
 	</section>
       </div>
       <div class="4u 6u$(2) 12u$(3)">
