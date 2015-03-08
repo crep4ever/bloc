@@ -5,8 +5,8 @@
   <head>
     <title>Open de bloc Grenoble 2015</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="Open de bloc de Grenoble 2015" />
+    <meta name="keywords" content="escalade, compétition, bloc, grenoble, caf fontaine" />
     <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.dropotron.min.js"></script>
