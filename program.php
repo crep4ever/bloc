@@ -22,11 +22,21 @@
 
       <!--    **************** PROGRAM ******************    -->
 
-      <h3 id="program">Programme prévisionnel</h3>
+      <div id="program">
+      <hr />
+      <section class="feature feature fa-clock-o">
+      <h3>Programme prévisionnel</h3>
+
+      <p>Consultez la <a href="images/program-full.pdf">version
+      imprimable du programme</a>.</p>
 
       <p>
-	Les grimpeurs seront répartis dans un des deux circuits de leur catégorie d'âge, en fonction du niveau annoncé à l'inscription.<br />
-	Ils seront informés de cette attribution lors du retrait de leur dossard.
+	Les grimpeurs seront répartis dans un des deux circuits de
+	leur catégorie d'âge, en fonction du niveau annoncé à
+	l'inscription.<br />
+
+	Ils seront informés de cette attribution lors du retrait de
+	leur dossard.
       </p>
 
       <ul>
@@ -46,8 +56,8 @@
       <table style="width:90%">
 	<tr>
 	  <th style="text-align:center">Heure</th>
-	  <th style="text-align:center">Poussins/Benjamins</th>
-	  <th style="text-align:center">Minimes/Cadets</th>
+	  <th style="text-align:center">Poussins / Benjamins</th>
+	  <th style="text-align:center">Minimes / Cadets</th>
 	</tr>
 	<tr style="text-align:center">
 	  <td>8h30 - 9h15</td>
@@ -57,17 +67,17 @@
 	<tr style="text-align:center">
 	  <td>9h30 - 12h00</td>
 	  <td>Pointage et retrait des dossards (11h/12h)</td>
-	  <td>Qualifications : circuit rouge ou noir</td>
+	  <td>Qualifications : <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b></td>
 	</tr>
 	<tr style="text-align:center">
 	  <td>12h30 - 15h00</td>
-	  <td>Qualifications : circuit jaune ou bleu</td>
+	  <td>Qualifications : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b></td>
 	  <td> - </td>
 	</tr>
 	<tr style="text-align:center">
 	  <td>15h30 - 16h30</td>
-	  <td> Encourager les plus grands !</td>
-	  <td> Finales pour les qualifiés issus du circuit noir </td>
+	  <td>Encourager les plus grands !</td>
+	  <td>Finales pour les qualifiés issus du <b class="black">circuit noir</b></td>
 	</tr>
 	<tr style="text-align:center">
 	  <td>16h30</td>
@@ -75,14 +85,17 @@
 	</tr>
       </table>
 
-      <br />
-      <p>Téléchargez la <a href="images/program-full.pdf">version imprimable du programme</a>.</p>
-
-      <hr />
+      </section>
+      </div>
       
       <!--    **************** RULES ******************    -->
 
-      <h3 id="rules">Règlement de la compétition</h3>
+      <div id="rules">
+      <hr />
+      <section class="feature feature fa-file">
+	<h3>Règlement de la compétition</h3>
+	<p>Consultez la <a href="#">version officielle du règlement</a>.</p>
+
       <h4 id="contest">Contest</h4>
 
       <ul>
@@ -130,51 +143,23 @@
 	</ul>
 
 
-      <br />
-      <p>Le règlement complet est <a href="images/reglement.pdf">téléchargeable ici</a>.</p>
-
-      <hr />
-
-      <!--    **************** RESULTS ******************    -->
-      <h3 id="results">Résultats</h3>
-
-      <div class="row">
-
-	<div class="4u 6u(2) 12u$(3)">
-	  <article class="box post">
-	    <a href="#" class="image fit"><img src="images/results01.jpg" alt="" /></a>
-	    <h3>Classement par circuit</h3>
-	    <p>Résultats généraux des qualifications sur circuit.</p>
-	    <ul class="actions">
-	      <li><a href="#" class="button">Résultats</a></li>
-	    </ul>
-	  </article>
-	</div>
-
-	<div class="4u 6u$(2) 12u$(3)">
-	  <article class="box post">
-	    <a href="#" class="image fit"><img src="images/results02.jpg" alt="" /></a>
-	    <h3>Classement par catégorie</h3>
-	    <p>Résultats des qualifications sur circuit par catégorie.</p>
-	    <ul class="actions">
-	      <li><a href="#" class="button">Résultats</a></li>
-	    </ul>
-	  </article>
-	</div>
-
-	<div class="4u 6u$(2) 12u$(3)">
-	  <article class="box post">
-	    <a href="#" class="image fit"><img src="images/results03.jpg" alt="" /></a>
-	    <h3>Finales</h3>
-	    <p>Classement des finalistes Minimes/Cadets.</p>
-	    <ul class="actions">
-	      <li><a href="#" class="button">Résultats</a></li>
-	    </ul>
-	  </article>
-	</div>
-
+      </section>
       </div>
 
+      <!--    **************** RESULTS ******************    -->
+      <div id="results">
+      <hr />
+      <section class="feature feature fa-trophy">
+	<h3>Résultats</h3>
+	<ul>
+	  <li>Qualifications par circuit</li>
+	  <li>Qualifications par catégorie</li>
+	  <li>Finales</li>
+	</ul>
+
+      </section>
+      </div>
+      <hr />
 
     </section>
   </div>
