@@ -152,6 +152,36 @@ else
 	  <td><?php echo $category . ' ' . $sex_str ?></td>
 	</tr>
 
+	<tr>
+	  <td>Licence</td>
+	  <td><?php echo $licenceType . ' ' . $licenceNumber ?></td>
+	</tr>
+
+	<tr>
+	  <td>Club</td>
+	  <td><?php echo $club ?></td>
+	</tr>
+
+	<tr>
+	  <td>Niveau</td>
+	  <td><?php echo $experience ?></td>
+	</tr>
+
+	<tr>
+	  <td>Commentaire</td>
+	  <td><?php echo $comment ?></td>
+	</tr>
+
+	<tr>
+	  <td>Mail</td>
+	  <td><?php echo $mail ?></td>
+	</tr>
+
+	<tr>
+	  <td>Téléphone</td>
+	  <td><?php echo $tel ?></td>
+	</tr>
+
       </table>
 
       <p>
