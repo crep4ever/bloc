@@ -113,7 +113,7 @@
     </div>
 
     <div>
-      <textarea name="message" id="message" placeholder="Dites-nous en plus sur votre expérience (ou éventuellement vos résultats en compétition) :" rows="4"></textarea>
+      <textarea name="message" id="message" placeholder="Dites-nous en plus sur votre expérience (ou éventuellement vos résultats en compétition)" rows="4"></textarea>
     </div>
 
     <div class="clear">&nbsp;</div>

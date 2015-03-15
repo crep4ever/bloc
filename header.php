@@ -3,7 +3,7 @@
 <html lang="fr">
 
   <head>
-    <title>Open de bloc Grenoble 2015</title>
+    <title>Open de bloc 2015</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Open de bloc de Grenoble 2015" />
     <meta name="keywords" content="escalade, compétition, bloc, grenoble, caf fontaine" />

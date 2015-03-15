@@ -113,7 +113,7 @@ else
     <section id="content">
 
       <p>
-	Vous vous appretez à finaliser l'inscription du participant 
+	Vous vous apprêtez à finaliser l'inscription du participant 
 	<b><?php echo $firstname ?> <?php echo $lastname ?></b>.
       </p>
 
@@ -125,7 +125,7 @@ else
 
       <p>
 	Merci de bien vérifier les informations saisies avant de
-	procéder au paiement.  En cas d'informations incomplètes ou
+	procéder au paiement. En cas d'informations incomplètes ou
 	erronées, vous pouvez <a href="registration.php">retourner au formulaire d'inscription</a>
 	pour les modifier.
       </p>
