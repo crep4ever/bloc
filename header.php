@@ -65,7 +65,7 @@ $(function() {
 <link rel="manifest" href="images/icons/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+
 
 <!-- Open graph -->
 <meta property="og:title" content="Open de bloc Grenoble 2015" />
