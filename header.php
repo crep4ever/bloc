@@ -26,6 +26,7 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
+<!-- Date picker -->
  <script>
 $(function() {
     $.datepicker.setDefaults($.extend(
@@ -66,6 +67,11 @@ $(function() {
 <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
+<!-- Open graph -->
+<meta property="og:title" content="Open de bloc Grenoble 2015" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.openblocgrenoble.fr" />
+<meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2015.jpg" />
 
   </head>
   <body class="landing">
