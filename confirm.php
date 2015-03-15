@@ -11,14 +11,15 @@ $lastname = htmlspecialchars($_POST['nom']);
 $firstname = htmlspecialchars($_POST['prenom']);
 $sex = htmlspecialchars($_POST['sex']);
 $birthday = htmlspecialchars($_POST['naissance']);
+$year = explode("/", $birthday)[2];
 
-if ($birthday == '1998' || $birthday == '1999'):
+if ($year == '1998' || $year == '1999'):
   $category ='cadet';
-elseif ($birthday == '2000' || $birthday == '2001'):
+elseif ($year == '2000' || $year == '2001'):
 $category = 'minime';
-elseif ($birthday == '2002' || $birthday == '2003'):
+elseif ($year == '2002' || $year == '2003'):
 $category = 'benjamin';
-elseif ($birthday == '2004' || $birthday == '2005'):
+elseif ($year == '2004' || $year == '2005'):
 $category = 'poussin';
 else:
   $category = 'invalid';
