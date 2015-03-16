@@ -2,82 +2,6 @@
 
 <?php require 'globals.php' ?>
 
-<?php 
-// Check date validity
-if (strtotime('now') < $GLOBALS['registration-open-date']) // too soon
-{
-$info = $info . <<< MSG
-  <section class="feature feature fa-info-circle">
-    <h3>Les inscriptions ne sont pas encore ouvertes</h3>
-    <p>
-      Merci de revenir plus tard.
-    </p>
-  </section>
-MSG;
-}
-else if (strtotime('now') > $GLOBALS['registration-close-date']) // too late
-{
-$info = $info . <<< MSG
-  <section class="feature feature fa-info-circle">
-    <h3>Les inscriptions sont maintenant fermées</h3>
-    <p>
-      Vous pouvez néanmoins <a href="contact.php">nous contacter</a> pour une
-      inscription sur liste d'attente.
-    </p>
-  </section>
-MSG;
-}
-else
-{
-// Check available places from already registered candidates
-require 'database.php';
-$db = new Database();
-
-$db->query("SELECT * FROM bloc_participants WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
-
-$db->bind(':cat1', 'poussin');
-$db->bind(':cat2', 'benjamin');
-$db->resultset();
-$remainingPlacesPB = max(0, $GLOBALS['available-places'] - $db->rowCount());
-
-$db->bind(':cat1', 'minime');
-$db->bind(':cat2', 'cadet');
-$db->resultset();
-$remainingPlacesMC = max(0, $GLOBALS['available-places'] - $db->rowCount());
-
-if ($remainingPlacesPB == 0)
-{
-    $info = $info . <<< MSG
-      <section class="feature fa-exclamation-triangle">
-	<h3>Attention</h3>
-	<p>
-	  Les inscriptions sont closes pour les catégories <b>Poussin et Benjamin</b>.<br />
-	  Vous pouvez néanmoins <a href="contact.php">nous contacter</a> pour une
-	  inscription sur liste d'attente.
-	</p>
-      </section>
-MSG;
-}
-
-if ($remainingPlacesMC == 0)
-{
-  $info = $info . <<< MSG
-    <section class="feature fa-exclamation-triangle">
-      <h3>Attention</h3>
-      <p>
-	Les inscriptions sont closes pour les catégories <b>Minime et Cadet</b>.<br />
-	Vous pouvez néanmoins <a href="contact.php">nous contacter</a> pour une
-	inscription sur liste d'attente.
-      </p>
-    </section>
-MSG;
-}
-}
-
-$displayForm = (strtotime('now') >= $GLOBALS['registration-open-date']) && 
-	       (strtotime('now') <= $GLOBALS['registration-close-date']);
-?>
-
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Enregistrement</h2>
@@ -89,7 +13,7 @@ $displayForm = (strtotime('now') >= $GLOBALS['registration-open-date']) &&
 
 	<!-- Content -->
 	<section id="content">
-	  <?php echo $info ?>
+          <?php include("registration-info.php"); ?>
 	  <?php if ($displayForm) include("registration-form.php"); ?>
 	</section>
 
@@ -121,11 +45,11 @@ $displayForm = (strtotime('now') >= $GLOBALS['registration-open-date']) &&
 		</tr>
 		<tr>
 		  <td>Poussins / Benjamins (F&amp;G)</td>
-		  <td><?php echo $remainingPlacesPB ?></td>
+		  <td><?php echo $GLOBALS['remaining-places-poussin-benjamin'] ?></td>
 		</tr>
 		<tr>
 		  <td>Minimes / Cadets (F&amp;G)</td>
-		  <td><?php echo $remainingPlacesMC ?></td>
+		  <td><?php echo $GLOBALS['remaining-places-minime-cadet'] ?></td>
 		</tr>
 	      </table>
 	    </footer>
