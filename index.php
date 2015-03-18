@@ -21,9 +21,8 @@
       <h2>Un évènement convivial et pour tous les niveaux</h2>
       <p>
 	Le club CAF Fontaine en montagne vous invite à la 3ème
-	édition de l'Open de bloc de Grenoble : <br />
-	une compétition ouverte aux catégories poussins, benjamins,
-	minimes et cadets.
+	édition de l'Open de bloc de Grenoble. <br />
+	Une compétition d'escalade ludique pour les 10 / 17 ans où chacun pourra s'exprimer pleinement.
       </p>
 
     </header>
