@@ -92,7 +92,6 @@ $(function() {
 	  <li><a href="program.php">Déroulement</a></li>
 	  <li><a href="registration.php">Inscription</a></li>
 	  <li><a href="benevoles.php">Bénévoles</a></li>
-	  <li><a href="contact.php">Contact</a></li>
 	</ul>
       </nav>
     </header>
