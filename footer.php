@@ -3,7 +3,10 @@
     <footer id="footer">
       <ul class="icons">
 	<li><a href="http://www.ffme.fr"><img src="images/logos/ffme.png" title="FFME" alt="FFME" /></a></li>
-	<li><a href="http://www.ffcam.fr"><img src="images/logos/ffcam.png" title="FFCAM" alt="FFCAM" /></a></li>
+	<li><a href="http://www.ffcam.fr"><img src="images/logos/ffcam.jpg" title="FFCAM" alt="FFCAM" /></a></li>
+	<li><a href="http://ville-fontaine.fr"><img src="images/logos/fontaine.jpg" title="Ville de Fontaine" alt="Ville de Fontaine" /></a></li>
+	<li><a href="http://www.auvieuxcampeur.fr"><img src="images/logos/vieux-campeur.jpg" title="Au vieux campeur" alt="Au vieux campeur" /></a></li>
+	<li><a href="http://www.adidas.fr"><img src="images/logos/adidas.jpg" title="Au vieux campeur" alt="Au vieux campeur" /></a></li>
       </ul>
 
       <span class="copyright">
