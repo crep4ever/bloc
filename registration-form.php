@@ -50,30 +50,54 @@
     </div>
 
     <script>
-      <!-- n'est pas charge si dans head : trouver une solution -->
-      var availableClubs = ["A.C.S. SAVOIE TECHNOLAC", "A.S. VILLEFONTAINE", "A.S.V.E.L. SKI MONTAGNE", "ACCRO-ROC", "ALBERTVILLE ESCALADE",
-      "ALPES CLUB", "AMICALE LAIQUE CHAPONOST", "AMICALE LAIQUE D'ANSE", "AMICALE LAIQUE DE JONAGE", "AMICALE LAIQUE ECHIROLLES", "ANNECY ESCALADE", "ARAIGNEE BLEU CIEL",
-      "ASLGC ESCALADE", "ASPTT CHAMBERY", "ASPTT GRAND LYON MONTAGNE", "ASSOCIATION CLAIXOISE ESCALADE",
-      "ASSOCIATION DES FAMILLES DE CRAPONNE", "BELLEDONNE GRIMPE", "BELLES GRIMPES EN BELLEDONNE", "BOBST LYON SPORTS",
-      "BREDAROC", "BRON VERTICAL", "C.A.F. ALBERTVILLE", "C.A.F. ANNECY COMPETITION", "C.A.F. FAVERGES COMP", "C.A.F. SALEVE ANNEMASSE", "C.O.D.C. ESCALADE",
-      "C.O.R.V.I. MONTAGNE", "C.P.E.A. VAULX EN VELIN", "C.S. VAL ISERE", "C.S.A. 27ème B.C.A. Montagne Escalade", "CAF BELLEDONNE NORD", "CAF DSA DAUPHINE SKI ALPINISME",
-      "CAF FONTAINE EN MONTAGNE", "CAF GRENOBLE ISERE", "CAF GRENOBLE OISANS", "CAF GRESIVAUDAN", "CAF JEUNES EN MONTAGNE GRENOBLE", "CAF LA MURE MATHEYSINE",
-      "CAF LA ROCHE BONNEVILLE", "CAF NORD DAUPHINE", "CAF OBIOU", "CAF PAYS D'OISANS", "CAF SAINT GEORGES D ESPERANCHE", "CAF SAINT MARTIN D'HERES",
-      "CAF SALLANCHES COMPETITION", "CAF VALLEE DE LA GRESSE", "CAF VIENNE", "CAF VOIRON CHARTREUSE"];
+$(function() {
 
-      <!-- par defaut matche le motif quelle que soit la position -->
-      <!-- $("#association" ).autocomplete({source: availableClubs });
-	-->
-      <!-- ne matche que le debut -->
+    var availableClubs = ["A.C.S. SAVOIE TECHNOLAC", "A.S. VILLEFONTAINE", "A.S.V.E.L. SKI MONTAGNE", "ACCRO-ROC", "ALBERTVILLE ESCALADE",
+			  "ALPES CLUB", "AMICALE LAIQUE CHAPONOST", "AMICALE LAIQUE D'ANSE", "AMICALE LAIQUE DE JONAGE",
+			  "AMICALE LAIQUE ECHIROLLES", "ANNECY ESCALADE", "ARAIGNEE BLEU CIEL",
+			  "ASLGC ESCALADE", "ASPTT CHAMBERY", "ASPTT GRAND LYON MONTAGNE", "ASSOCIATION CLAIXOISE ESCALADE",
+			  "ASSOCIATION DES FAMILLES DE CRAPONNE", "BELLEDONNE GRIMPE", "BELLES GRIMPES EN BELLEDONNE", "BOBST LYON SPORTS",
+			  "BREDAROC", "BRON VERTICAL", "C.A.F. ALBERTVILLE", "C.A.F. ANNECY COMPETITION", "C.A.F. FAVERGES COMP", "C.A.F. SALEVE ANNEMASSE", "C.O.D.C. ESCALADE",
+			  "C.O.R.V.I. MONTAGNE", "C.P.E.A. VAULX EN VELIN", "C.S. VAL ISERE", "C.S.A. 27ème B.C.A. Montagne Escalade",
+			  "CAF BELLEDONNE NORD", "CAF DSA DAUPHINE SKI ALPINISME",
+			  "CAF FONTAINE EN MONTAGNE", "CAF GRENOBLE ISERE", "CAF GRENOBLE OISANS", "CAF GRESIVAUDAN", "CAF JEUNES EN MONTAGNE GRENOBLE", "CAF LA MURE MATHEYSINE",
+			  "CAF LA ROCHE BONNEVILLE", "CAF NORD DAUPHINE", "CAF OBIOU", "CAF PAYS D'OISANS", "CAF SAINT GEORGES D ESPERANCHE", "CAF SAINT MARTIN D'HERES",
+			  "CAF SALLANCHES COMPETITION", "CAF VALLEE DE LA GRESSE", "CAF VIENNE", "CAF VOIRON CHARTREUSE"];
 
-      $( "#association" ).autocomplete({
-      source: function( request, response ) {
-      var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
-      response( $.grep( availableClubs, function( item ){
-      return matcher.test( item );
-      }) );
-      }
-      });
+    var accentMap = {
+	"è": "e",
+	"é": "e",
+	"à": "a"
+    };
+
+    var normalize = function( term ) {
+	var ret = "";
+	for ( var i = 0; i < term.length; i++ ) {
+	    ret += accentMap[ term.charAt(i) ] || term.charAt(i);
+	}
+	return ret;
+    };
+
+    var strip = function ( str ) {
+	return str.replace(/[\.:+*?|\\^$(){}\[\]-]/g, '');
+    };
+
+    $( "#association" ).autocomplete({
+	source: function( request, response ) {
+	    var input = strip(request.term).split(/[ ,]+/);
+	    var results = [];
+	    for (var i = input.length - 1; i >=0 ; i--) {
+		var matcher = new RegExp( $.ui.autocomplete.escapeRegex( input[i] ), "i" );
+		results = results.concat($.grep( availableClubs, function( value ) {
+		    value = value.label || value.value || value;
+		    return matcher.test( strip(value) ) || matcher.test( normalize( strip(value) ) );
+		}));
+	    }
+
+	    response(results);
+	}
+    });
+});
 
     </script>
 
