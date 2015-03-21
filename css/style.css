@@ -1615,3 +1615,23 @@ b.black {
     padding-bottom: 0em;
     padding-left: 0em;
 }
+
+
+.ui-autocomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: default;
+    background-color: #fff;
+    border: solid 1px;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+
+.ui-autocomplete  li:hover{
+    background: #eee;
+    color: #ce5c00;
+}
