@@ -44,6 +44,8 @@
       <input type="text" name="licence-num" id="licence-num" required>
     </div>
 
+    <div class="clear">&nbsp;</div>
+
     <div class="left">
       <label for="association">Club</label>
       <input type="text" name="club" id="association">

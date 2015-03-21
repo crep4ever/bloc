@@ -1629,9 +1629,14 @@ b.black {
     overflow-y: auto;
     /* prevent horizontal scrollbar */
     overflow-x: hidden;
+    width: 350px;
 }
 
 .ui-autocomplete  li:hover{
     background: #eee;
     color: #ce5c00;
+}
+
+#association {
+width: 350px;
 }
