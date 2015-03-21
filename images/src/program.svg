@@ -9,12 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1573.9658"
+   width="1568.2365"
    height="443.09021"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="program.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="program.svg"
+   inkscape:export-filename="/home/crep/bloc/images/program.png"
+   inkscape:export-xdpi="45.904179"
+   inkscape:export-ydpi="45.904179">
   <defs
      id="defs4">
     <marker
@@ -31,34 +34,6 @@
          transform="scale(-0.6,-0.6)"
          inkscape:connector-curvature="0" />
     </marker>
-    <marker
-       inkscape:stockid="Arrow1Mend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="Arrow1Mend"
-       style="overflow:visible">
-      <path
-         id="path3926"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
-         transform="matrix(-0.4,0,0,-0.4,-4,0)"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="Arrow1Lend"
-       style="overflow:visible">
-      <path
-         id="path3920"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         inkscape:connector-curvature="0" />
-    </marker>
     <inkscape:path-effect
        effect="spiro"
        id="path-effect4723"
@@ -71,9 +46,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="853.90852"
-     inkscape:cy="175.12413"
+     inkscape:zoom="0.5"
+     inkscape:cx="1053.9339"
+     inkscape:cy="-98.536874"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -81,9 +56,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1535"
-     inkscape:window-height="876"
-     inkscape:window-x="65"
+     inkscape:window-width="1625"
+     inkscape:window-height="1026"
+     inkscape:window-x="55"
      inkscape:window-y="24"
      inkscape:window-maximized="1">
     <inkscape:grid
@@ -93,8 +68,8 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="-1.350098e-07px"
-       originy="-48.475956px" />
+       originx="-5.7294082px"
+       originy="-48.475962px" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -112,54 +87,49 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-32.344723,-507.16297)">
+     transform="translate(-38.074131,-507.16297)">
     <path
        style="fill:#eeeeec;stroke:#000000;stroke-width:2.37096786px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:none"
-       d="m 44.989023,508.34845 1355.004777,0 205.1313,200.68327 -169.3964,201.69089 -1402.198493,0 129.590863,-181.16334 z"
+       d="m 39.259615,508.34845 1378.601685,0 187.2638,210.94704 -187.2638,191.42712 -1378.601685,0 123.861455,-191.42712 z"
        id="path3175"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
-    <g
-       id="g6387"
-       transform="translate(1062.4189,-470.00001)">
-      <rect
-         y="1099.8375"
-         x="242.86365"
-         height="83.157799"
-         width="177.73477"
-         id="rect3217-4-9"
-         style="fill:#5c3566;fill-opacity:1;fill-rule:nonzero;stroke:#5c3566;stroke-width:6.81780005;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4048-6"
-         y="1144.4865"
-         x="325.68314"
-         style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           id="tspan6385"
-           y="1144.4865"
-           x="325.68314"
-           sodipodi:role="line">Podiums</tspan></text>
-      <rect
-         y="1207.9668"
-         x="242.85229"
-         height="82.031685"
-         width="177.78023"
-         id="rect3217-4-9-7"
-         style="fill:#5c3566;fill-opacity:1;fill-rule:nonzero;stroke:#5c3566;stroke-width:6.77234554;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <text
-         xml:space="preserve"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         x="1284.106"
-         y="280.45566"
-         id="text6714"
-         sodipodi:linespacing="125%"
-         transform="translate(-1030.0742,977.16298)"><tspan
-           sodipodi:role="line"
-           id="tspan6716"
-           x="1284.106"
-           y="280.45566"></tspan></text>
-    </g>
+    <rect
+       style="fill:#5c3566;fill-opacity:1;fill-rule:nonzero;stroke:#5c3566;stroke-width:6.81780005;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3217-4-9"
+       width="177.73477"
+       height="83.157799"
+       x="1305.2826"
+       y="629.83752" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1388.1021"
+       y="674.48645"
+       id="text4048-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1388.1021"
+         y="674.48645"
+         id="tspan6385">Podiums</tspan></text>
+    <rect
+       style="fill:#5c3566;fill-opacity:1;fill-rule:nonzero;stroke:#5c3566;stroke-width:6.77234554;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3217-4-9-7"
+       width="177.78023"
+       height="82.031685"
+       x="1305.2712"
+       y="737.9668" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text6714"
+       y="787.61865"
+       x="1316.4507"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="787.61865"
+         x="1316.4507"
+         id="tspan6716"
+         sodipodi:role="line" /></text>
     <path
        style="opacity:0.61648745;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0;marker-end:url(#Arrow2Mend)"
        d="m 500,286.22513 c 1.38308,6.92156 4.3805,13.5125 8.67062,19.11747 4.29013,5.60498 9.85932,10.20125 16.09884,13.50113 6.23953,3.29988 13.11799,5.29608 20.10244,6.31505 6.98445,1.01897 14.06971,1.06635 21.1281,1.06635 l 506,0 c 9.4865,0 19.0876,-0.4246 28.1582,-3.20296 9.0705,-2.77835 17.3921,-7.647 24.9155,-13.42559 10.3826,-7.97471 19.4998,-17.59353 26.9075,-28.38804"
@@ -243,35 +213,30 @@
          x="269.92578"
          y="763.72913"
          id="tspan3898">Minimes / Cadets</tspan></text>
-    <g
-       id="g3171"
-       transform="translate(-264.99366,-104.44154)"
-       style="fill-rule:nonzero">
-      <rect
-         y="976.68726"
-         x="1090.3655"
-         height="31.141691"
-         width="149.40619"
-         id="rect3217-6"
-         style="fill:#5c3566;fill-opacity:1;fill-rule:nonzero;stroke:#5c3566;stroke-width:3.82526875;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4060-8"
-         y="989.17065"
-         x="1166.0981"
-         style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="989.17065"
-           x="1166.0981"
-           id="tspan4062-8"
-           sodipodi:role="line"
-           style="text-align:center;text-anchor:middle">Résultats qualifications</tspan><tspan
-           id="tspan4064-4"
-           y="1004.1707"
-           x="1166.0981"
-           sodipodi:role="line"
-           style="text-align:center;text-anchor:middle">Minimes/Cadets</tspan></text>
-    </g>
+    <rect
+       style="fill:#5c3566;fill-opacity:1;fill-rule:nonzero;stroke:#5c3566;stroke-width:5.16613245;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3217-6"
+       width="201.77724"
+       height="42.057728"
+       x="785.7287"
+       y="861.13086" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.20633507px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Sans"
+       x="888.00781"
+       y="877.99005"
+       id="text4060-8"
+       sodipodi:linespacing="125%"><tspan
+         style="text-align:center;text-anchor:middle"
+         sodipodi:role="line"
+         id="tspan4062-8"
+         x="888.00781"
+         y="877.99005">Résultats qualifications</tspan><tspan
+         style="text-align:center;text-anchor:middle"
+         sodipodi:role="line"
+         x="888.00781"
+         y="898.24799"
+         id="tspan4064-4">Minimes/Cadets</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -316,302 +281,269 @@
          x="1179.0161"
          y="719.05219"
          id="tspan3085">Minimes / Cadets</tspan></text>
-    <g
-       id="g3115"
-       transform="translate(-336,132)">
-      <rect
-         y="607.01605"
-         x="765.50037"
-         height="107.14286"
-         width="281.42856"
-         id="rect2985-6"
-         style="fill:#2e3436;fill-opacity:1;fill-rule:nonzero;stroke:#2e3436;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3798-1"
-         y="629.9613"
-         x="768.79834"
-         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="629.9613"
-           x="768.79834"
-           id="tspan3800-1"
-           sodipodi:role="line">Circuit noir</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3802-6"
-         y="659.22321"
-         x="767.36981"
-         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="659.22321"
-           x="767.36981"
-           id="tspan3804-3"
-           sodipodi:role="line">Minimes / Cadets</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3096-2"
-         y="707.15509"
-         x="770.26337"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="707.15509"
-           x="770.26337"
-           id="tspan3098-36"
-           sodipodi:role="line">filles &amp; garçons</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3096-2-5"
-         y="630.11548"
-         x="1514.2466"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="630.11548"
-           x="1516.4751"
-           id="tspan3098-36-3"
-           sodipodi:role="line"
-           style="font-style:italic;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans Italic">ayant participé au </tspan><tspan
-           y="647.61548"
-           x="1514.2466"
-           sodipodi:role="line"
-           id="tspan6625"
-           style="font-style:italic;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans Italic">circuit noir</tspan></text>
-    </g>
-    <g
-       id="g3104"
-       transform="translate(-337.01282,-132.83411)">
-      <rect
-         y="739.03998"
-         x="765.50037"
-         height="107.14286"
-         width="281.42856"
-         id="rect2985-2"
-         style="fill:#a40000;fill-opacity:1;fill-rule:nonzero;stroke:#a40000;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3841"
-         y="758.24042"
-         x="774.78613"
-         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="758.24042"
-           x="774.78613"
-           id="tspan3843"
-           sodipodi:role="line">Circuit rouge</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3845"
-         y="783.56323"
-         x="773.35754"
-         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="783.56323"
-           x="773.35754"
-           id="tspan3847"
-           sodipodi:role="line">Minimes / Cadets</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3096-93"
-         y="841.52563"
-         x="769.25317"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="841.52563"
-           x="769.25317"
-           id="tspan3098-2"
-           sodipodi:role="line">filles &amp; garçons</tspan></text>
-    </g>
-    <g
-       id="g3078"
-       transform="translate(416.22863,382.28564)">
-      <rect
-         y="356.49823"
-         x="348.54468"
-         height="107.14286"
-         width="281.42856"
-         id="rect2985"
-         style="fill:#204a85;fill-opacity:1;fill-rule:nonzero;stroke:#204a87;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3798"
-         y="379.44348"
-         x="355.01483"
-         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="379.44348"
-           x="355.01483"
-           id="tspan3800"
-           sodipodi:role="line">Circuit bleu</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3802"
-         y="407.66827"
-         x="354.25897"
-         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="407.66827"
-           x="354.25897"
-           id="tspan3804"
-           sodipodi:role="line">Poussins / Benjamins</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3167"
-         y="388.59534"
-         x="601.83984"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
-           y="388.59534"
-           x="601.83984"
-           id="tspan3169"
-           sodipodi:role="line"
-           style="font-size:40px;font-weight:normal;-inkscape-font-specification:Sans">*</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3096"
-         y="456.39435"
-         x="352.66754"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="456.39435"
-           x="352.66754"
-           id="tspan3098"
-           sodipodi:role="line">filles &amp; garçons</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3167-5"
-         y="388.72116"
-         x="263.26642"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
-           y="388.72116"
-           x="263.26642"
-           id="tspan3169-4"
-           sodipodi:role="line"
-           style="font-size:40px;font-weight:normal;-inkscape-font-specification:Sans">*</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3167-4"
-         y="291.69122"
-         x="1035.9865"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
-           y="291.69122"
-           x="1035.9865"
-           id="tspan3169-2"
-           sodipodi:role="line"
-           style="font-size:40px;font-weight:normal;-inkscape-font-specification:Sans">*</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3167-5-3"
-         y="317.00494"
-         x="1030.2291"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
-           y="317.00494"
-           x="1030.2291"
-           id="tspan3169-4-9"
-           sodipodi:role="line"
-           style="font-size:40px;font-weight:normal;-inkscape-font-specification:Sans" /></text>
-    </g>
-    <g
-       id="g3091"
-       transform="translate(342.0589,-131.93989)">
-      <rect
-         y="739.03998"
-         x="422.28583"
-         height="107.14286"
-         width="281.42856"
-         id="rect2985-5"
-         style="fill:#edd400;fill-opacity:1;fill-rule:nonzero;stroke:#edd400;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3833"
-         y="758.24042"
-         x="428.75598"
-         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="758.24042"
-           x="428.75598"
-           id="tspan3835"
-           sodipodi:role="line">Circuit jaune</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3837"
-         y="782.52612"
-         x="428.00012"
-         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="782.52612"
-           x="428.00012"
-           id="tspan3839"
-           sodipodi:role="line">Poussins / Benjamins</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3096-9"
-         y="841.58655"
-         x="427.82169"
-         style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="841.58655"
-           x="427.82169"
-           id="tspan3098-3"
-           sodipodi:role="line">filles &amp; garçons</tspan></text>
-    </g>
-    <g
-       id="g6242"
-       transform="translate(346.23356,-630.35549)">
-      <g
-         id="g6318"
-         transform="translate(-10.233564,-25.644518)">
-        <g
-           id="g6328"
-           transform="translate(44,10)">
-          <g
-             transform="matrix(0.62001204,0,0,1,102.15998,0)"
-             id="g6315">
-            <rect
-               style="fill:#5c3566;fill-opacity:1;fill-rule:nonzero;stroke:#5c3566;stroke-width:6.64462233;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-               id="rect3217-4-3"
-               width="208.21252"
-               height="67.424942"
-               x="160.75674"
-               y="1165.821" />
-          </g>
-          <text
-             sodipodi:linespacing="125%"
-             id="text4048-1"
-             y="1180.7291"
-             x="262.34473"
-             style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-             xml:space="preserve"><tspan
-               id="tspan3898-9"
-               y="1180.7291"
-               x="262.34473"
-               sodipodi:role="line"
-               style="font-weight:normal;-inkscape-font-specification:Sans">Pointage</tspan><tspan
-               y="1205.7291"
-               x="262.34473"
-               sodipodi:role="line"
-               id="tspan6344">Poussins,</tspan><tspan
-               y="1230.7291"
-               x="262.34473"
-               sodipodi:role="line"
-               id="tspan6313">Benjamins</tspan></text>
-        </g>
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         x="345.47217"
-         y="-90.064346"
-         id="text6346"
-         sodipodi:linespacing="125%"
-         transform="translate(-313.88884,1192.8595)"><tspan
-           sodipodi:role="line"
-           id="tspan6348"
-           x="345.47217"
-           y="-90.064346" /></text>
-    </g>
+    <rect
+       style="fill:#2e3436;fill-opacity:1;fill-rule:nonzero;stroke:#2e3436;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-6"
+       width="281.42856"
+       height="107.14286"
+       x="429.50037"
+       y="739.01605" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="432.79834"
+       y="761.9613"
+       id="text3798-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3800-1"
+         x="432.79834"
+         y="761.9613">Circuit noir</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="431.36981"
+       y="791.22321"
+       id="text3802-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3804-3"
+         x="431.36981"
+         y="791.22321">Minimes / Cadets</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="434.26337"
+       y="839.15509"
+       id="text3096-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3098-36"
+         x="434.26337"
+         y="839.15509">filles &amp; garçons</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1178.2466"
+       y="762.11548"
+       id="text3096-2-5"
+       sodipodi:linespacing="125%"><tspan
+         style="font-style:italic;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans Italic"
+         sodipodi:role="line"
+         id="tspan3098-36-3"
+         x="1180.4751"
+         y="762.11548">ayant participé au </tspan><tspan
+         style="font-style:italic;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans Italic"
+         id="tspan6625"
+         sodipodi:role="line"
+         x="1178.2466"
+         y="779.61548">circuit noir</tspan></text>
+    <rect
+       style="fill:#a40000;fill-opacity:1;fill-rule:nonzero;stroke:#a40000;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-2"
+       width="281.42856"
+       height="107.14286"
+       x="428.48755"
+       y="606.20587" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="437.77332"
+       y="625.40631"
+       id="text3841"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3843"
+         x="437.77332"
+         y="625.40631">Circuit rouge</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="436.34473"
+       y="650.72913"
+       id="text3845"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3847"
+         x="436.34473"
+         y="650.72913">Minimes / Cadets</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="432.24036"
+       y="708.69153"
+       id="text3096-93"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3098-2"
+         x="432.24036"
+         y="708.69153">filles &amp; garçons</tspan></text>
+    <rect
+       style="fill:#204a85;fill-opacity:1;fill-rule:nonzero;stroke:#204a87;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985"
+       width="281.42856"
+       height="107.14286"
+       x="764.77332"
+       y="738.78387" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="771.24347"
+       y="761.72913"
+       id="text3798"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3800"
+         x="771.24347"
+         y="761.72913">Circuit bleu</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="770.48761"
+       y="789.95392"
+       id="text3802"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3804"
+         x="770.48761"
+         y="789.95392">Poussins / Benjamins</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="1018.0685"
+       y="770.88098"
+       id="text3167"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:40px;font-weight:normal;-inkscape-font-specification:Sans"
+         sodipodi:role="line"
+         id="tspan3169"
+         x="1018.0685"
+         y="770.88098">*</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="768.89618"
+       y="838.67999"
+       id="text3096"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3098"
+         x="768.89618"
+         y="838.67999">filles &amp; garçons</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="679.49506"
+       y="771.00677"
+       id="text3167-5"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:40px;font-weight:normal;-inkscape-font-specification:Sans"
+         sodipodi:role="line"
+         id="tspan3169-4"
+         x="679.49506"
+         y="771.00677">*</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="1452.2151"
+       y="673.97687"
+       id="text3167-4"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:40px;font-weight:normal;-inkscape-font-specification:Sans"
+         sodipodi:role="line"
+         id="tspan3169-2"
+         x="1452.2151"
+         y="673.97687">*</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="1446.4578"
+       y="699.29059"
+       id="text3167-5-3"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:40px;font-weight:normal;-inkscape-font-specification:Sans"
+         sodipodi:role="line"
+         id="tspan3169-4-9"
+         x="1446.4578"
+         y="699.29059" /></text>
+    <rect
+       style="fill:#edd400;fill-opacity:1;fill-rule:nonzero;stroke:#edd400;stroke-width:12;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-5"
+       width="281.42856"
+       height="107.14286"
+       x="764.34473"
+       y="607.1001" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="770.81488"
+       y="626.30054"
+       id="text3833"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3835"
+         x="770.81488"
+         y="626.30054">Circuit jaune</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="770.05902"
+       y="650.58624"
+       id="text3837"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3839"
+         x="770.05902"
+         y="650.58624">Poussins / Benjamins</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="769.88062"
+       y="709.64667"
+       id="text3096-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3098-3"
+         x="769.88062"
+         y="709.64667">filles &amp; garçons</tspan></text>
+    <rect
+       style="fill:#5c3566;fill-opacity:1;fill-rule:nonzero;stroke:#5c3566;stroke-width:5.23203182;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3217-4-3"
+       width="129.09427"
+       height="67.424942"
+       x="581.83112"
+       y="519.82104" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="642.34473"
+       y="534.72913"
+       id="text4048-1"
+       sodipodi:linespacing="125%"><tspan
+         style="font-weight:normal;-inkscape-font-specification:Sans"
+         sodipodi:role="line"
+         x="642.34473"
+         y="534.72913"
+         id="tspan3898-9">Pointage</tspan><tspan
+         id="tspan6344"
+         sodipodi:role="line"
+         x="642.34473"
+         y="559.72913">Poussins,</tspan><tspan
+         id="tspan6313"
+         sodipodi:role="line"
+         x="642.34473"
+         y="584.72913">Benjamins</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6346"
+       y="472.43967"
+       x="377.81689"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="472.43967"
+         x="377.81689"
+         id="tspan6348"
+         sodipodi:role="line" /></text>
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"

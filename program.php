@@ -49,8 +49,10 @@
 	Seuls les compétiteurs issus du <b class="blue">circuit bleu</b> ou du <b class="black">circuit noir</b> pourront prétendre au podium.
       </p>
 
-      <p style="padding:4em">
-	<img src="images/src/program.svg" alt="" style="border:none; background:transparent; overflow:hidden; width:100%;" />
+      <p>
+	<a href="images/src/program.svg">
+	  <img src="images/program.png" alt="Programme prévisionnel" style="border:none; width:90%;" />
+	</a>
       </p>
 
       <table style="width:90%">
