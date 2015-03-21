@@ -7,7 +7,12 @@ $_SESSION['lastname']  = htmlspecialchars($_POST['nom']);
 $_SESSION['firstname'] = htmlspecialchars($_POST['prenom']);
 $_SESSION['sex']       = htmlspecialchars($_POST['sex']);
 $_SESSION['birthday']  = htmlspecialchars($_POST['naissance']);
-$year = explode("/", $_SESSION['birthday'])[2];
+
+$birthday = explode("/", $_SESSION['birthday']);
+$day   = $birthday[0];
+$month = $birthday[1];
+$year  = $birthday[2];
+$birthday_str = $year . '-' . $month . '-' . $day;
 
 $_SESSION['category'] = 'invalid';
 if ($year == '1998' || $year == '1999')
@@ -87,8 +92,8 @@ else
 
     $db->bind('nom', $_SESSION['lastname']);
     $db->bind('prenom' , $_SESSION['firstname']);
-    $db->bind('sexe', $_SESSION['sex']);
-    $db->bind('naissance', $_SESSION['birthday']);
+    $db->bind('sexe', $_SESSION['sex_str']);
+    $db->bind('naissance', $birthday_str);
     $db->bind('categorie', $_SESSION['category']);
     $db->bind('licence_type', $_SESSION['licenceType']);
     $db->bind('licence_number', $_SESSION['licenceNumber']);
