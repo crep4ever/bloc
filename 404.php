@@ -6,6 +6,7 @@
 
     <p>
       <span class="image left"><img src="images/fabien.jpg" alt="404" /></span>
+    </p>
 
     <p style="padding:  4em 0em 4em 0em; font-size: 160%; text-align:center; color:#5c3566;">
       Pour Fabien, c'est pas gagné, mais vous c'est sûr : vous la
@@ -17,10 +18,7 @@
       mais si vous ne trouvez pas la méthode, <a href="index.php">reposez-vous ici</a>.
     </p>
 
-    </p>
-
   </div>
 </section>
 
-</body>
-</html>
+<?php include("footer.php"); ?>
