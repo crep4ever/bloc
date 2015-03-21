@@ -24,7 +24,7 @@
 
       <div id="program">
       <hr />
-      <section class="feature feature fa-clock-o">
+      <section class="feature fa-clock-o">
       <h3>Programme prévisionnel</h3>
 
       <p>Consultez la <a href="images/program-full.pdf">version
@@ -92,7 +92,7 @@
 
       <div id="rules">
       <hr />
-      <section class="feature feature fa-file">
+      <section class="feature fa-file">
 	<h3>Règlement de la compétition</h3>
 	<p>Consultez la <a href="#">version officielle du règlement</a>.</p>
 
@@ -149,7 +149,7 @@
       <!--    **************** RESULTS ******************    -->
       <div id="results">
       <hr />
-      <section class="feature feature fa-trophy">
+      <section class="feature fa-trophy">
 	<h3>Résultats</h3>
 	<ul>
 	  <li>Qualifications par circuit</li>
