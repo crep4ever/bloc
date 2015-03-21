@@ -31,13 +31,13 @@
       <div class="viewer">
 	<div class="reel">
 	  <div class="slide">
-	    <img src="images/slide01.jpg" alt="" />
+	    <img src="images/slide01.jpg" alt="Open de Bloc 2013" />
 	  </div>
 	  <div class="slide">
-	    <img src="images/slide02.jpg" alt="" />
+	    <img src="images/slide02.jpg" alt="Open de Bloc 2013" />
 	  </div>
 	  <div class="slide">
-	    <img src="images/slide03.jpg" alt="" />
+	    <img src="images/slide03.jpg" alt="Open de Bloc 2013" />
 	  </div>
 	</div>
       </div>
