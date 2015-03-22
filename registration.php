@@ -1,3 +1,13 @@
+<?php 
+
+ob_start();
+session_start();
+
+require 'error-handler.php';
+set_error_handler("handleError");
+
+?>
+
 <?php include("header.php"); ?>
 
 <?php require 'globals.php' ?>

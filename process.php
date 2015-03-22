@@ -1,11 +1,29 @@
 <?php
+session_start();
+require 'error-handler.php';
+set_error_handler("handleError");
+
+
+/*
+  Retrieve session info from database
+*/
+
+require 'database.php';
+$db = new Database();
+
+$db->query("SELECT prenom, nom, mail FROM bloc_participants WHERE token=:token LIMIT 1");
+$db->bind(':token', $_GET['token']);
+$result = $db->single();
+$_SESSION['firstname'] = $result['prenom'];
+$_SESSION['lastname']  = $result['nom'];
+$_SESSION['mail']      = $result['mail'];
+
+/*
+  Process Paypal response
+*/
 
 require 'globals.php';
 require 'paypal.php';
-require 'error.php';
-
-// Set error handler
-set_error_handler("handleError");
 
 $product = array("name" => "Frais d'inscription",
 		 "price"=> $GLOBALS['registration-fee'],
@@ -56,9 +74,6 @@ else
 
     $response['PAYMENTINFO_0_TRANSACTIONID'];
 
-    require 'database.php';
-    $db = new Database();
-
     $db->beginTransaction();
 
     $db->query("UPDATE bloc_participants SET payer_id = :payer_id, transaction = :transaction WHERE token = :token");
@@ -72,6 +87,6 @@ else
     $db->endTransaction();
 }
 
-header( "Location: $url" );
-die();
+header("Location: $url");
+exit();
 ?>
