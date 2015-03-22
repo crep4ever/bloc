@@ -59,7 +59,7 @@
       <div class="4u 6u$(2) 12u$(3)">
 	<section class="feature fa-calendar">
 	  <h3>Date</h3>
-	  <p>Dimanche 7 juin 2015</p>
+	  <p><?php echo $GLOBALS['event-date-str'] ?></p>
 	</section>
       </div>
       <div class="4u$ 6u(2) 12u$(3)">
