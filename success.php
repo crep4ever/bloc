@@ -1,31 +1,54 @@
 <?php 
 session_start();
 
-function sendConfirmation($firstName, $lastName, $mail)
+function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
 {
   require 'globals.php';
 
   $event = $GLOBALS['event-date-str'];
+
+  if ($category == 'poussin' || $category == 'benjamin')
+    {
+      $hour = strftime('%Hh%M', $GLOBALS['poussin-benjamin-arrival']);
+    }
+  else if ($category == 'minime' || $category == 'cadet')
+    {
+      $hour = strftime('%Hh%M', $GLOBALS['minime-cadet-arrival']);
+    }
+
   $subject = "[Open de Bloc] Confirmation d'inscription";
-  $body = "Bonjour,\r\n\r\n"
-    . "Vous avez réalisé l'inscription du participant $firstName $lastName pour l'open de bloc de Grenoble 2015.\r\n\r\n"
-    . "Rendez-vous $event à Espace Vertical 3 en possession :\r\n"
-    . " - d'une pièce d'identité du participant\r\n"
-    . " - de sa licence\r\n"
-    . " - de l'autorisation parentale écrite de participation à la compétition\r\n\r\n"
+
+  $site = "www.openblocgrenoble.fr";
+  $from = "opendebloc.grenoble@gmail.com";
+  $nom = "Open de Bloc";
+  $to = $mail;
+  $sujet = "[Open de Bloc] Confirmation d'inscription";
+
+  $text = "Bonjour,\r\n\r\n"
+    . "Vous avez réalisé l'inscription du participant $firstName $lastName en catégorie $category $sex pour l'Open de bloc de Grenoble 2015.\r\n\r\n"
+    . "Vous pouvez consuler le programme et le règlement de la compétition à l'adresse : http://openblocgrenoble.fr/program.php\r\n\r\n"
+    . "Nous vous donnons rendez-vous le $event à $hour à Espace Vertical 3 en possession :\r\n"
+    . " * d'une pièce d'identité du participant\r\n"
+    . " * de sa licence\r\n"
+    . " * de l'autorisation parentale écrite de participation à la compétition\r\n\r\n"
     . "Merci et à bientôt !\r\n\r\n"
     . "Le CAF Fontaine";
 
-  $body = wordwrap($body, 80, "\r\n");
+  $from = $nom." <".$from.">";
 
-  $headers = 'From: Open de bloc Grenoble <opendebloc.grenoble@gmail.com>' ."\r\n"
-    . 'Reply-To: opendebloc.grenoble@gmail.com' ."\r\n";
+  $header  = "Reply-to: ".$from."\n";
+  $header .= "From: ".$from."\n";
+  $header .= "X-Sender: <".$site.">\n";
 
-  mail($mail, $subject, $body, $headers);
+  $message = wordwrap($text, 80, "\r\n");
+
+  mail($to, $subject, $message, $header);
 }
 
 sendConfirmation($_SESSION['firstname'],
 		 $_SESSION['lastname'],
+		 $_SESSION['category'],
+		 $_SESSION['sex_str'],
 		 $_SESSION['mail']);
 
 include("header.php");
@@ -40,7 +63,9 @@ include("header.php");
     <section id="content">
 
       <p>
-	L'inscription du participant <b><?php echo $_SESSION['firstname'] ?> <?php echo $_SESSION['lastname'] ?></b>
+  
+	L'inscription du participant <b><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?></b>
+dans la catégorie <b><?php echo $_SESSION['category'] . ' ' . $_SESSION['sex_str'] ?></b>
 	a été réalisée avec succès.
       </p>
 
@@ -50,11 +75,11 @@ include("header.php");
 
       <p>
 	Nous vous donnons rendez-vous le <b><?php echo $GLOBALS['event-date-str'] ?></b>
-	à <a href="access.php">Espace Vertical 3</a>. N'oubliez pas
-	de vous munir :
+	à <a href="access.php">Espace Vertical 3</a> en possession&nbsp;:
 	<ul>
-	  <li>D'une pièce d'identité valide</li>
-	  <li>De l'autorisation parentale écrite</li>
+	  <li>d'une pièce d'identité du participant</li>
+	  <li>de sa licence</li>
+          <li>de l'autorisation parentale écrite de participation à la compétition</li>
 	</ul>
       </p>
 
