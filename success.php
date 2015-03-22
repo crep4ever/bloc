@@ -18,8 +18,8 @@ function sendConfirmation($firstName, $lastName, $mail)
 
   $body = wordwrap($body, 80, "\r\n");
 
-  $headers = 'From: Open de bloc Grenoble <opendebloc.grenoble@gmail.com>\r\n'
-    . 'Reply-To: opendebloc.grenoble@gmail.com\r\n';
+  $headers = 'From: Open de bloc Grenoble <opendebloc.grenoble@gmail.com>' ."\r\n"
+    . 'Reply-To: opendebloc.grenoble@gmail.com' ."\r\n";
 
   mail($mail, $subject, $body, $headers);
 }
