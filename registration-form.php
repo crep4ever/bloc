@@ -41,7 +41,7 @@
 
     <div class="left">
       <label for="licence-num">Numéro</label>
-      <input type="text" name="licence-num" id="licence-num" required>
+      <input type="text" name="licence-num" id="licence-num" pattern="\d{6}|\d{12}" required>
     </div>
 
     <div class="clear">&nbsp;</div>

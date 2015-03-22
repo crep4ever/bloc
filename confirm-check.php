@@ -2,8 +2,7 @@
   <section class="feature fa-exclamation-triangle">
     <h3>Attention</h3>
     <p>
-      Impossible de déterminer la catégorie du participant à partir de sa date de naissance.<br />
-      Merci de <a href="registration.php">retourner au formulaire</a> afin de corriger ces informations.
+      Impossible de déterminer la catégorie du participant à partir de sa date de naissance.
     </p>
   </section>
 <?php } ?>
@@ -12,20 +11,42 @@
   <section class="feature fa-exclamation-triangle">
     <h3>Attention</h3>
     <p>
-      Vous devez accepter le <a href="program.php#rules">règlement de la compétition</a> pour valider votre inscription.<br />
-      Merci de <a href="registration.php">retourner au formulaire</a> afin de corriger ces informations.
+      Vous devez accepter le <a href="program.php#rules">règlement de la compétition</a> pour valider votre inscription.
+    </p>
+  </section>
+<?php } ?>
+
+
+<?php if ($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) != 6) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+      Votre numéro de licence FFME n'a pas le bon format&nbsp: un numéro à 6 chiffres est attendu.
+    </p>
+  </section>
+<?php } ?>
+
+<?php if ($_SESSION['licenceType'] == 'FFCAM' && strlen($_SESSION['licenceNumber']) != 12) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+      Votre numéro de licence FFCAM <b><?php echo $_SESSION['licenceNumber'] ?></b>
+      n'a pas le bon format&nbsp: un numéro à 12 chiffres est attendu.
     </p>
   </section>
 <?php } ?>
 
 <?php 
-  $ok = $_SESSION['category'] != 'invalid' && $_SESSION['conditions'];
+  $ok = $_SESSION['category'] != 'invalid' && 
+     $_SESSION['conditions'] &&
+     (($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) == 6) || 
+      ($_SESSION['licenceType'] == 'FFCAM' && strlen($_SESSION['licenceNumber']) == 12));
 ?>
 
 <?php if ($ok) { ?>
       <p>
 	Vous vous apprêtez à finaliser l'inscription du participant 
-	<b><?php echo $_SESSION['firstname'] ?> <?php echo $_SESSION['lastname'] ?></b>.
+	<b><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?></b>.
       </p>
 
       <p>
@@ -100,3 +121,8 @@
       </p
 <?php } ?>
 
+<?php if (!$ok) { ?>
+  <p>
+    Merci de <a href="registration.php">retourner au formulaire</a> afin de corriger ces informations.
+  </p>
+<?php } ?>
