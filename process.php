@@ -11,12 +11,23 @@ set_error_handler("handleError");
 require 'database.php';
 $db = new Database();
 
-$db->query("SELECT prenom, nom, mail FROM bloc_participants WHERE token=:token LIMIT 1");
+$db->query("SELECT prenom, nom, mail, categorie, sexe FROM bloc_participants WHERE token=:token LIMIT 1");
 $db->bind(':token', $_GET['token']);
 $result = $db->single();
 $_SESSION['firstname'] = $result['prenom'];
 $_SESSION['lastname']  = $result['nom'];
 $_SESSION['mail']      = $result['mail'];
+$_SESSION['category']  = $result['categorie'];
+$_SESSION['sex']       = $result['sexe'];
+
+if ($_SESSION['sex'] == 'M')
+  {
+    $_SESSION['sex_str'] = 'garçon';
+  }
+else
+  {
+    $_SESSION['sex_str'] = 'fille';
+  }
 
 /*
   Process Paypal response
