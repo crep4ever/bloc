@@ -10,7 +10,7 @@
       </ul>
 
       <span class="copyright">
-	&copy; Copyright <a href="http://fontaine-en-montagne.ffcam.fr/">CAF Fontaine</a>. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk">Responsive Web Templates</a>
+	&copy; Copyright <a href="http://fontaine-en-montagne.ffcam.fr/">CAF Fontaine</a>. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk">Responsive Web Templates</a>.
       </span>
     </footer>
 
