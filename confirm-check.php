@@ -1,3 +1,82 @@
+<?php
+// Recheck available places from already registered candidates in db
+$available = false;
+if ($_SESSION['category'] == 'poussin' || $_SESSION['category'] == 'benjamin')
+  {
+    $db = new Database();
+    $db->query("SELECT * FROM bloc_participants WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
+    $db->bind(':cat1', 'poussin');
+    $db->bind(':cat2', 'benjamin');
+    $db->resultset();
+    $available = ($GLOBALS['available-places'] - $db->rowCount()) > 0;
+  }
+else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
+  {
+    $db = new Database();
+    $db->query("SELECT * FROM bloc_participants WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
+    $db->bind(':cat1', 'minime');
+    $db->bind(':cat2', 'cadet');
+    $db->resultset();
+    $available = ($GLOBALS['available-places'] - $db->rowCount()) > 0;
+  }
+?>
+
+<?php if (!$available) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+      Les inscriptions sont fermées pour la catégorie demandée.<br />
+      Vous pouvez néanmoins <a href="contact.php">nous contacter</a> pour une
+      inscription sur liste d'attente.
+    </p>
+  </section>
+<?php } ?>
+
+<?php if (empty($_SESSION['lastname'])) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+      Vous devez renseigner le nom du participant.
+    </p>
+  </section>
+<?php } ?>
+
+<?php if (empty($_SESSION['firstname'])) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+      Vous devez renseigner le prénom du participant.
+    </p>
+  </section>
+<?php } ?>
+
+<?php if (empty($_SESSION['experience'])) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+       Vous devez renseigner le niveau du participant.
+    </p>
+  </section>
+<?php } ?>
+
+<?php if (empty($_SESSION['mail'])) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+       Vous devez renseigner un email de contact valide.
+    </p>
+  </section>
+<?php } ?>
+
+<?php if (empty($_SESSION['tel']) || strlen($_SESSION['tel']) != 10) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+       Vous devez renseigner un numéro de téléphonne de contact valide.
+    </p>
+  </section>
+<?php } ?>
+
 <?php if ($_SESSION['category'] == 'invalid') { ?>
   <section class="feature fa-exclamation-triangle">
     <h3>Attention</h3>
@@ -37,10 +116,16 @@
 <?php } ?>
 
 <?php 
-  $ok = $_SESSION['category'] != 'invalid' && 
-     $_SESSION['conditions'] &&
-     (($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) == 6) || 
-      ($_SESSION['licenceType'] == 'FFCAM' && strlen($_SESSION['licenceNumber']) == 12));
+  $ok = $available &&
+        !empty($_SESSION['lastname']) &&
+        !empty($_SESSION['firstname']) &&
+        !empty($_SESSION['experience']) &&
+        !empty($_SESSION['mail']) &&
+        !empty($_SESSION['tel']) && strlen($_SESSION['tel']) == 10 &&
+	$_SESSION['category'] != 'invalid' &&
+	$_SESSION['conditions'] &&
+	(($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) == 6) ||
+         ($_SESSION['licenceType'] == 'FFCAM' && strlen($_SESSION['licenceNumber']) == 12));
 ?>
 
 <?php if ($ok) { ?>
@@ -52,7 +137,7 @@
       <p>
 	Une fois le paiement effectué, une confirmation vous sera
 	envoyée par email à l'adresse
-	<b><?php echo $_SESSION['mail']?></b>
+	<b><?php echo $_SESSION['mail']?></b>.
       </p>
 
       <p>
