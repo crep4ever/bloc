@@ -8,7 +8,6 @@ class Database
   private $dbname    = DB_NAME;
  
   private $dbh;
-  private $error;
 
   private $stmt;
 
@@ -25,7 +24,8 @@ class Database
       }
     catch (PDOException $e)
       {
-	$this->error = $e->getMessage();
+	$_SESSION['error'] = $e->getMessage();
+	trigger_error("Connexion impossible avec la base de données");
       }
   }
 

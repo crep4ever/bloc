@@ -1,4 +1,7 @@
-<?php include("header.php"); ?>
+<?php 
+session_start();
+include("header.php"); 
+?>
 
 <section id="main" class="wrapper style1">
 
@@ -9,11 +12,15 @@
     <section id="content">
 
       <p>
-	Une erreur est survenue pendant l'inscription du participant <b><?php echo $firstname ?> <?php echo $lastname ?></b>.
+	Le service de paiement en ligne <a href="www.paypal.fr">Paypal</a>
+	n'a pas pu donner suite à la transaction pour l'inscription du participant
+	<b>
+	  <?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?>
+	</b>.
       </p>
 
       <p>
-	Merci de <a href="mailto:romain.goffe@gmail.com">contacter l'administrateur</a>.
+	Merci de nous <a href="contact.php">contacter</a> pour plus de renseignements.
       </p>
 
       <p>

@@ -1,39 +1,24 @@
 <?php include("header.php"); ?>
 
 <section id="main" class="wrapper style1">
-  <header class="major">
-    <h2>Contactez-nous !</h2>
-    <p>Le meilleur moyen d'avoir une réponse à vos questions</p>
-  </header>
-  <div class="container">
-    
-    <!-- Content -->
-    <section id="content">
+ <header class="major">
+ <h2>Contactez-nous !</h2>
+ <p>Le meilleur moyen d'avoir une réponse à vos questions</p>
+ </header>
+ <div class="container">
 
-      <!-- Text -->
-      <section>
-	<h3>Qui sommes-nous ?</h3>
-	<p>L'open de bloc 2015 de Grenoble est organisé par le club CAF Fontaine à travers :</p>
-	<ul>
-	  <li>Fabien Viguier</li>
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	</ul>
+ <!-- Content -->
+ <section id="content">
 
-	<hr />
-	
-	<h3>Aide bénévole</h3>
-	<p>Nous recherchons des volontaires bénévoles pour nous
-	  aider dans le bon déroulement de l'événement. Merci de
-	  renseigner le doodle participatif si vous souhaitez vous
-	  impliquer.</p>
+ <!-- Text -->
+ <section class="feature fa-envelope-o">
+   <p>
+     Pour des informations complémentaires ou toute question sur le
+     déroulement et les inscriptions, merci de nous contacter à l'adresse suivante :<br />
+     <a href="mailto:opendebloc.grenoble@gmail.com">opendebloc.grenoble@gmail.com</a></p>
+ </section>
 
-	<hr />
-
-      </section>
-    </section>
-  </div>
+ </div>
 </section>
 
 <?php include("footer.php"); ?>
