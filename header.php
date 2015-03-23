@@ -16,7 +16,6 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
-    <script src="js/jquery-ui.js"></script>
     <noscript>
       <link rel="stylesheet" href="css/skel.css" />
       <link rel="stylesheet" href="css/style.css" />
@@ -24,29 +23,6 @@
     </noscript>
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-
-<!-- Date picker -->
-<script src="http://jqueryui.com/resources/demos/datepicker/datepicker-fr.js"></script>
-<script>
-$(function() {
-    $.datepicker.setDefaults($.extend(
-	{ dateFormat: 'dd/mm/yy',
-	  defaultDate: '01/01/1998',
-	  changeYear: true,
-	  changeMonth: true,
-	  yearRange: "1998:2005" },
-	$.datepicker.regional['fr']
-    ));
-
-    $( '#datepicker' ).datepicker({
-	// restore input field style when a date is selected
-	onSelect: function(dateText, inst) {
-		$( this ).css( 'background', 'rgba(144, 144, 144, 0.075)' );
-		$( this ).css( 'border-color', '#ccc' );
-	}
-    });
-});
-</script>
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
