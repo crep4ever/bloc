@@ -96,7 +96,12 @@ $(function() {
 		}));
 	    }
 
-	    response(results);
+	    var uniqueResults = [];
+	    $.each(results, function(i, el){
+		if($.inArray(el, uniqueResults) === -1) uniqueResults.push(el);
+	      });
+
+	    response(uniqueResults);
 	}
     });
 });
