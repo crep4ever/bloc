@@ -51,6 +51,7 @@
 
   </head>
   <body class="landing">
+   <?php include_once("analyticstracking.php") ?>
 
     <!-- Header -->
     <header id="header" class="alt skel-layers-fixed">
