@@ -50,7 +50,7 @@
       </p>
 
       <p>
-	<a href="images/src/program.svg">
+	<a class="fancybox-effects-c" href="images/src/program.svg">
 	  <img src="images/program.png" alt="Programme prévisionnel" style="border:none; width:90%;" />
 	</a>
       </p>
