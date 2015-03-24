@@ -28,7 +28,7 @@
 	circuits.
       </p>
 
-      <img class="image" src="images/mutant_ligne.png"
+      <img class="image" src="images/slogan.png"
 	   alt="Débutant ou mutant, tu rentreras content !"
 	   style="border:none; width:70%;" />
 

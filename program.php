@@ -3,11 +3,11 @@
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Programme et Règlement</h2>
-    <p>Pour que chaque participant puisse s'exprimer pleinement, dans des blocs qui lui sont abordables.</p>
+    <p>Nouvelle formule : des circuits pour que chaque participant puisse s'exprimer pleinement, dans des blocs qui lui sont abordables.</p>
+    <img src="images/slogan.png" style="border:none; width:50%;"/>
   </header>
   <div class="container">
 
-    
     <nav class="subnav">
       <ul>
 	<li><a href="#program">Programme</a></li>
