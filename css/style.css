@@ -226,6 +226,10 @@
 	    clear:both;
 	}
 
+	form p {
+	    font-size: 90%;
+	}
+
 	label {
 		color: #545454;
 		display: block;
