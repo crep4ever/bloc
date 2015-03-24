@@ -20,12 +20,17 @@
 
       <h2>Un évènement convivial et pour tous les niveaux</h2>
       <p>
-	Le club CAF Fontaine en montagne vous invite à la 3ème
-	édition de l'Open de bloc de Grenoble. <br />
-	Nouvelle formule : compétition d'escalade ludique pour les 10&nbsp;/&nbsp;17 ans où chacun pourra s'exprimer pleinement, grâce à un système de circuit.
-
+	Le club CAF Fontaine en montagne vous invite à la 3ème édition
+	de l'Open de bloc de Grenoble. <br />
+	Nouvelle formule&nbsp;:
+	compétition d'escalade ludique pour les 10&nbsp;/&nbsp;17 ans
+	où chacun pourra s'exprimer pleinement, grâce à un système de
+	circuits.
       </p>
-<img src="images/mutant_ligne.png" style="border:none; width:70%;"/>
+
+      <img class="image" src="images/mutant_ligne.png"
+	   alt="Débutant ou mutant, tu rentreras content !"
+	   style="border:none; width:70%;" />
 
     </header>
     <div class="slider">
@@ -33,13 +38,13 @@
       <div class="viewer">
 	<div class="reel">
 	  <div class="slide">
-	    <img src="images/slide01.jpg" alt="Open de Bloc 2013" />
+	    <img src="images/slide01.jpg" alt="Open de Bloc 2013 Photo 01" />
 	  </div>
 	  <div class="slide">
-	    <img src="images/slide02.jpg" alt="Open de Bloc 2013" />
+	    <img src="images/slide02.jpg" alt="Open de Bloc 2013 Photo 02" />
 	  </div>
 	  <div class="slide">
-	    <img src="images/slide03.jpg" alt="Open de Bloc 2013" />
+	    <img src="images/slide03.jpg" alt="Open de Bloc 2013 Photo 03" />
 	  </div>
 	</div>
       </div>
