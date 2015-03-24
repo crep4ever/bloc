@@ -207,10 +207,6 @@
 			font-size: 2.35em;
 		}
 
-		header.major p {
-			margin: -1em 0 3.5em 0;
-		}
-
 /* Form */
 
 	form {
@@ -224,6 +220,10 @@
 
 	form .clear {
 	    clear:both;
+	}
+
+	form p {
+	    font-size: 90%;
 	}
 
 	label {
@@ -512,6 +512,13 @@
 		.icon > .label {
 			display: none;
 		}
+
+	form .icon {
+		color: #204a87;
+		float: left;
+		font-size: 150%;
+	}
+
 
 /* Image */
 

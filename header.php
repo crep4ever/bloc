@@ -49,6 +49,34 @@
 <meta property="og:url" content="http://www.openblocgrenoble.fr" />
 <meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2015.jpg" />
 
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    // Set custom style, close if clicked, change title type and overlay color
+    $(".fancybox-effects-c").fancybox({
+	wrapCSS    : 'fancybox-custom',
+	closeClick : true,
+
+	openEffect : 'none',
+
+	helpers : {
+	    title : {
+		type : 'inside'
+	    },
+	    overlay : {
+		css : {
+		    'background' : 'rgba(238,238,238,0.85)'
+		}
+	    }
+	}
+    });
+});
+</script>
+
   </head>
   <body class="landing">
    <?php include_once("analyticstracking.php") ?>
