@@ -513,6 +513,13 @@
 			display: none;
 		}
 
+	form .icon {
+		color: #204a87;
+		float: left;
+		font-size: 150%;
+	}
+
+
 /* Image */
 
 	.image {
