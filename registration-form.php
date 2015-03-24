@@ -196,7 +196,7 @@ il n'y a rien à gagner à vous sur- ou sous- estimer ! </i> </label>
     <h2>Enregistrement</h2>
 
     <input type="checkbox" name="conditions" id="conditions" value="" required>
-    <label for="conditions">En cochant cette case, vous acceptez les <a href="program.php">conditions d'inscription et le règlement de la compétition</a>.</label>
+    <label for="conditions">En cochant cette case, vous acceptez les <a href="program.php" target="_blank">conditions d'inscription et le règlement de la compétition</a>.</label>
     <br>
 
     <button type="submit" class="button big" role="button"

@@ -18,9 +18,6 @@
 	      22 rue Victor Lastella<br />
 	      38000 Grenoble<br />
 	    </p>
-	    <p>
-	      <!-- <a href="https://goo.gl/maps/Adh4W">Plan d'accès</a> -->
-	    </p>
 	  </section>
 	</div>
 

@@ -26,7 +26,7 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
 
   $text = "Bonjour,\r\n\r\n"
     . "Vous avez réalisé l'inscription du participant $firstName $lastName en catégorie $category $sex pour l'Open de bloc de Grenoble 2015.\r\n\r\n"
-    . "Vous pouvez consuler le programme et le règlement de la compétition à l'adresse : http://openblocgrenoble.fr/program.php\r\n\r\n"
+    . "Vous pouvez consulter le programme et le règlement de la compétition à l'adresse : http://openblocgrenoble.fr/program.php\r\n\r\n"
     . "Nous vous donnons rendez-vous le $event à $hour à Espace Vertical 3 en possession :\r\n"
     . " * d'une pièce d'identité du participant\r\n"
     . " * de sa licence\r\n"
