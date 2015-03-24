@@ -73,7 +73,7 @@
 	</tr>
 	<tr style="text-align:center">
 	  <td>12h30 - 15h00</td>
-	  <td>Qualifications : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b></td>
+	  <td>Contest : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b></td>
 	  <td> - </td>
 	</tr>
 	<tr style="text-align:center">
