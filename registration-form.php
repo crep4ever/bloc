@@ -137,6 +137,10 @@ $(function() {
 
     <div>
       <label>Niveau maximum réalisé en voie</label>
+      <div class="icon fa-info-circle"></div>
+      <p>Cette indication servira à répartir les compétiteurs dans les
+      circuits. Soyez justes, il n'y a rien à gagner à vous sur- ou
+      sous- estimer !</p>
       <input type="radio" name="niveau" id="4c" value="4c" required>
       <label for="4c">4c</label>
 
