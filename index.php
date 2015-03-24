@@ -5,7 +5,7 @@
 <!-- Banner -->
 <section id="banner">
   <div class="inner">
-    <h2>3<sup>ème</sup> Open de bloc de Grenoble</h2>
+    <h2>Open de bloc de Grenoble</h2>
    <p><?php echo $GLOBALS['event-date-str'] ?></p>
     <ul class="actions">
       <li><a href="#cta" class="button big scrolly">Inscription</a></li>
@@ -22,8 +22,10 @@
       <p>
 	Le club CAF Fontaine en montagne vous invite à la 3ème
 	édition de l'Open de bloc de Grenoble. <br />
-	Une compétition d'escalade ludique pour les 10&nbsp;/&nbsp;17 ans où chacun pourra s'exprimer pleinement.
+	Nouvelle formule : compétition d'escalade ludique pour les 10&nbsp;/&nbsp;17 ans où chacun pourra s'exprimer pleinement, grâce à un système de circuit.
+
       </p>
+<img src="images/mutant_ligne.png" style="border:none; width:70%;"/>
 
     </header>
     <div class="slider">

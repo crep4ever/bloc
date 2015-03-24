@@ -12,16 +12,20 @@
   <div class="container">
 
     <p style="text-align: center; font-size: 120%;">
-      Merci de vous <a href="#">positionner ici</a> sur l'une des missions suivantes&nbsp;:
+      Merci de <a href="https://docs.google.com/forms/d/1DmxhyqLcMlYdcEAbtX2zekUH-KBXIdff4Vj161JdKEA/viewform" target="_blank">vous positionner à l'aide de ce formulaire</a> sur l'une des missions ci-dessous&nbsp;,
+	
+ selon vos préférences et/ou les besoins résumés en temps réel <a href="https://docs.google.com/spreadsheets/d/1LcM0C_mSpIOakY4dHhFNgaip1kade2DrMJBzkFlS3zA/edit#gid=127100981" target="_blank"> dans ce fichier. </a>
     </p>
+
+
 
 
     <div class="row uniform">
       <div class="4u 6u(2) 12u$(3)">
 	<section class="feature fa-tag">
 	  <h3>Installation de la salle</h3>
-	  <div class="icon fa-clock-o">&nbsp;la veille au soir&nbsp;</div>
-	  <div class="icon fa-users">&nbsp;10&nbsp;</div>
+	  <div class="icon fa-clock-o">&nbsp;la veille au soir ?&nbsp;</div>
+	  <div class="icon fa-users">&nbsp;15&nbsp;</div>
 	  <div class="icon fa-star">&nbsp;?&nbsp;</div>
 	  <p>Positionner les chaises, les barrières, les tapis, la sono ...</p>
 	</section>
@@ -58,7 +62,7 @@
 	  <h3>Saisie des résultats</h3>
 	  <div class="icon fa-clock-o">&nbsp;12h-13h30 puis 15h-16h30&nbsp;</div>
 	  <div class="icon fa-users">&nbsp;4 (+formation préalable)&nbsp;</div>
-	  <div class="icon fa-star">&nbsp;Romain/Viviane ?&nbsp;</div>
+	  <div class="icon fa-star">&nbsp;Romain/Viviane &nbsp;</div>
 	  <p>Saisir informatiquement les résultats, en binôme. Concentration et rigueur sont de mise !</p>
 	</section>
       </div>
@@ -75,7 +79,7 @@
 	<section class="feature fa-tag">
 	  <h3>Rangement de la salle</h3>
 	  <div class="icon fa-clock-o">&nbsp;À partir de 16h30&nbsp;</div>
-	  <div class="icon fa-users">&nbsp;10&nbsp;</div>
+	  <div class="icon fa-users">&nbsp;15&nbsp;</div>
 	  <div class="icon fa-star">&nbsp;?&nbsp;</div>
 	  <p>... et après on boit un coup ? ;-)</p>
 	</section>
