@@ -1630,6 +1630,11 @@ program .icon {
     padding-left: 0em;
 }
 
+#program .icon {
+    color: #204a87;
+    float: left;
+    font-size: 150%;
+}
 
 .ui-autocomplete {
     position: absolute;

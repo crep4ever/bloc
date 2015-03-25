@@ -58,7 +58,6 @@ $(document).ready(function() {
 
     // Set custom style, close if clicked, change title type and overlay color
     $(".fancybox-effects-c").fancybox({
-	wrapCSS    : 'fancybox-custom',
 	closeClick : true,
 
 	openEffect : 'none',
