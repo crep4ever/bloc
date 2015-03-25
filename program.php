@@ -3,7 +3,7 @@
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Programme et Règlement</h2>
-    <p>Nouvelle formule : des circuits pour que chaque participant puisse s'exprimer pleinement, dans des blocs qui lui sont abordables.</p>
+    <p><u>Nouvelle formule</u> : des circuits pour que chaque participant puisse s'exprimer pleinement, dans des blocs qui lui sont abordables.</p>
     <img src="images/slogan.png" style="border:none; width:50%;"/>
   </header>
   <div class="container">
@@ -30,6 +30,9 @@
       <p>Consultez la <a href="images/program-full.pdf">version
       imprimable du programme</a>.</p>
 
+
+<div>
+      <div class="icon fa-info-circle"></div>
       <p>
 	Les grimpeurs seront répartis dans un des deux circuits de
 	leur catégorie d'âge, en fonction du niveau annoncé à
@@ -37,7 +40,7 @@
 
 	Ils seront informés de cette attribution lors du retrait de
 	leur dossard.
-      </p>
+      </p> </div>
 
       <ul>
 	<li>Poussins et benjamins, filles et garçons : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
@@ -140,8 +143,7 @@
 	participant mineur :
       </p>
 	<ul>
-	  <li>se porte garante d'avoir en sa possession <b>l'autorisation parentale écrite</b> pour cette participation</li>
-	  <li>accorde l'utilisation par le CAF FONTAINE des <b>photos ou vidéos du participant</b> prises pendant l'évènement</li>
+	  <li>se porte garante d'avoir en sa possession <a href="images/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a> pour cette participation</li>
 	</ul>
 
 

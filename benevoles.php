@@ -69,8 +69,8 @@
       <div class="4u 6u(2) 12u$(3)">
 	<section class="feature fa-tag">
 	  <h3>Photos &amp; Vidéos</h3>
-	  <div class="icon fa-clock-o">&nbsp;12h-13h30 puis 15h-16h30&nbsp;</div>
-	  <div class="icon fa-users">&nbsp;4 (+formation préalable)&nbsp;</div>
+	  <div class="icon fa-clock-o">&nbsp;toute la journée est à couvrir&nbsp;</div>
+	  <div class="icon fa-users">&nbsp;mini 1 photo + 1 vidéo &nbsp;</div>
 	  <div class="icon fa-star">&nbsp;Grégoire ?&nbsp;</div>
 	  <p>Couvrir l'évènement. Les photographes "officiels" pourront avoir accès aux zones propices à la prise de vue.</p>
 	</section>

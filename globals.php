@@ -2,7 +2,7 @@
 setlocale(LC_TIME, "fr_FR");
 
 $GLOBALS['root-dir'] = 'http://www.openblocgrenoble.fr';
-$GLOBALS['registration-fee'] = 15.0;
+$GLOBALS['registration-fee'] = 12.0;
 $GLOBALS['available-places'] = 100;
 $GLOBALS['remaining-places-poussin-benjamin'] = 0;
 $GLOBALS['remaining-places-minime-cadet'] = 0;

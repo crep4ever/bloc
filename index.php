@@ -20,9 +20,9 @@
 
       <h2>Un évènement convivial et pour tous les niveaux</h2>
       <p>
-	Le club CAF Fontaine en montagne vous invite à la 3ème édition
+	Le club CAF Fontaine en montagne vous invite à la 3<sup>ème</sup> édition
 	de l'Open de bloc de Grenoble. <br />
-	Nouvelle formule&nbsp;:
+	<u>Nouvelle formule&nbsp;</u> : 
 	compétition d'escalade ludique pour les 10&nbsp;/&nbsp;17 ans
 	où chacun pourra s'exprimer pleinement, grâce à un système de
 	circuits.

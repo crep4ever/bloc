@@ -13,8 +13,7 @@
  <!-- Text -->
  <section class="feature fa-envelope-o">
    <p>
-     Pour des informations complémentaires ou toute question sur le
-     déroulement et les inscriptions, merci de nous contacter à l'adresse suivante :<br />
+     Pour toute question sur les règles du jeu, l'inscription ou des informations complémentaires, n'hésitez pas à nous contacter à l'adresse suivante :<br />
      <a href="mailto:opendebloc.grenoble@gmail.com">opendebloc.grenoble@gmail.com</a></p>
  </section>
 
