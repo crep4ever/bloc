@@ -28,9 +28,10 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
     . "Vous avez réalisé l'inscription du participant $firstName $lastName en catégorie $category $sex pour l'Open de bloc de Grenoble 2015.\r\n\r\n"
     . "Vous pouvez consulter le programme et le règlement de la compétition à l'adresse : http://openblocgrenoble.fr/program.php\r\n\r\n"
     . "Nous vous donnons rendez-vous le $event à $hour à Espace Vertical 3 en possession :\r\n"
-    . " * d'une pièce d'identité du participant\r\n"
     . " * de sa licence\r\n"
-    . " * de l'autorisation parentale écrite de participation à la compétition\r\n\r\n"
+    . " * d'une pièce d'identité du participant si sa licence ne comporte pas de photo\r\n"
+    . " * de l'autorisation parentale écrite pour cette participation, téléchargeable ici : \r\n
+http://openblocgrenoble.fr/images/autorisation_parentale.pdf\r\n\r\n"
     . "Merci et à bientôt !\r\n\r\n"
     . "Le CAF Fontaine";
 
@@ -77,9 +78,10 @@ dans la catégorie <b><?php echo $_SESSION['category'] . ' ' . $_SESSION['sex_st
 	Nous vous donnons rendez-vous le <b><?php echo $GLOBALS['event-date-str'] ?></b>
 	à <a href="access.php">Espace Vertical 3</a> en possession&nbsp;:
 	<ul>
-	  <li>d'une pièce d'identité du participant</li>
-	  <li>de sa licence</li>
-          <li>de l'autorisation parentale écrite de participation à la compétition</li>
+	  <li>de la licence</li>
+	  <li>d'une pièce d'identité du participant si sa licence ne comporte pas de photo</li>
+          <li>de l'autorisation parentale écrite pour cette participation, 
+<a href="images/autorisation_parentale.pdf" target="_blank">téléchargeable ici.</a></li>
 	</ul>
       </p>
 

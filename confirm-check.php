@@ -72,7 +72,7 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
   <section class="feature fa-exclamation-triangle">
     <h3>Attention</h3>
     <p>
-       Vous devez renseigner un numéro de téléphonne de contact valide.
+       Vous devez renseigner un numéro de téléphone de contact valide.
     </p>
   </section>
 <?php } ?>
