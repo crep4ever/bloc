@@ -31,16 +31,14 @@
       imprimable du programme</a>.</p>
 
 
-<div>
       <div class="icon fa-info-circle"></div>
       <p>
 	Les grimpeurs seront répartis dans un des deux circuits de
 	leur catégorie d'âge, en fonction du niveau annoncé à
 	l'inscription.<br />
-
 	Ils seront informés de cette attribution lors du retrait de
 	leur dossard.
-      </p> </div>
+      </p>
 
       <ul>
 	<li>Poussins et benjamins, filles et garçons : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
