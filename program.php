@@ -31,7 +31,6 @@
       imprimable du programme</a>.</p>
 
 
-<div>
       <div class="icon fa-info-circle"></div>
       <p>
 	Les grimpeurs seront répartis dans un des deux circuits de
@@ -40,7 +39,7 @@
 
 	Ils seront informés de cette attribution lors du retrait de
 	leur dossard.
-      </p> </div>
+      </p> 
 
       <ul>
 	<li>Poussins et benjamins, filles et garçons : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
@@ -139,12 +138,9 @@
 
       <h4 id="parental">Autorisation parentale</h4>
       <p>
-	La personne effectuant l'enregistrement et le paiement d'un
-	participant mineur :
+	La personne effectuant l'enregistrement et le paiement pour un
+	participant mineur se porte garante d'avoir en sa possession <a href="images/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a> relative à cette participation.
       </p>
-	<ul>
-	  <li>se porte garante d'avoir en sa possession <a href="images/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a> pour cette participation</li>
-	</ul>
 
 
       </section>
