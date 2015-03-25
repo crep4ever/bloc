@@ -1599,6 +1599,16 @@
 
 /* User-defined */
 
+.message p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 0;
+}
+
+.message icon {
+    display: inline-block;
+    margin-top: 0;
+}
 
 b.yellow {
     color:#edd400;
