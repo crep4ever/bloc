@@ -34,8 +34,8 @@
       <div class="icon fa-info-circle"></div>
       <p>
 	Les grimpeurs seront répartis dans un des deux circuits de
-	leur catégorie d'âge, en fonction du niveau annoncé à
-	l'inscription.<br />
+	leur catégorie d'âge, <u>en fonction du niveau annoncé à
+	l'inscription.</u><br />
 	Ils seront informés de cette attribution lors du retrait de
 	leur dossard.
       </p> 
