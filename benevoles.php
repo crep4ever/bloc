@@ -54,7 +54,7 @@
 	  <div class="icon fa-clock-o">&nbsp;9h30-12 et/ou 12h30-15h&nbsp;</div>
 	  <div class="icon fa-users">&nbsp;30 (+formation préalable)&nbsp;</div>
 	  <div class="icon fa-star">&nbsp;Fabien&nbsp;</div>
-	  <p>Organiser le passages des jeunes dans le bloc dont vous êtes responsable, observer et inscrire leur prestation sur les feuilles de route.</p>
+	  <p>Organiser le passage des jeunes dans le bloc dont vous êtes responsable, observer et inscrire leur prestation sur les feuilles de route.</p>
 	</section>
       </div>
       <div class="4u 6u(2) 12u$(3)">
