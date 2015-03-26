@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="program.svg">
+   sodipodi:docname="program-full.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,7 +23,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="684.79659"
+     inkscape:cx="419.9709"
      inkscape:cy="346.00485"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -32,11 +32,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1625"
-     inkscape:window-height="1026"
-     inkscape:window-x="55"
+     inkscape:window-width="812"
+     inkscape:window-height="998"
+     inkscape:window-x="867"
      inkscape:window-y="24"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
        id="grid3102"
@@ -801,11 +801,11 @@
              sodipodi:role="line"
              id="tspan15066"
              x="549.9082"
-             y="772.93488">Podiums, Remise des prix,</tspan><tspan
+             y="772.93488">Podiums, remise des prix,</tspan><tspan
              sodipodi:role="line"
              x="549.9082"
              y="797.93488"
-             id="tspan15068">et pour tous : Tirage au sort de la tombola </tspan></text>
+             id="tspan15068">et pour tous : tirage au sort de la tombola </tspan></text>
       </g>
       <g
          transform="translate(0,73.229691)"
@@ -871,7 +871,7 @@
              sodipodi:role="line"
              id="tspan15076"
              x="299.45239"
-             y="621.70477">Qualifications : circuit jaune ou bleu</tspan></text>
+             y="621.70477">Contest : circuit jaune ou bleu</tspan></text>
       </g>
       <g
          transform="translate(0,31.966248)"
