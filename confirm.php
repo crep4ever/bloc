@@ -1,7 +1,7 @@
 <?php
 
-$_SESSION['lastname']  = htmlspecialchars($_POST['nom']);
-$_SESSION['firstname'] = htmlspecialchars($_POST['prenom']);
+$_SESSION['lastname']  = trim(htmlspecialchars($_POST['nom']));
+$_SESSION['firstname'] = trim(htmlspecialchars($_POST['prenom']));
 $_SESSION['sex']       = htmlspecialchars($_POST['sex']);
 $_SESSION['birthday']  = htmlspecialchars($_POST['naissance']);
 
@@ -39,12 +39,12 @@ else
   }
 
 $_SESSION['licenceType']   = htmlspecialchars($_POST['licence-type']);
-$_SESSION['licenceNumber'] = htmlspecialchars($_POST['licence-num']);
-$_SESSION['club']          = htmlspecialchars($_POST['club']);
+$_SESSION['licenceNumber'] = trim(htmlspecialchars($_POST['licence-num']));
+$_SESSION['club']          = trim(htmlspecialchars($_POST['club']));
 $_SESSION['experience']    = htmlspecialchars($_POST['niveau']);
-$_SESSION['comment']       = htmlspecialchars($_POST['message']);
-$_SESSION['mail']          = htmlspecialchars($_POST['email']);
-$_SESSION['tel']           = htmlspecialchars($_POST['telephone']);
+$_SESSION['comment']       = trim(htmlspecialchars($_POST['message']));
+$_SESSION['mail']          = trim(htmlspecialchars($_POST['email']));
+$_SESSION['tel']           = trim(htmlspecialchars($_POST['telephone']));
 
 $_SESSION['conditions'] = isset($_POST['conditions']);
 
