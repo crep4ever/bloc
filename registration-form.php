@@ -1,6 +1,16 @@
 <script src="js/jquery-ui.js"></script>
 
 <form action="confirm.php" method="post">
+
+<div class="message">
+      <div class="icon fa-question-circle"></div>    
+ 	<p>
+	<a href="program.php" target="_blank">Avez-vous bien lu les règles du jeu 
+		                              avant de procéder à l'inscription ?
+	</a>
+      </p>
+</div>
+
   <fieldset>
     <h2>Participant</h2>
 
@@ -73,7 +83,7 @@ $(function() {
 
     <div class="left">
       <label for="association">Club</label>
-      <input type="text" name="club" id="association">
+      <input type="text" name="club" id="association" placeholder="Sélectionnez la suggestion adéquate">
     </div>
 
     <script>
