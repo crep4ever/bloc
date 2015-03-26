@@ -83,7 +83,7 @@ $(function() {
 
     <div class="left">
       <label for="association">Club</label>
-      <input type="text" name="club" id="association" placeholder="Sélectionnez la suggestion adéquate">
+      <input type="text" name="club" id="association" placeholder="Ecrivez puis sélectionnez la suggestion" required>
     </div>
 
     <script>
