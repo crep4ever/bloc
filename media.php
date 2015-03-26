@@ -10,7 +10,7 @@
       <ul>
 	<li><a href="#quotes">Témoignages</a></li>
 	<li><a href="#photos">Photos</a></li>
-	<li><a href="#video">Vidéos</a></li>
+	<li><a href="#videos">Vidéos</a></li>
       </ul>
     </nav>
 
@@ -172,12 +172,18 @@
       </div>
 
       <!--    **************** VIDEOS ******************    -->
-      <div id="video">
+      <div id="videos">
 	<hr />
 	<h3>Sélection vidéos</h3>
 
-	<div style="text-align: center;">
-	  <iframe frameborder="0" width="800" height="450" src="//www.dailymotion.com/embed/video/x10tmc5" allowfullscreen></iframe><br /><a href="http://www.dailymotion.com/video/x10tmc5_teaser-open-de-bloc-jeune-de-grenoble-2013-hd_sport" target="_blank">Teaser Open de Bloc Jeune de Grenoble 2013 HD</a> <i>by <a href="http://www.dailymotion.com/CMEV" target="_blank">CMEV</a></i>
+	<div style="padding-left: 2em; text-align: center; width: 70%">
+	  <div class="aspect-ratio">
+	    <iframe frameborder="0" width="800" height="450" src="//www.dailymotion.com/embed/video/x10tmc5" allowfullscreen></iframe>
+	  </div>
+	  <a href="http://www.dailymotion.com/video/x10tmc5_teaser-open-de-bloc-jeune-de-grenoble-2013-hd_sport" target="_blank">
+	    Teaser Open de Bloc Jeune de Grenoble 2013 HD
+	  </a>
+	  <i>by <a href="http://www.dailymotion.com/CMEV" target="_blank">CMEV</a></i>
 	</div>
 
       </div>
