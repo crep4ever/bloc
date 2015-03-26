@@ -14,5 +14,6 @@
       </span>
     </footer>
 
+   <?php include_once("event-markup.php") ?>
   </body>
 </html>
