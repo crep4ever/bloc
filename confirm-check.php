@@ -50,6 +50,15 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
   </section>
 <?php } ?>
 
+<?php if (empty($_SESSION['club'])) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+       Vous devez renseigner le club d'appartenance du participant.
+    </p>
+  </section>
+<?php } ?>
+
 <?php if (empty($_SESSION['experience'])) { ?>
   <section class="feature fa-exclamation-triangle">
     <h3>Attention</h3>
@@ -119,6 +128,7 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
   $ok = $available &&
         !empty($_SESSION['lastname']) &&
         !empty($_SESSION['firstname']) &&
+        !empty($_SESSION['club']) &&
         !empty($_SESSION['experience']) &&
         !empty($_SESSION['mail']) &&
         !empty($_SESSION['tel']) && strlen($_SESSION['tel']) == 10 &&
