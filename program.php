@@ -2,7 +2,7 @@
 
 <section id="main" class="wrapper style1">
   <header class="major">
-    <h2>Programme et Règlement</h2>
+    <h2>Déroulement</h2>
     <p><u>Nouvelle formule</u> : des circuits pour que chaque participant puisse s'exprimer pleinement, dans des blocs qui lui sont abordables.</p>
     <img src="images/slogan.png" style="border:none; width:50%;"/>
   </header>

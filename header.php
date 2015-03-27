@@ -93,7 +93,7 @@ $(document).ready(function() {
       </h1>
       <nav id="nav">
 	<ul>
-	  <li><a href="index.php">Présentation</a></li>
+	  <li><a href="index.php">Accueil</a></li>
 	  <li><a href="program.php">Déroulement</a></li>
 	  <li><a href="registration.php">Inscription</a></li>
 	  <li><a href="benevoles.php">Bénévoles</a></li>

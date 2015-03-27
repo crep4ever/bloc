@@ -14,7 +14,7 @@ set_error_handler("handleError");
 
 <section id="main" class="wrapper style1">
   <header class="major">
-    <h2>Enregistrement</h2>
+    <h2>Inscription</h2>
   </header>
 
   <div class="container">
