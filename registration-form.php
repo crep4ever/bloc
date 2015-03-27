@@ -6,7 +6,7 @@
       <div class="icon fa-question-circle"></div>    
  	<p>
 	<a href="program.php" target="_blank">Avez-vous bien lu les règles du jeu 
-		                              avant de procéder à l'inscription ?
+		                              avant de procéder à l'inscription&nbsp;?
 	</a>
       </p>
 </div>
