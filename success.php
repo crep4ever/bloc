@@ -16,13 +16,11 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
       $hour = strftime('%Hh%M', $GLOBALS['minime-cadet-arrival']);
     }
 
-  $subject = "[Open de Bloc] Confirmation d'inscription";
-
   $site = "www.openblocgrenoble.fr";
   $from = "openblocgrenoble@gmail.com";
   $nom = "Open de Bloc";
   $to = $mail;
-  $sujet = "[Open de Bloc] Confirmation d'inscription";
+  $subject = "[Open de Bloc] Confirmation d'inscription";
 
   $text = "Bonjour,\r\n\r\n"
     . "Vous avez réalisé l'inscription du participant $firstName $lastName en catégorie $category $sex pour l'Open de bloc de Grenoble 2015.\r\n\r\n"
