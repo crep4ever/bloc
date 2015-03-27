@@ -1,4 +1,5 @@
 <?php include("header.php"); ?>
+<?php require 'globals.php' ?>
 
 <section id="main" class="wrapper style1">
   <header class="major">
@@ -138,7 +139,7 @@
 
       <h4 id="registration">Inscriptions</h4>
       <p>
-	Les inscriptions se déroulent intégralement <a href="http://openblocgrenoble.fr/registration.php" target="_blank"> via Internet </a> : saisie des informations et règlement de 12 euros.
+	Les inscriptions se déroulent intégralement <a href="http://openblocgrenoble.fr/registration.php" target="_blank"> via Internet </a> : saisie des informations et règlement de <?php echo $GLOBALS['registration-fee'] ?>€.
 Vous recevrez un email de confirmation. 
 </br> Merci de nous <a href="http://openblocgrenoble.fr/contact.php" target="_blank">contacter</a> pour tout problème.
       </p>
