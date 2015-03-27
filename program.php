@@ -99,7 +99,7 @@
       <section class="feature fa-file">
 	<h3>Règlement de la compétition</h3>
 	<p>Consultez la <a href="#" target="_blank">version officielle du règlement</a>.</p>
-
+	<p>Cette compétition s'adresse aux licenciés FFCAM, FFME ou UNSS.</p>
       <h4 id="contest">Contest</h4>
 
       <ul>
