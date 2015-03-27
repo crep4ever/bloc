@@ -46,7 +46,7 @@ set_error_handler("handleError");
 
 	    <p>Les inscriptions sont limitées à <?php echo
 	    $GLOBALS['available-places']; ?> participants par
-	    demi-journées.</p>
+	    demi-journée.</p>
 	    <footer>
 	      <table class="actions">
 		<tr>

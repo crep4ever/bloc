@@ -28,10 +28,10 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
     . "Vous avez réalisé l'inscription du participant $firstName $lastName en catégorie $category $sex pour l'Open de bloc de Grenoble 2015.\r\n\r\n"
     . "Vous pouvez consulter le programme et le règlement de la compétition à l'adresse : http://openblocgrenoble.fr/program.php\r\n\r\n"
     . "Nous vous donnons rendez-vous le $event à $hour à Espace Vertical 3 en possession :\r\n"
-    . " * de sa licence\r\n"
-    . " * d'une pièce d'identité du participant si sa licence ne comporte pas de photo\r\n"
-    . " * de l'autorisation parentale écrite pour cette participation, téléchargeable ici : \r\n
-http://openblocgrenoble.fr/images/autorisation_parentale.pdf\r\n\r\n"
+    . " * de votre licence\r\n"
+    . " * d'une pièce d'identité si votre licence ne comporte pas de photo\r\n"
+    . " * de l'autorisation parentale écrite pour cette participation, téléchargeable ici : \r\n"
+    . "http://openblocgrenoble.fr/images/autorisation_parentale.pdf\r\n\r\n"
     . "Merci et à bientôt !\r\n\r\n"
     . "Le CAF Fontaine";
 

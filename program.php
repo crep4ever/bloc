@@ -27,7 +27,7 @@
       <section class="feature fa-clock-o">
       <h3>Programme prévisionnel</h3>
 
-      <p>Consultez la <a href="images/program-full.pdf">version
+      <p>Consultez la <a href="images/program-full.pdf" target="_blank">version
       imprimable du programme</a>.</p>
 
 
@@ -98,7 +98,7 @@
       <hr />
       <section class="feature fa-file">
 	<h3>Règlement de la compétition</h3>
-	<p>Consultez la <a href="#">version officielle du règlement</a>.</p>
+	<p>Consultez la <a href="#" target="_blank">version officielle du règlement</a>.</p>
 
       <h4 id="contest">Contest</h4>
 
@@ -151,6 +151,7 @@
       <hr />
       <section class="feature fa-trophy">
 	<h3>Résultats</h3>
+        <p>Mise en ligne des résultats dès que possible à l'issue de la compétition.</p>
 	<ul>
 	  <li>Qualifications par circuit</li>
 	  <li>Qualifications par catégorie</li>
