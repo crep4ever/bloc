@@ -124,6 +124,16 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
   </section>
 <?php } ?>
 
+<?php if ($_SESSION['licenceType'] == 'UNSS' && strlen($_SESSION['licenceNumber']) != 9) { ?>
+  <section class="feature fa-exclamation-triangle">
+    <h3>Attention</h3>
+    <p>
+      Votre numéro de licence UNSS <b><?php echo $_SESSION['licenceNumber'] ?></b>
+      n'a pas le bon format&nbsp: un numéro à 9 chiffres est attendu.
+    </p>
+  </section>
+<?php } ?>
+
 <?php 
   $ok = $available &&
         !empty($_SESSION['lastname']) &&
@@ -135,6 +145,7 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
 	$_SESSION['category'] != 'invalid' &&
 	$_SESSION['conditions'] &&
 	(($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) == 6) ||
+         ($_SESSION['licenceType'] == 'UNSS' && strlen($_SESSION['licenceNumber']) == 9) ||
          ($_SESSION['licenceType'] == 'FFCAM' && strlen($_SESSION['licenceNumber']) == 12));
 ?>
 

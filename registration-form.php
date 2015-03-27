@@ -72,11 +72,14 @@ $(function() {
 
       <input type="radio" name="licence-type" id="ffcam" value="FFCAM">
       <label for="ffcam">FFCAM</label>
+
+      <input type="radio" name="licence-type" id="unss" value="UNSS">
+      <label for="unss">UNSS</label>
     </div>
 
     <div class="left">
       <label for="licence-num">Numéro</label>
-      <input type="text" name="licence-num" id="licence-num" pattern="\d{6}|\d{12}" required>
+      <input type="text" name="licence-num" id="licence-num" pattern="\d{6}|\d{9}|\d{12}" required>
     </div>
 
     <div class="clear">&nbsp;</div>
@@ -104,7 +107,7 @@ $(function() {
 			  "ESCALADE VOIRON ALPINISME", "LIBRE ECART MARIGNIER", "ROC EVASION", "ESCALADE CLUB LA TRONCHE", "MOUSTE'CLIP", "CANTON GRIMP'", "BRON VERTICAL",
 			  "AS VILLEFONTAINE", "FRATERN BOURGOIN", "CAF LA ROCHETTE", "ART BLOC", "GRIMP ALTITUDE", 
 			  "CAF EMBRUN", "ESCAPILADE", "CAF FAVERGES", "CARROZ VERTICAL", "CANYON ESCALADE TOURAINE",
-			  "GROUPE MONTAGNARD PETITES ROCHES", "CAF SALEVE ANNEMASSE", "CLUB EYBENS", "PIED MAIN ESCALADE"];
+			  "GROUPE MONTAGNARD PETITES ROCHES", "CAF SALEVE ANNEMASSE", "CLUB EYBENS", "PIED MAIN ESCALADE", "UNSS"];
 
     var accentMap = {
 	"è": "e",
