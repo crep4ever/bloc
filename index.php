@@ -92,7 +92,7 @@
       <div class="4u$ 6u$(2) 12u$(3)">
 	<section class="feature fa-envelope-o">
 	  <h3>Contact</h3>
-	  <p><a href="mailto:openblocgrenoble@gmail.com">opendebloc.grenoble@gmail.com</a></p>
+	  <p><a href="mailto:openblocgrenoble@gmail.com">openblocgrenoble@gmail.com</a></p>
 	</section>
       </div>
     </div>
