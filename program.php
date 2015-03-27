@@ -158,10 +158,11 @@ Vous reçevrez un email de confirmation.
       <hr />
       <section class="feature fa-trophy">
 	<h3>Résultats</h3>
+Seront disponibles :
 	<ul>
-	  <li>Qualifications par circuit</li>
-	  <li>Qualifications par catégorie</li>
-	  <li>Finales</li>
+	  <li>Contest par circuit</li>
+	  <li>Contest par catégorie</li>
+	  <li>Finales des minimes et cadets</li>
 	</ul>
 
       </section>
