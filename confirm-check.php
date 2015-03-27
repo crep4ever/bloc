@@ -152,7 +152,8 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
 <?php if ($ok) { ?>
       <p>
 	Vous vous apprêtez à finaliser l'inscription du participant 
-	<b><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?></b>.
+	<b><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?></b>
+	en catégorie <b><?php echo ucwords($_SESSION['category'] . ' ' . $_SESSION['sex_str']) ?></b>.
       </p>
 
       <p>
@@ -168,63 +169,40 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
 	pour les modifier.
       </p>
 
+      <p style="text-align: center">
+	<a href="<?= $_SESSION['paypal']; ?>" class="button big">Paiement</a>
+      </p>
+
+<h3>Informations saisies</h3>
       <table>
 
 	<tr>
-	  <td>Nom</td>
-	  <td><?php echo $_SESSION['lastname'] ?></td>
-	</tr>
-
-	<tr>
-	  <td>Prénom</td>
-	  <td><?php echo $_SESSION['firstname'] ?></td>
-	</tr>
-
-	<tr>
-	  <td>Date de naissance</td>
-	  <td><?php echo $_SESSION['birthday'] ?></td>
+	  <td>Participant</td>
+	  <td><?php echo $_SESSION['lastname'] . ' ' . $_SESSION['firstname'] ?></td>
 	</tr>
 
 	<tr>
 	  <td>Catégorie</td>
-	  <td><?php echo $_SESSION['category'] . ' ' . $_SESSION['sex_str'] ?></td>
-	</tr>
-
-	<tr>
-	  <td>Licence</td>
-	  <td><?php echo $_SESSION['licenceType'] . ' ' . $_SESSION['licenceNumber'] ?></td>
+	  <td><?php echo ucwords($_SESSION['category'] . ' ' . $_SESSION['sex_str']) . ' (' . $_SESSION['birthday'] . ')' ?></td>
 	</tr>
 
 	<tr>
 	  <td>Club</td>
-	  <td><?php echo $_SESSION['club'] ?></td>
+	  <td><?php echo $_SESSION['club'] . ' ; Licence ' . $_SESSION['licenceType'] . ' ' . $_SESSION['licenceNumber'] ?></td>
 	</tr>
 
 	<tr>
 	  <td>Niveau</td>
-	  <td><?php echo $_SESSION['experience'] ?></td>
+	  <td><?php echo $_SESSION['experience'] . ' ' . $_SESSION['comment'] ?></td>
 	</tr>
 
 	<tr>
-	  <td>Commentaire</td>
-	  <td><?php echo $_SESSION['comment'] ?></td>
-	</tr>
-
-	<tr>
-	  <td>Mail</td>
-	  <td><?php echo $_SESSION['mail'] ?></td>
-	</tr>
-
-	<tr>
-	  <td>Téléphone</td>
-	  <td><?php echo $_SESSION['tel'] ?></td>
+	  <td>Contact</td>
+	  <td><?php echo $_SESSION['tel'] . ' ; ' . $_SESSION['mail'] ?></td>
 	</tr>
 
       </table>
 
-      <p>
-	<a href="<?= $_SESSION['paypal']; ?>" class="button big">Paiement</a>
-      </p
 <?php } ?>
 
 <?php if (!$ok) { ?>
