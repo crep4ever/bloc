@@ -136,6 +136,13 @@
 	<li>Notez qu'un gagnant qui ne se présenterait pas à l'appel de son nom verra son lot remis en jeu.</li>
       </ul>
 
+      <h4 id="registration">Inscriptions</h4>
+      <p>
+	Les inscriptions se déroulent intégralement <a href="http://openblocgrenoble.fr/registration.php" target="_blank"> via Internet </a> : saisie des informations et règlement de 12 euros.
+Vous reçevrez un email de confirmation. 
+</br> Nous <a href="http://openblocgrenoble.fr/contact.php" target="_blank">contacter</a> pour tout problème.
+      </p>
+
       <h4 id="parental">Autorisation parentale</h4>
       <p>
 	La personne effectuant l'enregistrement et le paiement pour un
