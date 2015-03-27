@@ -24,9 +24,9 @@
       <div class="4u 6u(2) 12u$(3)">
 	<section class="feature fa-tag">
 	  <h3>Installation de la salle</h3>
-	  <div class="icon fa-clock-o">&nbsp;la veille au soir ?&nbsp;</div>
+	  <div class="icon fa-clock-o">&nbsp;la veille au soir&nbsp;</div>
 	  <div class="icon fa-users">&nbsp;15&nbsp;</div>
-	  <div class="icon fa-star">&nbsp;?&nbsp;</div>
+	  <div class="icon fa-star">&nbsp;&nbsp;</div>
 	  <p>Positionner les chaises, les barrières, les tapis, la sono ...</p>
 	</section>
       </div>
@@ -44,7 +44,7 @@
 	  <h3>Pointage des compétiteurs</h3>
 	  <div class="icon fa-clock-o">&nbsp;8h30-9h15 puis 11h-12h&nbsp;</div>
 	  <div class="icon fa-users">&nbsp;5 ; compatible buvette&nbsp;</div>
-	  <div class="icon fa-star">&nbsp;?&nbsp;</div>
+	  <div class="icon fa-star">&nbsp;&nbsp;</div>
 	  <p>Vérifier les licences, remettre les dossards ...</p>
 	</section>
       </div>
@@ -71,7 +71,7 @@
 	  <h3>Photos &amp; Vidéos</h3>
 	  <div class="icon fa-clock-o">&nbsp;toute la journée est à couvrir&nbsp;</div>
 	  <div class="icon fa-users">&nbsp;mini 1 photo + 1 vidéo &nbsp;</div>
-	  <div class="icon fa-star">&nbsp;Grégoire ?&nbsp;</div>
+	  <div class="icon fa-star">&nbsp;Grégoire&nbsp;</div>
 	  <p>Couvrir l'évènement. Les photographes "officiels" pourront avoir accès aux zones propices à la prise de vue.</p>
 	</section>
       </div>
@@ -80,7 +80,7 @@
 	  <h3>Rangement de la salle</h3>
 	  <div class="icon fa-clock-o">&nbsp;À partir de 16h30&nbsp;</div>
 	  <div class="icon fa-users">&nbsp;15&nbsp;</div>
-	  <div class="icon fa-star">&nbsp;?&nbsp;</div>
+	  <div class="icon fa-star">&nbsp;&nbsp;</div>
 	  <p>... et après on boit un coup ? ;-)</p>
 	</section>
       </div>

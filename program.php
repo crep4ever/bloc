@@ -2,7 +2,7 @@
 
 <section id="main" class="wrapper style1">
   <header class="major">
-    <h2>Programme et Règlement</h2>
+    <h2>Déroulement</h2>
     <p><u>Nouvelle formule</u> : des circuits pour que chaque participant puisse s'exprimer pleinement, dans des blocs qui lui sont abordables.</p>
     <img src="images/slogan.png" style="border:none; width:50%;"/>
   </header>
@@ -27,7 +27,7 @@
       <section class="feature fa-clock-o">
       <h3>Programme prévisionnel</h3>
 
-      <p>Consultez la <a href="images/program-full.pdf">version
+      <p>Consultez la <a href="images/program-full.pdf" target="_blank">version
       imprimable du programme</a>.</p>
 
 
@@ -98,7 +98,7 @@
       <hr />
       <section class="feature fa-file">
 	<h3>Règlement de la compétition</h3>
-	<p>Consultez la <a href="#">version officielle du règlement</a>.</p>
+	<p>Consultez la <a href="#" target="_blank">version officielle du règlement</a>.</p>
 
       <h4 id="contest">Contest</h4>
 
@@ -158,7 +158,10 @@ Vous recevrez un email de confirmation.
       <hr />
       <section class="feature fa-trophy">
 	<h3>Résultats</h3>
-Seront disponibles :
+        <p>
+	  Mise en ligne des résultats dès que possible à l'issue de la compétition.<br />
+	  Seront disponibles&nbsp;:
+	</p>
 	<ul>
 	  <li>Contest par circuit</li>
 	  <li>Contest par catégorie</li>

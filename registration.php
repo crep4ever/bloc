@@ -14,7 +14,7 @@ set_error_handler("handleError");
 
 <section id="main" class="wrapper style1">
   <header class="major">
-    <h2>Enregistrement</h2>
+    <h2>Inscription</h2>
   </header>
 
   <div class="container">
@@ -39,14 +39,14 @@ set_error_handler("handleError");
 	    <li>Ouverture : <?php echo $GLOBALS['registration-open-date-str'] ?></li>
 	    <li>Fermeture : <?php echo $GLOBALS['registration-close-date-str'] ?></li>
 	    </ul>
-
+            <p>Voir la <a href="candidates.php" target="_blank">liste des participants inscrits</a>.</p>
 	    <hr />
 
 	    <h3>Places restantes disponibles</h3>
 
 	    <p>Les inscriptions sont limitées à <?php echo
 	    $GLOBALS['available-places']; ?> participants par
-	    demi-journées.</p>
+	    demi-journée.</p>
 	    <footer>
 	      <table class="actions">
 		<tr>

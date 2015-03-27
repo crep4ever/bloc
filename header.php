@@ -85,7 +85,7 @@ $(document).ready(function() {
       <h1>
 	<a href="index.php">Open de bloc Grenoble 2015</a>
 	<span>&nbsp;&nbsp;par le&nbsp;&nbsp;</span>
-	<a href="http://fontaine-en-montagne.ffcam.fr">CAF Fontaine
+	<a href="http://fontaine-en-montagne.ffcam.fr" target="_blank">CAF Fontaine
 	<span>
 	  <img src="images/logos/caf-fontaine.png" alt="CAF Fontaine" height="40" />
 	</span>
@@ -93,7 +93,7 @@ $(document).ready(function() {
       </h1>
       <nav id="nav">
 	<ul>
-	  <li><a href="index.php">Présentation</a></li>
+	  <li><a href="index.php">Accueil</a></li>
 	  <li><a href="program.php">Déroulement</a></li>
 	  <li><a href="registration.php">Inscription</a></li>
 	  <li><a href="benevoles.php">Bénévoles</a></li>

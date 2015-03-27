@@ -1,7 +1,7 @@
 <?php
 
-$_SESSION['lastname']  = trim(htmlspecialchars($_POST['nom']));
-$_SESSION['firstname'] = trim(htmlspecialchars($_POST['prenom']));
+$_SESSION['lastname']  = strtoupper(trim(htmlspecialchars($_POST['nom'])));
+$_SESSION['firstname'] = ucwords(trim(htmlspecialchars($_POST['prenom'])));
 $_SESSION['sex']       = htmlspecialchars($_POST['sex']);
 $_SESSION['birthday']  = htmlspecialchars($_POST['naissance']);
 
@@ -29,18 +29,10 @@ else if ($year == '2004' || $year == '2005')
     $_SESSION['category'] = 'poussin';
   }
 
-if ($_SESSION['sex'] == 'M')
-  {
-    $_SESSION['sex_str'] = 'garçon';
-  }
-else
-  {
-    $_SESSION['sex_str'] = 'fille';
-  }
-
+$_SESSION['sex_str']       = ($_SESSION['sex'] == 'M') ? 'garçon' : 'fille';
 $_SESSION['licenceType']   = htmlspecialchars($_POST['licence-type']);
 $_SESSION['licenceNumber'] = trim(htmlspecialchars($_POST['licence-num']));
-$_SESSION['club']          = trim(htmlspecialchars($_POST['club']));
+$_SESSION['club']          = strtoupper(trim(htmlspecialchars($_POST['club'])));
 $_SESSION['experience']    = htmlspecialchars($_POST['niveau']);
 $_SESSION['comment']       = trim(htmlspecialchars($_POST['message']));
 $_SESSION['mail']          = trim(htmlspecialchars($_POST['email']));
