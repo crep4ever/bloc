@@ -59,7 +59,7 @@
     <div class="row uniform">
       <div class="4u 6u(2) 12u$(3)">
 	<section class="feature fa-map-marker">
-	  <h3>Adresse</h3>
+	  <h3>Lieu</h3>
 	  <p><a href="access.php">Espace Vertical 3 à Grenoble.</a></p>
 	</section>
       </div>
