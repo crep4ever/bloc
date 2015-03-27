@@ -139,8 +139,8 @@
       <h4 id="registration">Inscriptions</h4>
       <p>
 	Les inscriptions se déroulent intégralement <a href="http://openblocgrenoble.fr/registration.php" target="_blank"> via Internet </a> : saisie des informations et règlement de 12 euros.
-Vous reçevrez un email de confirmation. 
-</br> Nous <a href="http://openblocgrenoble.fr/contact.php" target="_blank">contacter</a> pour tout problème.
+Vous recevrez un email de confirmation. 
+</br> Merci de nous <a href="http://openblocgrenoble.fr/contact.php" target="_blank">contacter</a> pour tout problème.
       </p>
 
       <h4 id="parental">Autorisation parentale</h4>
