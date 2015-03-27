@@ -126,14 +126,14 @@
 	<li>Les podiums seront annoncés par catégorie d'âge et de sexe.</li>
 	<li>Seuls les compétiteurs issus des circuits les plus
 	difficiles (<b class="blue">circuit bleu</b>
-	ou <b class="black">circuit noir</b>) peuvent y
+	ou <b class="black">circuit noir</b>) pourront y
 	prétendre.</li>
 	<li>Une récompense sera remise à tous les partipants.</li>
       </ul>
 
       <ul>
 	<li>Des (beaux) lots seront à gagner par tirage au sort. Tous les compétiteurs auront leur chance.</li>
-	<li>Notez qu'un gagnant qui ne se présenterait pas à l'appel de son nom verra son lot remis en jeu.</li>
+	<li>Notez qu'un gagnant qui ne se présenterait pas à l'appel de son nom verra le lot remis en jeu.</li>
       </ul>
 
       <h4 id="registration">Inscriptions</h4>
