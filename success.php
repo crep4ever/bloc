@@ -19,7 +19,7 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
   $subject = "[Open de Bloc] Confirmation d'inscription";
 
   $site = "www.openblocgrenoble.fr";
-  $from = "opendebloc.grenoble@gmail.com";
+  $from = "openblocgrenoble@gmail.com";
   $nom = "Open de Bloc";
   $to = $mail;
   $sujet = "[Open de Bloc] Confirmation d'inscription";
