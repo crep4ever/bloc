@@ -102,7 +102,7 @@
 <!-- CTA -->
 <section id="cta" class="wrapper style3">
   <ul class="actions">
-    <li><a href="registration.php" class="button big">Prenez votre place !</a></li>
+    <li><a href="registration.php" class="button big">Réservez votre place !</a></li>
   </ul>
 </section>
 
