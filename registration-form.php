@@ -1,4 +1,4 @@
-<script src="js/jquery-ui.js"></script>
+<script src="js/compressed/ui.js"></script>
 
 <form action="confirm.php" method="post">
 
