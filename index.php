@@ -6,7 +6,8 @@
 <section id="banner">
   <div class="inner">
     <h2>Open de bloc de Grenoble</h2>
-   <p><?php echo $GLOBALS['event-date-str'] ?></p>
+   <p><b><?php echo ucwords($GLOBALS['event-date-str']) ?></b><br />
+   <span style="font-size:80%;">Espace Vertical 3</span></p>
     <ul class="actions">
       <li><a href="#cta" class="button big scrolly">Inscription</a></li>
     </ul>
@@ -66,7 +67,7 @@
       <div class="4u 6u$(2) 12u$(3)">
 	<section class="feature fa-calendar">
 	  <h3>Date</h3>
-	  <p><?php echo $GLOBALS['event-date-str'] ?></p>
+	  <p><?php echo ucwords($GLOBALS['event-date-str']) ?></p>
 	</section>
       </div>
       <div class="4u$ 6u(2) 12u$(3)">
