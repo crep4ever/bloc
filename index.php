@@ -72,7 +72,7 @@
       <div class="4u$ 6u(2) 12u$(3)">
 	<section class="feature fa-users">
 	  <h3>Participants</h3>
-	  <p>Compétition ouverte aux catégories poussins, benjamins, minimes et cadets.</p>
+	  <p>Poussins, Benjamins, Minimes, Cadets. <br />FFCAM, FFME, UNSS.</p>
 	</section>
       </div>
       <div class="4u 6u$(2) 12u$(3)">
