@@ -16,13 +16,11 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
       $hour = strftime('%Hh%M', $GLOBALS['minime-cadet-arrival']);
     }
 
-  $subject = "[Open de Bloc] Confirmation d'inscription";
-
   $site = "www.openblocgrenoble.fr";
-  $from = "opendebloc.grenoble@gmail.com";
+  $from = "openblocgrenoble@gmail.com";
   $nom = "Open de Bloc";
   $to = $mail;
-  $sujet = "[Open de Bloc] Confirmation d'inscription";
+  $subject = "[Open de Bloc] Confirmation d'inscription";
 
   $text = "Bonjour,\r\n\r\n"
     . "Vous avez réalisé l'inscription du participant $firstName $lastName en catégorie $category $sex pour l'Open de bloc de Grenoble 2015.\r\n\r\n"
@@ -77,13 +75,12 @@ dans la catégorie <b><?php echo $_SESSION['category'] . ' ' . $_SESSION['sex_st
       <p>
 	Nous vous donnons rendez-vous le <b><?php echo $GLOBALS['event-date-str'] ?></b>
 	à <a href="access.php">Espace Vertical 3</a> en possession&nbsp;:
-	<ul>
-	  <li>de la licence</li>
-	  <li>d'une pièce d'identité du participant si sa licence ne comporte pas de photo</li>
-          <li>de l'autorisation parentale écrite pour cette participation, 
-<a href="images/autorisation_parentale.pdf" target="_blank">téléchargeable ici.</a></li>
-	</ul>
       </p>
+      <ul>
+	<li>de votre licence</li>
+	<li>d'une pièce d'identité si votre licence ne comporte pas de photo</li>
+        <li>de <a href="images/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a> pour cette participation</li>
+      </ul>
 
       <p>
 	<a href="index.php" class="button big">Retourner au site</a>

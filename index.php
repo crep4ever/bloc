@@ -6,7 +6,8 @@
 <section id="banner">
   <div class="inner">
     <h2>Open de bloc de Grenoble</h2>
-   <p><?php echo $GLOBALS['event-date-str'] ?></p>
+   <p><b><?php echo ucwords($GLOBALS['event-date-str']) ?></b><br />
+   <span style="font-size:80%;">Espace Vertical 3</span></p>
     <ul class="actions">
       <li><a href="#cta" class="button big scrolly">Inscription</a></li>
     </ul>
@@ -65,13 +66,13 @@
       <div class="4u 6u$(2) 12u$(3)">
 	<section class="feature fa-calendar">
 	  <h3>Date</h3>
-	  <p><?php echo $GLOBALS['event-date-str'] ?></p>
+	  <p><?php echo ucwords($GLOBALS['event-date-str']) ?></p>
 	</section>
       </div>
       <div class="4u$ 6u(2) 12u$(3)">
 	<section class="feature fa-users">
 	  <h3>Participants</h3>
-	  <p>Compétition ouverte aux catégories poussins, benjamins, minimes et cadets.</p>
+	  <p>Poussins, Benjamins, Minimes, Cadets. <br />FFCAM, FFME, UNSS.</p>
 	</section>
       </div>
       <div class="4u 6u$(2) 12u$(3)">
@@ -85,13 +86,13 @@
       <div class="4u 6u(2) 12u$(3)">
 	<section class="feature fa-facebook">
 	  <h3>Réseaux sociaux</h3>
-	  <p>Rejoignez notre page Facebook.</p>
+	  <p>Rejoignez notre <a href="https://www.facebook.com/events/1627927100770086/" target="_blank">page Facebook</a>.</p>
 	</section>
       </div>
       <div class="4u$ 6u$(2) 12u$(3)">
 	<section class="feature fa-envelope-o">
 	  <h3>Contact</h3>
-	  <p><a href="mailto:opendebloc.grenoble@gmail.com">opendebloc.grenoble@gmail.com</a></p>
+	  <p><a href="mailto:openblocgrenoble@gmail.com">openblocgrenoble@gmail.com</a></p>
 	</section>
       </div>
     </div>

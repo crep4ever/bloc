@@ -9,10 +9,7 @@
     <meta name="keywords" content="escalade, compétition, bloc, grenoble, caf fontaine" />
     <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.min.js"></script>
-    <script src="js/jquery.scrollgress.min.js"></script>
-    <script src="js/jquery.scrolly.min.js"></script>
-    <script src="js/jquery.slidertron.min.js"></script>
+    <script src="js/compressed/index.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
@@ -50,7 +47,7 @@
 <meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2015.jpg" />
 
 <!-- Add fancyBox main JS and CSS files -->
-<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/compressed/fancybox.js"></script>
 <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 <script type="text/javascript">

@@ -15,7 +15,6 @@ $db->bind(':cat2', 'cadet');
 $rows = $db->resultset();
 ?>
 
-
 <section id="main" class="wrapper style1">
  <header class="major">
  <h2>Liste des participants inscrits</h2>
@@ -55,8 +54,7 @@ $rows = $db->resultset();
   echo "</table>";
 ?>
 
-
-
+  </section>
  </div>
 </section>
 

@@ -1,10 +1,11 @@
 <?php include("header.php"); ?>
+<?php require 'globals.php' ?>
 
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Déroulement</h2>
     <p><u>Nouvelle formule</u> : des circuits pour que chaque participant puisse s'exprimer pleinement, dans des blocs qui lui sont abordables.</p>
-    <img src="images/slogan.png" style="border:none; width:50%;"/>
+    <img src="images/slogan.png" style="border:none; width:50%;" alt="Débutant ou mutant, tu rentreras content !" />
   </header>
   <div class="container">
 
@@ -138,9 +139,9 @@
 
       <h4 id="registration">Inscriptions</h4>
       <p>
-	Les inscriptions se déroulent intégralement <a href="http://openblocgrenoble.fr/registration.php" target="_blank"> via Internet </a> : saisie des informations et règlement de 12 euros.
+	Les inscriptions se déroulent intégralement <a href="http://openblocgrenoble.fr/registration.php" target="_blank"> via Internet </a> : saisie des informations et règlement de <?php echo $GLOBALS['registration-fee'] ?>€.
 Vous recevrez un email de confirmation. 
-</br> Merci de nous <a href="http://openblocgrenoble.fr/contact.php" target="_blank">contacter</a> pour tout problème.
+<br /> Merci de nous <a href="http://openblocgrenoble.fr/contact.php" target="_blank">contacter</a> pour tout problème.
       </p>
 
       <h4 id="parental">Autorisation parentale</h4>
