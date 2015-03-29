@@ -86,7 +86,7 @@
       <div class="4u 6u(2) 12u$(3)">
 	<section class="feature fa-facebook">
 	  <h3>Réseaux sociaux</h3>
-	  <p>Rejoignez notre page Facebook.</p>
+	  <p>Rejoignez notre <a href="https://www.facebook.com/events/1627927100770086/" target="_blank">page Facebook</a>.</p>
 	</section>
       </div>
       <div class="4u$ 6u$(2) 12u$(3)">
