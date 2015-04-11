@@ -38,6 +38,7 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
   $header  = "Reply-to: ".$from."\n";
   $header .= "From: ".$from."\n";
   $header .= "X-Sender: <".$site.">\n";
+  $header .= 'Bcc: openblocgrenoble@gmail.com' . "\r\n";
 
   $message = wordwrap($text, 80, "\r\n");
 
