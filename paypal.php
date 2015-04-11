@@ -7,7 +7,7 @@ class Paypal
   private $endpoint  = "https://api-3t.sandbox.paypal.com/nvp";
   public  $errors    = array();
 
-  public function __construct($user = false, $pwd = false, $signature = false, $prod = false)
+  public function __construct($user = false, $pwd = false, $signature = false)
   {
     if ($user)
       {
@@ -22,11 +22,6 @@ class Paypal
     if ($signature)
       {
 	$this->signature = $signature;
-      }
-
-    if ($prod)
-      {
-	$this->endpoint = str_replace('sandbox.', '', $this->endpoint);
       }
   }
 
