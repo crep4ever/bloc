@@ -58,7 +58,8 @@ $params = array('RETURNURL' => $return,
                'PAYMENTREQUEST_0_AMT' => $totalttc + $port,
                'PAYMENTREQUEST_0_CURRENCYCODE' => 'EUR',
                'PAYMENTREQUEST_0_SHIPPINGAMT' => $port,
-               'PAYMENTREQUEST_0_ITEMAMT' => $totalttc);
+		'PAYMENTREQUEST_0_ITEMAMT' => $totalttc,
+		'SOLUTIONTYPE' => 'Sole');
 
 $params["L_PAYMENTREQUEST_0_NAME0"] = $product['name'];
 $params["L_PAYMENTREQUEST_0_DESC0"] = 'Open de Bloc Grenoble 2015';
