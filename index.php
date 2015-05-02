@@ -9,7 +9,7 @@
    <p><b><?php echo ucwords($GLOBALS['event-date-str']) ?></b><br />
    <span style="font-size:80%;">Espace Vertical 3</span></p>
     <ul class="actions">
-      <li><a href="#cta" class="button big scrolly">Inscription</a></li>
+      <li><a href="#cta" class="button big scrolly">Réservez votre place !</a></li>
     </ul>
   </div>
 </section>
@@ -102,7 +102,7 @@
 <!-- CTA -->
 <section id="cta" class="wrapper style3">
   <ul class="actions">
-    <li><a href="registration.php" class="button big">Réservez votre place !</a></li>
+    <li><a href="registration.php" class="button big">Inscription</a></li>
   </ul>
 </section>
 
