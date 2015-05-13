@@ -66,7 +66,7 @@ $(function() {
     <div class="clear">&nbsp;</div>
 
     <div class="left">
-      <label>Licence</label>
+      <label>Licence  <i>(Sélectionnez votre fédération)</i></label>
       <input type="radio" name="licence-type" id="ffme" value="FFME" checked>
       <label for="ffme">FFME</label>
 
