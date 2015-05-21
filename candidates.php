@@ -40,7 +40,7 @@ $rows = $db->resultset();
   {
     $sex       = ($row['sexe'] == 'M') ? 'Garçon' : 'Fille';
     $lastname  = strtoupper($row['nom']);
-    $firstname = ucwords($row['prenom']);
+    $firstname = ucwords(strtolower($row['prenom']));
     $category  = ucfirst($row['categorie']) . " " . $sex;
     $club      = strtoupper($row['club']);
     echo "<tr>";
