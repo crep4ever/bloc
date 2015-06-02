@@ -12,9 +12,14 @@
   <div class="container">
 
     <p style="text-align: center; font-size: 120%;">
-      Merci de <a href="https://docs.google.com/forms/d/1DmxhyqLcMlYdcEAbtX2zekUH-KBXIdff4Vj161JdKEA/viewform" target="_blank">vous positionner à l'aide de ce formulaire</a> sur l'une des missions ci-dessous&nbsp;,
+
+<br /> <b class="red"> MISE A JOUR 02/06 : Organisation et Planning Bénévoles : <a href="images/planning_benevoles.pdf" target="_blank"> cliquer ici </a> </b>
+  <br /> <br />    Merci de <a href="https://docs.google.com/forms/d/1DmxhyqLcMlYdcEAbtX2zekUH-KBXIdff4Vj161JdKEA/viewform" target="_blank">vous positionner à l'aide de ce formulaire</a> sur l'une des missions ci-dessous&nbsp;,
 	
  selon vos préférences et/ou les besoins résumés en temps réel <a href="https://docs.google.com/spreadsheets/d/1LcM0C_mSpIOakY4dHhFNgaip1kade2DrMJBzkFlS3zA/edit#gid=127100981" target="_blank"> dans ce fichier. </a>
+
+
+
     </p>
 
 
