@@ -12,11 +12,7 @@
 <?php if (strtotime('now') > $GLOBALS['registration-close-date']) { ?>
   <section class="feature feature fa-info-circle">
     <h3>Les inscriptions sont maintenant fermées</h3>
-    <p>
-      Vous pouvez néanmoins <a href="contact.php">nous contacter</a> pour une
-      inscription sur liste d'attente.
-    </p>
-  </section>
+ </section>
 <?php } ?>
 
 <?php
