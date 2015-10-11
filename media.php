@@ -18,6 +18,15 @@
     <!-- Content -->
     <section id="content">
 
+      <!--    **************** VIDEO ******************    -->
+      <div id="video">
+	<hr />
+	<h3>Vidéo</h3>
+	<div align = "center"> 
+	  <iframe width="640" height="360" src="https://www.youtube.com/embed/hsW-9uYXcBM?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+      </div>
+
       <!--    **************** PHOTOS ******************    -->
       <script type="text/javascript">
       $(document).ready(function() {
