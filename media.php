@@ -292,7 +292,7 @@
 	<h3>Album souvenir</h3>
 
 	Vous pouvez consulter et télécharger une plus large sélection
-	de photos sur <a href="https://goo.gl/photos/kyZTEggNRnnw8Dvx5">l'album photo de l'Open de Bloc de Grenoble 2015</a>.
+	de photos sur <a href="https://goo.gl/photos/Ur4FD8qx9gXzPG3Q8">l'album photo de l'Open de Bloc de Grenoble 2015</a>.
 
       </div>
       
