@@ -2,14 +2,14 @@
 
 <form action="confirm.php" method="post">
 
-<div class="message">
-      <div class="icon fa-question-circle"></div>    
- 	<p>
-	<a href="program.php" target="_blank">Avez-vous bien lu les règles du jeu 
-		                              avant de procéder à l'inscription&nbsp;?
-	</a>
-      </p>
-</div>
+  <div class="message">
+    <div class="icon fa-question-circle"></div>
+    <p>
+      <a href="program.php" target="_blank">Avez-vous bien lu les règles du jeu
+        avant de procéder à l'inscription&nbsp;?
+      </a>
+    </p>
+  </div>
 
   <fieldset>
     <h2>Participant</h2>
@@ -35,28 +35,28 @@
       <label for="f">F</label>
     </div>
 
-<!-- Date picker -->
-<script src="http://jqueryui.com/resources/demos/datepicker/datepicker-fr.js"></script>
-<script>
-$(function() {
-    $.datepicker.setDefaults($.extend(
-	{ dateFormat: 'dd/mm/yy',
-	  defaultDate: '01/01/1998',
-	  changeYear: true,
-	  changeMonth: true,
-	  yearRange: "1998:2005" },
-	$.datepicker.regional['fr']
-    ));
+    <!-- Date picker -->
+    <script src="http://jqueryui.com/resources/demos/datepicker/datepicker-fr.js"></script>
+    <script>
+    $(function() {
+      $.datepicker.setDefaults($.extend(
+        { dateFormat: 'dd/mm/yy',
+        defaultDate: '01/01/1998',
+        changeYear: true,
+        changeMonth: true,
+        yearRange: "1998:2005" },
+        $.datepicker.regional['fr']
+      ));
 
-    $( '#datepicker' ).datepicker({
-	// restore input field style when a date is selected
-	onSelect: function(dateText, inst) {
-		$( this ).css( 'background', 'rgba(144, 144, 144, 0.075)' );
-		$( this ).css( 'border-color', '#ccc' );
-	}
+      $( '#datepicker' ).datepicker({
+        // restore input field style when a date is selected
+        onSelect: function(dateText, inst) {
+          $( this ).css( 'background', 'rgba(144, 144, 144, 0.075)' );
+          $( this ).css( 'border-color', '#ccc' );
+        }
+      });
     });
-});
-</script>
+    </script>
 
     <div class="left">
       <label for="datepicker">Date de naissance</label>
@@ -90,64 +90,64 @@ $(function() {
     </div>
 
     <script>
-$(function() {
+    $(function() {
 
-    var availableClubs = ["ACS SAVOIE TECHNOLAC", "ASVEL SKI MONTAGNE", "ACCRO-ROC", "ALBERTVILLE ESCALADE",
-			  "ALPES CLUB", "AMICALE LAIQUE CHAPONOST", "AMICALE LAIQUE D'ANSE", "AMICALE LAIQUE DE JONAGE",
-			  "AMICALE LAIQUE ECHIROLLES", "ANNECY ESCALADE", "ARAIGNEE BLEU CIEL",
-			  "ASLGC ESCALADE", "ASPTT CHAMBERY", "ASPTT GRAND LYON MONTAGNE", "ASSOCIATION CLAIXOISE ESCALADE",
-			  "ASSOCIATION DES FAMILLES DE CRAPONNE", "BELLEDONNE GRIMPE", "BELLES GRIMPES EN BELLEDONNE", "BOBST LYON SPORTS",
-			  "BREDAROC", "CAF ALBERTVILLE", "CAF ANNECY COMPETITION", "CAF FAVERGES COMP", "CODC ESCALADE",
-			  "CORVI MONTAGNE", "CPEA VAULX EN VELIN", "CS VAL ISERE", "CSA 27ème B.C.A. Montagne Escalade",
-			  "CAF BELLEDONNE NORD", "CAF DSA DAUPHINE SKI ALPINISME",
-			  "CAF FONTAINE EN MONTAGNE", "CAF GRENOBLE ISERE", "CAF GRENOBLE OISANS", "CAF GRESIVAUDAN", "CAF JEUNES EN MONTAGNE GRENOBLE", "CAF LA MURE MATHEYSINE",
-			  "CAF LA ROCHE BONNEVILLE", "CAF NORD DAUPHINE", "CAF OBIOU", "CAF PAYS D'OISANS", "CAF SAINT GEORGES D ESPERANCHE", "CAF SAINT MARTIN D'HERES",
-			  "CAF SALLANCHES COMPETITION", "CAF VALLEE DE LA GRESSE", "CAF VIENNE", "CAF VOIRON CHARTREUSE",
-			  "CROLLES GRESIVAUDAN ESCALADE", "CHAMBERY ESCALADE", "TIRE-CLOUS DU GRAND MANTI", "SARL CULTURE ROC", 
-			  "ESCALADE VOIRON ALPINISME", "LIBRE ECART MARIGNIER", "ROC EVASION", "ESCALADE CLUB LA TRONCHE", "MOUSTE'CLIP", "CANTON GRIMP'", "BRON VERTICAL",
-			  "AS VILLEFONTAINE", "FRATERN BOURGOIN", "CAF LA ROCHETTE", "ART BLOC", "GRIMP ALTITUDE", 
-			  "CAF EMBRUN", "ESCAPILADE", "CAF FAVERGES", "CARROZ VERTICAL", "CANYON ESCALADE TOURAINE",
-			  "GROUPE MONTAGNARD PETITES ROCHES", "CAF SALEVE ANNEMASSE", "CLUB EYBENS", "PIED MAIN ESCALADE", "MINERAL SPIRIT", "ESCAPADE", "LES LEZARDS VAGABONDS", "FOURNEL ARGENTIERE", "ASPTT GAP", "VERTIGE", "LA DEGAINE", "MROC", "UNSS", "CHARLAIX'SCALADE", "ROC DEVERS"];
+      var availableClubs = ["ACS SAVOIE TECHNOLAC", "ASVEL SKI MONTAGNE", "ACCRO-ROC", "ALBERTVILLE ESCALADE",
+      "ALPES CLUB", "AMICALE LAIQUE CHAPONOST", "AMICALE LAIQUE D'ANSE", "AMICALE LAIQUE DE JONAGE",
+      "AMICALE LAIQUE ECHIROLLES", "ANNECY ESCALADE", "ARAIGNEE BLEU CIEL",
+      "ASLGC ESCALADE", "ASPTT CHAMBERY", "ASPTT GRAND LYON MONTAGNE", "ASSOCIATION CLAIXOISE ESCALADE",
+      "ASSOCIATION DES FAMILLES DE CRAPONNE", "BELLEDONNE GRIMPE", "BELLES GRIMPES EN BELLEDONNE", "BOBST LYON SPORTS",
+      "BREDAROC", "CAF ALBERTVILLE", "CAF ANNECY COMPETITION", "CAF FAVERGES COMP", "CODC ESCALADE",
+      "CORVI MONTAGNE", "CPEA VAULX EN VELIN", "CS VAL ISERE", "CSA 27ème B.C.A. Montagne Escalade",
+      "CAF BELLEDONNE NORD", "CAF DSA DAUPHINE SKI ALPINISME",
+      "CAF FONTAINE EN MONTAGNE", "CAF GRENOBLE ISERE", "CAF GRENOBLE OISANS", "CAF GRESIVAUDAN", "CAF JEUNES EN MONTAGNE GRENOBLE", "CAF LA MURE MATHEYSINE",
+      "CAF LA ROCHE BONNEVILLE", "CAF NORD DAUPHINE", "CAF OBIOU", "CAF PAYS D'OISANS", "CAF SAINT GEORGES D ESPERANCHE", "CAF SAINT MARTIN D'HERES",
+      "CAF SALLANCHES COMPETITION", "CAF VALLEE DE LA GRESSE", "CAF VIENNE", "CAF VOIRON CHARTREUSE",
+      "CROLLES GRESIVAUDAN ESCALADE", "CHAMBERY ESCALADE", "TIRE-CLOUS DU GRAND MANTI", "SARL CULTURE ROC",
+      "ESCALADE VOIRON ALPINISME", "LIBRE ECART MARIGNIER", "ROC EVASION", "ESCALADE CLUB LA TRONCHE", "MOUSTE'CLIP", "CANTON GRIMP'", "BRON VERTICAL",
+      "AS VILLEFONTAINE", "FRATERN BOURGOIN", "CAF LA ROCHETTE", "ART BLOC", "GRIMP ALTITUDE",
+      "CAF EMBRUN", "ESCAPILADE", "CAF FAVERGES", "CARROZ VERTICAL", "CANYON ESCALADE TOURAINE",
+      "GROUPE MONTAGNARD PETITES ROCHES", "CAF SALEVE ANNEMASSE", "CLUB EYBENS", "PIED MAIN ESCALADE", "MINERAL SPIRIT", "ESCAPADE", "LES LEZARDS VAGABONDS", "FOURNEL ARGENTIERE", "ASPTT GAP", "VERTIGE", "LA DEGAINE", "MROC", "UNSS", "CHARLAIX'SCALADE", "ROC DEVERS"];
 
-    var accentMap = {
-	"è": "e",
-	"é": "e",
-	"à": "a"
-    };
+      var accentMap = {
+        "è": "e",
+        "é": "e",
+        "à": "a"
+      };
 
-    var normalize = function( term ) {
-	var ret = "";
-	for ( var i = 0; i < term.length; i++ ) {
-	    ret += accentMap[ term.charAt(i) ] || term.charAt(i);
-	}
-	return ret;
-    };
+      var normalize = function( term ) {
+        var ret = "";
+        for ( var i = 0; i < term.length; i++ ) {
+          ret += accentMap[ term.charAt(i) ] || term.charAt(i);
+        }
+        return ret;
+      };
 
-    var strip = function ( str ) {
-	return str.replace(/[\.:+*?|\\^$(){}\[\]-]/g, '');
-    };
+      var strip = function ( str ) {
+        return str.replace(/[\.:+*?|\\^$(){}\[\]-]/g, '');
+      };
 
-    $( "#association" ).autocomplete({
-	source: function( request, response ) {
-	    var input = strip(request.term).split(/[ ,]+/);
-	    var results = [];
-	    for (var i = input.length - 1; i >=0 ; i--) {
-		var matcher = new RegExp( $.ui.autocomplete.escapeRegex( input[i] ), "i" );
-		results = results.concat($.grep( availableClubs, function( value ) {
-		    value = value.label || value.value || value;
-		    return matcher.test( strip(value) ) || matcher.test( normalize( strip(value) ) );
-		}));
-	    }
+      $( "#association" ).autocomplete({
+        source: function( request, response ) {
+          var input = strip(request.term).split(/[ ,]+/);
+          var results = [];
+          for (var i = input.length - 1; i >=0 ; i--) {
+            var matcher = new RegExp( $.ui.autocomplete.escapeRegex( input[i] ), "i" );
+            results = results.concat($.grep( availableClubs, function( value ) {
+              value = value.label || value.value || value;
+              return matcher.test( strip(value) ) || matcher.test( normalize( strip(value) ) );
+            }));
+          }
 
-	    var uniqueResults = [];
-	    $.each(results, function(i, el){
-		if($.inArray(el, uniqueResults) === -1) uniqueResults.push(el);
-	      });
+          var uniqueResults = [];
+          $.each(results, function(i, el){
+            if($.inArray(el, uniqueResults) === -1) uniqueResults.push(el);
+          });
 
-	    response(uniqueResults);
-	}
+          response(uniqueResults);
+        }
+      });
     });
-});
 
     </script>
 
@@ -157,10 +157,10 @@ $(function() {
       <label>Niveau maximum réalisé en voie</label>
       <div class="icon fa-info-circle"></div>
       <p>
-	Cette indication servira à répartir les compétiteurs dans les
-	circuits.<br />
-	Soyez justes, il n'y a rien à gagner à vous sur- ou
-	sous- estimer !
+        Cette indication servira à répartir les compétiteurs dans les
+        circuits.<br />
+        Soyez justes, il n'y a rien à gagner à vous sur- ou
+        sous- estimer !
       </p>
       <input type="radio" name="niveau" id="4c" value="4c" required>
       <label for="4c">4c</label>
@@ -221,7 +221,7 @@ $(function() {
     <br>
 
     <button type="submit" class="button big" role="button"
-	    aria-disabled="false">Validation et paiement</button>
+    aria-disabled="false">Validation et paiement</button>
 
   </fieldset>
 

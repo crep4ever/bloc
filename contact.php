@@ -12,12 +12,13 @@
 
       <!-- Text -->
       <section class="feature fa-envelope-o">
-	<p>
-	  Pour toute question sur les règles du jeu, l'inscription ou des informations complémentaires, n'hésitez pas à nous contacter à l'adresse suivante :<br />
-	  <a href="mailto:openblocgrenoble@gmail.com">openblocgrenoble@gmail.com</a></p>
+        <p>
+          Pour toute question sur les règles du jeu, l'inscription ou des informations complémentaires, n'hésitez pas à nous contacter à l'adresse suivante :<br />
+          <a href="mailto:openblocgrenoble@gmail.com">openblocgrenoble@gmail.com</a>
+        </p>
       </section>
 
     </section>
- </div>
+  </div>
 </section>
 <?php include("footer.php"); ?>
