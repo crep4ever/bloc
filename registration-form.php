@@ -66,8 +66,8 @@
     <div class="clear">&nbsp;</div>
 
     <div class="left">
-      <label>Licence  <i>(Sélectionnez votre fédération)</i></label>
-      <input type="radio" name="licence-type" id="ffme" value="FFME" checked>
+      <label>Sélectionnez votre fédération</label>
+      <input type="radio" name="licence-type" id="ffme" value="FFME">
       <label for="ffme">FFME</label>
 
       <input type="radio" name="licence-type" id="ffcam" value="FFCAM">
@@ -78,7 +78,7 @@
     </div>
 
     <div class="left">
-      <label for="licence-num">Numéro</label>
+      <label for="licence-num">Numéro de licence</label>
       <input type="text" name="licence-num" id="licence-num" pattern="\d{6}|\d{9}|\d{12}" required>
     </div>
 
