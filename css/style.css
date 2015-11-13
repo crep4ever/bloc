@@ -1096,16 +1096,11 @@
 	body.landing #skel-layers-wrapper {
 		padding-top: 0;
 	}
-	@-moz-keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
-	@-webkit-keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
-	@-o-keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
-	@-ms-keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
-	@keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 
 	#header {
-		background-color: #2e3436;
+		background-color: #5c3566;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-		color: inherit;
+		color: #fff;
 		cursor: default;
 		height: 3em;
 		left: 0;
@@ -1114,26 +1109,8 @@
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+    opacity: 0.9;
 	}
-
-		#header.reveal {
-			-moz-animation: reveal-header 0.5s;
-			-webkit-animation: reveal-header 0.5s;
-			-o-animation: reveal-header 0.5s;
-			-ms-animation: reveal-header 0.5s;
-			animation: reveal-header 0.5s;
-		}
-
-		#header.alt {
-			-moz-animation: none;
-			-webkit-animation: none;
-			-o-animation: none;
-			-ms-animation: none;
-			animation: none;
-			opacity: 0.8;
-			box-shadow: none;
-			color: #fff;
-		}
 
 		#header h1 {
 			color: inherit;
@@ -1599,8 +1576,8 @@
 }
 
 /* User-defined */
-table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
-    content: " \25B4\25BE" 
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: " \25B4\25BE"
 }
 
 .message p {

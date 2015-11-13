@@ -3,9 +3,9 @@
 <html lang="fr">
 
 <head>
-  <title>Open de bloc 2015</title>
+  <title>Open de bloc 2016</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Open de bloc de Grenoble 2015" />
+  <meta name="description" content="Open de bloc de Grenoble 2016" />
   <meta name="keywords" content="escalade, compétition, bloc, grenoble, caf fontaine" />
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
   <script src="js/jquery.min.js"></script>
@@ -41,10 +41,10 @@
 
 
   <!-- Open graph -->
-  <meta property="og:title" content="Open de bloc Grenoble 2015" />
+  <meta property="og:title" content="Open de bloc Grenoble 2016" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://www.openblocgrenoble.fr" />
-  <meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2015.jpg" />
+  <meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2016.jpg" />
 
   <!-- Add fancyBox main JS and CSS files -->
   <script type="text/javascript" src="js/compressed/fancybox.js"></script>
@@ -80,13 +80,9 @@
   <!-- Header -->
   <header id="header" class="alt skel-layers-fixed">
     <h1>
-      <a href="index.php">Open de bloc Grenoble 2015</a>
-      <span>&nbsp;&nbsp;par le&nbsp;&nbsp;</span>
-      <a href="http://fontaine-en-montagne.ffcam.fr" target="_blank">CAF Fontaine
-        <span>
-          <img src="images/logos/caf-fontaine.png" alt="CAF Fontaine" height="40" />
-        </span>
-      </a>
+      <a href="index.php">Open de bloc Grenoble 2016</a>
+      <span>&nbsp;&nbsp;par le club&nbsp;&nbsp;</span>
+      <a href="http://fontaine-en-montagne.ffcam.fr" target="_blank">Drac Vercors Escalade</a>
     </h1>
     <nav id="nav">
       <ul>
