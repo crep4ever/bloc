@@ -29,6 +29,8 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
+  <link rel="stylesheet" href="css/bloc.css" />
+
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
