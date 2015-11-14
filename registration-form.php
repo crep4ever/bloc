@@ -1,5 +1,3 @@
-<script src="js/compressed/ui.js"></script>
-
 <form action="confirm.php" method="post">
 
   <div class="message">
