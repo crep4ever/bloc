@@ -3,20 +3,21 @@
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Contactez-nous !</h2>
-    <p>Le meilleur moyen d'avoir une réponse à vos questions</p>
+    <p>L'Open de bloc de Grenoble est un événement organisé par le club Drac Vercors Escalade.</p>
   </header>
   <div class="container">
 
     <!-- Content -->
     <section id="content">
 
+      <img class="centered" src="images/logos/dve.png" alt="Drac Vercors Escalade" />
+
       <!-- Text -->
-      <section class="feature fa-envelope-o">
-        <p>
-          Pour toute question sur les règles du jeu, l'inscription ou des informations complémentaires, n'hésitez pas à nous contacter à l'adresse suivante :<br />
-          <a href="mailto:openblocgrenoble@gmail.com">openblocgrenoble@gmail.com</a>
+        <p class="centered">
+          Pour toute question sur les règles du jeu, l'inscription ou des informations complémentaires :
+          <a href="mailto:openblocgrenoble@gmail.com" class="button big scrolly icon fa-envelope-o" >openblocgrenoble@gmail.com</a>
         </p>
-      </section>
+
 
     </section>
   </div>
