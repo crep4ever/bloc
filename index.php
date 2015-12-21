@@ -5,13 +5,25 @@
 <!-- Banner -->
 <section id="banner">
   <div class="inner">
+
     <h2>Open de bloc de Grenoble</h2>
     <p><b><?php echo ucwords($GLOBALS['event-date-str']) ?></b><br />
-      <span style="font-size:80%;">Espace Vertical 3</span></p>
+      <span style="font-size:80%;"><a href="access.php">Espace Vertical 3</a></span></p>
       <ul class="actions">
-        <li><a href="media.php" class="button big scrolly" >Voir les photos</a></li>
+        <li><a href="registration.php" class="button big scrolly" >S'inscrire</a></li>
+        <li><a href="program.php" class="button big scrolly" >Plus d'infos</a></li>
       </ul>
+
+      <div class="quick-icons">
+        <ul>
+        <li><a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" target="_blank"><div class="feature fa-facebook"></div></a></li>
+        <li><a href="contact.php" target="_blank"><div class="feature fa-envelope-o"></div></a></li>
+      </ul>
+      </div>
+
     </div>
+    <div class="clear">&nbsp;</div>
+
   </section>
 
   <!-- One -->
@@ -21,16 +33,11 @@
 
         <h2>Un évènement convivial et pour tous les niveaux</h2>
         <p>
-          Le club CAF Fontaine en montagne vous invite à la 3<sup>ème</sup> édition
-          de l'Open de bloc de Grenoble. <br />
-          Compétition d'escalade ludique ouverte aux Poussins, Benjamins, Minimes et Cadets, licenciés FFCAM, FFME ou UNSS.<br />
-          <u>Nouvelle formule&nbsp;</u> : Chacun pourra s'exprimer pleinement, grâce à un système de
-          circuits.
+          Le club Drac Vercors Escalade vous invite à la 4<sup>ème</sup> édition
+          de l'Open de bloc de Grenoble.<br />
+          Une compétition d'escalade ludique ouverte aux Poussins, Benjamins,
+          Minimes et Cadets, licenciés FFCAM, FFME ou UNSS.
         </p>
-
-        <img class="image" src="images/slogan.png"
-        alt="Débutant ou mutant, tu rentreras content !"
-        style="border:none; width:70%;" />
 
       </header>
       <div class="slider">
@@ -51,6 +58,7 @@
         <span class="nav-next"></span>
       </div>
     </div>
+
   </section>
 
   <!-- Two -->
@@ -86,7 +94,7 @@
           <div class="4u 6u(2) 12u$(3)">
             <section class="feature fa-facebook">
               <h3>Réseaux sociaux</h3>
-              <p>Rejoignez notre <a href="https://www.facebook.com/events/1627927100770086/" target="_blank">page Facebook</a>.</p>
+              <p>Rejoignez notre <a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" target="_blank">page Facebook</a>.</p>
             </section>
           </div>
           <div class="4u$ 6u$(2) 12u$(3)">
@@ -102,7 +110,7 @@
     <!-- CTA -->
     <section id="cta" class="wrapper style3">
       <ul class="actions">
-        <li><a href="registration.php" class="button big">Inscription</a></li>
+        <li><a href="media.php" class="button big">Voir les souvenirs des éditions précédentes</a></li>
       </ul>
     </section>
 
