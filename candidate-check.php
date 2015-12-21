@@ -1,5 +1,11 @@
 <?php
+
 // Recheck available places from already registered candidates in db
+require 'globals.php';
+
+require 'database.php';
+$db = new Database();
+
 $available = false;
 if ($_SESSION['category'] == 'poussin' || $_SESSION['category'] == 'benjamin')
 {
@@ -68,24 +74,6 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
           </section>
           <?php } ?>
 
-          <?php if (empty($_SESSION['mail'])) { ?>
-            <section class="feature fa-exclamation-triangle">
-              <h3>Attention</h3>
-              <p>
-                Vous devez renseigner un email de contact valide.
-              </p>
-            </section>
-            <?php } ?>
-
-            <?php if (empty($_SESSION['tel']) || strlen($_SESSION['tel']) != 10) { ?>
-              <section class="feature fa-exclamation-triangle">
-                <h3>Attention</h3>
-                <p>
-                  Vous devez renseigner un numéro de téléphone de contact valide.
-                </p>
-              </section>
-              <?php } ?>
-
               <?php if ($_SESSION['category'] == 'invalid') { ?>
                 <section class="feature fa-exclamation-triangle">
                   <h3>Attention</h3>
@@ -94,16 +82,6 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
                   </p>
                 </section>
                 <?php } ?>
-
-                <?php if (!$_SESSION['conditions']) { ?>
-                  <section class="feature fa-exclamation-triangle">
-                    <h3>Attention</h3>
-                    <p>
-                      Vous devez accepter le <a href="program.php#rules">règlement de la compétition</a> pour valider votre inscription.
-                    </p>
-                  </section>
-                  <?php } ?>
-
 
                   <?php if ($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) != 6) { ?>
                     <section class="feature fa-exclamation-triangle">
@@ -135,21 +113,18 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
                         <?php } ?>
 
                         <?php
-                        $ok = $available &&
+                        $candidate_ok = $available &&
                         !empty($_SESSION['lastname']) &&
                         !empty($_SESSION['firstname']) &&
                         !empty($_SESSION['club']) &&
                         !empty($_SESSION['experience']) &&
-                        !empty($_SESSION['mail']) &&
-                        !empty($_SESSION['tel']) && strlen($_SESSION['tel']) == 10 &&
                         $_SESSION['category'] != 'invalid' &&
-                        $_SESSION['conditions'] &&
                         (($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) == 6) ||
                         ($_SESSION['licenceType'] == 'UNSS' && strlen($_SESSION['licenceNumber']) == 9) ||
                         ($_SESSION['licenceType'] == 'FFCAM' && strlen($_SESSION['licenceNumber']) == 12));
                         ?>
 
-                        <?php if ($ok) { ?>
+                        <?php if ($candidate_ok) { ?>
                           <p>
                             Vous vous apprêtez à finaliser l'inscription du participant
                             <b><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?></b>
@@ -157,21 +132,17 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
                           </p>
 
                           <p>
-                            Une fois le paiement effectué, une confirmation vous sera
-                            envoyée par email à l'adresse
-                            <b><?php echo $_SESSION['mail']?></b>.
-                          </p>
-
-                          <p>
-                            Merci de bien vérifier les informations saisies avant de
-                            procéder au paiement. En cas d'informations incomplètes ou
+                            Merci de bien vérifier les informations saisies.
+                            En cas d'informations incomplètes ou
                             erronées, vous pouvez <a href="registration.php">retourner au formulaire d'inscription</a>
                             pour les modifier.
                           </p>
 
-                          <p style="text-align: center">
-                            <a href="<?= $_SESSION['paypal']; ?>" class="button big">Paiement</a>
-                          </p>
+                          <?php var_dump($_SESSION); ?>
+
+                          <ul class="actions">
+                            <li><a href="candidate-process.php" class="button big scrolly" >Continuer</a></li>
+                          </ul>
 
                           <h3>Informations saisies</h3>
                           <table>
@@ -196,16 +167,11 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
                               <td><?php echo $_SESSION['experience'] . ' ' . $_SESSION['comment'] ?></td>
                             </tr>
 
-                            <tr>
-                              <td>Contact</td>
-                              <td><?php echo $_SESSION['tel'] . ' ; ' . $_SESSION['mail'] ?></td>
-                            </tr>
-
                           </table>
 
                           <?php } ?>
 
-                          <?php if (!$ok) { ?>
+                          <?php if (!$candidate_ok) { ?>
                             <p>
                               Merci de <a href="registration.php">retourner au formulaire</a> afin de corriger ces informations.
                             </p>

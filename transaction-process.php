@@ -11,23 +11,10 @@ Retrieve session info from database
 require 'database.php';
 $db = new Database();
 
-$db->query("SELECT prenom, nom, mail, categorie, sexe FROM bloc_participants WHERE token=:token LIMIT 1");
-$db->bind(':token', $_GET['token']);
-$result = $db->single();
-$_SESSION['firstname'] = $result['prenom'];
-$_SESSION['lastname']  = $result['nom'];
-$_SESSION['mail']      = $result['mail'];
-$_SESSION['category']  = $result['categorie'];
-$_SESSION['sex']       = $result['sexe'];
-
-if ($_SESSION['sex'] == 'M')
-{
-  $_SESSION['sex_str'] = 'garçon';
-}
-else
-{
-  $_SESSION['sex_str'] = 'fille';
-}
+// Get list of this session's registered candidates
+$db->query("SELECT * FROM bloc_participants WHERE session = :session");
+$db->bind(":session", session_id());
+$nbCandidates = count($db->resultset());
 
 /*
 Process Paypal response
@@ -35,13 +22,13 @@ Process Paypal response
 
 require 'globals.php';
 require 'paypal.php';
-
+$nbCandidates = 3;
 $product = array("name" => "Frais d'inscription",
 "price"=> $GLOBALS['registration-fee'],
-"count"=> 1);
+"count"=> $nbCandidates);
 
 $port = 0;
-$totalttc = $product['price'];
+$totalttc = $product['price'] * $product['count'];
 
 $paypal = new Paypal();
 $response = $paypal->request('GetExpressCheckoutDetails',
@@ -77,11 +64,11 @@ $response = $paypal->request('DoExpressCheckoutPayment', $params);
 
 if (!$response)
 {
-  $url = 'cancel.php';
+  $url = 'transaction-cancel.php';
 }
 else
 {
-  $url = 'success.php';
+  $url = 'transaction-success.php';
 
   $response['PAYMENTINFO_0_TRANSACTIONID'];
 
