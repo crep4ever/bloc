@@ -4,45 +4,74 @@
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Déroulement</h2>
-    <p><u>Nouvelle formule</u> : des circuits pour que chaque participant puisse s'exprimer pleinement, dans des blocs qui lui sont abordables.</p>
     <img src="images/slogan.png" style="border:none; width:50%;" alt="Débutant ou mutant, tu rentreras content !" />
   </header>
   <div class="container">
 
     <nav class="subnav">
       <ul>
-        <li><a href="#program">Programme</a></li>
-        <li><a href="#rules">Règlement</a></li>
-        <li><a href="#results">Résultats</a></li>
+        <li><a href="#program">Format de la compétition</a></li>
+        <li><a href="#rules">Règles du jeu</a></li>
       </ul>
     </nav>
 
     <!-- Content -->
     <section id="content">
 
+      <!--    **************** FILES ******************    -->
+      <div id="files">
+        <hr />
+
+        <div class="row uniform">
+          <div class="4u 6u(2) 12u$(3)">
+            <a href="images/program-full.pdf" target="_blank">
+              <div class="feature fa-download">
+                <h3>Programme prévisionnel</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="4u 6u$(2) 12u$(3)">
+            <a href="images/src/reglement.pdf" target="_blank">
+              <div class="feature fa-download">
+                <h3>Règlement officiel</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="4u 6u$(2) 12u$(3)">
+            <a href="images/autorisation_parentale.pdf" target="_blank">
+              <div class="feature fa-download">
+                <h3>Autorisation parentale</h3>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
       <!--    **************** PROGRAM ******************    -->
 
       <div id="program">
         <hr />
         <section class="feature fa-clock-o">
-          <h3>Programme prévisionnel</h3>
+          <h3>Format de la compétition</h3>
 
-          <p>Consultez la <a href="images/program-full.pdf" target="_blank">version
-            imprimable du programme</a>.</p>
-
-            <div class="icon fa-info-circle"></div>
             <p>
-              Les grimpeurs seront répartis dans un des deux circuits de
-              leur catégorie d'âge, <u>en fonction du niveau annoncé à l'inscription.</u>
-              <br />
-              Ils seront informés de cette attribution lors du retrait de
+              Les grimpeurs sont répartis dans un des deux circuits de
+              leur catégorie d'âge, <u>en fonction du niveau annoncé à l'inscription</u>.
+              <ul>
+                <li>Poussins et benjamins, filles et garçons : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
+                <li>Minimes et cadets, filles et garçons : <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b> (plus difficile).</li>
+              </ul>
+            </p>
+            <p>
+              Ces circuits sont pensés pour que chacun puisse s'exprimer pleinement
+              dans des blocs qui lui sont abordables.<br />
+              Les grimpeurs auront connaissance de leur circuit lors du retrait de
               leur dossard.
             </p>
-
-            <ul>
-              <li>Poussins et benjamins, filles et garçons : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
-              <li>Minimes et cadets, filles et garçons : <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b> (plus difficile).</li>
-            </ul>
 
             <p>
               Le <b class="black">circuit noir</b> donnera lieu à des finales par catégorie d'âge (MF, MG, CF, CG).<br />
@@ -87,6 +116,8 @@
               </tr>
             </table>
 
+
+
           </section>
         </div>
 
@@ -95,8 +126,8 @@
         <div id="rules">
           <hr />
           <section class="feature fa-file">
-            <h3>Règlement de la compétition</h3>
-            <p>Consultez la <a href="images/src/reglement.pdf" target="_blank">version officielle du règlement</a>.</p>
+            <h3>Règles du jeu</h3>
+
             <p>Cette compétition s'adresse aux licenciés FFCAM, FFME ou UNSS.</p>
             <h4 id="contest">Contest</h4>
 
@@ -135,9 +166,9 @@
 
                 <h4 id="registration">Inscriptions</h4>
                 <p>
-                  Les inscriptions se déroulent intégralement <a href="http://openblocgrenoble.fr/registration.php" target="_blank"> via Internet </a> : saisie des informations et règlement de <?php echo $GLOBALS['registration-fee'] ?>€ <i>(non remboursable, sauf cas de force majeure avec présentation de justificatifs) </i>.
+                  Les inscriptions se déroulent intégralement <a href="registration.php" target="_blank"> via Internet </a> : saisie des informations et règlement de <?php echo $GLOBALS['registration-fee'] ?>€ <i>(non remboursable, sauf cas de force majeure avec présentation de justificatifs) </i>.
                   <br /> Une fois l'inscription terminée, vous recevrez un email de confirmation.
-                  <br /> Merci de nous <a href="http://openblocgrenoble.fr/contact.php" target="_blank">contacter</a> pour tout problème.
+                  <br /> Merci de nous <a href="contact.php" target="_blank">contacter</a> pour tout problème.
                 </p>
 
                 <h4 id="parental">Autorisation parentale</h4>
@@ -146,26 +177,11 @@
                   participant mineur se porte garante d'avoir en sa possession <a href="images/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a> relative à cette participation.
                 </p>
 
-              </section>
-            </div>
 
-            <!--    **************** RESULTS ******************    -->
-            <div id="results">
-              <hr />
-              <section class="feature fa-trophy">
-                <h3>Résultats</h3>
-                <p>
-                  Mise en ligne des résultats dès que possible à l'issue de la compétition.<br />
-                  Seront disponibles&nbsp;:
-                </p>
-                <ul>
-                  <li>Contest par circuit</li>
-                  <li>Contest par catégorie</li>
-                  <li>Finales des minimes et cadets</li>
-                </ul>
 
               </section>
             </div>
+
             <hr />
 
           </section>
