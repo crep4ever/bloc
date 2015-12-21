@@ -5,7 +5,7 @@ class Database
   private $host      = 'localhost';
   private $user      = 'root';
   private $pass      = '';
-  private $dbname    = 'openbloc2015';
+  private $dbname    = 'openbloc2016';
 
   private $dbh;
 
