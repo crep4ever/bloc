@@ -1,1 +1,5 @@
-media/open*.jpg
+media/src/
+ignore/
+*.patch
+todo
+
