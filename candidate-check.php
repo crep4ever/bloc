@@ -123,24 +123,13 @@ $_SESSION['category'] != 'invalid' &&
 ?>
 
 <?php if ($candidate_ok) { ?>
+  <h2>Merci de bien vérifier les informations saisies avant de continuer.</h2>
   <p>
-    Vous vous apprêtez à finaliser l'inscription du participant
-    <b><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?></b>
-    en catégorie <b><?php echo ucwords($_SESSION['category'] . ' ' . $_SESSION['sex_str']) ?></b>.
-  </p>
-
-  <p>
-    Merci de bien vérifier les informations saisies.
-    En cas d'informations incomplètes ou
-    erronées, vous pouvez <a href="registration.php">retourner au formulaire d'inscription</a>
+    En cas d'informations incomplètes ou erronées, vous pouvez
+    <a href="registration.php">retourner au formulaire d'inscription</a>
     pour les modifier.
   </p>
 
-  <ul class="actions">
-    <li><a href="candidate-process.php" class="button big scrolly" >Continuer</a></li>
-  </ul>
-
-  <h3>Informations saisies</h3>
   <table>
 
     <tr>
@@ -164,6 +153,10 @@ $_SESSION['category'] != 'invalid' &&
     </tr>
 
   </table>
+
+  <ul class="actions">
+    <li><a href="candidate-process.php" class="button big scrolly" >Continuer</a></li>
+  </ul>
 
 <?php } ?>
 
