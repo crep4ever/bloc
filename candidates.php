@@ -8,10 +8,6 @@ require 'database.php';
 $db = new Database();
 
 $db->query("SELECT * FROM bloc_participants WHERE payer_id IS NOT NULL");
-$db->resultset();
-
-$db->bind(':cat1', 'minime');
-$db->bind(':cat2', 'cadet');
 $rows = $db->resultset();
 ?>
 
