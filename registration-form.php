@@ -23,8 +23,8 @@ $rows = $db->resultset();
   echo "<tr>";
   echo "<th>Nom</th>";
   echo "<th>Prénom</th>";
-  echo "<th>Club</th>";
   echo "<th>Catégorie</th>";
+  echo "<th colspan=\"2\">Club</th>";
   echo "</tr>";
 
   foreach ($rows as $row)
@@ -34,18 +34,25 @@ $rows = $db->resultset();
     $firstname = ucwords(strtolower($row['prenom']));
     $category  = ucfirst($row['categorie']) . " " . $sex;
     $club      = strtoupper($row['club']);
+    $url_params = "?lastname=" . $row['nom']
+     . "&firstname=" . $row['prenom']
+     . "&category=" . $row['categorie']
+     . "&club=" . $row['club'];
+
     echo "<tr>";
     echo "<td>" . $lastname  . "</td>";
     echo "<td>" . $firstname . "</td>";
-    echo "<td>" . $club      . "</td>";
     echo "<td>" . $category  . "</td>";
+    echo "<td>" . $club      . "</td>";
+    echo "<td><a href=\"candidate-remove.php" . $url_params . "\"><div class=\"fa fa-times\"></div></a></td>";
     echo "</tr>";
   }
 
   echo "</table>";
 
-  echo "<hr />";
-  echo "<b>Montant de l'inscription pour " . count($rows) . " participants : " . count($rows) * $GLOBALS['registration-fee'] . "€ TTC</b>";
+  echo "<p style=\"text-align: right\">";
+  echo "<b>" . count($rows) . " participant(s) : " . count($rows) * $GLOBALS['registration-fee'] . "€ TTC</b>";
+  echo "</p>"
   ?>
 
 
