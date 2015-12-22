@@ -55,10 +55,12 @@ $rows = $db->resultset();
   echo "</p>"
   ?>
 
-
 <ul class="actions">
   <li><a href="candidate-register.php" class="button big scrolly" >Ajouter un participant</a></li>
+
+<?php if (count($rows) > 0) { ?>
   <li><a href="transaction-register.php" class="button big scrolly" >Continuer</a></li>
+<?php } ?>
 </ul>
 
 </div>
