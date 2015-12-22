@@ -31,7 +31,7 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
   . " * de l'autorisation parentale écrite pour cette participation, téléchargeable ici : \r\n"
   . "http://openblocgrenoble.fr/images/autorisation_parentale.pdf\r\n\r\n"
   . "Merci et à bientôt !\r\n\r\n"
-  . "Le CAF Fontaine";
+  . "Drac Vercors Escalade";
 
   $from = $nom." <".$from.">";
 

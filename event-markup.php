@@ -5,8 +5,8 @@
   "name": "Open de bloc Grenoble 2015",
   "image": "http://openblocgrenoble.fr/images/open-bloc-2015.jpg",
   "organizer": {
-    "name": "CAF Fontaine",
-    "image": "http://openblocgrenoble.fr/images/logos/caf-fontaine.png",
+    "name": "Drac Vercors Escalade",
+    "image": "http://openblocgrenoble.fr/images/logos/dve.png",
     "url": "http://fontaine-en-montagne.ffcam.fr/"
   },
   "typicalAgeRange": "10-17",

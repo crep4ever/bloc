@@ -6,7 +6,7 @@
   <title>Open de bloc 2016</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" content="Open de bloc de Grenoble 2016" />
-  <meta name="keywords" content="escalade, compétition, bloc, grenoble, caf fontaine" />
+  <meta name="keywords" content="escalade, open, bloc, compétition, grenoble, drac vercors escalade" />
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
