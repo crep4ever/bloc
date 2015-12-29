@@ -21,7 +21,7 @@
 require 'database.php';
 $db = new Database();
 
-$db->query("SELECT * FROM bloc_participants WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
+$db->query("SELECT * FROM bloc_2016 WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
 
 $db->bind(':cat1', 'poussin');
 $db->bind(':cat2', 'benjamin');

@@ -12,7 +12,7 @@ require 'database.php';
 $db = new Database();
 
 // Get list of this session's registered candidates
-$db->query("SELECT * FROM bloc_participants WHERE session = :session");
+$db->query("SELECT * FROM bloc_2016 WHERE session = :session");
 $db->bind(":session", session_id());
 $nbCandidates = count($db->resultset());
 
@@ -74,7 +74,7 @@ else
 
   $db->beginTransaction();
 
-  $db->query("UPDATE bloc_participants SET payer_id = :payer_id, transaction = :transaction WHERE token = :token");
+  $db->query("UPDATE bloc_2016 SET payer_id = :payer_id, transaction = :transaction WHERE token = :token");
 
   $db->bind('payer_id', $_GET['PayerID']);
   $db->bind('transaction' , $response['PAYMENTINFO_0_TRANSACTIONID']);

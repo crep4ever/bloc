@@ -40,7 +40,7 @@ $_SESSION['conditions'];
 
   <?php
   // Get list of this session's registered candidates
-  $db->query("SELECT * FROM bloc_participants WHERE session = '" . session_id() . "'");
+  $db->query("SELECT * FROM bloc_2016 WHERE session = '" . session_id() . "'");
   $rows = $db->resultset();
   ?>
 

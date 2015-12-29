@@ -7,7 +7,7 @@
 require 'database.php';
 $db = new Database();
 
-$db->query("SELECT * FROM bloc_participants WHERE payer_id IS NOT NULL");
+$db->query("SELECT * FROM bloc_2016 WHERE payer_id IS NOT NULL");
 $rows = $db->resultset();
 ?>
 
