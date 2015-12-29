@@ -22,7 +22,7 @@ Process Paypal response
 
 require 'globals.php';
 require 'paypal.php';
-$nbCandidates = 3;
+
 $product = array("name" => "Frais d'inscription",
 "price"=> $GLOBALS['registration-fee'],
 "count"=> $nbCandidates);
