@@ -10,12 +10,12 @@
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" defer></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" defer/>
 
-  <script type="text/javascript" src="js/jquery.dropotron.min.js"></script>
-  <script type="text/javascript" src="js/jquery.slidertron.min.js"></script>
-  <script type="text/javascript" src="js/jquery.scrollgress.min.js"></script>
+  <script type="text/javascript" src="js/jquery.dropotron.min.js" defer></script>
+  <script type="text/javascript" src="js/jquery.slidertron.min.js" defer></script>
+  <script type="text/javascript" src="js/jquery.scrollgress.min.js" defer></script>
 
   <script src="js/skel.min.js"></script>
   <script src="js/skel-layers.min.js"></script>
@@ -56,10 +56,10 @@
   <meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2016.jpg" />
 
   <!-- Add fancyBox main JS and CSS files -->
-  <script type="text/javascript" src="js/compressed/fancybox.js"></script>
+  <script type="text/javascript" src="js/compressed/fancybox.js" defer></script>
   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
 
-  <script type="text/javascript">
+  <script type="text/javascript" defer>
   $(document).ready(function() {
 
     // Set custom style, close if clicked, change title type and overlay color
