@@ -1,6 +1,13 @@
 <!-- CHECK LIST -->
   <div class="checklist">
     <ul class="fa-ul">
+      <li><i class="fa-li fa-2x fa fa-users"></i>
+        La compétition concerne uniquement les catégories Poussins, Benjamins,
+        Minimes et Cadets, licenciés FFCAM, FFME ou UNSS.
+      </li>
+      <li><i class="fa-li fa-2x fa fa-eur"></i>
+        Les frais d'inscription sont de <?php echo $GLOBALS['registration-fee'] ?>€ par participant.
+      </li>
       <li><i class="fa-li fa-2x fa fa-question-circle"></i>
         Avez-vous bien lu <a href="program.php" target="_blank">les règles du jeu</a>
         avant de procéder à l'inscription&nbsp;?
