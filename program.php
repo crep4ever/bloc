@@ -24,7 +24,7 @@
 
         <div class="row uniform">
           <div class="4u 6u(2) 12u$(3)">
-            <a href="images/program-full.pdf" target="_blank">
+            <a href="data/program-full.pdf" target="_blank">
               <div class="feature fa-download">
                 <h3>Programme prévisionnel</h3>
               </div>
@@ -32,7 +32,7 @@
           </div>
 
           <div class="4u 6u$(2) 12u$(3)">
-            <a href="images/src/reglement.pdf" target="_blank">
+            <a href="data/reglement.pdf" target="_blank">
               <div class="feature fa-download">
                 <h3>Règlement officiel</h3>
               </div>
@@ -40,7 +40,7 @@
           </div>
 
           <div class="4u 6u$(2) 12u$(3)">
-            <a href="images/autorisation_parentale.pdf" target="_blank">
+            <a href="data/autorisation_parentale.pdf" target="_blank">
               <div class="feature fa-download">
                 <h3>Autorisation parentale</h3>
               </div>
