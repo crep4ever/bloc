@@ -5,8 +5,14 @@ ErrorDocument 404 /404.php
 
 # BEGIN www redirect
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^openblocgrenoble.com
-RewriteRule (.*) http://www.openblocgrenoble.com$1 [R=301,L]
+
+# rule for forcing www on main domain
+RewriteCond %{HTTP_HOST} ^openblocgrenoble\.fr$ [NC]
+RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# rule for removing www on sub domains
+RewriteCond %{HTTP_HOST} ^www\.([^.]+\.openblocgrenoble\.fr)$ [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
 # END www redirect
 
 # BEGIN Expire headers
@@ -33,7 +39,7 @@ RewriteRule (.*) http://www.openblocgrenoble.com$1 [R=301,L]
 
 # BEGIN Cache-Control Headers
 <ifmodule mod_headers.c>
-    <filesmatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf|svg|woff)$">
+    <filesmatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf|svg|woff|woff2)$">
 	Header set Cache-Control "max-age=2592000, public"
     </filesmatch>
     <filesmatch "\\.(css)$">
