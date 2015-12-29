@@ -39,7 +39,7 @@ include("header.php");
           <br>
 
           <ul class="actions">
-            <li><button type="submit" class="button big" role="button" aria-disabled="false">Validation et paiement</button></li>
+            <li><button type="submit" class="button big" role="button" aria-disabled="false">Continuer</button></li>
           </ul>
 
         </fieldset>
