@@ -40,18 +40,19 @@
         </p>
 
       </header>
+
       <div class="slider">
         <span class="nav-previous"></span>
         <div class="viewer">
           <div class="reel">
             <div class="slide">
-              <img src="images/slide01.jpg" alt="Open de Bloc 2013 Photo 01" />
+              <img src="images/slide01.jpg" alt="Open de Bloc 2015 Photo 01" />
             </div>
             <div class="slide">
-              <img src="images/slide02.jpg" alt="Open de Bloc 2013 Photo 02" />
+              <img src="images/slide02.jpg" alt="Open de Bloc 2015 Photo 02" />
             </div>
             <div class="slide">
-              <img src="images/slide03.jpg" alt="Open de Bloc 2013 Photo 03" />
+              <img src="images/slide03.jpg" alt="Open de Bloc 2015 Photo 03" />
             </div>
           </div>
         </div>
