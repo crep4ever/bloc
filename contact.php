@@ -10,7 +10,9 @@
     <!-- Content -->
     <section id="content">
 
-      <img class="centered" src="images/logos/dve.png" alt="Drac Vercors Escalade" />
+      <a href="http://fontaine-en-montagne.ffcam.fr/">
+        <img class="centered" src="images/logos/dve.png" alt="Drac Vercors Escalade" />
+      </a>
 
       <!-- Text -->
         <p class="centered">
