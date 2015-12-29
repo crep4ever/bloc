@@ -35,8 +35,41 @@ $_SESSION['conditions'];
 
 <?php if ($contact_ok) { ?>
   <p>
-    Vous vous apprêtez à finaliser l'inscription des participants.
+    Vous vous apprêtez à finaliser l'inscription des participants suivants :
   </p>
+
+  <?php
+  // Get list of this session's registered candidates
+  $db->query("SELECT * FROM bloc_participants WHERE session = '" . session_id() . "'");
+  $rows = $db->resultset();
+  ?>
+
+  <div class="candidates-summary">
+
+    <?php
+    echo "<table>";
+    echo "<tr>";
+    echo "<th>Nom</th>";
+    echo "<th>Prénom</th>";
+    echo "<th>Catégorie</th>";
+    echo "</tr>";
+
+    foreach ($rows as $row)
+    {
+      $sex       = ($row['sexe'] == 'M') ? 'Garçon' : 'Fille';
+      $lastname  = strtoupper($row['nom']);
+      $firstname = ucwords(strtolower($row['prenom']));
+      $category  = ucfirst($row['categorie']) . " " . $sex;
+
+      echo "<tr>";
+      echo "<td>" . $lastname  . "</td>";
+      echo "<td>" . $firstname . "</td>";
+      echo "<td>" . $category  . "</td>";
+      echo "</tr>";
+    }
+
+    echo "</table>";
+    ?>
 
   <p>
     Une fois le paiement effectué, une confirmation vous sera
@@ -44,9 +77,7 @@ $_SESSION['conditions'];
     <b><?php echo $_SESSION['mail']?></b>.
   </p>
 
-  <p style="text-align: center">
-    <a href="<?= $_SESSION['paypal']; ?>" class="button big">Paiement</a>
-  </p>
+  <a href="<?= $_SESSION['paypal']; ?>" class="button big">Paiement</a>
 
 <?php } ?>
 
