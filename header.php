@@ -13,10 +13,9 @@
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
 
-  <script src="js/jquery.dropotron.min.js"></script>
-  <script src="js/jquery.scrollgress.min.js"></script>
-  <script src="js/jquery.scrolly.min.js"></script>
-  <script src="js/jquery.slidertron.min.js"></script>
+  <script type="text/javascript" src="js/jquery.dropotron.min.js"></script>
+  <script type="text/javascript" src="js/jquery.slidertron.min.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollgress.min.js"></script>
 
   <script src="js/skel.min.js"></script>
   <script src="js/skel-layers.min.js"></script>
