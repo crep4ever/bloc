@@ -1,4 +1,7 @@
-<?php require 'globals.php' ?>
+<?php
+require_once 'globals.php';
+require_once 'database.php';
+?>
 
 <?php if (strtotime('now') < $GLOBALS['registration-open-date']) { ?>
   <section class="feature feature fa-info-circle">
@@ -18,9 +21,6 @@
 <?php
 
 // Check available places from already registered candidates in db
-require 'database.php';
-$db = new Database();
-
 $db->query("SELECT * FROM bloc_2016 WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
 
 $db->bind(':cat1', 'poussin');

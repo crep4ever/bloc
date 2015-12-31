@@ -1,11 +1,8 @@
 <?php
+require_once 'globals.php';
+require_once 'database.php';
 
 // Recheck available places from already registered candidates in db
-require 'globals.php';
-
-require 'database.php';
-$db = new Database();
-
 $available = false;
 if ($_SESSION['category'] == 'poussin' || $_SESSION['category'] == 'benjamin')
 {

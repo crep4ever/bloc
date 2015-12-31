@@ -3,8 +3,6 @@ session_start();
 //require 'error-handler.php';
 //set_error_handler("handleError");
 
-var_dump($_SESSION);
-
 require 'database.php';
 $db = new Database();
 

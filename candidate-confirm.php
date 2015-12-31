@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+require 'globals.php';
+
+require 'database.php';
+$db = new Database();
+
 include("header.php");
 
 /* Process candidate form results and store them in $_SESSION */
@@ -44,12 +50,9 @@ $_SESSION['session']       = session_id();
 ?>
 
 <section id="main" class="wrapper style1">
-
   <div class="container">
-
-    <!-- Content -->
     <section id="content">
-      <?php include("candidate-check.php"); ?>
+      <?php include("candidate-check.inc.php"); ?>
     </section>
   </div>
 </section>
