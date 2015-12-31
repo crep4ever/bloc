@@ -21,7 +21,7 @@
           </section>
         </div>
 
-        <div style="float:right">
+        <div style="float:left">
           <section class="feature fa-mobile">
             <h3>Contact</h3>
             <p>
