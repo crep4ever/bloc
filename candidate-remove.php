@@ -12,7 +12,7 @@ $db = new Database();
 
 $db->beginTransaction();
 
-$db->query("DELETE FROM bloc_2016 WHERE nom=:nom AND prenom=:prenom AND categorie=:categorie AND club=:club AND session=:session");
+$db->query("DELETE FROM bloc_2016 WHERE payer_id IS NULL AND nom=:nom AND prenom=:prenom AND categorie=:categorie AND club=:club AND session=:session");
 
 $db->bind(':nom', $lastname);
 $db->bind(':prenom' , $firstname);
