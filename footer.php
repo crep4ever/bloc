@@ -14,7 +14,7 @@
     <li><a href="http://www.grimper.com/" target="_blank" rel="nofollow"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/logos/grimper.png" title="Grimper" alt="Grimper" /></a></li>
     <li><a href="http://entre-prises.fr/" target="_blank" rel="nofollow"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/logos/entre-prises.png" title="Entre-Prises" alt="Entre-Prises" /></a></li>
     <li><a href="http://www.atelierrocabilo.com/" target="_blank" rel="nofollow"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/logos/atelier-rocabilo.png" title="Atelier Rocabilo" alt="Atelier Rocabilo" /></a></li>
-    <li><a href="http://www.prises-escalade-osmose.com/" target="_blank" rel="nofollow"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" src="images/logos/osmose.png" title="Osmose" alt="Osmose" /></a></li>
+    <li><a href="http://www.prises-escalade-osmose.com/" target="_blank" rel="nofollow"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/logos/osmose.png" title="Osmose" alt="Osmose" /></a></li>
     <li><a href="http://www.ledauphine.com/" target="_blank" rel="nofollow"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/logos/DL.png" title="Dauphiné Libéré" alt="Dauphiné Libéré" /></a></li>
   </ul>
 

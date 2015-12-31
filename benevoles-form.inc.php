@@ -54,7 +54,7 @@
       <div class="clear">&nbsp;</div>
 
       <div class="left">
-        <label for="dispo">Disponibilité</label>
+        <label>Disponibilité</label>
         <input type="radio" name="dispo" id="all" value="all">
         <label for="all">Toute la durée de la mission</label>
 

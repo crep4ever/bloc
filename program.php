@@ -61,11 +61,12 @@
             <p>
               Les grimpeurs sont répartis dans un des deux circuits de
               leur catégorie d'âge, <u>en fonction du niveau annoncé à l'inscription</u>.
-              <ul>
-                <li>Poussins et benjamins, filles et garçons : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
-                <li>Minimes et cadets, filles et garçons : <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b> (plus difficile).</li>
-              </ul>
             </p>
+            <ul>
+              <li>Poussins et benjamins, filles et garçons : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
+              <li>Minimes et cadets, filles et garçons : <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b> (plus difficile).</li>
+            </ul>
+
             <p>
               Ces circuits sont pensés pour que chacun puisse s'exprimer pleinement
               dans des blocs qui lui sont abordables.<br />

@@ -38,7 +38,8 @@ $rows = $db->resultset();
   echo "<th>Nom</th>";
   echo "<th>Prénom</th>";
   echo "<th>Catégorie</th>";
-  echo "<th colspan=\"2\">Club</th>";
+  echo "<th>Club</th>";
+  echo "<th></th>";
   echo "</tr>";
 
   foreach ($rows as $row)

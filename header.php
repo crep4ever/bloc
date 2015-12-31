@@ -11,7 +11,7 @@
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" defer></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" defer/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
 
   <script type="text/javascript" src="js/jquery.dropotron.min.js" defer></script>
   <script type="text/javascript" src="js/jquery.slidertron.min.js" defer></script>
@@ -59,7 +59,7 @@
   <script type="text/javascript" src="js/compressed/fancybox.js" defer></script>
   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
 
-  <script type="text/javascript" defer>
+  <script type="text/javascript">
   $(document).ready(function() {
 
     // Set custom style, close if clicked, change title type and overlay color
