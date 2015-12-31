@@ -484,3 +484,24 @@ width: 350px;
         .tab.active {
             display:block;
         }
+
+/*----- Benevoles -----*/
+#accordion{
+  width: 100%;
+}
+
+#accordion h3{
+  display:block;
+  text-align:left;
+  width:100%;
+}
+
+#accordion span.effectif{
+  float:right;
+  text-align:right;
+  font-size: 80%;
+}
+
+#accordion span.effectif:before{
+  content: "Effectif : ";
+}
