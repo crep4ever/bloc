@@ -119,6 +119,16 @@ margin-bottom: 2em;
   padding: 1em 0 0 1.5em;
 }
 
+fieldset .checklist {
+  border: solid;
+  border-width: medium;
+  border-radius: 1em;
+  border-color: #204a87;
+  padding: 1em 0 0px 2em;
+  font-size: 90%;
+  margin: 1em 6em 1em 1em;
+}
+
 .checklist li {
   text-decoration: none;
   padding: 0.2em;
