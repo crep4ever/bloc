@@ -21,7 +21,7 @@ include("header.php");
 
           <div class="left">
             <label>Sexe</label>
-            <input type="radio" name="sex" id="m" value="M">
+            <input type="radio" name="sex" id="m" value="M" required>
             <label for="m">G</label>
 
             <input type="radio" name="sex" id="f" value="F">
@@ -70,7 +70,7 @@ include("header.php");
 
           <div class="left">
             <label>Sélectionnez votre fédération</label>
-            <input type="radio" name="licence-type" id="ffme" value="FFME">
+            <input type="radio" name="licence-type" id="ffme" value="FFME" required>
             <label for="ffme">FFME</label>
 
             <input type="radio" name="licence-type" id="ffcam" value="FFCAM">
