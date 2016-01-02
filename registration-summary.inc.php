@@ -10,7 +10,7 @@ require_once 'globals.php';
       <li>Ouverture : <?php echo $GLOBALS['registration-open-date-str'] ?></li>
       <li>Fermeture : <?php echo $GLOBALS['registration-close-date-str'] ?></li>
     </ul>
-    <p>Voir la <a href="candidates.php" target="_blank">liste des participants inscrits</a>.</p>
+    <p>Voir la <a href="list-candidates.php" target="_blank">liste des participants inscrits</a>.</p>
     <hr />
 
     <h3>Places restantes disponibles</h3>
