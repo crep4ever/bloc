@@ -9,9 +9,9 @@
   <meta name="keywords" content="escalade, open, bloc, compétition, grenoble, drac vercors escalade" />
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" defer></script>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" defer></script>
 
   <script type="text/javascript" src="js/jquery.dropotron.min.js" defer></script>
   <script type="text/javascript" src="js/jquery.slidertron.min.js" defer></script>
@@ -19,16 +19,16 @@
 
   <script src="js/skel.min.js"></script>
   <script src="js/skel-layers.min.js"></script>
-  <script src="js/init.js"></script>
+  <script src="js/init.min.js"></script>
   <noscript>
-    <link rel="stylesheet" href="css/skel.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-xlarge.css" />
+    <link rel="stylesheet" href="css/skel.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style-xlarge.min.css" />
   </noscript>
   <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
-  <link rel="stylesheet" href="css/bloc.css" />
+  <link rel="stylesheet" href="css/bloc.min.css" />
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
@@ -56,8 +56,8 @@
   <meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2016.jpg" />
 
   <!-- Add fancyBox main JS and CSS files -->
-  <script type="text/javascript" src="js/compressed/fancybox.js" defer></script>
-  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="screen" />
+  <script type="text/javascript" src="js/jquery.fancybox.min.js" defer></script>
 
   <script type="text/javascript">
   $(document).ready(function() {
