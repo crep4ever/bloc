@@ -1,6 +1,28 @@
 <?php
 require_once 'globals.php';
 require_once 'database.php';
+
+function displayActions($count)
+{
+  $html = "<ul class=\"actions\">";
+  $html .= "<li><a href=\"candidate-register.php\" class=\"button big scrolly\" >Ajouter un participant</a></li>";
+
+  if ($count > 0)
+  {
+    $html .= "<li><a href=\"transaction-register.php\" class=\"button big scrolly\" >";
+    $html .= "Valider " . $count . " participant";
+    if ($count > 1)
+    {
+      $html .= "s";
+    }
+    $html .=  " (" . $count * $GLOBALS['registration-fee'] . "€)";
+    $html .= "</a></li>";
+  }
+  $html .= "</ul>";
+
+  echo $html;
+}
+
 ?>
 
 <!-- CHECK LIST -->
@@ -33,49 +55,42 @@ $rows = $db->resultset();
 <div class="candidates-summary">
 
   <?php
-  echo "<table>";
-  echo "<tr>";
-  echo "<th>Nom</th>";
-  echo "<th>Prénom</th>";
-  echo "<th>Catégorie</th>";
-  echo "<th>Club</th>";
-  echo "<th></th>";
-  echo "</tr>";
-
-  foreach ($rows as $row)
+  if (count($rows) > 0)
   {
-    $sex       = ($row['sexe'] == 'M') ? 'Garçon' : 'Fille';
-    $lastname  = strtoupper($row['nom']);
-    $firstname = ucwords(strtolower($row['prenom']));
-    $category  = ucfirst($row['categorie']) . " " . $sex;
-    $club      = strtoupper($row['club']);
-    $url_params = "?lastname=" . $row['nom']
-    . "&firstname=" . $row['prenom']
-    . "&category=" . $row['categorie']
-    . "&club=" . $row['club'];
-
+    echo "<table>";
     echo "<tr>";
-    echo "<td>" . $lastname  . "</td>";
-    echo "<td>" . $firstname . "</td>";
-    echo "<td>" . $category  . "</td>";
-    echo "<td>" . $club      . "</td>";
-    echo "<td><a href=\"candidate-remove.php" . $url_params . "\"><div class=\"fa fa-times\"></div></a></td>";
+    echo "<th>Nom</th>";
+    echo "<th>Prénom</th>";
+    echo "<th>Catégorie</th>";
+    echo "<th>Club</th>";
+    echo "<th></th>";
     echo "</tr>";
+
+    foreach ($rows as $row)
+    {
+      $sex       = ($row['sexe'] == 'M') ? 'Garçon' : 'Fille';
+      $lastname  = strtoupper($row['nom']);
+      $firstname = ucwords(strtolower($row['prenom']));
+      $category  = ucfirst($row['categorie']) . " " . $sex;
+      $club      = strtoupper($row['club']);
+      $url_params = "?lastname=" . $row['nom']
+      . "&firstname=" . $row['prenom']
+      . "&category=" . $row['categorie']
+      . "&club=" . $row['club'];
+
+      echo "<tr>";
+      echo "<td>" . $lastname  . "</td>";
+      echo "<td>" . $firstname . "</td>";
+      echo "<td>" . $category  . "</td>";
+      echo "<td>" . $club      . "</td>";
+      echo "<td><a title=\"Supprimer ce participant\" href=\"candidate-remove.php" . $url_params . "\"><div class=\"fa fa-times\"></div></a></td>";
+      echo "</tr>";
+    }
+
+    echo "</table>";
   }
-
-  echo "</table>";
-
-  echo "<p style=\"text-align: right\">";
-  echo "<b>" . count($rows) . " participant(s) : " . count($rows) * $GLOBALS['registration-fee'] . "€ TTC</b>";
-  echo "</p>"
   ?>
 
-  <ul class="actions">
-    <li><a href="candidate-register.php" class="button big scrolly" >Ajouter un participant</a></li>
-
-    <?php if (count($rows) > 0) { ?>
-      <li><a href="transaction-register.php" class="button big scrolly" >Continuer</a></li>
-      <?php } ?>
-    </ul>
+<?php displayActions(count($rows)) ?>
 
   </div>
