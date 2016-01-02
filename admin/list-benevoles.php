@@ -14,8 +14,8 @@ $rows = $db->resultset();
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" content="Open de bloc de Grenoble 2016" />
   <meta name="keywords" content="escalade, open, bloc, compétition, grenoble, drac vercors escalade" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/bloc.css" />
+  <link rel="stylesheet" href="../css/style.min.css" />
+  <link rel="stylesheet" href="../css/bloc.min.css" />
 </head>
 
 <body>
