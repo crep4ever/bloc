@@ -20,103 +20,78 @@ else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
   $db->resultset();
   $available = ($GLOBALS['available-places'] - $db->rowCount()) > 0;
 }
-?>
 
-<?php if (!$available) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Les inscriptions sont fermées pour la catégorie demandée.<br />
-      Vous pouvez néanmoins <a href="contact.php">nous contacter</a> pour une
-      inscription sur liste d'attente.
-    </p>
-  </section>
-<?php } ?>
+$errors = [];
 
-<?php if (empty($_SESSION['lastname'])) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Vous devez renseigner le nom du participant.
-    </p>
-  </section>
-<?php } ?>
+if (!$available)
+{
+  array_push($errors, "Les inscriptions sont fermées pour la catégorie demandée.<br />
+                       Vous pouvez néanmoins <a href=\"contact.php\">nous contacter</a> pour une
+                       inscription sur liste d'attente.");
+}
 
-<?php if (empty($_SESSION['firstname'])) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Vous devez renseigner le prénom du participant.
-    </p>
-  </section>
-<?php } ?>
+if (empty($_SESSION['lastname']))
+{
+  array_push($errors, "Vous devez renseigner le nom du participant.");
+}
 
-<?php if (empty($_SESSION['club'])) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Vous devez renseigner le club d'appartenance du participant.
-    </p>
-  </section>
-<?php } ?>
+if (empty($_SESSION['firstname']))
+{
+  array_push($errors, "Vous devez renseigner le prénom du participant.");
+}
 
-<?php if (empty($_SESSION['experience'])) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Vous devez renseigner le niveau du participant.
-    </p>
-  </section>
-<?php } ?>
+if (empty($_SESSION['club']))
+{
+  array_push($errors, "Vous devez renseigner le club d'appartenance du participant.");
+}
 
-<?php if ($_SESSION['category'] == 'invalid') { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Impossible de déterminer la catégorie du participant à partir de sa date de naissance.
-    </p>
-  </section>
-<?php } ?>
+if (empty($_SESSION['experience']))
+{
+  array_push($errors, "Vous devez renseigner le niveau du participant.");
+}
 
-<?php if ($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) != 6) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Votre numéro de licence FFME n'a pas le bon format&nbsp: un numéro à 6 chiffres est attendu.
-    </p>
-  </section>
-<?php } ?>
+if ($_SESSION['category'] == 'invalid')
+{
+  array_push($errors, "Impossible de déterminer la catégorie du participant à partir de sa date de naissance.");
+}
 
-<?php if ($_SESSION['licenceType'] == 'FFCAM' && strlen($_SESSION['licenceNumber']) != 12) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Votre numéro de licence FFCAM <b><?php echo $_SESSION['licenceNumber'] ?></b>
-      n'a pas le bon format&nbsp: un numéro à 12 chiffres est attendu.
-    </p>
-  </section>
-<?php } ?>
+if ($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) != 6)
+{
+  array_push($errors, "Votre numéro de licence FFME <b>" . $_SESSION['licenceNumber'] . "</b>
+                       n'a pas le bon format&nbsp: un numéro à 6 chiffres est attendu.");
+}
 
-<?php if ($_SESSION['licenceType'] == 'UNSS' && strlen($_SESSION['licenceNumber']) != 9) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Votre numéro de licence UNSS <b><?php echo $_SESSION['licenceNumber'] ?></b>
-      n'a pas le bon format&nbsp: un numéro à 9 chiffres est attendu.
-    </p>
-  </section>
-<?php } ?>
+if ($_SESSION['licenceType'] == 'FFCAM' && strlen($_SESSION['licenceNumber']) != 12)
+{
+  array_push($errors, "Votre numéro de licence FFCAM <b>" . $_SESSION['licenceNumber'] . "</b>
+                       n'a pas le bon format&nbsp: un numéro à 12 chiffres est attendu.");
+}
 
-<?php
-$candidate_ok = $available &&
-!empty($_SESSION['lastname']) &&
-!empty($_SESSION['firstname']) &&
-!empty($_SESSION['club']) &&
-!empty($_SESSION['experience']) &&
-$_SESSION['category'] != 'invalid' &&
-(($_SESSION['licenceType'] == 'FFME' && strlen($_SESSION['licenceNumber']) == 6) ||
-($_SESSION['licenceType'] == 'UNSS' && strlen($_SESSION['licenceNumber']) == 9) ||
-($_SESSION['licenceType'] == 'FFCAM' && strlen($_SESSION['licenceNumber']) == 12));
+if ($_SESSION['licenceType'] == 'UNSS' && strlen($_SESSION['licenceNumber']) != 9)
+{
+  array_push($errors, "Votre numéro de licence UNSS <b>" . $_SESSION['licenceNumber'] . "</b>
+                       n'a pas le bon format&nbsp: un numéro à 9 chiffres est attendu.");
+}
+
+$candidate_ok = empty($errors);
+
+if (!$candidate_ok)
+{
+  $errors_html = "<section class=\"feature fa-exclamation-triangle\">";
+  $errors_html .= "<h3>Attention</h3>";
+  $errors_html .= "<ul>";
+  foreach ($errors as $error)
+  {
+      $errors_html .= "<li>" . $error . "</li>";
+  }
+  $errors_html .= "</ul></section>";
+
+  $errors_html .= "<p>";
+  $errors_html .= "Merci de <a href=\"registration.php\">retourner au formulaire</a> afin de corriger ces informations.";
+  $errors_html .= "</p>";
+
+  echo $errors_html;
+}
 ?>
 
 <?php if ($candidate_ok) { ?>
@@ -155,10 +130,4 @@ $_SESSION['category'] != 'invalid' &&
     <li><a href="candidate-process.php" class="button big scrolly" >Continuer</a></li>
   </ul>
 
-<?php } ?>
-
-<?php if (!$candidate_ok) { ?>
-  <p>
-    Merci de <a href="registration.php">retourner au formulaire</a> afin de corriger ces informations.
-  </p>
 <?php } ?>
