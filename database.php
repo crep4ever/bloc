@@ -15,12 +15,12 @@ class Database
   {
     $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname . ';charset=utf8';
 
-    $options = array(PDO::ATTR_PERSISTENT       => true,
-    PDO::ATTR_ERRMODE          => PDO::ERRMODE_EXCEPTION);
-
     try
     {
-      $this->dbh = new PDO($dsn, $this->user, $this->pass, $options);
+      $this->dbh = new PDO($dsn, $this->user, $this->pass);
+      $this->dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+      $this->dbh->setAttribute(PDO::ATTR_PERSISTENT, true);
+      $this->dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       $this->dbh->exec("SET CHARACTER SET utf8");
     }
     catch (PDOException $e)
