@@ -1,4 +1,9 @@
-<?php include("header.php"); ?>
+<?php
+include("header.php");
+require 'database.php';
+$db = new Database();
+?>
+
 
 <section id="main" class="wrapper style1">
   <header class="major">
@@ -10,11 +15,9 @@
   </header>
 
   <div class="container">
-
     <?php include("benevoles-missions.inc.php"); ?>
-
+    <p>Voir la <a href="list-benevoles.php" target="_blank">liste des bénévoles inscrits</a>.</p>
     <?php include("benevoles-form.inc.php"); ?>
-
   </div>
 </section>
 

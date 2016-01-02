@@ -1,5 +1,6 @@
+<section>
+
 <h2>Se positionner</h2>
-<section id="content">
 
   <form action="benevole-confirm.php" method="post">
 
@@ -16,38 +17,33 @@
       </div>
 
       <div class="left">
-        <label for="firstname">Mail</label>
+        <label for="email">Mail</label>
         <input type="email" id="email" name="email" placeholder="name@provider.com" required>
-      </div>
-
-      <div class="left">
-        <label for="tel">Téléphone</label>
-        <input type="tel" id="tel" name="telephone" placeholder="06XXXXXXXX" maxlength="10" pattern="[0][0-9]{9}" required>
       </div>
 
       <div class="clear">&nbsp;</div>
 
       <div class="left">
         <label>Missions souhaitées</label>
-        <input type="checkbox" name="missions" id="installation" value="installation">
+        <input type="checkbox" name="missions[]" id="installation" value="installation">
         <label for="installation">Installation de la salle</label>
 
-        <input type="checkbox" name="missions" id="buvette" value="buvette">
+        <input type="checkbox" name="missions[]" id="buvette" value="buvette">
         <label for="buvette">Buvette</label>
 
-        <input type="checkbox" name="missions" id="pointage" value="pointage">
+        <input type="checkbox" name="missions[]" id="pointage" value="pointage">
         <label for="pointage">Pointage</label>
 
-        <input type="checkbox" name="missions" id="juge" value="juge">
+        <input type="checkbox" name="missions[]" id="juge" value="juge">
         <label for="juge">Juge de bloc</label>
 
-        <input type="checkbox" name="missions" id="saisie" value="saisie">
+        <input type="checkbox" name="missions[]" id="saisie" value="saisie">
         <label for="saisie">Saisie des résultats</label>
 
-        <input type="checkbox" name="missions" id="reportage" value="reportage">
-        <label for="reportage">Reportage photo / video</label>
+        <input type="checkbox" name="missions[]" id="reportage" value="reportage">
+        <label for="reportage">Reportage photo/video</label>
 
-        <input type="checkbox" name="missions" id="rangement" value="rangement">
+        <input type="checkbox" name="missions[]" id="rangement" value="rangement">
         <label for="rangement">Rangement de la salle</label>
       </div>
 
