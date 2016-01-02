@@ -93,4 +93,4 @@ $rows = $db->resultset();
 
 <?php displayActions(count($rows)) ?>
 
-  </div>
+</div>

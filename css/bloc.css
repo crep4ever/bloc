@@ -111,26 +111,22 @@ margin-bottom: 2em;
 }
 
 /* registration */
+.checklist {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 1em;
+  border-color: #204a87;
+  padding: 1em 0 0 1.5em;
+}
+
 .checklist li {
   text-decoration: none;
   padding: 0.2em;
   margin: 0.4em;
-  background: #eee;
 }
 
 .checklist i {
   color: #204a87;
-}
-
-.message p {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-top: 0;
-}
-
-.message icon {
-    display: inline-block;
-    margin-top: 0;
 }
 
 .left {

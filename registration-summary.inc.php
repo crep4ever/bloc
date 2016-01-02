@@ -19,7 +19,7 @@ require_once 'globals.php';
     $GLOBALS['available-places']; ?> participants par
     demi-journée.</p>
     <footer>
-      <table class="actions">
+      <table style="font-size: 90%">
         <tr>
           <th>Catégorie</th>
           <th>Places restantes</th>
