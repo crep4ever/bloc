@@ -497,6 +497,10 @@ width: 350px;
   padding: 0 0 1em 0;
 }
 
+#accordion .icon:before{
+  padding: 0.5em;
+}
+
 #accordion h3{
   display:block;
   text-align:left;
