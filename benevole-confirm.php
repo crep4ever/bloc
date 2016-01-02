@@ -9,11 +9,7 @@ $lastname  = strtoupper(trim(htmlspecialchars($_POST['nom'])));
 $firstname = ucwords(trim(htmlspecialchars($_POST['prenom'])));
 $mail = htmlspecialchars($_POST['email']);
 $missions = implode(',', $_POST['missions']);
-$dispo = "";
-if (in_array('dispo', $_POST))
-{
-  $dispo = $_POST['dispo'];
-}
+$dispo = $_POST['dispo'];
 $comment = trim(htmlspecialchars($_POST['message']));
 
 /* Checks */
