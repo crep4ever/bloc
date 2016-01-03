@@ -108,4 +108,9 @@ RewriteRule ^(.+) $1.gz [QSA,L]
 order allow,deny
 deny from all
 </files>
+
+<ifmodule mod_headers.c>
+Header always set X-FRAME-OPTIONS "DENY"
+Header always set X-XSS-Protection "1; mode=block"
+</ifmodule>
 # END htaccess protection
