@@ -11,7 +11,7 @@ require 'database.php';
 $db = new Database();
 
 // Get list of this session's registered candidates
-$db->query("SELECT * FROM bloc_2016 WHERE session = :session");
+$db->query("SELECT * FROM bloc_2016 WHERE session = :session AND payer_id IS NULL");
 $db->bind(":session", session_id());
 $nbCandidates = count($db->resultset());
 
