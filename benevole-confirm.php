@@ -5,12 +5,22 @@ $db = new Database();
 
 /* Process benevole form results */
 
-$lastname  = strtoupper(trim(htmlspecialchars($_POST['nom'])));
-$firstname = ucwords(trim(htmlspecialchars($_POST['prenom'])));
-$mail = htmlspecialchars($_POST['email']);
-$missions = implode(',', $_POST['missions']);
-$dispo = $_POST['dispo'];
-$comment = trim(htmlspecialchars($_POST['message']));
+$defaultValues = array(
+    'nom' => '',
+    'prenom' => '',
+    'email' => '',
+    'missions' => [],
+    'dispo' => '',
+    'message' => '',
+);
+$formValues = array_merge($defaultValues, $_POST);
+
+$lastname  = strtoupper(trim(htmlspecialchars($formValues['nom'])));
+$firstname = ucwords(trim(htmlspecialchars($formValues['prenom'])));
+$mail = htmlspecialchars($formValues['email']);
+$missions = implode(',', $formValues['missions']);
+$dispo = $formValues['dispo'];
+$comment = trim(htmlspecialchars($formValues['message']));
 
 /* Checks */
 
@@ -73,7 +83,8 @@ else
 
   $html = "<section id=\"main\" class=\"wrapper style1\">" .
           "<div class=\"container\">" .
-          "<h2>Merci de votre participation</h2>" .
+          "<h2>Merci de votre participation</h2>";
+          "<p>Nous vous communiquerons plus d'information sur votre adresse <b>" . $mail . "</b>.</p>";
 
   $html .= "<a href=\"benevoles.php\" class=\"button big scrolly\" >Retourner au site</a>";
   $html .= "</div>";
