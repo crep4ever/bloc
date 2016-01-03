@@ -39,15 +39,20 @@ include("header.php");
           </div>
 
           <!-- Date picker -->
+          <div class="left">
+            <label for="datepicker">Date de naissance</label>
+            <input type="text" name="naissance" id="datepicker" pattern="\d{1,2}/\d{1,2}/\d{4}" readonly="true" required>
+          </div>
+
           <script src="http://jqueryui.com/resources/demos/datepicker/datepicker-fr.js"></script>
           <script>
           $(function() {
             $.datepicker.setDefaults($.extend(
               { dateFormat: 'dd/mm/yy',
-              defaultDate: '01/01/1998',
+              defaultDate: '01/01/1999',
               changeYear: true,
               changeMonth: true,
-              yearRange: "1998:2005" },
+              yearRange: "1999:2006" },
               $.datepicker.regional['fr']
             ));
 
@@ -60,11 +65,6 @@ include("header.php");
             });
           });
           </script>
-
-          <div class="left">
-            <label for="datepicker">Date de naissance</label>
-            <input type="text" name="naissance" id="datepicker" pattern="\d{1,2}/\d{1,2}/\d{4}" readonly="true" required>
-          </div>
 
           <div class="clear">&nbsp;</div>
 
