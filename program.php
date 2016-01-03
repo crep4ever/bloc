@@ -22,32 +22,11 @@
       <div id="files">
         <hr />
 
-        <div class="row uniform">
-          <div class="4u 6u(2) 12u$(3)">
-            <a href="data/program-full.pdf" target="_blank">
-              <div class="feature fa-download">
-                <h3>Programme prévisionnel</h3>
-              </div>
-            </a>
-          </div>
-
-          <div class="4u 6u$(2) 12u$(3)">
-            <a href="data/reglement.pdf" target="_blank">
-              <div class="feature fa-download">
-                <h3>Règlement officiel</h3>
-              </div>
-            </a>
-          </div>
-
-          <div class="4u 6u$(2) 12u$(3)">
-            <a href="data/autorisation_parentale.pdf" target="_blank">
-              <div class="feature fa-download">
-                <h3>Autorisation parentale</h3>
-              </div>
-            </a>
-          </div>
-
-        </div>
+        <ul class="actions">
+          <li><a href="data/program-full.pdf" class="button icon special fa-download">Programme prévisionnel</a></li>
+          <li><a href="data/reglement.pdf" class="button icon special fa-download">Règlement officiel</a></li>
+          <li><a href="data/autorisation_parentale.pdf" class="button icon special fa-download">Autorisation parentale</a></li>
+        </ul>
 
       </div>
 
