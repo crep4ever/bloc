@@ -16,7 +16,9 @@
 
       <!-- Text -->
         <p class="centered">
-          Pour toute question sur les règles du jeu, l'inscription ou des informations complémentaires :
+          Pour toute question sur les règles du jeu, l'inscription ou des informations complémentaires&nbsp;:
+          <br />
+          <br />
           <a href="mailto:openblocgrenoble@gmail.com" class="button big scrolly icon fa-envelope-o" >openblocgrenoble@gmail.com</a>
         </p>
 
