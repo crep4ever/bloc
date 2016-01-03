@@ -55,7 +55,7 @@ else
 {
   $db->beginTransaction();
 
-  $db->query("UPDATE bloc_2016 SET mail=:mail, tel=:tel, conditions=:conditions, token=:token WHERE session=:session");
+  $db->query("UPDATE bloc_2016 SET mail=:mail, tel=:tel, conditions=:conditions, token=:token WHERE session=:session AND payer_id IS NULL");
 
   $db->bind(':mail', $_SESSION['mail']);
   $db->bind(':tel', $_SESSION['tel']);

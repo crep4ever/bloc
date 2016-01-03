@@ -70,8 +70,6 @@ else
 {
   $url = 'transaction-success.php';
 
-  $response['PAYMENTINFO_0_TRANSACTIONID'];
-
   $db->beginTransaction();
 
   $db->query("UPDATE bloc_2016 SET payer_id = :payer_id, transaction = :transaction WHERE token = :token");
@@ -83,6 +81,7 @@ else
   $db->execute();
 
   $db->endTransaction();
+  $_SESSION['token'] = $_GET['token'];
 }
 
 header("Location: $url");
