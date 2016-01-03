@@ -1,88 +1,78 @@
-<?php if (empty($_SESSION['mail'])) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Vous devez renseigner un email de contact valide.
-    </p>
-  </section>
-<?php } ?>
-
-<?php if (empty($_SESSION['tel']) || strlen($_SESSION['tel']) != 10) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Vous devez renseigner un numéro de téléphone de contact valide.
-    </p>
-  </section>
-<?php } ?>
-
-
-<?php if (!$_SESSION['conditions']) { ?>
-  <section class="feature fa-exclamation-triangle">
-    <h3>Attention</h3>
-    <p>
-      Vous devez accepter le <a href="program.php#rules">règlement de la compétition</a> pour valider votre inscription.
-    </p>
-  </section>
-<?php } ?>
-
 <?php
-$contact_ok =
-!empty($_SESSION['mail']) &&
-!empty($_SESSION['tel']) && strlen($_SESSION['tel']) == 10 &&
-$_SESSION['conditions'];
-?>
 
-<?php if ($contact_ok) { ?>
-  <p>
-    Vous vous apprêtez à finaliser l'inscription des participants suivants :
-  </p>
+$errors = [];
+if (empty($_SESSION['mail']))
+{
+  array_push($errors, "L'adresse email renseignée est incorrecte.");
+}
 
-  <?php
-  // Get list of this session's registered candidates
-  $db->query("SELECT * FROM bloc_2016 WHERE session = '" . session_id() . "'");
+if (empty($_SESSION['tel']) || strlen($_SESSION['tel']) != 10)
+{
+  array_push($errors, "Le numéro de téléphone renseigné est incorrect.");
+}
+
+if (!$_SESSION['conditions'])
+{
+  array_push($errors, "Vous devez accepter le <a href=\"program.php#rules\">
+                       règlement de la compétition</a> pour valider l'inscription des participants.");
+}
+
+$contact_ok = empty($errors);
+
+if (!$contact_ok)
+{
+  $errors_html = "<section class=\"feature fa-exclamation-triangle\">";
+  $errors_html .= "<h3>Attention</h3>";
+  $errors_html .= "<ul>";
+  foreach ($errors as $error)
+  {
+      $errors_html .= "<li>" . $error . "</li>";
+  }
+  $errors_html .= "</ul></section>";
+
+  $errors_html .= "<p>";
+  $errors_html .= "Merci de <a href=\"registration.php\">retourner au formulaire</a> afin de corriger ces informations.";
+  $errors_html .= "</p>";
+
+  echo $errors_html;
+}
+else
+{
+  $html = "<p>Vous vous apprêtez à finaliser l'inscription des participants suivants :</p>";
+  $html .= "<div class=\"candidates-summary\">";
+
+  $db->query("SELECT * FROM bloc_2016 WHERE session = '" . session_id() . "' AND payer_id IS NULL");
   $rows = $db->resultset();
-  ?>
 
-  <div class="candidates-summary">
+  $html .= "<table>";
+  $html .= "<tr>";
+  $html .= "<th>Nom</th>";
+  $html .= "<th>Prénom</th>";
+  $html .= "<th>Catégorie</th>";
+  $html .= "</tr>";
 
-    <?php
-    echo "<table>";
-    echo "<tr>";
-    echo "<th>Nom</th>";
-    echo "<th>Prénom</th>";
-    echo "<th>Catégorie</th>";
-    echo "</tr>";
+  foreach ($rows as $row)
+  {
+    $sex       = ($row['sexe'] == 'M') ? 'Garçon' : 'Fille';
+    $lastname  = strtoupper($row['nom']);
+    $firstname = ucwords(strtolower($row['prenom']));
+    $category  = ucfirst($row['categorie']) . " " . $sex;
 
-    foreach ($rows as $row)
-    {
-      $sex       = ($row['sexe'] == 'M') ? 'Garçon' : 'Fille';
-      $lastname  = strtoupper($row['nom']);
-      $firstname = ucwords(strtolower($row['prenom']));
-      $category  = ucfirst($row['categorie']) . " " . $sex;
+    $html .= "<tr>";
+    $html .= "<td>" . $lastname  . "</td>";
+    $html .= "<td>" . $firstname . "</td>";
+    $html .= "<td>" . $category  . "</td>";
+    $html .= "</tr>";
+  }
 
-      echo "<tr>";
-      echo "<td>" . $lastname  . "</td>";
-      echo "<td>" . $firstname . "</td>";
-      echo "<td>" . $category  . "</td>";
-      echo "</tr>";
-    }
+  $html .= "</table>";
+  $html .= "</div>";
 
-    echo "</table>";
-    ?>
+  $html .= "<p>Une fois le paiement effectué, une confirmation vous sera
+            envoyée par email à l'adresse <b>" . $_SESSION['mail'] . "</b>.</p>";
 
-  <p>
-    Une fois le paiement effectué, une confirmation vous sera
-    envoyée par email à l'adresse
-    <b><?php echo $_SESSION['mail']?></b>.
-  </p>
+  $html .= "<a href=\"" . $_SESSION['paypal'] ."\" class=\"button big special icon fa-credit-card\">Paiement en ligne</a>";
 
-  <a href="<?= $_SESSION['paypal']; ?>" class="button big special icon fa-credit-card">Paiement en ligne</a>
-
-<?php } ?>
-
-<?php if (!$contact_ok) { ?>
-  <p>
-    Merci de <a href="registration.php">retourner au formulaire</a> afin de corriger ces informations.
-  </p>
-<?php } ?>
+  echo $html;
+}
+?>
