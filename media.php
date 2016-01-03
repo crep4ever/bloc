@@ -48,10 +48,10 @@
 
         <div class="tabs">
 
-          <ul class="tab-links">
-            <li class="active"><a href="#tab1">Vidéo</a></li>
-            <li><a href="#tab2">Photos</a></li>
-            <li><a href="#tab3">Résultats</a></li>
+          <ul class="tab-links actions">
+            <li class="active"><a href="#tab1" class="icon fa-video-camera">Vidéo</a></li>
+            <li><a href="#tab2" class="icon fa-camera">Photos</a></li>
+            <li><a href="#tab3" class="icon fa-trophy">Résultats</a></li>
           </ul>
 
           <div class="tab-content">
