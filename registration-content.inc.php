@@ -5,11 +5,11 @@ require_once 'database.php';
 function displayActions($count)
 {
   $html = "<ul class=\"actions\">";
-  $html .= "<li><a href=\"candidate-register.php\" class=\"button big scrolly\" >Ajouter un participant</a></li>";
+  $html .= "<li><a href=\"candidate-register.php\" class=\"button big icon fa-cart-plus\" >Ajouter un participant</a></li>";
 
   if ($count > 0)
   {
-    $html .= "<li><a href=\"transaction-register.php\" class=\"button big scrolly\" >";
+    $html .= "<li><a href=\"transaction-register.php\" class=\"button big special icon fa-credit-card\" >";
     $html .= "Valider " . $count . " participant";
     if ($count > 1)
     {

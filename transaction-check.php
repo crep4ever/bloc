@@ -77,7 +77,7 @@ $_SESSION['conditions'];
     <b><?php echo $_SESSION['mail']?></b>.
   </p>
 
-  <a href="<?= $_SESSION['paypal']; ?>" class="button big">Paiement</a>
+  <a href="<?= $_SESSION['paypal']; ?>" class="button big special icon fa-credit-card">Paiement en ligne</a>
 
 <?php } ?>
 
