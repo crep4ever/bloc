@@ -192,7 +192,6 @@ textarea {
   text-decoration: none;
   width: 100%;
   box-shadow: none;
-
 }
 
 input[type="text"]:invalid,
@@ -257,12 +256,10 @@ input[type="radio"] {
   -o-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  display: block;
-  float: left;
-  margin-right: -3em;
-  opacity: 0;
-  width: 1em;
+  display: none;
+  clear: none;
   z-index: -1;
+  margin:0;
 }
 
 input[type="text"],
