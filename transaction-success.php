@@ -1,20 +1,14 @@
 <?php
 session_start();
+require 'globals.php';
+require 'database.php';
 
-function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
+function sendConfirmation($count, $mail)
 {
-  require 'globals.php';
 
   $event = $GLOBALS['event-date-str'];
-
-  if ($category == 'poussin' || $category == 'benjamin')
-  {
-    $hour = strftime('%Hh%M', $GLOBALS['poussin-benjamin-arrival']);
-  }
-  else if ($category == 'minime' || $category == 'cadet')
-  {
-    $hour = strftime('%Hh%M', $GLOBALS['minime-cadet-arrival']);
-  }
+  $pbHour = strftime('%Hh%M', $GLOBALS['poussin-benjamin-arrival']);
+  $mcHour = strftime('%Hh%M', $GLOBALS['minime-cadet-arrival']);
 
   $site = "www.openblocgrenoble.fr";
   $from = "openblocgrenoble@gmail.com";
@@ -23,13 +17,16 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
   $subject = "[Open de Bloc] Confirmation d'inscription";
 
   $text = "Bonjour,\r\n\r\n"
-  . "Vous avez réalisé l'inscription du participant $firstName $lastName en catégorie $category $sex pour l'Open de bloc de Grenoble 2015.\r\n\r\n"
-  . "Vous pouvez consulter le programme et le règlement de la compétition à l'adresse : http://openblocgrenoble.fr/program.php\r\n\r\n"
-  . "Nous vous donnons rendez-vous le $event à $hour à Espace Vertical 3 en possession :\r\n"
+  . "Vous avez réalisé l'inscription de $count participant(s) pour l'Open de bloc de Grenoble 2016.\r\n\r\n"
+  . "Vous pouvez consulter le programme et le règlement de la compétition à l'adresse : www.openblocgrenoble.fr/program.php\r\n\r\n"
+  . "Nous vous donnons rendez-vous le $event à Espace Vertical 3 en possession :\r\n"
   . " * de votre licence\r\n"
   . " * d'une pièce d'identité si votre licence ne comporte pas de photo\r\n"
   . " * de l'autorisation parentale écrite pour cette participation, téléchargeable ici : \r\n"
-  . "http://openblocgrenoble.fr/images/autorisation_parentale.pdf\r\n\r\n"
+  . "www.openblocgrenoble.fr/data/autorisation_parentale.pdf\r\n\r\n"
+  . "Nous vous rappelons que les heures d'arrivée sont :\r\n"
+  . " * $mcHour pour les catégories Minime et Cadet\r\n"
+  . " * $pbHour pour les catégories Poussin et Benjamin\r\n"
   . "Merci et à bientôt !\r\n\r\n"
   . "Drac Vercors Escalade";
 
@@ -44,12 +41,36 @@ function sendConfirmation($firstName, $lastName, $category, $sex, $mail)
 
   mail($to, $subject, $message, $header);
 }
+$db = new Database;
+$db->query("SELECT * FROM bloc_2016 WHERE session = '" . session_id() . "' AND payer_id IS NOT NULL");
+$rows = $db->resultset();
 
-sendConfirmation($_SESSION['firstname'],
-$_SESSION['lastname'],
-$_SESSION['category'],
-$_SESSION['sex_str'],
-$_SESSION['mail']);
+$candidates_count = count($rows);
+
+sendConfirmation($candidates_count, $_SESSION['mail']);
+
+$candidates_html  = "<table>";
+$candidates_html .= "<tr>";
+$candidates_html .= "<th>Nom</th>";
+$candidates_html .= "<th>Prénom</th>";
+$candidates_html .= "<th>Catégorie</th>";
+$candidates_html .= "</tr>";
+
+foreach ($rows as $row)
+{
+  $sex       = ($row['sexe'] == 'M') ? 'Garçon' : 'Fille';
+  $lastname  = strtoupper($row['nom']);
+  $firstname = ucwords(strtolower($row['prenom']));
+  $category  = ucfirst($row['categorie']) . " " . $sex;
+
+  $candidates_html .= "<tr>";
+  $candidates_html .= "<td>" . $lastname  . "</td>";
+  $candidates_html .= "<td>" . $firstname . "</td>";
+  $candidates_html .= "<td>" . $category  . "</td>";
+  $candidates_html .= "</tr>";
+}
+
+$candidates_html .= "</table>";
 
 include("header.php");
 ?>
@@ -63,10 +84,10 @@ include("header.php");
     <section id="content">
 
       <p>
-        L'inscription du participant <b><?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?></b>
-        dans la catégorie <b><?php echo $_SESSION['category'] . ' ' . $_SESSION['sex_str'] ?></b>
-        a été réalisée avec succès.
+        L'inscription des participants suivants a été réalisée avec succès :
       </p>
+
+      <?php echo $candidates_html ?>
 
       <p>
         Une confirmation du paiement vous a été envoyée par email à l'adresse <b><?php echo $_SESSION['mail'] ?></b>.
@@ -80,7 +101,7 @@ include("header.php");
       <ul>
         <li>de votre licence</li>
         <li>d'une pièce d'identité si votre licence ne comporte pas de photo</li>
-        <li>de <a href="images/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a> pour cette participation</li>
+        <li>de <a href="data/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a> pour cette participation</li>
       </ul>
 
       <p>
