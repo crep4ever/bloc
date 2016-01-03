@@ -10,10 +10,7 @@
   <meta name="viewport" content="initial-scale=1"/>
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" defer></script>
-
   <script type="text/javascript" src="js/jquery.dropotron.min.js" defer></script>
   <script type="text/javascript" src="js/jquery.slidertron.min.js" defer></script>
   <script type="text/javascript" src="js/jquery.scrollgress.min.js" defer></script>
@@ -30,6 +27,33 @@
   <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
   <link rel="stylesheet" href="css/bloc.min.css" />
+
+<?php if (isset($jqueryui) && $jqueryui == true) { ?>
+  <!-- Add jquery-ui module -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="http://jqueryui.com/resources/demos/datepicker/datepicker-fr.js"></script>
+  <script>
+    $(function() {
+      $.datepicker.setDefaults($.extend(
+        { dateFormat: 'dd/mm/yy',
+        defaultDate: '01/01/1999',
+        changeYear: true,
+        changeMonth: true,
+        yearRange: "1999:2006" },
+        $.datepicker.regional['fr']
+      ));
+
+      $( '#datepicker' ).datepicker({
+        // restore input field style when a date is selected
+        onSelect: function(dateText, inst) {
+          $( this ).css( 'background', 'rgba(144, 144, 144, 0.075)' );
+          $( this ).css( 'border-color', '#ccc' );
+        }
+      });
+    });
+  </script>
+<?php } ?>
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
@@ -56,32 +80,35 @@
   <meta property="og:url" content="http://www.openblocgrenoble.fr" />
   <meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2016.jpg" />
 
-  <!-- Add fancyBox main JS and CSS files -->
+<?php if (isset($fancybox) && $fancybox == true) { ?>
+  <!-- Add fancyBox module -->
   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="screen" />
   <script type="text/javascript" src="js/jquery.fancybox.min.js" defer></script>
-
   <script type="text/javascript">
-  $(document).ready(function() {
+    $(document).ready(function() {
 
-    // Set custom style, close if clicked, change title type and overlay color
-    $(".fancybox-effects-c").fancybox({
-      closeClick : true,
+      // Set custom style, close if clicked, change title type and overlay color
+      $(".fancybox-effects-c").fancybox({
+        closeClick : true,
 
-      openEffect : 'none',
+        openEffect : 'none',
 
-      helpers : {
-        title : {
-          type : 'inside'
-        },
-        overlay : {
-          css : {
-            'background' : 'rgba(238,238,238,0.85)'
+        helpers : {
+          title : {
+            type : 'inside'
+          },
+          overlay : {
+            css : {
+              'background' : 'rgba(238,238,238,0.85)'
+            }
           }
         }
-      }
+      });
     });
-  });
   </script>
+
+<?php } ?>
+
 
 </head>
 <body class="landing">

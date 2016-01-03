@@ -1,5 +1,6 @@
 <?php
 session_start();
+$jqueryui = true;
 include("header.php");
 ?>
 
@@ -44,27 +45,7 @@ include("header.php");
             <input type="text" name="naissance" id="datepicker" pattern="\d{1,2}/\d{1,2}/\d{4}" readonly="true" required>
           </div>
 
-          <script src="http://jqueryui.com/resources/demos/datepicker/datepicker-fr.js"></script>
-          <script>
-          $(function() {
-            $.datepicker.setDefaults($.extend(
-              { dateFormat: 'dd/mm/yy',
-              defaultDate: '01/01/1999',
-              changeYear: true,
-              changeMonth: true,
-              yearRange: "1999:2006" },
-              $.datepicker.regional['fr']
-            ));
 
-            $( '#datepicker' ).datepicker({
-              // restore input field style when a date is selected
-              onSelect: function(dateText, inst) {
-                $( this ).css( 'background', 'rgba(144, 144, 144, 0.075)' );
-                $( this ).css( 'border-color', '#ccc' );
-              }
-            });
-          });
-          </script>
 
           <div class="clear">&nbsp;</div>
 

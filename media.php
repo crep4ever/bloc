@@ -1,4 +1,7 @@
-<?php include("header.php"); ?>
+<?php
+$fancybox = true;
+include("header.php");
+?>
 
 <section id="main" class="wrapper style1">
   <header class="major">

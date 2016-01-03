@@ -1,5 +1,8 @@
-<?php include("header.php"); ?>
-<?php require 'globals.php' ?>
+<?php
+$fancybox = true;
+include("header.php");
+require 'globals.php'
+?>
 
 <section id="main" class="wrapper style1">
   <header class="major">

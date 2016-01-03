@@ -1,4 +1,5 @@
 <?php
+$jqueryui = true;
 include("header.php");
 require 'database.php';
 $db = new Database();
