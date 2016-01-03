@@ -7,6 +7,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" content="Open de bloc de Grenoble 2016" />
   <meta name="keywords" content="escalade, open, bloc, compétition, grenoble, drac vercors escalade" />
+  <meta name="viewport" content="initial-scale=1"/>
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
