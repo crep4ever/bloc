@@ -8,7 +8,7 @@
 
     <h2>Open de bloc de Grenoble</h2>
     <p><b><?php echo ucwords($GLOBALS['event-date-str']) ?></b><br />
-      <span style="font-size:80%;"><a href="access.php">Espace Vertical 3</a></span></p>
+      <span><a href="access.php">Espace Vertical 3</a></span></p>
       <ul class="actions">
         <li><a href="registration.php" class="button big scrolly" >S'inscrire</a></li>
         <li><a href="program.php" class="button big scrolly" >Plus d'infos</a></li>
@@ -17,7 +17,7 @@
       <div class="quick-icons">
         <ul>
         <li><a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" target="_blank"><div class="feature fa-facebook"></div></a></li>
-        <li><a href="contact.php" target="_blank"><div class="feature fa-envelope-o"></div></a></li>
+        <li><a href="contact.php"><div class="feature fa-envelope-o"></div></a></li>
       </ul>
       </div>
 
