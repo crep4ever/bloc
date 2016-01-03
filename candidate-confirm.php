@@ -22,19 +22,19 @@ $year  = $birthday[2];
 $_SESSION['birthday_str']  = $year . '-' . $month . '-' . $day;
 
 $_SESSION['category'] = 'invalid';
-if ($year == '1998' || $year == '1999')
+if ($year == '1999' || $year == '2000')
 {
   $_SESSION['category'] ='cadet';
 }
-else if ($year == '2000' || $year == '2001')
+else if ($year == '2001' || $year == '2002')
 {
   $_SESSION['category'] = 'minime';
 }
-else if ($year == '2002' || $year == '2003')
+else if ($year == '2003' || $year == '2004')
 {
   $_SESSION['category'] = 'benjamin';
 }
-else if ($year == '2004' || $year == '2005')
+else if ($year == '2005' || $year == '2006')
 {
   $_SESSION['category'] = 'poussin';
 }
