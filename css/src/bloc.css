@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #555753;
 }
 
+.button.special:hover, input.special[type="reset"]:hover, input.special[type="button"]:hover, input.special[type="submit"]:hover {
+    background-color: #75507b;
+}
+
 header a:hover {
   text-decoration: none;
   color: #fff !important;
@@ -284,10 +288,6 @@ input[type="button"].special,
   color: #ddd;
 }
 
-.icon {
-  padding: 0.5em;
-}
-
 .wrapper.style1 .box {
   background-color: #f5f5f5;
 }
@@ -455,24 +455,24 @@ width: 350px;
     content:'';
   }
 
+  .tab-links .icon:before {
+    padding: 0 0.5em 0 0 ;
+  }
+
   .tab-links a {
     padding:9px 15px;
     display:inline-block;
-    border-radius:3px 3px 0px 0px;
-    font-size:16px;
-    font-weight:600;
-  }
-
-  .tab-links li {
-    margin:0px 5px;
-    float:left;
-    list-style:none;
-    border-radius: 0.5em;
-  }
-  .tab-links a{
+    border-radius:0.4em;
     color:#5c3566 !important;
     background:#fff;
     border-bottom: 0;
+  }
+
+  .tab-links li {
+    margin:0.5em 1em;
+    float:left;
+    list-style:none;
+    border-radius: 1em;
   }
 
   .tab-links a:hover {
@@ -494,8 +494,10 @@ width: 350px;
   /*----- Content of Tabs -----*/
   .tab-content {
     padding:15px;
-    border-radius:3px;
-    box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+    border-style: solid;
+    border-width:thin;
+    border-radius:1em;
+    box-shadow:none;
     background:#fff;
   }
 
