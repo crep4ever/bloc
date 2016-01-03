@@ -40,6 +40,7 @@ $rows = $db->resultset();
       echo "<th>Missions</th>";
       echo "<th>Disponibilité</th>";
       echo "<th>Commentaire</th>";
+      echo "<th>Mail</th>";
       echo "</tr>";
 
       foreach ($rows as $row)
@@ -49,6 +50,7 @@ $rows = $db->resultset();
         $missions  = $row['missions'];
         $dispo  = $row['dispo'];
         $comment  = $row['comment'];
+        $mail  = $row['mail'];
 
         echo "<tr>";
         echo "<td>" . $lastname  . "</td>";
@@ -56,6 +58,7 @@ $rows = $db->resultset();
         echo "<td>" . $missions  . "</td>";
         echo "<td>" . $dispo     . "</td>";
         echo "<td>" . $comment   . "</td>";
+        echo "<td>" . $mail      . "</td>";
         echo "</tr>";
       }
 
