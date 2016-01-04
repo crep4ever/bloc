@@ -7,7 +7,7 @@ include("header.php");
 <section id="main" class="wrapper style1">
 
   <header class="major">
-    <h2>Inscription</h2>
+    <h2>Saisie d'un participant</h2>
   </header>
 
   <div class="container">
@@ -18,8 +18,6 @@ include("header.php");
       <form action="candidate-confirm.php" method="post">
 
         <fieldset>
-          <h2>Saisie d'un participant</h2>
-
           <div class="left">
             <label>Sexe</label>
             <input type="radio" name="sex" id="m" value="M" required>
@@ -39,13 +37,10 @@ include("header.php");
             <input type="text" name="prenom" id="firstname" required>
           </div>
 
-          <!-- Date picker -->
           <div class="left">
             <label for="datepicker">Date de naissance</label>
             <input type="text" name="naissance" id="datepicker" pattern="\d{1,2}/\d{1,2}/\d{4}" readonly="true" required>
           </div>
-
-
 
           <div class="clear">&nbsp;</div>
 
