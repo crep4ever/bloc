@@ -87,7 +87,7 @@ include("header.php");
     <section id="content">
 
       <p>
-        L'inscription des participants suivants a été réalisée avec succès :
+        L'inscription des participants suivants a été réalisée avec succès&nbsp;:
       </p>
 
       <?php echo $candidates_html ?>

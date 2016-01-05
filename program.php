@@ -47,8 +47,8 @@ require 'globals.php'
               leur catégorie d'âge, <u>en fonction du niveau annoncé à l'inscription</u>.
             </p>
             <ul>
-              <li>Poussins et benjamins, filles et garçons : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
-              <li>Minimes et cadets, filles et garçons : <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b> (plus difficile).</li>
+              <li>Poussins et benjamins, filles et garçons&nbsp;: <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
+              <li>Minimes et cadets, filles et garçons&nbsp;: <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b> (plus difficile).</li>
             </ul>
 
             <p>
@@ -97,11 +97,9 @@ require 'globals.php'
               </tr>
               <tr style="text-align:center">
                 <td>16h30</td>
-                <td colspan="2" > Podiums, Remise des prix, <br /> et pour tous : Tirage au sort de la tombola </td>
+                <td colspan="2" > Podiums, Remise des prix, <br /> et pour tous&nbsp;: Tirage au sort de la tombola </td>
               </tr>
             </table>
-
-
 
           </section>
         </div>
@@ -117,7 +115,7 @@ require 'globals.php'
             <h4 id="contest">Contest</h4>
 
             <ul>
-              <li>Format contest : les grimpeurs ont 2h30 pour réussir le maximum de blocs du circuit qui leur a été attribué.</li>
+              <li>Format contest&nbsp;: les grimpeurs ont 2h30 pour réussir le maximum de blocs du circuit qui leur a été attribué.</li>
               <li>Chaque circuit comporte entre 12 et 15 blocs, dont quelques surprises ludiques.</li>
               <li>Les grimpeurs disposent de 8 essais maximum par bloc.</li>
               <li>Le classement d'un participant est calculé
@@ -131,7 +129,7 @@ require 'globals.php'
                 <li>Seul le <b class="black">circuit noir</b> est qualificatif pour des finales.</li>
                 <li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge (MF, MG, CF, CG).</li>
                 <li>La finale se fera sous la forme d’un circuit de 3 blocs à-vue, chaque finaliste disposant de 3 essais maximum par bloc.</li>
-                <li>Le classement des finalistes sera établi en fonction du nombre de bloc réussis, du nombre d'essais nécessaires, du nombre de "prise de zone", puis du nombre d'essais pour atteindre ces prises de zone.</li>
+                <li>Le classement des finalistes sera établi en fonction du nombre de bloc réussis, du nombre d'essais nécessaires, du nombre de "prises de zone", puis du nombre d'essais pour atteindre ces prises de zone.</li>
               </ul>
 
               <h4 id="prizes">Remise des prix</h4>
@@ -151,7 +149,9 @@ require 'globals.php'
 
                 <h4 id="registration">Inscriptions</h4>
                 <p>
-                  Les inscriptions se déroulent intégralement <a href="registration.php" target="_blank"> via Internet </a> : saisie des informations et règlement de <?php echo $GLOBALS['registration-fee'] ?>€ <i>(non remboursable, sauf cas de force majeure avec présentation de justificatifs) </i>.
+                  Les inscriptions se déroulent intégralement
+                  <a href="registration.php" target="_blank"> via Internet </a>&nbsp;:
+                  saisie des informations et règlement de <?php echo $GLOBALS['registration-fee'] ?>€ <i>(non remboursable, sauf cas de force majeure avec présentation de justificatifs) </i>.
                   <br /> Une fois l'inscription terminée, vous recevrez un email de confirmation.
                   <br /> Merci de nous <a href="contact.php" target="_blank">contacter</a> pour tout problème.
                 </p>
@@ -159,11 +159,10 @@ require 'globals.php'
                 <h4 id="parental">Autorisation parentale</h4>
                 <p>
                   La personne effectuant l'enregistrement et le paiement pour un
-                  participant mineur se porte garante d'avoir en sa possession <a href="images/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a> relative à cette participation.
+                  participant mineur se porte garante d'avoir en sa possession
+                  <a href="images/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a>
+                  relative à cette participation.
                 </p>
-
-
-
               </section>
             </div>
 

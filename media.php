@@ -6,7 +6,7 @@ include("header.php");
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Souvenirs</h2>
-    <p>Revivez l'ambiance des éditions précédentes</p>
+    <p>Revivez l'ambiance des éditions précédentes.</p>
   </header>
   <div class="container">
     <script type="text/javascript">
