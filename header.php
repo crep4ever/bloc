@@ -10,7 +10,8 @@
   <meta name="viewport" content="initial-scale=1"/>
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--
   <script type="text/javascript" src="js/jquery.dropotron.min.js" defer></script>
   <script type="text/javascript" src="js/jquery.slidertron.min.js" defer></script>
   <script type="text/javascript" src="js/jquery.scrollgress.min.js" defer></script>
@@ -18,6 +19,9 @@
   <script src="js/skel.min.js"></script>
   <script src="js/skel-layers.min.js"></script>
   <script src="js/init.min.js"></script>
+-->
+  <script src="js/combined.min.js"></script>
+
   <noscript>
     <link rel="stylesheet" href="css/skel.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
@@ -30,8 +34,8 @@
 
 <?php if (isset($jqueryui) && $jqueryui == true) { ?>
   <!-- Add jquery-ui module -->
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
-  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script src="http://jqueryui.com/resources/demos/datepicker/datepicker-fr.js"></script>
   <script>
     $(function() {
