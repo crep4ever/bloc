@@ -129,7 +129,7 @@
       <ul>
         <li><a href="index.php">Accueil</a></li>
         <li><a href="program.php">Déroulement</a></li>
-        <li><a href="registration.php">Inscription</a></li>
+        <li><a href="registration.php">Inscriptions</a></li>
         <li><a href="benevoles.php">Bénévoles</a></li>
         <li><a href="media.php">Souvenirs</a></li>
         <li><a href="contact.php">Contact</a></li>

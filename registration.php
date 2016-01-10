@@ -15,7 +15,7 @@ require 'globals.php';
 
 <section id="main" class="wrapper style1">
   <header class="major">
-    <h2>Inscription</h2>
+    <h2>Inscriptions</h2>
   </header>
 
   <div class="container">

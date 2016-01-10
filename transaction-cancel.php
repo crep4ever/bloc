@@ -13,10 +13,7 @@ include("header.php");
 
       <p>
         Le service de paiement en ligne <a href="www.paypal.fr">Paypal</a>&nbsp;
-        n'a pas pu donner suite à la transaction pour l'inscription du participant
-        <b>
-          <?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?>
-        </b>.
+        n'a pas pu donner suite à la transaction.
       </p>
 
       <p>
