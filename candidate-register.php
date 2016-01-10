@@ -182,9 +182,10 @@ include("header.php");
 
           <div class="clear">&nbsp;</div>
 
-          <button type="submit" class="button big" role="button"
-              aria-disabled="false">Valider</button>
-
+          <ul class="actions">
+            <li><a href="registration.php" class="button big icon" >Retourner au panier</a></li>
+            <li><button type="submit" class="button big special" role="button" aria-disabled="false">Valider</button></li>
+          </ul>
 
         </fieldset>
       </form>

@@ -39,7 +39,8 @@ include("header.php");
           <br>
 
           <ul class="actions">
-            <li><button type="submit" class="button big" role="button" aria-disabled="false">Continuer</button></li>
+            <li><a href="registration.php" class="button big icon" >Retourner au panier</a></li>
+            <li><button type="submit" class="button big special" role="button" aria-disabled="false">Continuer</button></li>
           </ul>
 
         </fieldset>

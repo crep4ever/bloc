@@ -10,7 +10,7 @@ function displayActions($count)
   if ($count > 0)
   {
     $html .= "<li><a href=\"transaction-register.php\" class=\"button big special icon fa-credit-card\" >";
-    $html .= "Valider " . $count . " participant";
+    $html .= "Payer " . $count . " inscription";
     if ($count > 1)
     {
       $html .= "s";
