@@ -21,7 +21,7 @@
 
   <p style="padding: 0em 0em 4em 0em; font-size: 140%; text-align:center; color:#5c3566;">
     Vous pouvez refaire un essai,
-    mais si vous ne trouvez pas la méthode, <a href="www.openblocgrenoble.fr">reposez-vous ici</a>.
+    mais si vous ne trouvez pas la méthode, <a href="http://www.openblocgrenoble.fr">reposez-vous ici</a>.
   </p>
 </body>
 
