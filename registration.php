@@ -20,6 +20,10 @@ require 'globals.php';
 
   <div class="container">
     <div class="row 150%">
+      <div class="4u 12u$(2)">
+        <?php include("registration-summary.inc.php"); ?>
+      </div>
+
       <div class="8u 12u$(2)">
         <section id="content">
           <?php include("registration-info.inc.php"); ?>
@@ -27,9 +31,7 @@ require 'globals.php';
         </section>
       </div>
 
-      <div class="4u 12u$(2)">
-        <?php include("registration-summary.inc.php"); ?>
-      </div>
+
     </div>
   </div>
 </section>
