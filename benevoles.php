@@ -17,7 +17,7 @@ $db = new Database();
 
   <div class="container">
     <?php include("benevoles-missions.inc.php"); ?>
-    <p>Voir la <a href="list-benevoles.php" target="_blank">liste des bénévoles inscrits</a>.</p>
+    <p>Voir la <a href="list-benevoles.php">liste des bénévoles inscrits</a>.</p>
     <?php include("benevoles-form.inc.php"); ?>
   </div>
 </section>

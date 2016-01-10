@@ -150,17 +150,17 @@ require 'globals.php'
                 <h4 id="registration">Inscriptions</h4>
                 <p>
                   Les inscriptions se déroulent intégralement
-                  <a href="registration.php" target="_blank"> via Internet </a>&nbsp;:
+                  <a href="registration.php"> via Internet </a>&nbsp;:
                   saisie des informations et règlement de <?php echo $GLOBALS['registration-fee'] ?>€ <i>(non remboursable, sauf cas de force majeure avec présentation de justificatifs) </i>.
                   <br /> Une fois l'inscription terminée, vous recevrez un email de confirmation.
-                  <br /> Merci de nous <a href="contact.php" target="_blank">contacter</a> pour tout problème.
+                  <br /> Merci de nous <a href="contact.php">contacter</a> pour tout problème.
                 </p>
 
                 <h4 id="parental">Autorisation parentale</h4>
                 <p>
                   La personne effectuant l'enregistrement et le paiement pour un
                   participant mineur se porte garante d'avoir en sa possession
-                  <a href="images/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a>
+                  <a href="data/autorisation_parentale.pdf">l'autorisation parentale écrite</a>
                   relative à cette participation.
                 </p>
               </section>

@@ -16,7 +16,7 @@
 
       <div class="quick-icons">
         <ul>
-        <li><a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" target="_blank"><div class="feature fa-facebook"></div></a></li>
+        <li><a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" rel="nofollow"><div class="feature fa-facebook"></div></a></li>
         <li><a href="contact.php"><div class="feature fa-envelope-o"></div></a></li>
       </ul>
       </div>
@@ -97,7 +97,7 @@
             </a>
           </div>
           <div class="4u 6u(2) 12u$(3)">
-            <a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" target="_blank">
+            <a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" rel="nofollow">
               <section class="feature fa-facebook">
                 <h3>Réseaux sociaux</h3>
                 <p>Rejoignez notre page Facebook.</p>

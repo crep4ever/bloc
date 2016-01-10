@@ -35,7 +35,7 @@ include("header.php");
           <div class="clear">&nbsp;</div>
 
           <input type="checkbox" name="conditions" id="conditions" value="" required>
-          <label for="conditions">En cochant cette case, vous acceptez les <a href="program.php" target="_blank">conditions d'inscription et le règlement de la compétition</a>.</label>
+          <label for="conditions">En cochant cette case, vous acceptez les <a href="program.php">conditions d'inscription et le règlement de la compétition</a>.</label>
           <br>
 
           <ul class="actions">

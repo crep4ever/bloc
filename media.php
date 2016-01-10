@@ -342,10 +342,10 @@ include("header.php");
           <div class="videocontainer">
             <iframe frameborder="0" width="480" height="270" src="//www.dailymotion.com/embed/video/x10tmc5" allowfullscreen></iframe>
             <br />
-            <a href="http://www.dailymotion.com/video/x10tmc5_teaser-open-de-bloc-jeune-de-grenoble-2013-hd_sport" target="_blank">
+            <a href="http://www.dailymotion.com/video/x10tmc5_teaser-open-de-bloc-jeune-de-grenoble-2013-hd_sport">
               Teaser Open de Bloc Jeune de Grenoble 2013 HD
             </a>
-            <i>par <a href="http://www.dailymotion.com/CMEV" target="_blank">CMEV</a></i>
+            <i>par <a href="http://www.dailymotion.com/CMEV">CMEV</a></i>
           </div>
         </div>
 

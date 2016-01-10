@@ -115,7 +115,7 @@ include("header.php");
       <ul>
         <li>de votre licence</li>
         <li>d'une pièce d'identité si votre licence ne comporte pas de photo</li>
-        <li>de <a href="data/autorisation_parentale.pdf" target="_blank">l'autorisation parentale écrite</a> pour cette participation</li>
+        <li>de <a href="data/autorisation_parentale.pdf">l'autorisation parentale écrite</a> pour cette participation</li>
       </ul>
 
       <p>

@@ -123,7 +123,7 @@
     <h1>
       <a href="index.php">Open de bloc Grenoble 2016</a>
       <span>&nbsp;&nbsp;par le club&nbsp;&nbsp;</span>
-      <a href="http://fontaine-en-montagne.ffcam.fr" target="_blank">Drac Vercors Escalade</a>
+      <a href="http://fontaine-en-montagne.ffcam.fr">Drac Vercors Escalade</a>
     </h1>
     <nav id="nav">
       <ul>
