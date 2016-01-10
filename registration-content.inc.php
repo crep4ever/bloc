@@ -40,7 +40,7 @@ function displayActions($count)
       avant de procéder à l'inscription&nbsp;?
     </li>
     <li><i class="fa-li fa-2x fa fa-sign-in"></i>
-      Avez-vous considéré de <a href="benevoles.php" target="_blank">rejoindre notre équipe de bénévoles</a> ?
+      Avez-vous considéré de <a href="benevoles.php" target="_blank">rejoindre notre équipe de bénévoles</a>&nbsp;?
     </li>
   </ul>
 </div>
