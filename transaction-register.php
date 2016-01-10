@@ -6,15 +6,12 @@ include("header.php");
 <section id="main" class="wrapper style1">
 
   <header class="major">
-    <h2>Inscription</h2>
+    <h2>Inscriptions</h2>
   </header>
 
   <div class="container">
 
-    <!-- Content -->
     <section id="content">
-
-      <!-- CANDIDATES SUMMARY -->
 
       <form action="transaction-confirm.php" method="post">
 
@@ -35,7 +32,7 @@ include("header.php");
           <div class="clear">&nbsp;</div>
 
           <input type="checkbox" name="conditions" id="conditions" value="" required>
-          <label for="conditions">En cochant cette case, vous acceptez les <a href="program.php">conditions d'inscription et le règlement de la compétition</a>.</label>
+          <label for="conditions">En cochant cette case, vous acceptez les <a href="program.php#rules">conditions d'inscription et le règlement de la compétition</a>.</label>
           <br>
 
           <ul class="actions">
