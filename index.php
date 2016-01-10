@@ -67,10 +67,12 @@
     <div class="container">
       <div class="row uniform">
         <div class="4u 6u(2) 12u$(3)">
-          <section class="feature fa-map-marker">
-            <h3>Lieu</h3>
-            <p><a href="access.php">Espace Vertical 3 à Grenoble.</a></p>
-          </section>
+          <a href="access.php">
+            <section class="feature fa-map-marker">
+              <h3>Lieu</h3>
+              <p>Espace Vertical 3 à Grenoble.</p>
+            </section>
+          </a>
         </div>
         <div class="4u 6u$(2) 12u$(3)">
           <section class="feature fa-calendar">
@@ -85,24 +87,30 @@
           </section>
         </div>
         <div class="4u 6u$(2) 12u$(3)">
-          <section class="feature fa-sign-in">
-            <h3>Inscription</h3>
-            <p><a href="registration.php">Inscriptions en ligne</a>
-              jusqu'au <?php echo $GLOBALS['registration-close-date-str']
-              ?> au tarif unique de <?php echo $GLOBALS['registration-fee'] ?>€.</p>
-            </section>
+          <a href="registration.php">
+            <section class="feature fa-sign-in">
+              <h3>Inscription</h3>
+              <p>Inscriptions en ligne
+                jusqu'au <?php echo $GLOBALS['registration-close-date-str']
+                ?> au tarif unique de <?php echo $GLOBALS['registration-fee'] ?>€.</p>
+              </section>
+            </a>
           </div>
           <div class="4u 6u(2) 12u$(3)">
-            <section class="feature fa-facebook">
-              <h3>Réseaux sociaux</h3>
-              <p>Rejoignez notre <a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" target="_blank">page Facebook</a>.</p>
-            </section>
+            <a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" target="_blank">
+              <section class="feature fa-facebook">
+                <h3>Réseaux sociaux</h3>
+                <p>Rejoignez notre page Facebook.</p>
+              </section>
+            </a>
           </div>
           <div class="4u$ 6u$(2) 12u$(3)">
-            <section class="feature fa-envelope-o">
-              <h3>Contact</h3>
-              <p><a href="mailto:openblocgrenoble@gmail.com">openblocgrenoble@gmail.com</a></p>
-            </section>
+            <a href="mailto:openblocgrenoble@gmail.com">
+              <section class="feature fa-envelope-o">
+                <h3>Contact</h3>
+                <p>openblocgrenoble@gmail.com</p>
+              </section>
+            </a>
           </div>
         </div>
       </div>
