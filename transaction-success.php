@@ -50,30 +50,39 @@ $rows = $db->resultset();
 
 $candidates_count = count($rows);
 
-sendConfirmation($candidates_count, $_SESSION['mail']);
+$candidates_html = "";
 
-$candidates_html  = "<table>";
-$candidates_html .= "<tr>";
-$candidates_html .= "<th>Nom</th>";
-$candidates_html .= "<th>Prénom</th>";
-$candidates_html .= "<th>Catégorie</th>";
-$candidates_html .= "</tr>";
-
-foreach ($rows as $row)
+if ($candidates_count > 0)
 {
-  $sex       = ($row['sexe'] == 'M') ? 'Garçon' : 'Fille';
-  $lastname  = strtoupper($row['nom']);
-  $firstname = ucwords(strtolower($row['prenom']));
-  $category  = ucfirst($row['categorie']) . " " . $sex;
+  sendConfirmation($candidates_count, $_SESSION['mail']);
 
+  $candidates_html .= "<p>";
+  $candidates_html .= "L'inscription des participants suivants a été réalisée avec succès&nbsp;:";
+  $candidates_html .= "</p>";
+
+  $candidates_html .= "<table>";
   $candidates_html .= "<tr>";
-  $candidates_html .= "<td>" . $lastname  . "</td>";
-  $candidates_html .= "<td>" . $firstname . "</td>";
-  $candidates_html .= "<td>" . $category  . "</td>";
+  $candidates_html .= "<th>Nom</th>";
+  $candidates_html .= "<th>Prénom</th>";
+  $candidates_html .= "<th>Catégorie</th>";
   $candidates_html .= "</tr>";
-}
 
-$candidates_html .= "</table>";
+  foreach ($rows as $row)
+  {
+    $sex       = ($row['sexe'] == 'M') ? 'Garçon' : 'Fille';
+    $lastname  = strtoupper($row['nom']);
+    $firstname = ucwords(strtolower($row['prenom']));
+    $category  = ucfirst($row['categorie']) . " " . $sex;
+
+    $candidates_html .= "<tr>";
+    $candidates_html .= "<td>" . $lastname  . "</td>";
+    $candidates_html .= "<td>" . $firstname . "</td>";
+    $candidates_html .= "<td>" . $category  . "</td>";
+    $candidates_html .= "</tr>";
+  }
+
+  $candidates_html .= "</table>";
+}
 
 include("header.php");
 ?>
@@ -86,14 +95,16 @@ include("header.php");
     <!-- Content -->
     <section id="content">
 
-      <p>
-        L'inscription des participants suivants a été réalisée avec succès&nbsp;:
-      </p>
-
       <?php echo $candidates_html ?>
 
       <p>
-        Une confirmation du paiement vous a été envoyée par email à l'adresse <b><?php echo $_SESSION['mail'] ?></b>.
+        Une confirmation du paiement vous a été envoyée par email
+        <?php
+        if (!empty($_SESSION['mail']))
+        {
+          echo ' à l\'adresse <b>' . $_SESSION['mail'] . '</b>';
+        }
+        ?>.
       </p>
 
       <p>
