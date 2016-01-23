@@ -117,6 +117,12 @@
 </head>
 <body class="landing">
   <?php include_once("analyticstracking.php") ?>
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">
+    La version de votre navigateur internet est <strong>obsolète</strong>.
+    Pensez à le <a href="http://browsehappy.com/">mettre à jour</a> afin d'améliorer votre expérience.
+  </p>
+  <![endif]-->
 
   <!-- Header -->
   <header id="header" class="alt skel-layers-fixed">

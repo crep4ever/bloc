@@ -651,3 +651,21 @@ footer li a{
     height: 80px;
     background-position: -532px -275px;
 }
+
+/* Browser Upgrade Prompt */
+
+.browserupgrade {
+    margin: 0.2em;
+    background: #fff;
+    color: #2e3436;
+    padding: 0.5em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    z-index: 10;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: #5c3566;
+  }
