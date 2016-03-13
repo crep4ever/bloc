@@ -26,7 +26,7 @@ require 'globals.php'
       <div id="files">
         <hr />
         <section class="feature fa-file-pdf-o">
-          <h3>Fichiers utiles</h3>
+          <h3>Fichiers utiless</h3>
           <ul class="actions">
             <li><a href="data/program-full.pdf" class="button icon special fa-download">Programme prévisionnel</a></li>
             <li><a href="data/reglement.pdf" class="button icon special fa-download">Règlement officiel</a></li>
@@ -43,24 +43,24 @@ require 'globals.php'
           <h3>Format de la compétition</h3>
 
             <p>
-              Les grimpeurs sont répartis dans un des deux circuits de
-              leur catégorie d'âge, <u>en fonction du niveau annoncé à l'inscription</u>.
+              Les grimpeurs s'intéressent au circuit de leur catégorie d'âge.
             </p>
             <ul>
-              <li>Poussins et benjamins, filles et garçons&nbsp;: <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b> (plus difficile).</li>
-              <li>Minimes et cadets, filles et garçons&nbsp;: <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b> (plus difficile).</li>
+              <li>Microbes, filles et garçons&nbsp;: <b class="yellow">circuit jaune</b> </li>
+              <li>Poussins, filles et garçons : <b class="blue">circuit bleu</b> </li>
+              <li>Minimes, filles et garçons&nbsp;: <b class="red">circuit rouge</b> </li>
+              <li>Cadets, filles et garçons&nbsp;:  ou <b class="black">circuit noir</b> </li>
             </ul>
 
             <p>
-              Ces circuits sont pensés pour que chacun puisse s'exprimer pleinement
-              dans des blocs qui lui sont abordables.<br />
-              Les grimpeurs auront connaissance de leur circuit lors du retrait de
-              leur dossard.
+              Chaque circuit est composé de 18 blocs, classés par ordre de difficulté croissante.
+            </p>
+              <p>
+              <b>IMPORTANT : Seules les 10 meilleures performances compteront dans le classement.</b>
             </p>
 
             <p>
-              Le <b class="black">circuit noir</b> donnera lieu à des finales par catégorie d'âge (MF, MG, CF, CG).<br />
-              Seuls les compétiteurs issus du <b class="blue">circuit bleu</b> ou du <b class="black">circuit noir</b> pourront prétendre au podium.
+              Les circuits Benjamins et Minimes donneront lieu à des finales par catégorie d'âge et de sexe.<br />
             </p>
 
             <p>
@@ -72,8 +72,8 @@ require 'globals.php'
             <table style="width:90%">
               <tr>
                 <th style="text-align:center">Heure</th>
-                <th style="text-align:center">Poussins / Benjamins</th>
-                <th style="text-align:center">Minimes / Cadets</th>
+                <th style="text-align:center">Microbes / Poussins </th>
+                <th style="text-align:center">Benjamins / Minimes</th>
               </tr>
               <tr style="text-align:center">
                 <td>8h30 - 9h15</td>
@@ -83,17 +83,17 @@ require 'globals.php'
               <tr style="text-align:center">
                 <td>9h30 - 12h00</td>
                 <td>Pointage et retrait des dossards (11h/12h)</td>
-                <td>Qualifications : <b class="red">circuit rouge</b> ou <b class="black">circuit noir</b></td>
+                <td>Qualifications : <b class="red">Benjamin(e)s</b> ou <b class="black">Cadet(te)s</b></td>
               </tr>
               <tr style="text-align:center">
                 <td>12h30 - 15h00</td>
-                <td>Contest : <b class="yellow">circuit jaune</b> ou <b class="blue">circuit bleu</b></td>
+                <td>Contest : <b class="yellow">Microbes</b> ou <b class="blue">Poussin(e)s</b></td>
                 <td> - </td>
               </tr>
               <tr style="text-align:center">
                 <td>15h30 - 16h30</td>
                 <td>Encourager les plus grands !</td>
-                <td>Finales pour les qualifiés issus du <b class="black">circuit noir</b></td>
+                <td>Finales Benjamin(e)s et Minimes</td>
               </tr>
               <tr style="text-align:center">
                 <td>16h30</td>
