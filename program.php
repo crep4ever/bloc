@@ -48,8 +48,8 @@ require 'globals.php'
             <ul>
               <li>Microbes (filles et garçons)&nbsp;: <b class="yellow">circuit jaune</b> </li>
               <li>Poussins (filles et garçons)&nbsp;: <b class="blue">circuit bleu</b> </li>
-              <li>Minimes (filles et garçons)&nbsp;: <b class="red">circuit rouge</b> </li>
-              <li>Cadets (filles et garçons)&nbsp;: <b class="black">circuit noir</b> </li>
+              <li>Benjamins (filles et garçons)&nbsp;: <b class="red">circuit rouge</b> </li>
+              <li>Minimes (filles et garçons)&nbsp;: <b class="black">circuit noir</b> </li>
             </ul>
 
             <p>
@@ -83,7 +83,7 @@ require 'globals.php'
               <tr style="text-align:center">
                 <td>9h30 - 12h00</td>
                 <td>Pointage et retrait des dossards (11h/12h)</td>
-                <td>Qualifications : <b class="red">Benjamin(e)s</b> ou <b class="black">Cadet(te)s</b></td>
+                <td>Qualifications : <b class="red">Benjamin(e)s</b> ou <b class="black">Minimes</b></td>
               </tr>
               <tr style="text-align:center">
                 <td>12h30 - 15h00</td>
@@ -97,7 +97,7 @@ require 'globals.php'
               </tr>
               <tr style="text-align:center">
                 <td>16h30</td>
-                <td colspan="2" > Podiums, Remise des prix, <br /> et pour tous&nbsp;: Tirage au sort de la tombola </td>
+                <td colspan="2" >Podiums, Remise des prix, <br /> et pour tous&nbsp;: Tirage au sort de la tombola </td>
               </tr>
             </table>
 
@@ -127,7 +127,7 @@ require 'globals.php'
               <h4 id="finals">Finales</h4>
               <ul>
                 <li>Seul le <b class="black">circuit noir</b> est qualificatif pour des finales.</li>
-                <li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge (MF, MG, CF, CG).</li>
+                <li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge (BF, BG, MF, MG).</li>
                 <li>La finale se fera sous la forme d’un circuit de 3 blocs à-vue, chaque finaliste disposant de 3 essais maximum par bloc.</li>
                 <li>Le classement des finalistes sera établi en fonction du nombre de bloc réussis, du nombre d'essais nécessaires, du nombre de "prises de zone", puis du nombre d'essais pour atteindre ces prises de zone.</li>
               </ul>
