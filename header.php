@@ -41,10 +41,10 @@
     $(function() {
       $.datepicker.setDefaults($.extend(
         { dateFormat: 'dd/mm/yy',
-        defaultDate: '01/01/1999',
+        defaultDate: '01/01/2008',
         changeYear: true,
         changeMonth: true,
-        yearRange: "1999:2006" },
+        yearRange: "2001:2008" },
         $.datepicker.regional['fr']
       ));
 
