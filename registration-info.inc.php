@@ -8,12 +8,12 @@ $db->query("SELECT * FROM bloc_2016 WHERE (categorie = :cat1 OR categorie = :cat
 $db->bind(':cat1', 'poussin');
 $db->bind(':cat2', 'benjamin');
 $db->resultset();
-$GLOBALS['remaining-places-poussin-benjamin'] = max(0, $GLOBALS['available-places'] - $db->rowCount());
+$GLOBALS['remaining-places-morning'] = max(0, $GLOBALS['available-places'] - $db->rowCount());
 
 $db->bind(':cat1', 'minime');
 $db->bind(':cat2', 'cadet');
 $db->resultset();
-$GLOBALS['remaining-places-minime-cadet'] = max(0, $GLOBALS['available-places'] - $db->rowCount());
+$GLOBALS['remaining-places-afternoon'] = max(0, $GLOBALS['available-places'] - $db->rowCount());
 
 $infos = [];
 
@@ -27,16 +27,16 @@ if (strtotime('now') > $GLOBALS['registration-close-date'])
   array_push($infos, "Les inscriptions sont maintenant fermées.");
 }
 
-if ($GLOBALS['remaining-places-poussin-benjamin'] == 0)
+if ($GLOBALS['remaining-places-morning'] == 0)
 {
-  array_push($infos, "Les inscriptions sont closes pour les catégories <b>Poussin et Benjamin</b>.<br />
+  array_push($infos, "Les inscriptions sont closes pour les catégories <b>Microbe et Poussin</b>.<br />
                       Vous pouvez néanmoins <a href=\"contact.php\">nous contacter</a> pour une
                       inscription sur liste d'attente.");
 }
 
-if ($GLOBALS['remaining-places-minime-cadet'] == 0)
+if ($GLOBALS['remaining-places-afternoon'] == 0)
 {
-  array_push($infos, "Les inscriptions sont closes pour les catégories <b>Minime et Cadet</b>.<br />
+  array_push($infos, "Les inscriptions sont closes pour les catégories <b>Benjamin et Minime</b>.<br />
                       Vous pouvez néanmoins <a href=\"contact.php\">nous contacter</a> pour une
                       inscription sur liste d'attente.");
 }

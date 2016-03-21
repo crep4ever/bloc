@@ -7,8 +7,8 @@ function sendConfirmation($count, $mail)
 {
 
   $event = $GLOBALS['event-date-str'];
-  $pbHour = strftime('%Hh%M', $GLOBALS['poussin-benjamin-arrival']);
-  $mcHour = strftime('%Hh%M', $GLOBALS['minime-cadet-arrival']);
+  $arrivalMorning  = strftime('%Hh%M', $GLOBALS['arrival-morning']);
+  $arrivalAfternoon = strftime('%Hh%M', $GLOBALS['arrival-afternoon']);
 
   $site = "www.openblocgrenoble.fr";
   $from = "openblocgrenoble@gmail.com";
@@ -25,8 +25,8 @@ function sendConfirmation($count, $mail)
   . " * de l'autorisation parentale écrite pour cette participation, téléchargeable ici : \r\n"
   . "www.openblocgrenoble.fr/data/autorisation_parentale.pdf\r\n\r\n"
   . "Nous vous rappelons que les heures d'arrivée sont :\r\n"
-  . " * $mcHour pour les catégories Minime et Cadet\r\n"
-  . " * $pbHour pour les catégories Poussin et Benjamin\r\n"
+  . " * $arrivalMorning pour les catégories Benjamin et Minime\r\n"
+  . " * $arrivalAfternoon pour les catégories Microbe et Poussin\r\n"
   . "Merci et à bientôt !\r\n\r\n"
   . "Drac Vercors Escalade";
 

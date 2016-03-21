@@ -26,11 +26,11 @@ require_once 'globals.php';
         </tr>
         <tr>
           <td>Poussins / Benjamins (F&amp;G)</td>
-          <td><?php echo $GLOBALS['remaining-places-poussin-benjamin'] ?></td>
+          <td><?php echo $GLOBALS['remaining-places-morning'] ?></td>
         </tr>
         <tr>
           <td>Minimes / Cadets (F&amp;G)</td>
-          <td><?php echo $GLOBALS['remaining-places-minime-cadet'] ?></td>
+          <td><?php echo $GLOBALS['remaining-places-afternoon'] ?></td>
         </tr>
       </table>
     </footer>
