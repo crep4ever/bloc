@@ -26,7 +26,7 @@ require 'globals.php'
       <div id="files">
         <hr />
         <section class="feature fa-file-pdf-o">
-          <h3>Fichiers utiless</h3>
+          <h3>Fichiers utiles</h3>
           <ul class="actions">
             <li><a href="data/program-full.pdf" class="button icon special fa-download">Programme prévisionnel</a></li>
             <li><a href="data/reglement.pdf" class="button icon special fa-download">Règlement officiel</a></li>
@@ -46,16 +46,16 @@ require 'globals.php'
               Les grimpeurs s'intéressent au circuit de leur catégorie d'âge.
             </p>
             <ul>
-              <li>Microbes, filles et garçons&nbsp;: <b class="yellow">circuit jaune</b> </li>
-              <li>Poussins, filles et garçons : <b class="blue">circuit bleu</b> </li>
-              <li>Minimes, filles et garçons&nbsp;: <b class="red">circuit rouge</b> </li>
-              <li>Cadets, filles et garçons&nbsp;:  ou <b class="black">circuit noir</b> </li>
+              <li>Microbes (filles et garçons)&nbsp;: <b class="yellow">circuit jaune</b> </li>
+              <li>Poussins (filles et garçons)&nbsp;: <b class="blue">circuit bleu</b> </li>
+              <li>Minimes (filles et garçons)&nbsp;: <b class="red">circuit rouge</b> </li>
+              <li>Cadets (filles et garçons)&nbsp;: <b class="black">circuit noir</b> </li>
             </ul>
 
             <p>
               Chaque circuit est composé de 18 blocs, classés par ordre de difficulté croissante.
             </p>
-              <p>
+            <p>
               <b>IMPORTANT : Seules les 10 meilleures performances compteront dans le classement.</b>
             </p>
 
