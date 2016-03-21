@@ -11,7 +11,7 @@ require 'database.php';
 $db = new Database();
 
 // Get list of this session's registered candidates
-$db->query("SELECT * FROM bloc_2016 WHERE session = :session AND payer_id IS NULL");
+$db->query("SELECT * FROM bloc_2016_grimpeurs WHERE session = :session AND payer_id IS NULL");
 $db->bind(":session", session_id());
 $nbCandidates = count($db->resultset());
 
@@ -55,7 +55,7 @@ else
 {
   $db->beginTransaction();
 
-  $db->query("UPDATE bloc_2016 SET mail=:mail, tel=:tel, conditions=:conditions, token=:token WHERE session=:session AND payer_id IS NULL");
+  $db->query("UPDATE bloc_2016_grimpeurs SET mail=:mail, tel=:tel, conditions=:conditions, token=:token WHERE session=:session AND payer_id IS NULL");
 
   $db->bind(':mail', $_SESSION['mail']);
   $db->bind(':tel', $_SESSION['tel']);

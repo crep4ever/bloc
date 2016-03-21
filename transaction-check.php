@@ -41,7 +41,8 @@ else
   $html = "<p>Vous vous apprêtez à finaliser l'inscription des participants suivants :</p>";
   $html .= "<div class=\"candidates-summary\">";
 
-  $db->query("SELECT * FROM bloc_2016 WHERE session = '" . session_id() . "' AND payer_id IS NULL");
+  $db->query("SELECT * FROM bloc_2016_grimpeurs WHERE session = :session AND payer_id IS NULL");
+  $db->bind(":session", session_id());
   $rows = $db->resultset();
 
   $html .= "<table>";
