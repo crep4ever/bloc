@@ -355,6 +355,7 @@ AddDefaultCharset utf-8
 #    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 # </IfModule>
 
+
 # ----------------------------------------------------------------------
 # | Suppressing / Forcing the `www.` at the beginning of URLs          |
 # ----------------------------------------------------------------------
@@ -400,7 +401,21 @@ AddDefaultCharset utf-8
 #     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # </IfModule>
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Remove index.php from served urls
 
+ <IfModule mod_rewrite.c>
+     RewriteEngine On
+     RewriteBase /
+
+     RewriteCond %{REQUEST_FILENAME} !-f
+     RewriteCond %{REQUEST_FILENAME} !-d
+     RewriteRule ^(.*)$ index.php?$1 [L,QSA]
+
+     RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)/index\.php [NC]
+     RewriteRule ^ %1 [R=301,L]
+ </IfModule>
+ 
 # ######################################################################
 # # SECURITY                                                           #
 # ######################################################################
