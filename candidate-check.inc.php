@@ -6,7 +6,7 @@ require_once 'database.php';
 $available = false;
 if ($_SESSION['category'] == 'microbe' || $_SESSION['category'] == 'poussin')
 {
-  $db->query("SELECT * FROM bloc_2016 WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
+  $db->query("SELECT * FROM bloc_2016_grimpeurs WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
   $db->bind(':cat1', 'microbe');
   $db->bind(':cat2', 'poussin');
   $db->resultset();
@@ -14,7 +14,7 @@ if ($_SESSION['category'] == 'microbe' || $_SESSION['category'] == 'poussin')
 }
 else if ($_SESSION['category'] == 'benjamin' || $_SESSION['category'] == 'minime')
 {
-  $db->query("SELECT * FROM bloc_2016 WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
+  $db->query("SELECT * FROM bloc_2016_grimpeurs WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
   $db->bind(':cat1', 'benjamin');
   $db->bind(':cat2', 'minime');
   $db->resultset();
