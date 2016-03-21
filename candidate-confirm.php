@@ -22,13 +22,9 @@ $year  = $birthday[2];
 $_SESSION['birthday_str']  = $year . '-' . $month . '-' . $day;
 
 $_SESSION['category'] = 'invalid';
-if ($year == '1999' || $year == '2000')
+if ($year == '2001' || $year == '2002')
 {
-  $_SESSION['category'] ='cadet';
-}
-else if ($year == '2001' || $year == '2002')
-{
-  $_SESSION['category'] = 'minime';
+  $_SESSION['category'] ='minime';
 }
 else if ($year == '2003' || $year == '2004')
 {
@@ -37,6 +33,10 @@ else if ($year == '2003' || $year == '2004')
 else if ($year == '2005' || $year == '2006')
 {
   $_SESSION['category'] = 'poussin';
+}
+else if ($year == '2007' || $year == '2008')
+{
+  $_SESSION['category'] = 'microbe';
 }
 
 $_SESSION['sex_str']       = ($_SESSION['sex'] == 'M') ? 'garçon' : 'fille';

@@ -35,8 +35,8 @@
         <p>
           Le club Drac Vercors Escalade vous invite à la 4<sup>ème</sup> édition
           de l'Open de bloc de Grenoble.<br />
-          Une compétition d'escalade ludique ouverte aux Poussins, Benjamins,
-          Minimes et Cadets, licenciés FFCAM, FFME ou UNSS.
+          Une compétition d'escalade ludique ouverte aux Microbes, Poussins, Benjamins
+          et Minimes, licenciés FFCAM, FFME ou UNSS.
         </p>
 
       </header>
@@ -83,7 +83,7 @@
         <div class="4u$ 6u(2) 12u$(3)">
           <section class="feature fa-users">
             <h3>Participants</h3>
-            <p>Poussins, Benjamins, Minimes, Cadets. <br />FFCAM, FFME, UNSS.</p>
+            <p>Microbes, Poussins, Benjamins, Minimes. <br />FFCAM, FFME, UNSS.</p>
           </section>
         </div>
         <div class="4u 6u$(2) 12u$(3)">

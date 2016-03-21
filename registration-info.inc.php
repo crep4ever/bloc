@@ -5,13 +5,13 @@ require_once 'database.php';
 // Check available places from already registered candidates in db
 $db->query("SELECT * FROM bloc_2016 WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
 
-$db->bind(':cat1', 'poussin');
-$db->bind(':cat2', 'benjamin');
+$db->bind(':cat1', 'microbe');
+$db->bind(':cat2', 'poussin');
 $db->resultset();
 $GLOBALS['remaining-places-morning'] = max(0, $GLOBALS['available-places'] - $db->rowCount());
 
-$db->bind(':cat1', 'minime');
-$db->bind(':cat2', 'cadet');
+$db->bind(':cat1', 'benjamin');
+$db->bind(':cat2', 'minime');
 $db->resultset();
 $GLOBALS['remaining-places-afternoon'] = max(0, $GLOBALS['available-places'] - $db->rowCount());
 

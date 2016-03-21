@@ -4,19 +4,19 @@ require_once 'database.php';
 
 // Recheck available places from already registered candidates in db
 $available = false;
-if ($_SESSION['category'] == 'poussin' || $_SESSION['category'] == 'benjamin')
+if ($_SESSION['category'] == 'microbe' || $_SESSION['category'] == 'poussin')
 {
   $db->query("SELECT * FROM bloc_2016 WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
-  $db->bind(':cat1', 'poussin');
-  $db->bind(':cat2', 'benjamin');
+  $db->bind(':cat1', 'microbe');
+  $db->bind(':cat2', 'poussin');
   $db->resultset();
   $available = ($GLOBALS['available-places'] - $db->rowCount()) > 0;
 }
-else if ($_SESSION['category'] == 'minime' || $_SESSION['category'] == 'cadet')
+else if ($_SESSION['category'] == 'benjamin' || $_SESSION['category'] == 'minime')
 {
   $db->query("SELECT * FROM bloc_2016 WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
-  $db->bind(':cat1', 'minime');
-  $db->bind(':cat2', 'cadet');
+  $db->bind(':cat1', 'benjamin');
+  $db->bind(':cat2', 'minime');
   $db->resultset();
   $available = ($GLOBALS['available-places'] - $db->rowCount()) > 0;
 }
