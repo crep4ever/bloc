@@ -28,9 +28,9 @@ require 'globals.php'
         <section class="feature fa-file-pdf-o">
           <h3>Fichiers utiles</h3>
           <ul class="actions">
-            <li><a href="data/program-full.pdf" class="button icon special fa-download">Programme prévisionnel</a></li>
-            <li><a href="data/reglement.pdf" class="button icon special fa-download">Règlement officiel</a></li>
-            <li><a href="data/autorisation_parentale.pdf" class="button icon special fa-download">Autorisation parentale</a></li>
+            <li><a href="data/2016/program-full.pdf" class="button icon special fa-download">Programme prévisionnel</a></li>
+            <li><a href="data/2016/reglement.pdf" class="button icon special fa-download">Règlement officiel</a></li>
+            <li><a href="data/2016/autorisation_parentale.pdf" class="button icon special fa-download">Autorisation parentale</a></li>
           </ul>
         </section>
       </div>
@@ -160,7 +160,7 @@ require 'globals.php'
                 <p>
                   La personne effectuant l'enregistrement et le paiement pour un
                   participant mineur se porte garante d'avoir en sa possession
-                  <a href="data/autorisation_parentale.pdf">l'autorisation parentale écrite</a>
+                  <a href="data/2016/autorisation_parentale.pdf">l'autorisation parentale écrite</a>
                   relative à cette participation.
                 </p>
               </section>

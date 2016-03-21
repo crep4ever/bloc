@@ -23,7 +23,7 @@ function sendConfirmation($count, $mail)
   . " * de votre licence\r\n"
   . " * d'une pièce d'identité si votre licence ne comporte pas de photo\r\n"
   . " * de l'autorisation parentale écrite pour cette participation, téléchargeable ici : \r\n"
-  . "www.openblocgrenoble.fr/data/autorisation_parentale.pdf\r\n\r\n"
+  . "www.openblocgrenoble.fr/data/2016/autorisation_parentale.pdf\r\n\r\n"
   . "Nous vous rappelons que les heures d'arrivée sont :\r\n"
   . " * $arrivalMorning pour les catégories Benjamin et Minime\r\n"
   . " * $arrivalAfternoon pour les catégories Microbe et Poussin\r\n"
@@ -115,7 +115,7 @@ include("header.php");
       <ul>
         <li>de votre licence</li>
         <li>d'une pièce d'identité si votre licence ne comporte pas de photo</li>
-        <li>de <a href="data/autorisation_parentale.pdf">l'autorisation parentale écrite</a> pour cette participation</li>
+        <li>de <a href="data/2016/autorisation_parentale.pdf">l'autorisation parentale écrite</a> pour cette participation</li>
       </ul>
 
       <p>
