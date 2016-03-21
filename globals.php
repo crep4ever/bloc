@@ -8,12 +8,12 @@ $GLOBALS['remaining-places-morning'] = 0;
 $GLOBALS['remaining-places-afternoon'] = 0;
 
 $hour = 8; $minute = 30; $second = 0;
-$day = 7;  $month = 6;   $year = 2015;
+$day = 5;  $month = 6;   $year = 2016;
 $GLOBALS['event-date'] = mktime($hour, $minute, $second, $month, $day, $year);
 $GLOBALS['event-date-str'] = strftime('%A %e %B %G', $GLOBALS['event-date']);
 
 $hour = 0; $minute = 0; $second = 0;
-$day = 11; $month = 4;  $year = 2015;
+$day = 11; $month = 4;  $year = 2016;
 $GLOBALS['registration-open-date'] = mktime($hour, $minute, $second, $month, $day, $year);
 $GLOBALS['registration-open-date-str'] = strftime('%A %e %B %G', $GLOBALS['registration-open-date']);
 
@@ -23,11 +23,11 @@ $GLOBALS['registration-close-date'] = mktime($hour, $minute, $second, $month, $d
 $GLOBALS['registration-close-date-str'] = strftime('%A %e %B %G', $GLOBALS['registration-close-date']);
 
 $hour = 11; $minute = 0; $second = 0;
-$day = 7;   $month = 6;  $year = 2015;
+$day = 5;   $month = 6;  $year = 2016;
 $GLOBALS['arrival-morning'] = mktime($hour, $minute, $second, $month, $day, $year);
 
 $hour = 8; $minute = 30; $second = 0;
-$day = 7;  $month = 6;   $year = 2015;
+$day = 5;  $month = 6;   $year = 2016;
 $GLOBALS['arrival-afternoon'] = mktime($hour, $minute, $second, $month, $day, $year);
 
 ?>
