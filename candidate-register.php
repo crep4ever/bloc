@@ -133,17 +133,6 @@ include("header.php");
           <div>
             <label>Niveau maximum réalisé en voie</label>
 
-            <div class="checklist">
-              <ul class="fa-ul">
-                <li>
-                  <i class="fa-li fa-2x fa fa-info-circle"></i>
-                  Cette indication servira à répartir les compétiteurs dans les
-                  circuits. Soyez justes, il n'y a rien à gagner à vous sur- ou
-                  sous- estimer&nbsp;!
-                </li>
-              </ul>
-            </div>
-
             <input type="radio" name="niveau" id="4c" value="4c" required>
             <label for="4c">4c</label>
 
