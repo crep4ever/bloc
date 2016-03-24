@@ -43,7 +43,7 @@ function sendConfirmation($count, $mail)
 }
 
 $db = new Database;
-$db->query("SELECT * FROM bloc_2016 WHERE session = :session AND token = :token AND payer_id IS NOT NULL");
+$db->query("SELECT * FROM bloc_2016_grimpeurs WHERE session = :session AND token = :token AND payer_id IS NOT NULL");
 $db->bind(":session", session_id());
 $db->bind(":token", $_SESSION['token']);
 $rows = $db->resultset();
