@@ -53,7 +53,7 @@ require 'globals.php'
             </ul>
 
             <p>
-              Chaque circuit est composé de 18 blocs, classés par ordre de difficulté croissante.
+              Chaque circuit est composé de 16 blocs, classés par ordre de difficulté croissante.
             </p>
             <p>
               <b>IMPORTANT : Seules les 10 meilleures performances compteront dans le classement.</b>
@@ -115,18 +115,18 @@ require 'globals.php'
             <h4 id="contest">Contest</h4>
 
             <ul>
-              <li>Format contest&nbsp;: les grimpeurs ont 2h30 pour réussir le maximum de blocs du circuit qui leur a été attribué.</li>
-              <li>Chaque circuit comporte entre 12 et 15 blocs, dont quelques surprises ludiques.</li>
+              <li>Chaque circuit comporte 16 blocs triés par difficulté croissante, dont quelques surprises ludiques.</li>
+              <li>Format contest&nbsp;: les grimpeurs ont 2h30 pour réussir leur 10 meilleures performances parmi les blocs de leur circuit. </li>
               <li>Les grimpeurs disposent de 8 essais maximum par bloc.</li>
               <li>Le classement d'un participant est calculé
-                en considérant le nombre de blocs qu'il a réussi, puis le
-                nombre d'essais nécessaires.</li>
+                en considérant le nombre de points rapportés par ses 10 meilleures performances, puis le
+                nombre d'essais nécessaires pour les réaliser.</li>
                 <li>En cas d'égalité sur ces deux critères, un bloc de vitesse permet de départager les ex-aequos.</li>
               </ul>
 
               <h4 id="finals">Finales</h4>
               <ul>
-                <li>Seul le <b class="black">circuit noir</b> est qualificatif pour des finales.</li>
+                <li>Les circuits <b class="red">Benjamin(e)s</b> et <b class="black">Minimes</b> sont qualificatifs pour des finales.</li>
                 <li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge (BF, BG, MF, MG).</li>
                 <li>La finale se fera sous la forme d’un circuit de 3 blocs à-vue, chaque finaliste disposant de 3 essais maximum par bloc.</li>
                 <li>Le classement des finalistes sera établi en fonction du nombre de bloc réussis, du nombre d'essais nécessaires, du nombre de "prises de zone", puis du nombre d'essais pour atteindre ces prises de zone.</li>
@@ -135,10 +135,6 @@ require 'globals.php'
               <h4 id="prizes">Remise des prix</h4>
               <ul>
                 <li>Les podiums seront annoncés par catégorie d'âge et de sexe.</li>
-                <li>Seuls les compétiteurs issus des circuits les plus
-                  difficiles (<b class="blue">circuit bleu</b>
-                  ou <b class="black">circuit noir</b>) pourront y
-                  prétendre.</li>
                   <li>Une récompense sera remise à tous les partipants.</li>
                 </ul>
 
