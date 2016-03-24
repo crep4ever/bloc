@@ -559,97 +559,54 @@ footer li a{
     background-image: url(../images/logos/logos.png);
     background-repeat: no-repeat;
     display: block;
-    float:left;
-}
-
-.sprite-DL {
-    width: 308px;
-    height: 80px;
-    background-position: -5px -5px;
-}
-
-.sprite-adidas {
-    width: 120px;
-    height: 80px;
-    background-position: -5px -95px;
-}
-
-.sprite-andrea-boldrini {
-    width: 82px;
-    height: 79px;
-    background-position: -323px -5px;
 }
 
 .sprite-atelier-rocabilo {
     width: 54px;
     height: 80px;
-    background-position: -323px -94px;
+    background-position: -5px -5px;
 }
 
 .sprite-beal {
-    width: 180px;
+    width: 205px;
     height: 80px;
-    background-position: -135px -184px;
-}
-
-.sprite-canin {
-    width: 146px;
-    height: 80px;
-    background-position: -5px -274px;
-}
-
-.sprite-entre-prises {
-    width: 213px;
-    height: 80px;
-    background-position: -161px -274px;
+    background-position: -69px -5px;
 }
 
 .sprite-expe {
     width: 105px;
     height: 80px;
-    background-position: -325px -184px;
+    background-position: -5px -95px;
 }
 
 .sprite-ffcam {
     width: 231px;
     height: 80px;
-    background-position: -415px -5px;
+    background-position: -5px -185px;
 }
 
 .sprite-ffme {
     width: 79px;
     height: 80px;
-    background-position: -440px -95px;
+    background-position: -120px -95px;
 }
 
 .sprite-fontaine {
     width: 80px;
     height: 80px;
-    background-position: -529px -95px;
+    background-position: -209px -95px;
 }
 
-.sprite-grimper {
-    width: 116px;
+.sprite-scarpa {
+    width: 163px;
     height: 80px;
-    background-position: -440px -185px;
-}
-
-.sprite-jegrimpe {
-    width: 138px;
-    height: 80px;
-    background-position: -384px -275px;
-}
-
-.sprite-osmose {
-    width: 113px;
-    height: 80px;
-    background-position: -566px -185px;
+    background-position: -284px -5px;
 }
 
 .sprite-vieux-campeur {
-    width: 93px;
+    width: 94px;
     height: 80px;
-    background-position: -532px -275px;
+    background-position: -299px -95px;
 }
 
 /* Browser Upgrade Prompt */
