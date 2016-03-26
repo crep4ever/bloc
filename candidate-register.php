@@ -133,7 +133,7 @@ include("header.php");
           <div>
             <label>Niveau maximum réalisé en voie</label>
 
-            <input type="radio" name="niveau" id="4c" value="4c" required>
+            <input type="radio" name="niveau" id="4c" value="4c">
             <label for="4c">4c</label>
 
             <input type="radio" name="niveau" id="5a" value="5a">

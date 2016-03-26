@@ -45,11 +45,6 @@ if (empty($_SESSION['club']))
   array_push($errors, "Vous devez renseigner le club d'appartenance du participant.");
 }
 
-if (empty($_SESSION['experience']))
-{
-  array_push($errors, "Vous devez renseigner le niveau du participant.");
-}
-
 if ($_SESSION['category'] == 'invalid')
 {
   array_push($errors, "Impossible de déterminer la catégorie du participant à partir de sa date de naissance.");
@@ -117,11 +112,6 @@ if (!$candidate_ok)
     <tr>
       <td>Club</td>
       <td><?php echo $_SESSION['club'] . ' ; Licence ' . $_SESSION['licenceType'] . ' ' . $_SESSION['licenceNumber'] ?></td>
-    </tr>
-
-    <tr>
-      <td>Niveau</td>
-      <td><?php echo $_SESSION['experience'] . ' ' . $_SESSION['comment'] ?></td>
     </tr>
 
   </table>

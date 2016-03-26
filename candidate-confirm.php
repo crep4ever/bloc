@@ -10,10 +10,23 @@ include("header.php");
 
 /* Process candidate form results and store them in $_SESSION */
 
-$_SESSION['lastname']  = strtoupper(trim(htmlspecialchars($_POST['nom'])));
-$_SESSION['firstname'] = ucwords(trim(htmlspecialchars($_POST['prenom'])));
-$_SESSION['sex']       = htmlspecialchars($_POST['sex']);
-$_SESSION['birthday']  = htmlspecialchars($_POST['naissance']);
+$defaultValues = array(
+    'nom' => '',
+    'prenom' => '',
+    'sex' => '',
+    'naissance' => '',
+    'licence-type' => '',
+    'licence-num' => '',
+    'club' => '',
+    'niveau' => '',
+    'message' => '',
+);
+$formValues = array_merge($defaultValues, $_POST);
+
+$_SESSION['lastname']  = strtoupper(trim(htmlspecialchars($formValues['nom'])));
+$_SESSION['firstname'] = ucwords(trim(htmlspecialchars($formValues['prenom'])));
+$_SESSION['sex']       = htmlspecialchars($formValues['sex']);
+$_SESSION['birthday']  = htmlspecialchars($formValues['naissance']);
 
 $birthday = explode("/", $_SESSION['birthday']);
 $day   = $birthday[0];
@@ -40,11 +53,11 @@ else if ($year == '2007' || $year == '2008')
 }
 
 $_SESSION['sex_str']       = ($_SESSION['sex'] == 'M') ? 'garçon' : 'fille';
-$_SESSION['licenceType']   = htmlspecialchars($_POST['licence-type']);
-$_SESSION['licenceNumber'] = trim(htmlspecialchars($_POST['licence-num']));
-$_SESSION['club']          = strtoupper(trim(htmlspecialchars($_POST['club'])));
-$_SESSION['experience']    = htmlspecialchars($_POST['niveau']);
-$_SESSION['comment']       = trim(htmlspecialchars($_POST['message']));
+$_SESSION['licenceType']   = htmlspecialchars($formValues['licence-type']);
+$_SESSION['licenceNumber'] = trim(htmlspecialchars($formValues['licence-num']));
+$_SESSION['club']          = strtoupper(trim(htmlspecialchars($formValues['club'])));
+$_SESSION['experience']    = htmlspecialchars($formValues['niveau']);
+$_SESSION['comment']       = trim(htmlspecialchars($formValues['message']));
 $_SESSION['session']       = session_id();
 
 ?>
