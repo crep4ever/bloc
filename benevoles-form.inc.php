@@ -21,6 +21,11 @@
         <input type="email" id="email" name="email" placeholder="name@provider.com" required>
       </div>
 
+      <div class="left">
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel" name="telephone" placeholder="06XXXXXXXX" maxlength="10" pattern="[0][0-9]{9}">
+      </div>
+
       <div class="clear">&nbsp;</div>
 
       <div class="left">
