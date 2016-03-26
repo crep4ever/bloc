@@ -16,6 +16,26 @@ require 'globals.php';
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Inscriptions</h2>
+    <!-- CHECK LIST -->
+    <div class="checklist">
+      <ul class="fa-ul">
+        <li><i class="fa-li fa-2x fa fa-users"></i>
+          La compétition concerne uniquement les grimpeurs licenciés FFCAM, FFME ou UNSS
+          des catégories Microbe, Poussin, Benjamin et Minime.
+        </li>
+        <li><i class="fa-li fa-2x fa fa-eur"></i>
+          Les frais d'inscription sont de <?php echo $GLOBALS['registration-fee'] ?>€ par participant.
+        </li>
+        <li><i class="fa-li fa-2x fa fa-question-circle"></i>
+          Avez-vous bien lu <a href="program.php#rules">les règles du jeu</a>
+          avant de procéder à l'inscription&nbsp;?
+        </li>
+        <li><i class="fa-li fa-2x fa fa-sign-in"></i>
+          Avez-vous considéré de <a href="benevoles.php">rejoindre notre équipe de bénévoles</a>&nbsp;?
+        </li>
+      </ul>
+    </div>
+
   </header>
 
   <div class="container">
