@@ -8,6 +8,10 @@ require 'globals.php'
   <header class="major">
     <h2>Déroulement</h2>
     <img src="images/slogan.png" style="border:none; width:50%;" alt="Débutant ou mutant, tu rentreras content !" />
+    <p>
+      Le club Drac Vercors Escalade vous invite à la 4ème édition de l'Open de bloc de Grenoble.<br />
+      Une compétition d'escalade ludique ouverte aux Microbes, Poussins, Benjamins et Minimes, licenciés FFCAM, FFME ou UNSS.
+    </p>
   </header>
   <div class="container">
 
@@ -93,7 +97,7 @@ require 'globals.php'
               <tr style="text-align:center">
                 <td>15h30 - 16h30</td>
                 <td>Encourager les plus grands !</td>
-                <td>Finales Benjamin(e)s et Minimes</td>
+                <td>Finales <b class="red">Benjamin(e)s</b> et <b class="black">Minimes</b></td>
               </tr>
               <tr style="text-align:center">
                 <td>16h30</td>
