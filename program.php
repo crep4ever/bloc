@@ -132,7 +132,7 @@ require 'globals.php'
               <ul>
                 <li>Les circuits <b class="red">Benjamin(e)s</b> et <b class="black">Minimes</b> sont qualificatifs pour des finales.</li>
                 <li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge (BF, BG, MF, MG).</li>
-                <li>La finale se fera sous la forme d’un circuit de 3 blocs à-vue, chaque finaliste disposant de 3 essais maximum par bloc.</li>
+                <li>La finale se fera sous la forme d’un circuit de 3 blocs à-vue, chaque finaliste disposant de 3 minutes par bloc.</li>
                 <li>Le classement des finalistes sera établi en fonction du nombre de bloc réussis, du nombre d'essais nécessaires, du nombre de "prises de zone", puis du nombre d'essais pour atteindre ces prises de zone.</li>
               </ul>
 
