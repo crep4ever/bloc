@@ -4,7 +4,7 @@
 
 <!-- Banner -->
 <section id="banner">
-  <div class="inner">
+  <div class="inner left">
 
     <h2>Open de bloc de Grenoble</h2>
     <p><b><?php echo ucwords($GLOBALS['event-date-str']) ?></b><br />
@@ -15,14 +15,16 @@
       </ul>
 
       <div class="quick-icons">
-        <ul>
-        <li><a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" rel="nofollow"><div class="feature fa-facebook"></div></a></li>
-        <li><a href="contact.php"><div class="feature fa-envelope-o"></div></a></li>
-      </ul>
-      </div>
-
+        <a href="https://www.facebook.com/Drac-Vercors-Escalade-160141077367724/?fref=ts" rel="nofollow">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+        <a href="contact.php">
+          <i class="fa fa-envelope-o fa-2x"></i>
+        </a>
     </div>
-    <div class="clear">&nbsp;</div>
+
+  </div>
+  <div class="clear">&nbsp;</div>
 
   </section>
 
