@@ -39,8 +39,9 @@ $rows = $db->resultset();
       echo "<th>Prénom</th>";
       echo "<th>Missions</th>";
       echo "<th>Disponibilité</th>";
-      echo "<th>Commentaire</th>";
       echo "<th>Mail</th>";
+      echo "<th>Téléphone</th>";
+      echo "<th>Commentaire</th>";
       echo "</tr>";
 
       foreach ($rows as $row)
@@ -49,16 +50,18 @@ $rows = $db->resultset();
         $firstname = ucwords(strtolower($row['prenom']));
         $missions  = $row['missions'];
         $dispo  = $row['dispo'];
-        $comment  = $row['comment'];
         $mail  = $row['mail'];
+        $phone  = $row['tel'];
+        $comment  = $row['comment'];
 
         echo "<tr>";
         echo "<td>" . $lastname  . "</td>";
         echo "<td>" . $firstname . "</td>";
         echo "<td>" . $missions  . "</td>";
         echo "<td>" . $dispo     . "</td>";
-        echo "<td>" . $comment   . "</td>";
         echo "<td>" . $mail      . "</td>";
+        echo "<td>" . $phone      . "</td>";
+        echo "<td>" . $comment   . "</td>";
         echo "</tr>";
       }
 

@@ -72,7 +72,7 @@
 
       <div class="clear">&nbsp;</div>
 
-      <button type="submit" class="button big" role="button" aria-disabled="false">Valider</button>
+      <button type="submit" class="button big special" role="button" aria-disabled="false">Valider</button>
 
     </fieldset>
   </form>
