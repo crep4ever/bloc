@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #75507b;
 }
 
+
 header a:hover {
   text-decoration: none;
   color: #fff !important;
@@ -62,47 +63,29 @@ img.centered {
 
 /* Home page */
 
-.inner a {
-  color: #fff;
-}
-
-a .feature:hover:before {
-  background: #5c3566;
-  color: #eee;
-}
-
-.inner .quick-icons {
-  padding: 1em;
-  float:left;
-}
-
-.quick-icons {
-  color: #fff;
-  padding: 1em;
-  opacity: 0.9;
-}
-
-.quick-icons .feature {
-}
-
-.quick-icons ul {
+#banner .inner {
   margin: 0;
+  padding: 1em 5em;
+}
+#banner .button {
+  border-style: solid 0px;
+  background-color: #2e3436;
 }
 
-.quick-icons  li{
-    padding: 0.2em;
-    display: inline-block;
-    text-decoration: none;
+#banner .button:hover {
+    background-color: #5c3566;
 }
 
-.quick-icons .feature:before{
-    background: #fff;
+#banner .quick-icons {
+  float: left;
 }
 
-.quick-icons .feature:hover:before{
-    background: #5c3566;
-    color: #fff;
+#banner .quick-icons a{
+  color: #5c3566;
+  padding: 0 0.5em;
+  border-bottom: none;
 }
+
 
 
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
@@ -304,6 +287,10 @@ input[type="button"].special,
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#banner h2 {
+  color: #2e3436;
 }
 
 #banner span{
