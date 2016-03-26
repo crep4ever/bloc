@@ -22,7 +22,7 @@ $(function() {
 });
 </script>
 
-<section>
+<section id="description">
 
 <h2>Description des missions</h2>
 

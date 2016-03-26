@@ -16,9 +16,20 @@ $db = new Database();
   </header>
 
   <div class="container">
+    <nav class="subnav">
+      <ul>
+        <li><a href="#description">Description des missions</a></li>
+        <li><a href="#enregistrement">Se positionner</a></li>
+      </ul>
+    </nav>
+
+    <hr />
     <?php include("benevoles-missions.inc.php"); ?>
+    <hr />
     <p>Voir la <a href="list-benevoles.php">liste des bénévoles inscrits</a>.</p>
+    <hr />
     <?php include("benevoles-form.inc.php"); ?>
+    <hr />
   </div>
 </section>
 

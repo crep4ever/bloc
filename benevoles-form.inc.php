@@ -1,4 +1,4 @@
-<section>
+<section id="enregistrement">
 
 <h2>Se positionner</h2>
 
