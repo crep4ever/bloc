@@ -1,9 +1,9 @@
 <!-- Footer -->
 <footer id="footer">
   <ul class="icons">
+    <li><a href="http://ville-fontaine.fr" rel="nofollow"><i class="sprite sprite-fontaine"></i></a></li>
     <li><a href="http://www.ffme.fr" rel="nofollow"><i class="sprite sprite-ffme"></i></a></li>
     <li><a href="http://www.ffcam.fr" rel="nofollow"><i class="sprite sprite-ffcam"></i></a></li>
-    <li><a href="http://ville-fontaine.fr" rel="nofollow"><i class="sprite sprite-fontaine"></i></a></li>
     <li><a href="http://www.auvieuxcampeur.fr" rel="nofollow"><i class="sprite sprite-vieux-campeur"></i></a></li>
     <li><a href="http://www.beal-planet.com/" rel="nofollow"><i class="sprite sprite-beal"></i></a></li>
     <li><a href="http://www.expe.fr/fr" rel="nofollow"><i class="sprite sprite-expe"></i></a></li>
