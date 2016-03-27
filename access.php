@@ -3,7 +3,7 @@
 <section id="main" class="wrapper style1">
   <header class="major">
     <h2>Comment venir ?</h2>
-    <p>L'open de bloc Grenoble 2015 se tiendra à la salle <b>Espace Vertical 3</b> à Grenoble.</p>
+    <p>L'open de bloc Grenoble 2016 se tiendra à la salle <b>Espace Vertical 3</b> à Grenoble.</p>
   </header>
 
   <div class="container">

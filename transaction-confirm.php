@@ -37,7 +37,7 @@ $params = array('RETURNURL' => $return,
 'SOLUTIONTYPE' => 'Sole');
 
 $params["L_PAYMENTREQUEST_0_NAME0"] = $product['name'];
-$params["L_PAYMENTREQUEST_0_DESC0"] = 'Open de Bloc Grenoble 2015';
+$params["L_PAYMENTREQUEST_0_DESC0"] = 'Open de Bloc Grenoble 2016';
 $params["L_PAYMENTREQUEST_0_AMT0"] = $product['price'];
 $params["L_PAYMENTREQUEST_0_QTY0"] = $product['count'];
 
