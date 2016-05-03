@@ -12,7 +12,7 @@ include("header.php");
     <section id="content">
 
       <p>
-        Le service de paiement en ligne <a href="www.paypal.fr">Paypal</a>&nbsp;
+        Le service de paiement en ligne <a href="http://www.paypal.fr">Paypal</a>&nbsp;
         n'a pas pu donner suite à la transaction.
       </p>
 
