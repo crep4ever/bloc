@@ -50,6 +50,12 @@
 
         <input type="checkbox" name="missions[]" id="rangement" value="rangement">
         <label for="rangement">Rangement de la salle</label>
+
+        <input type="checkbox" name="missions[]" id="demontage" value="demontage">
+        <label for="demontage">Démontage des voies</label>
+
+        <input type="checkbox" name="missions[]" id="remontage" value="remontage">
+        <label for="remontage">Remontage des voies</label>
       </div>
 
       <div class="clear">&nbsp;</div>

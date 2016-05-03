@@ -69,6 +69,18 @@ $(function() {
     <div class="icon fa-clock-o">à partir de 16h30</div>
     <p>... et après on boit un coup ? ;-)</p>
   </div>
+
+  <?php displayEffectif($db, "demontage", "Démontage des voies", 10) ?>
+  <div>
+    <div class="icon fa-clock-o">La veille (Samedi 4 juin) 7h00-9h00</div>
+    <p>Démonter les prises d'EV pour faire place à l'open</p>
+  </div>
+
+  <?php displayEffectif($db, "remontage", "Remontage des voies", 10) ?>
+  <div>
+    <div class="icon fa-clock-o">Le lendemain (Lundi 6 Juin) 8h30-12h00</div>
+    <p>Remonter les prises d'EV comme si de rien n'était</p>
+  </div>
 </div>
 
 </section>
