@@ -74,9 +74,9 @@ else
 
   $db->query("UPDATE bloc_2016_grimpeurs SET payer_id = :payer_id, transaction = :transaction WHERE token = :token");
 
-  $db->bind('payer_id', $_GET['PayerID']);
-  $db->bind('transaction' , $response['PAYMENTINFO_0_TRANSACTIONID']);
-  $db->bind('token' , $_GET['token']);
+  $db->bind(':payer_id', $_GET['PayerID']);
+  $db->bind(':transaction' , $response['PAYMENTINFO_0_TRANSACTIONID']);
+  $db->bind(':token' , $_GET['token']);
 
   $db->execute();
 
