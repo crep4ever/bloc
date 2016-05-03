@@ -3,9 +3,16 @@ session_start();
 
 /* Process contact form results and store them in $_SESSION */
 
-$_SESSION['mail']          = trim(htmlspecialchars($_POST['email']));
-$_SESSION['tel']           = trim(htmlspecialchars($_POST['telephone']));
-$_SESSION['conditions'] = isset($_POST['conditions']);
+$defaultValues = array(
+    'email' => '',
+    'telephone' => '',
+    'conditions' => '',
+);
+$formValues = array_merge($defaultValues, $_POST);
+
+$_SESSION['mail']          = trim(htmlspecialchars($formValues['email']));
+$_SESSION['tel']           = trim(htmlspecialchars($formValues['telephone']));
+$_SESSION['conditions'] = isset($formValues['conditions']);
 
 require 'database.php';
 $db = new Database();
