@@ -33,7 +33,7 @@ require 'globals.php'
           <h3>Fichiers utiles</h3>
           <ul class="actions">
             <li><a href="data/2016/program-full.pdf" class="button icon special fa-download">Programme prévisionnel</a></li>
-            <li><a href="data/2016/reglement.pdf" class="button icon special fa-download">Règlement officiel</a></li>
+            <li><a href="#" class="button icon special fa-download">Règlement officiel</a></li>
             <li><a href="data/2016/autorisation_parentale.pdf" class="button icon special fa-download">Autorisation parentale</a></li>
           </ul>
         </section>
@@ -131,7 +131,7 @@ require 'globals.php'
               <h4 id="finals">Finales</h4>
               <ul>
                 <li>Les circuits <b class="red">Benjamin(e)s</b> et <b class="black">Minimes</b> sont qualificatifs pour des finales.</li>
-                <li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge (BF, BG, MF, MG).</li>
+                <li>Ainsi une finale sera proposée aux 5 premiers de leur catégorie d'âge  et de sexe (BF, BG, MF, MG).</li>
                 <li>La finale se fera sous la forme d’un circuit de 3 blocs à-vue, chaque finaliste disposant de 3 minutes par bloc.</li>
                 <li>Le classement des finalistes sera établi en fonction du nombre de bloc réussis, du nombre d'essais nécessaires, du nombre de "prises de zone", puis du nombre d'essais pour atteindre ces prises de zone.</li>
               </ul>
