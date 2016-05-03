@@ -8,7 +8,7 @@ function displayActions($count)
 
   if ($count == 0)
   {
-    $html .= "<li><a href=\"candidate-register.php\" class=\"button big special icon fa-cart-plus\" >Enregistrer un participant</a></li>";
+    $html .= "<li><a href=\"candidate-register.php\" class=\"button big special icon fa-cart-plus\" >Enregistrer un (des) participant(s)</a></li>";
   }
   else
   {
