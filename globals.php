@@ -4,8 +4,8 @@ setlocale(LC_TIME, "fr_FR");
 $GLOBALS['root-dir'] = 'http://demo.openblocgrenoble.fr';
 $GLOBALS['registration-fee'] = 12.0;
 $GLOBALS['available-places'] = 100;
-$GLOBALS['remaining-places-morning'] = 100;
-$GLOBALS['remaining-places-afternoon'] = 100;
+$GLOBALS['remaining-places-morning'] = 0;
+$GLOBALS['remaining-places-afternoon'] = 0;
 
 $hour = 8; $minute = 30; $second = 0;
 $day = 5;  $month = 6;   $year = 2016;
