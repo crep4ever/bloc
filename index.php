@@ -6,8 +6,8 @@
 <section id="banner">
   <div class="inner left">
 
-    <h2>Open de bloc de Grenoble</h2>
-    <p><b><?php echo ucwords($GLOBALS['event-date-str']) ?></b><br />
+    <h2>Open de bloc</h2>
+    <p><b><?php echo ucwords($GLOBALS['event-date-str']) ?> à Grenoble</b><br />
       <span><a href="access.php">Espace Vertical 3</a></span></p>
       <ul class="actions">
         <li><a href="registration.php" class="button big scrolly" >S'inscrire</a></li>
@@ -35,10 +35,9 @@
 
         <h2>Un évènement convivial et pour tous les niveaux</h2>
         <p>
-          Le club Drac Vercors Escalade vous invite à la 4<sup>ème</sup> édition
-          de l'Open de bloc de Grenoble.<br />
-          Une compétition d'escalade ludique ouverte aux Microbes, Poussins, Benjamins
-          et Minimes, licenciés FFCAM, FFME ou UNSS.
+          Le club Drac Vercors Escalade organise avec le soutien de la ville
+          de Fontaine la 4<sup>ème</sup> édition de l'Open de Bloc.<br />
+          Une compétition d'escalade ludique pour les 8-15 ans ouverte aux Microbes, Poussins, Benjamins et Minimes.
         </p>
 
       </header>
