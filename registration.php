@@ -21,7 +21,7 @@ require 'globals.php';
       <ul class="fa-ul">
         <li><i class="fa-li fa-2x fa fa-users"></i>
           La compétition concerne uniquement les grimpeurs licenciés FFCAM, FFME ou UNSS
-          des catégories Microbe, Poussin, Benjamin et Minime.
+          des catégories Microbe, Poussin, Benjamin et Minime nés entre le 01/01/2001 et le 31/12/2008.
         </li>
         <li><i class="fa-li fa-2x fa fa-eur"></i>
           Les frais d'inscription sont de <?php echo $GLOBALS['registration-fee'] ?>€ par participant.
