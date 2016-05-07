@@ -550,52 +550,106 @@ footer li a{
     display: block;
 }
 
-.sprite-atelier-rocabilo {
-    width: 54px;
+.sprite-abk {
+    width: 59px;
     height: 80px;
     background-position: -5px -5px;
 }
 
-.sprite-beal {
-    width: 205px;
+.sprite-adidas {
+    width: 120px;
     height: 80px;
-    background-position: -69px -5px;
+    background-position: -74px -5px;
 }
 
-.sprite-expe {
-    width: 105px;
+.sprite-andrea-boldrini {
+    width: 83px;
+    height: 80px;
+    background-position: -204px -5px;
+}
+
+.sprite-atelier-rocabilo {
+    width: 54px;
+    height: 80px;
+    background-position: -297px -5px;
+}
+
+.sprite-banque-rhone-alpes {
+    width: 160px;
     height: 80px;
     background-position: -5px -95px;
 }
 
-.sprite-ffcam {
-    width: 231px;
+.sprite-beal {
+    width: 238px;
+    height: 80px;
+    background-position: -175px -95px;
+}
+
+.sprite-canin {
+    width: 146px;
     height: 80px;
     background-position: -5px -185px;
 }
 
-.sprite-ffme {
-    width: 79px;
+.sprite-entreprises {
+    width: 221px;
     height: 80px;
-    background-position: -120px -95px;
+    background-position: -161px -185px;
+}
+
+.sprite-eska {
+    width: 70px;
+    height: 80px;
+    background-position: -361px -5px;
+}
+
+.sprite-expe {
+    width: 69px;
+    height: 80px;
+    background-position: -5px -275px;
+}
+
+.sprite-ffcam {
+    width: 239px;
+    height: 80px;
+    background-position: -84px -275px;
+}
+
+.sprite-ffme {
+    width: 80px;
+    height: 80px;
+    background-position: -333px -275px;
 }
 
 .sprite-fontaine {
-    width: 80px;
+    width: 115px;
     height: 80px;
-    background-position: -209px -95px;
+    background-position: -5px -365px;
+}
+
+.sprite-petzl {
+    width: 162px;
+    height: 80px;
+    background-position: -130px -365px;
 }
 
 .sprite-scarpa {
     width: 163px;
     height: 80px;
-    background-position: -284px -5px;
+    background-position: -441px -5px;
+}
+
+.sprite-teisseire {
+    width: 102px;
+    height: 80px;
+    background-position: -423px -95px;
 }
 
 .sprite-vieux-campeur {
     width: 94px;
     height: 80px;
-    background-position: -299px -95px;
+    background-position: -392px -185px;
 }
 
 /* Browser Upgrade Prompt */
