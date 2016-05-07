@@ -17,7 +17,7 @@
     <li><a href="http://www.entre-prises.fr" rel="nofollow"><i class="sprite sprite-entreprises"></i></a></li>
     <li><a href="http://eska-vetements.fr" rel="nofollow"><i class="sprite sprite-eska"></i></a></li>
     <li><a href="http://www.abk-climbing.eu" rel="nofollow"><i class="sprite sprite-abk"></i></a></li>
-    <li><a href="http://www.teisseire.fr" rel="nofollow"><i class="sprite sprite-tesseire"></i></a></li>                            
+    <li><a href="http://www.teisseire.fr" rel="nofollow"><i class="sprite sprite-teisseire"></i></a></li>                            
   </ul>
 
   <span class="copyright">
