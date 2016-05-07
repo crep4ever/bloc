@@ -86,8 +86,8 @@ else
 
   $html = "<section id=\"main\" class=\"wrapper style1\">" .
           "<div class=\"container\">" .
-          "<h2>Merci de votre participation</h2>";
-          "<p>Nous vous communiquerons plus d'information sur votre adresse <b>" . $mail . "</b>.</p>";
+          "<h2>Merci de votre participation</h2>" .
+          "<p>Nous vous communiquerons plus d'informations sur votre adresse <b>" . $mail . "</b>.</p>";
 
   $html .= "<a href=\"benevoles.php\" class=\"button big special\" >Retourner au site</a>";
   $html .= "</div>";
