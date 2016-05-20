@@ -58,7 +58,7 @@ include("header.php");
 
           <div class="left">
             <label for="licence-num">Numéro de licence</label>
-            <input type="text" name="licence-num" id="licence-num" pattern="\d{6}|\d{9}|\d{12}" required>
+            <input type="text" name="licence-num" id="licence-num" pattern="(^\d{6}$)|(^\d{9}$)|(^\d{12}$)" required>
           </div>
 
           <div class="left">
