@@ -33,7 +33,7 @@ require 'globals.php'
           <h3>Fichiers utiles</h3>
           <ul class="actions">
             <li><a href="data/2016/program-full.pdf" class="button icon special fa-download">Programme prévisionnel</a></li>
-            <li><a href="#" class="button icon special fa-download">Règlement officiel</a></li>
+            <li><a href="data/2016/reglement.pdf" class="button icon special fa-download">Règlement officiel</a></li>
             <li><a href="data/2016/autorisation_parentale.pdf" class="button icon special fa-download">Autorisation parentale</a></li>
           </ul>
         </section>
