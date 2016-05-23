@@ -99,12 +99,13 @@ margin-bottom: 2em;
 
 /* registration */
 .checklist {
+  text-align: left;
   border-style: solid;
   border-width: medium;
   border-radius: 1em;
   border-color: #204a87;
   padding: 1em 0 0 1.5em;
-  width: 60%;
+  width: 80%;
   margin:  1em auto;
 }
 
