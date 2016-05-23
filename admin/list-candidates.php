@@ -41,9 +41,9 @@ $rows = $db->resultset();
       echo "<th>Catégorie</th>";
       echo "<th>Club</th>";
       echo "<th>Niveau</th>";
-      echo "<th>Commentaire</th>";
       echo "<th>Mail</th>";
       echo "<th>Téléphone</th>";
+      echo "<th>Commentaire</th>";
       echo "</tr>";
 
       foreach ($rows as $row)
@@ -64,9 +64,9 @@ $rows = $db->resultset();
         echo "<td>" . $category  . "</td>";
         echo "<td>" . $club      . "</td>";
         echo "<td>" . $level     . "</td>";
-        echo "<td>" . $comment   . "</td>";
         echo "<td>" . $mail   . "</td>";
         echo "<td>" . $tel   . "</td>";
+        echo "<td>" . $comment   . "</td>";
         echo "</tr>";
       }
 
