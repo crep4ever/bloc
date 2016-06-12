@@ -1,6 +1,24 @@
 <?php
 $fancybox = true;
 include("header.php");
+
+function display_gallery($images_directory, $images_basename, $images_count, $images_title)
+{
+  $html = "<div class=\"row 50% uniform\">";
+
+  for ($i = 1; $i <= $images_count; $i++)
+  {
+    $html .= "<div class=\"4u 6u(3)\"><span class=\"image fit\">\n";
+    $html .= "<a class=\"fancybox\" data-fancybox-group=\"gallery\" href=\"" . $images_directory . "/" . $images_basename . "_" . $i . ".jpg\">\n";
+    $html .= "<img src=\"" . $images_directory . "/thumbnails/" . $images_basename . "_" . $i . ".jpg\" alt=\"" . $images_title . "\" />\n";
+    $html .= "</a>\n";
+    $html .= "</span></div>\n";
+  }
+
+  $html .= "</div>\n";
+  echo $html;
+}
+
 ?>
 
 <section id="main" class="wrapper style1">
@@ -37,6 +55,7 @@ include("header.php");
 
     <nav class="subnav">
       <ul>
+        <li><a href="#2016">Édition 2016</a></li>
         <li><a href="#2015">Édition 2015</a></li>
         <li><a href="#2013">Édition 2013</a></li>
       </ul>
@@ -44,6 +63,66 @@ include("header.php");
 
     <!-- Content -->
     <section id="content">
+
+      <div id="2016">
+        <hr />
+        <h3>Open de Bloc 2016</h3>
+
+        <div class="tabs">
+
+          <ul class="tab-links actions">
+            <li class="active"><a href="#tab1-2016" class="icon fa-camera">Photos</a></li>
+            <li><a href="#tab2-2016" class="icon fa-trophy">Résultats</a></li>
+          </ul>
+
+          <div class="tab-content">
+
+            <div id="tab1-2016" class="tab active">
+              <p>
+                Une plus large sélection de photos sera bientôt disponible !
+              </p>
+
+              <div class="box alt">
+                <?php
+                $directory = "images/2016";
+                $basename = "open_bloc_grenoble_2016";
+                $count = 24;
+                $title = "Open de Bloc Grenoble 2016";
+                display_gallery($directory, $basename, $count, $title);
+                ?>
+              </div>
+            </div>
+
+            <div id="tab2-2016" class="tab">
+              <p><b class="yellow">Circuit jaune</b></p>
+              <ul>
+                <li><a href="data/2016/results_microbes_filles.pdf">Microbes filles</a></li>
+                <li><a href="data/2016/results_microbes_garcons.pdf">Microbes garçons</a></li>
+              </ul>
+
+              <p><b class="blue">Circuit bleu</b></p>
+              <ul>
+                <li><a href="data/2016/results_poussins_filles.pdf">Poussins filles</a></li>
+                <li><a href="data/2016/results_poussins_garcons.pdf">Poussins garçons</a></li>
+              </ul>
+
+              <p><b class="red">Circuit rouge</b></p>
+              <ul>
+                <li><a href="data/2016/results_benjamins_filles.pdf">Benjamins filles</a></li>
+                <li><a href="data/2016/results_benjamins_garcons.pdf">Benjamins garçons</a></li>
+              </ul>
+
+              <p><b class="black">Circuit noir</b></p>
+              <ul>
+                <li><a href="data/2016/results_minimes_filles.pdf">Minimes filles</a></li>
+                <li><a href="data/2016/results_minimes_garcons.pdf">Minimes garçons</a></li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
 
       <div id="2015">
         <hr />
@@ -70,153 +149,13 @@ include("header.php");
                 l'événement sur l'<a href="https://goo.gl/photos/Ur4FD8qx9gXzPG3Q8">album photo</a> dédié.
               </p>
               <div class="box alt">
-                <div class="row 50% uniform">
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_1.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_1.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_2.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_2.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_3.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_3.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_4.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_4.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_5.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_5.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_6.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_6.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_7.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_7.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_8.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_8.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_9.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_9.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_10.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_10.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_11.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_11.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_12.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_12.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_13.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_13.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_14.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_14.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_15.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_15.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_16.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_16.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_17.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_17.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_18.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_18.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_19.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_19.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_20.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_20.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_21.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_21.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_22.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_22.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_23.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_23.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_24.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_24.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                </div>
+                <?php
+                $directory = "images/2015";
+                $basename = "open_bloc_grenoble";
+                $count = 24;
+                $title = "Open de Bloc Grenoble 2015";
+                display_gallery($directory, $basename, $count, $title);
+                ?>
               </div>
             </div>
 
@@ -235,103 +174,15 @@ include("header.php");
               </ul>
 
               <div class="box alt">
-                <div class="row 50% uniform">
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_1.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_1.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_2.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_2.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_3.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_3.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_4.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_4.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_5.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_5.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_6.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_6.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_7.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_7.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_8.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_8.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_9.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_9.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_10.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_10.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_11.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_11.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_12.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_12.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_13.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_13.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_14.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_14.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                  <div class="4u 6u(3)"><span class="image fit">
-                    <a class="fancybox" data-fancybox-group="gallery" href="images/2015/open_bloc_grenoble_podiums_15.jpg">
-                      <img src="images/2015/thumbnails/open_bloc_grenoble_podiums_15.jpg" alt="Open de Bloc Grenoble 2015" />
-                    </a>
-                  </span></div>
-
-                </div>
+                <?php
+                $directory = "images/2015";
+                $basename = "open_bloc_grenoble_podiums";
+                $count = 15;
+                $title = "Open de Bloc Grenoble 2015";
+                display_gallery($directory, $basename, $count, $title);
+                ?>
               </div>
-
             </div>
-
           </div>
 
         </div>
