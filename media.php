@@ -87,20 +87,19 @@ function display_gallery($images_directory, $images_basename, $images_count, $im
 
             <div id="tab2-2016" class="tab">
               <p>
-              <a href="https://drive.google.com/open?id=0B7619jy91UPlWGJkeHdMWURib28">   ----> Les <b> albums photos complets  </b> sont disponibles ici </a>
-<br /><i>Remercions particulièrement Nils pour le montage vidéo, </i>
-<br /><i>ainsi que Daniel, Grégoire, Sandrine, famille Salomon, Sarah et Yannick pour leurs prises de vue !</i>
-
-
+              <a href="https://drive.google.com/open?id=0B7619jy91UPlWGJkeHdMWURib28">
+                Les <b> albums photos complets  </b> sont disponibles ici
+              </a>
+              <br /><i>Remercions particulièrement Nils pour le montage vidéo, </i>
+              <br /><i>ainsi que Daniel, Grégoire, Sandrine, famille Salomon, Sarah et Yannick pour leurs prises de vue !</i>
               </p>
-
-                <?php
-                $directory = "images/2016";
-                $basename = "open_bloc_grenoble_2016";
-                $count = 27;
-                $title = "Open de Bloc Grenoble 2016";
-                display_gallery($directory, $basename, $count, $title);
-                ?>
+              <?php
+              $directory = "images/2016";
+              $basename = "open_bloc_grenoble_2016";
+              $count = 27;
+              $title = "Open de Bloc Grenoble 2016";
+              display_gallery($directory, $basename, $count, $title);
+              ?>
             </div>
 
             <div id="tab3-2016" class="tab">
@@ -127,9 +126,7 @@ function display_gallery($images_directory, $images_basename, $images_count, $im
                 <li><a href="data/2016/results_minimes_filles.pdf">Minimes filles</a></li>
                 <li><a href="data/2016/results_minimes_garcons.pdf">Minimes garçons</a></li>
               </ul>
-
             </div>
-
           </div>
       </div>
 
@@ -157,15 +154,13 @@ function display_gallery($images_directory, $images_basename, $images_count, $im
                 Vous pouvez consulter et télécharger toutes les photos de
                 l'événement sur l'<a href="https://goo.gl/photos/Ur4FD8qx9gXzPG3Q8">album photo</a> dédié.
               </p>
-              <div class="box alt">
-                <?php
-                $directory = "images/2015";
-                $basename = "open_bloc_grenoble";
-                $count = 24;
-                $title = "Open de Bloc Grenoble 2015";
-                display_gallery($directory, $basename, $count, $title);
-                ?>
-              </div>
+              <?php
+              $directory = "images/2015";
+              $basename = "open_bloc_grenoble";
+              $count = 24;
+              $title = "Open de Bloc Grenoble 2015";
+              display_gallery($directory, $basename, $count, $title);
+              ?>
             </div>
 
             <div id="tab3" class="tab">
