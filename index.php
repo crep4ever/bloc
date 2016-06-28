@@ -10,8 +10,9 @@
     <p><b><?php echo ucwords($GLOBALS['event-date-str']) ?> à Grenoble</b><br />
       <span><a href="access.php">Espace Vertical 3</a></span></p>
       <ul class="actions">
-        <li><a href="registration.php" class="button big scrolly" >S'inscrire</a></li>
+        <!--<li><a href="registration.php" class="button big scrolly" >S'inscrire</a></li>-->
         <li><a href="program.php" class="button big scrolly" >Plus d'infos</a></li>
+        <li><a href="media.php" class="button big scrolly" >Photos et Résultats</a></li>
       </ul>
 
       <div class="quick-icons">
