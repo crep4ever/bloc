@@ -17,7 +17,10 @@
     <li><a href="http://www.entre-prises.fr" rel="nofollow"><i class="sprite sprite-entreprises"></i></a></li>
     <li><a href="http://eska-vetements.fr" rel="nofollow"><i class="sprite sprite-eska"></i></a></li>
     <li><a href="http://www.abk-climbing.eu" rel="nofollow"><i class="sprite sprite-abk"></i></a></li>
-    <li><a href="http://www.teisseire.fr" rel="nofollow"><i class="sprite sprite-teisseire"></i></a></li>                            
+    <li><a href="http://www.artline-holds.fr" rel="nofollow"><i class="sprite sprite-artline-holds"></i></a></li>
+    <li><a href="http://www.decathlon.fr" rel="nofollow"><i class="sprite sprite-decathlon"></i></a></li>
+    <li><a href="http://www.ledauphine.com" rel="nofollow"><i class="sprite sprite-dauphine-libere"></i></a></li>
+    <li><a href="http://www.teisseire.fr" rel="nofollow"><i class="sprite sprite-teisseire"></i></a></li>
   </ul>
 
   <span class="copyright">

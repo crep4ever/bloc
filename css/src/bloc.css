@@ -569,10 +569,16 @@ footer li a{
     background-position: -204px -5px;
 }
 
+.sprite-artline-holds {
+    width: 78px;
+    height: 80px;
+    background-position: -297px -5px;
+}
+
 .sprite-atelier-rocabilo {
     width: 54px;
     height: 80px;
-    background-position: -297px -5px;
+    background-position: -385px -5px;
 }
 
 .sprite-banque-rhone-alpes {
@@ -593,64 +599,76 @@ footer li a{
     background-position: -5px -185px;
 }
 
+.sprite-dauphine-libere {
+    width: 311px;
+    height: 80px;
+    background-position: -161px -185px;
+}
+
+.sprite-decathlon {
+    width: 274px;
+    height: 80px;
+    background-position: -5px -275px;
+}
+
 .sprite-entreprises {
     width: 221px;
     height: 80px;
-    background-position: -161px -185px;
+    background-position: -289px -275px;
 }
 
 .sprite-eska {
     width: 70px;
     height: 80px;
-    background-position: -361px -5px;
+    background-position: -423px -95px;
 }
 
 .sprite-expe {
     width: 69px;
     height: 80px;
-    background-position: -5px -275px;
+    background-position: -449px -5px;
 }
 
 .sprite-ffcam {
     width: 239px;
     height: 80px;
-    background-position: -84px -275px;
+    background-position: -5px -365px;
 }
 
 .sprite-ffme {
     width: 80px;
     height: 80px;
-    background-position: -333px -275px;
+    background-position: -254px -365px;
 }
 
 .sprite-fontaine {
     width: 115px;
     height: 80px;
-    background-position: -5px -365px;
+    background-position: -344px -365px;
 }
 
 .sprite-petzl {
     width: 162px;
     height: 80px;
-    background-position: -130px -365px;
+    background-position: -528px -5px;
 }
 
 .sprite-scarpa {
     width: 163px;
     height: 80px;
-    background-position: -441px -5px;
+    background-position: -503px -95px;
 }
 
 .sprite-teisseire {
     width: 102px;
     height: 80px;
-    background-position: -423px -95px;
+    background-position: -482px -185px;
 }
 
 .sprite-vieux-campeur {
     width: 94px;
     height: 80px;
-    background-position: -392px -185px;
+    background-position: -594px -185px;
 }
 
 /* Browser Upgrade Prompt */
