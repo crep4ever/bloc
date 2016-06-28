@@ -27,6 +27,13 @@ if (strtotime('now') > $GLOBALS['registration-close-date'])
   array_push($infos, "Les inscriptions sont maintenant fermées.");
 }
 
+if (strtotime('now') > $GLOBALS['event-date'])
+{
+  array_push($infos, "Vous pouvez consulter les photos et les résultats des éditions
+                      précédentes sur la <a href=\"media.php\">page souvenirs</a>.");
+}
+
+
 if ($GLOBALS['remaining-places-morning'] == 0)
 {
   array_push($infos, "Les inscriptions sont closes pour les catégories <b>Microbe et Poussin</b>.<br />
