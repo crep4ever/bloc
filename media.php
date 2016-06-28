@@ -72,13 +72,12 @@ function display_gallery($images_directory, $images_basename, $images_count, $im
 
           <ul class="tab-links actions">
             <li class="active"><a href="#tab1-2016" class="icon fa-video-camera">Vidéo</a></li>
-            <li class="active"><a href="#tab2-2016" class="icon fa-camera">Photos</a></li>
+            <li><a href="#tab2-2016" class="icon fa-camera">Photos</a></li>
             <li><a href="#tab3-2016" class="icon fa-trophy">Résultats</a></li>
           </ul>
 
           <div class="tab-content">
 
-          <div class="tab-content">
             <div id="tab1-2016" class="tab active">
               <div class="videocontainer">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/BrDl-c1h5hs?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -86,16 +85,15 @@ function display_gallery($images_directory, $images_basename, $images_count, $im
             </div>
 
 
-            <div id="tab2-2016" class="tab active">
+            <div id="tab2-2016" class="tab">
               <p>
               <a href="https://drive.google.com/open?id=0B7619jy91UPlWGJkeHdMWURib28">   ----> Les <b> albums photos complets  </b> sont disponibles ici </a>
-<br /><i>Remercions particulièrement Nils pour le montage vidéo, </i>                  
+<br /><i>Remercions particulièrement Nils pour le montage vidéo, </i>
 <br /><i>ainsi que Daniel, Grégoire, Sandrine, famille Salomon, Sarah et Yannick pour leurs prises de vue !</i>
-               
+
 
               </p>
 
-              <div class="box alt">
                 <?php
                 $directory = "images/2016";
                 $basename = "open_bloc_grenoble_2016";
@@ -103,7 +101,6 @@ function display_gallery($images_directory, $images_basename, $images_count, $im
                 $title = "Open de Bloc Grenoble 2016";
                 display_gallery($directory, $basename, $count, $title);
                 ?>
-              </div>
             </div>
 
             <div id="tab3-2016" class="tab">
@@ -134,7 +131,6 @@ function display_gallery($images_directory, $images_basename, $images_count, $im
             </div>
 
           </div>
-        </div>
       </div>
 
       <div id="2015">
