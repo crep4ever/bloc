@@ -79,7 +79,9 @@ function display_gallery($images_directory, $images_basename, $images_count, $im
 
             <div id="tab1-2016" class="tab active">
               <p>
-                Une plus large sélection de photos sera bientôt disponible !
+                <a href="https://drive.google.com/open?id=0B7619jy91UPlWGJkeHdMWURib28">Les albums photos complets sont disponibles ici. </a>
+                  <br /><i>Remercions Daniel, Grégoire, Sandrine, famille Salomon, Sarah et Yannick pour leurs prises de vue !</i>
+
               </p>
 
               <div class="box alt">
