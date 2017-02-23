@@ -37,7 +37,7 @@
         <h2>Un évènement convivial et pour tous les niveaux</h2>
         <p>
           Le club Drac Vercors Escalade organise avec le soutien de la ville
-          de Fontaine la 4<sup>ème</sup> édition de l'Open de Bloc.<br />
+          de Fontaine la 5<sup>ème</sup> édition de l'Open de Bloc.<br />
           Une compétition d'escalade ludique pour les 8-15 ans ouverte aux Microbes, Poussins, Benjamins et Minimes.
         </p>
 
