@@ -3,7 +3,7 @@ require_once 'globals.php';
 require_once 'database.php';
 
 // Check available places from already registered candidates in db
-$db->query("SELECT * FROM bloc_2016_grimpeurs WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
+$db->query("SELECT * FROM bloc_2017_grimpeurs WHERE (categorie = :cat1 OR categorie = :cat2) AND payer_id IS NOT NULL");
 
 $db->bind(':cat1', 'microbe');
 $db->bind(':cat2', 'poussin');

@@ -70,7 +70,7 @@ else
 {
   /* insert benevole in db  */
   $db->beginTransaction();
-  $db->query("INSERT INTO bloc_2016_benevoles(nom, prenom, mail, tel, missions, dispo, comment) VALUES(:nom, :prenom, :mail, :tel, :missions, :dispo, :comment)");
+  $db->query("INSERT INTO bloc_2017_benevoles(nom, prenom, mail, tel, missions, dispo, comment) VALUES(:nom, :prenom, :mail, :tel, :missions, :dispo, :comment)");
   $db->bind(':nom', $lastname);
   $db->bind(':prenom' , $firstname);
   $db->bind(':mail', $mail);

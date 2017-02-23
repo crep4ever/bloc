@@ -1,7 +1,7 @@
 <?php
 require_once 'database.php';
 
-$db->query("SELECT DISTINCT mail FROM bloc_2016_benevoles WHERE FIND_IN_SET(:mission, missions) > 0");
+$db->query("SELECT DISTINCT mail FROM bloc_2017_benevoles WHERE FIND_IN_SET(:mission, missions) > 0");
 
 function displayEffectif($database, $mission, $title, $total)
 {

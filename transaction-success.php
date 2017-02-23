@@ -17,13 +17,13 @@ function sendConfirmation($count, $mail)
   $subject = "[Open de Bloc] Confirmation d'inscription";
 
   $text = "Bonjour,\r\n\r\n"
-  . "Vous avez réalisé l'inscription de $count participant(s) pour l'Open de bloc de Grenoble 2016.\r\n\r\n"
+  . "Vous avez réalisé l'inscription de $count participant(s) pour l'Open de bloc de Grenoble 2017.\r\n\r\n"
   . "Vous pouvez consulter le programme et le règlement de la compétition à l'adresse : www.openblocgrenoble.fr/program.php\r\n\r\n"
   . "Nous vous donnons rendez-vous le $event à Espace Vertical 3 en possession :\r\n"
   . " * de votre licence\r\n"
   . " * d'une pièce d'identité si votre licence ne comporte pas de photo\r\n"
   . " * de l'autorisation parentale écrite pour cette participation, téléchargeable ici : \r\n"
-  . "www.openblocgrenoble.fr/data/2016/autorisation_parentale.pdf\r\n\r\n"
+  . "www.openblocgrenoble.fr/data/2017/autorisation_parentale.pdf\r\n\r\n"
   . "Nous vous rappelons que les heures d'arrivée sont :\r\n"
   . " * $arrivalMorning pour les catégories Benjamin et Minime\r\n"
   . " * $arrivalAfternoon pour les catégories Microbe et Poussin\r\n"
@@ -43,7 +43,7 @@ function sendConfirmation($count, $mail)
 }
 
 $db = new Database;
-$db->query("SELECT * FROM bloc_2016_grimpeurs WHERE session = :session AND token = :token AND payer_id IS NOT NULL");
+$db->query("SELECT * FROM bloc_2017_grimpeurs WHERE session = :session AND token = :token AND payer_id IS NOT NULL");
 $db->bind(":session", session_id());
 $db->bind(":token", $_SESSION['token']);
 $rows = $db->resultset();
@@ -115,7 +115,7 @@ include("header.php");
       <ul>
         <li>de votre licence</li>
         <li>d'une pièce d'identité si votre licence ne comporte pas de photo</li>
-        <li>de <a href="data/2016/autorisation_parentale.pdf">l'autorisation parentale écrite</a> pour cette participation</li>
+        <li>de <a href="data/2017/autorisation_parentale.pdf">l'autorisation parentale écrite</a> pour cette participation</li>
       </ul>
 
       <p>

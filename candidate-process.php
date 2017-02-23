@@ -8,7 +8,7 @@ $db = new Database();
 
 $db->beginTransaction();
 
-$db->query("INSERT INTO bloc_2016_grimpeurs(nom, prenom, sexe, naissance, categorie, licence_type, licence_number, club, experience, comment, session) VALUES(:nom, :prenom, :sexe, :naissance, :categorie, :licence_type, :licence_number, :club, :experience, :comment, :session)");
+$db->query("INSERT INTO bloc_2017_grimpeurs(nom, prenom, sexe, naissance, categorie, licence_type, licence_number, club, experience, comment, session) VALUES(:nom, :prenom, :sexe, :naissance, :categorie, :licence_type, :licence_number, :club, :experience, :comment, :session)");
 
 $db->bind(':nom', $_SESSION['lastname']);
 $db->bind(':prenom' , $_SESSION['firstname']);

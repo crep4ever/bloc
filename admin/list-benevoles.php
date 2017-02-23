@@ -2,7 +2,7 @@
 require '../database.php';
 $db = new Database();
 
-$db->query("SELECT * FROM bloc_2016_benevoles");
+$db->query("SELECT * FROM bloc_2017_benevoles");
 $rows = $db->resultset();
 ?>
 

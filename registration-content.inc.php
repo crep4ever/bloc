@@ -36,7 +36,7 @@ function displayActions($count)
 <!-- CANDIDATES SUMMARY -->
 <?php
 // Get list of this session's registered candidates
-$db->query("SELECT * FROM bloc_2016_grimpeurs WHERE session = '" . session_id() . "' AND payer_id IS NULL");
+$db->query("SELECT * FROM bloc_2017_grimpeurs WHERE session = '" . session_id() . "' AND payer_id IS NULL");
 $rows = $db->resultset();
 ?>
 
