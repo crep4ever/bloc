@@ -3,9 +3,9 @@
 <html lang="fr">
 
 <head>
-  <title>Open de bloc 2016</title>
+  <title>Open de bloc 2017</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="Open de bloc de Grenoble 2016" />
+  <meta name="description" content="Open de bloc de Grenoble 2017" />
   <meta name="keywords" content="escalade, open, bloc, compétition, grenoble, drac vercors escalade" />
   <meta name="viewport" content="initial-scale=1"/>
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
@@ -79,10 +79,10 @@
 
 
   <!-- Open graph -->
-  <meta property="og:title" content="Open de bloc Grenoble 2016" />
+  <meta property="og:title" content="Open de bloc Grenoble 2017" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://www.openblocgrenoble.fr" />
-  <meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2016.jpg" />
+  <meta property="og:image" content="http://www.openblocgrenoble.fr/images/open-bloc-2017.jpg" />
 
 <?php if (isset($fancybox) && $fancybox == true) { ?>
   <!-- Add fancyBox module -->
@@ -127,7 +127,7 @@
   <!-- Header -->
   <header id="header" class="alt skel-layers-fixed">
     <h1>
-      <a href="index.php">Open de bloc Grenoble 2016</a>
+      <a href="index.php">Open de bloc Grenoble 2017</a>
       <span>&nbsp;&nbsp;par le club&nbsp;&nbsp;</span>
       <a href="http://fontaine-en-montagne.ffcam.fr">Drac Vercors Escalade</a>
     </h1>
